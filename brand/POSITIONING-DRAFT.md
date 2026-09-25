@@ -36,3 +36,13 @@ Kincsestérkép-regiszter (meleg, önironikus, egyenrangú, ":)" — nem "Ön", 
 ---
 
 *Ez egy nyers első réteg — várom, hogy mit vágnál ki belőle, mi hangzik túl "szépre megcsinált AI-szövegnek", és mi az, ami tényleg a te hangod.*
+
+---
+
+## Megjegyzés: a "kedvesség önmagunkkal szemben" mint Sophie-szintű alapérték (2026-09-25)
+
+Sophie visszajelzése: ez a mondat ("kedvesség önmagunkkal szemben, nem gyengeségként, hanem módszerként") rezonál egy másik, jelenleg fejlesztés alatt álló termékével — munkanevén **"My Tree Self" / Maitri Self** (korábbi néven Future Self Starter) —, ahol a **maitri** (páli/szanszkrit: jóindulat, barátságosság önmagunk felé) kifejezetten a termék névadó fogalma. Az a termék egy AI mentor-coach folyamat, amely a felhasználó jövőbeli énjének "cipőjébe helyezkedik be", hogy segítsen átvinni a jelen nehéz időszakain.
+
+**Ez nem termék-összemosás** — az Art of Small Steps és a My Tree Self/Maitri Self külön termékek, külön scope-pal maradnak (hasonlóan ahhoz, ahogy a Hearthlight is külön fut a Karmester szerint). De a **maitri/kedvesség-elv Sophie-nál nem egy adott termékhez kötött ötlet, hanem egy visszatérő, személyes alapréteg** — ami azt jelenti, hogy amikor az Art of Small Steps hangjába belefoglaljuk ezt az elvet, az nem kitalált márka-differenciátor, hanem valami, ami már függetlenül, több helyen is megjelenik Sophie munkájában. Ez erősíti a koncepció hitelességét.
+
+Ha/amikor a My Tree Self / Maitri Self globalizálása napirendre kerül, érdemes lesz visszanyúlni erre a jegyzetre — de az egy külön munkafolyamat lesz, nem ennek a session-nek a feladata.
