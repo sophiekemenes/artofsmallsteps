@@ -1,0 +1,55 @@
+---
+import '../styles/tokens.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Art of Small Steps — a gentle, evidence-informed path of small, doable steps.' } = Astro.props;
+
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/method/', label: 'The Method' },
+  { href: '/program/', label: 'The Program' },
+  { href: '/about/', label: 'About' },
+  { href: '/contact/', label: 'Contact' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} · Art of Small Steps</title>
+  </head>
+  <body>
+    <header style="border-bottom: 1px solid var(--color-border); padding: var(--space-3) var(--space-4);">
+      <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-2);">
+        <a href="/" style="font-family: var(--font-serif); font-size: 20px; text-decoration: none; color: var(--color-text);">Art of Small Steps</a>
+        <nav style="display: flex; gap: var(--space-3); font-family: var(--font-sans); font-size: 14px;">
+          {nav.map((item) => (
+            <a href={item.href} style="text-decoration: none; color: var(--color-text-muted);">{item.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main style="max-width: 1100px; margin: 0 auto; padding: var(--space-5) var(--space-4);">
+      <slot />
+    </main>
+
+    <footer style="border-top: 1px solid var(--color-border); padding: var(--space-4); margin-top: var(--space-6);">
+      <div style="max-width: 1100px; margin: 0 auto; font-family: var(--font-sans); font-size: 13px; color: var(--color-text-muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--space-2);">
+        <span>&copy; {new Date().getFullYear()} Art of Small Steps</span>
+        <div style="display: flex; gap: var(--space-3);">
+          <a href="/privacy/" style="color: var(--color-text-muted);">Privacy</a>
+          <a href="/terms/" style="color: var(--color-text-muted);">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

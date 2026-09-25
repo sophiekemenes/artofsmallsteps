@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Structural placeholder, mapped from the 15 Hungarian lessons analyzed in
+// /source-material/ujratervezes-hu/ANALYSIS.md. Titles and copy need a real
+// English adaptation (transcreation, not translation) — see that file's
+// section 5 for what needs to change, not just be translated.
+const lessons = [
+  { n: 1, title: '[TODO — was "The Downstairs Neighbor"]' },
+  { n: 2, title: '[TODO — was "The Protagonist"]' },
+  { n: 3, title: '[TODO — was "Value Added"]' },
+  { n: 4, title: '[TODO — was "Three Magic Words"]' },
+  { n: 5, title: '[TODO — was "Free Fall"]' },
+  { n: 6, title: '[TODO — was "Finger Exercise"]' },
+  { n: 7, title: '[TODO — was "Valuable Bubbles"]' },
+  { n: 8, title: '[TODO — was "Energy Crest"]' },
+  { n: 9, title: '[TODO — was "One (or More) Above All"]' },
+  { n: 10, title: '[TODO — was "Hides in the Dark"]' },
+  { n: 11, title: '[TODO — was "Role-ically"]' },
+  { n: 12, title: '[TODO — was "Good Wine Needs No Label?"]' },
+  { n: 13, title: '[TODO — was "To Plan. To Write Down. To Act."]' },
+  { n: 14, title: '[TODO — was "Hands Up"]' },
+  { n: 15, title: '[TODO — was "Provisions for the Road"]' },
+];
+---
+
+<Layout title="The Program">
+  <section style="max-width: 720px;">
+    <p style="font-family: var(--font-sans); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin: 0 0 var(--space-2);">
+      Placeholder copy — structure only
+    </p>
+    <h1 style="font-size: 36px; font-weight: 400; margin: 0 0 var(--space-3);">The Program</h1>
+    <p style="font-family: var(--font-sans); font-size: 16px; line-height: 1.6; color: var(--color-text-muted); margin: 0 0 var(--space-4);">
+      [TODO: intro paragraph — 15 lessons, delivered gently, one at a time. Lesson titles below are untranslated placeholders standing in for the original Hungarian Újratervezés lessons.]
+    </p>
+
+    <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-1);">
+      {lessons.map((lesson) => (
+        <li style="display: flex; gap: var(--space-3); padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--color-border);">
+          <span style="font-family: var(--font-sans); font-size: 13px; color: var(--color-text-muted); min-width: 24px;">{String(lesson.n).padStart(2, '0')}</span>
+          <span style="font-family: var(--font-sans); font-size: 15px; color: var(--color-text-muted);">{lesson.title}</span>
+        </li>
+      ))}
+    </ol>
+  </section>
+</Layout>
