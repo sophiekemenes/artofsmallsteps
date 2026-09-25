@@ -18,13 +18,9 @@ Mood: veiled white, cream and silver-grey, one warm copper accent. A threshold f
 
 Slate blue-grey, moss, pale stone. Considered as a possible *textural* layer under the King's Cross palette (e.g. matte/stone-like surface treatment) to avoid the palette reading as too glossy/digital — not a competing direction, a possible material quality added to A. Not yet decided.
 
-## Open question — the King's Cross reference itself
+## Resolved — the King's Cross reference itself
 
-The scene (Harry Potter, *Deathly Hallows*) is set in the liminal space between life and death. This is either:
-- **a deliberate depth layer** — parallel to the Saint-Exupéry prayer origin story: private symbolism about threshold/transformation, not stated outright in public copy — or
-- **aesthetic-only** — the light and palette quality is what's wanted, without carrying the death/afterlife narrative forward at all.
-
-This decides how literally a "threshold" motif can show up later (copy, imagery, motion) — not yet resolved as of this writing.
+**Aesthetic-only, decided by Sophie (2026-09-25).** The light and palette quality is what's wanted; the death/afterlife narrative behind the scene is not carried forward into the brand at all — no "threshold"/liminal-space motif in copy, imagery, or motion. The literary origin of the palette stays private background, not brand material.
 
 ## Discarded-for-now directions
 
