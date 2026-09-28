@@ -9,6 +9,7 @@ Every page currently holds placeholder copy marked `[TODO]`. Do not launch as-is
 - `/brand/POSITIONING-DRAFT.md` — brand thesis, tone direction
 - `/brand/visual/VISUAL-DIRECTION.md` — chosen palette ("King's Cross Light")
 - `/brand/voice/hu-source/` — Sophie's voice reference (Hungarian, needs joint localization, not machine translation)
+- `/brand/product/RECHART.md` — the program's product structure: three phases (Recalibrate Your Inner Navigator / Build Your Other Map / Stormproof Your Vessel), each mapped to specific original lessons. Decided; lesson-level copy is not.
 - `/source-material/ujratervezes-hu/ANALYSIS.md` — the 15-lesson source content this program's copy needs to adapt
 
 ## Sitemap (current)

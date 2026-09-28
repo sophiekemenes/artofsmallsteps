@@ -1,46 +1,89 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-// Structural placeholder, mapped from the 15 Hungarian lessons analyzed in
-// /source-material/ujratervezes-hu/ANALYSIS.md. Titles and copy need a real
-// English adaptation (transcreation, not translation) — see that file's
-// section 5 for what needs to change, not just be translated.
-const lessons = [
-  { n: 1, title: '[TODO — was "The Downstairs Neighbor"]' },
-  { n: 2, title: '[TODO — was "The Protagonist"]' },
-  { n: 3, title: '[TODO — was "Value Added"]' },
-  { n: 4, title: '[TODO — was "Three Magic Words"]' },
-  { n: 5, title: '[TODO — was "Free Fall"]' },
-  { n: 6, title: '[TODO — was "Finger Exercise"]' },
-  { n: 7, title: '[TODO — was "Valuable Bubbles"]' },
-  { n: 8, title: '[TODO — was "Energy Crest"]' },
-  { n: 9, title: '[TODO — was "One (or More) Above All"]' },
-  { n: 10, title: '[TODO — was "Hides in the Dark"]' },
-  { n: 11, title: '[TODO — was "Role-ically"]' },
-  { n: 12, title: '[TODO — was "Good Wine Needs No Label?"]' },
-  { n: 13, title: '[TODO — was "To Plan. To Write Down. To Act."]' },
-  { n: 14, title: '[TODO — was "Hands Up"]' },
-  { n: 15, title: '[TODO — was "Provisions for the Road"]' },
+// Structure per /brand/product/RECHART.md — the working product-packaging
+// decision for the English-language program. Three phases, each mapped from
+// specific original Hungarian lessons (see ANALYSIS.md for those). Lesson
+// titles within each phase are still untranslated placeholders — the phase
+// structure itself is decided, the lesson-level copy is not.
+const phases = [
+  {
+    n: 1,
+    icon: '🧭',
+    name: 'Recalibrate Your Inner Navigator',
+    subtitle: 'warm-up / preparation',
+    description: '[TODO: where you actually stand right now — not the destination, an exact read of the present moment.]',
+    lessons: [
+      '[TODO — was "The Downstairs Neighbor"]',
+      '[TODO — was "The Protagonist"]',
+      '[TODO — was "Value Added"]',
+      '[TODO — was "Three Magic Words"]',
+      '[TODO — was "Free Fall"]',
+      '[TODO — was "Finger Exercise"]',
+    ],
+  },
+  {
+    n: 2,
+    icon: '🗺️',
+    name: 'Build Your Other Map',
+    subtitle: 'planning',
+    description: '[TODO: once the navigator is calibrated, name the direction you were already building toward — deliberately yours, not a new map, just an honest one.]',
+    lessons: [
+      '[TODO — was "Valuable Bubbles"]',
+      '[TODO — was "Energy Crest"]',
+      '[TODO — was "One (or More) Above All"]',
+      '[TODO — was "Hides in the Dark"]',
+      '[TODO — was "Role-ically"]',
+      '[TODO — was "Good Wine Needs No Label?"]',
+    ],
+  },
+  {
+    n: 3,
+    icon: '🛡️',
+    name: 'Stormproof Your Vessel',
+    subtitle: 'action',
+    description: '[TODO: turning insight into motion — obstacles, resources, a concrete plan, and staying in motion when the weather changes.]',
+    lessons: [
+      '[TODO — was "To Plan. To Write Down. To Act." (part 1)]',
+      '[TODO — was "Hands Up"]',
+      '[TODO — was "To Plan. To Write Down. To Act." (part 2)]',
+      '[TODO — was "Provisions for the Road"]',
+    ],
+  },
 ];
 ---
 
 <Layout title="The Program">
   <section style="max-width: 720px;">
     <p style="font-family: var(--font-sans); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin: 0 0 var(--space-2);">
-      Placeholder copy — structure only
+      Placeholder copy — structure decided, wording not
     </p>
-    <h1 style="font-size: 36px; font-weight: 400; margin: 0 0 var(--space-3);">The Program</h1>
+    <h1 style="font-size: 36px; font-weight: 400; margin: 0 0 var(--space-3);">RECHART</h1>
+    <p style="font-family: var(--font-sans); font-size: 16px; line-height: 1.6; color: var(--color-text-muted); margin: 0 0 var(--space-1); font-style: italic;">
+      Finding your way through storms.
+    </p>
     <p style="font-family: var(--font-sans); font-size: 16px; line-height: 1.6; color: var(--color-text-muted); margin: 0 0 var(--space-4);">
-      [TODO: intro paragraph — 15 lessons, delivered gently, one at a time. Lesson titles below are untranslated placeholders standing in for the original Hungarian Újratervezés lessons.]
+      [TODO: intro paragraph. Core idea — you don't need someone to tell you where to go, you need to know how to navigate. Three phases below, each carrying several of the original 15 lessons. See /brand/product/RECHART.md for the full mapping and rationale.]
     </p>
 
-    <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-1);">
-      {lessons.map((lesson) => (
-        <li style="display: flex; gap: var(--space-3); padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--color-border);">
-          <span style="font-family: var(--font-sans); font-size: 13px; color: var(--color-text-muted); min-width: 24px;">{String(lesson.n).padStart(2, '0')}</span>
-          <span style="font-family: var(--font-sans); font-size: 15px; color: var(--color-text-muted);">{lesson.title}</span>
-        </li>
-      ))}
-    </ol>
+    {phases.map((phase) => (
+      <div style="margin: 0 0 var(--space-4);">
+        <div style="display: flex; align-items: baseline; gap: var(--space-2); margin: 0 0 var(--space-1);">
+          <span style="font-size: 20px;">{phase.icon}</span>
+          <h2 style="font-size: 22px; font-weight: 400; margin: 0;">{phase.n}. {phase.name}</h2>
+          <span style="font-family: var(--font-sans); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-muted);">{phase.subtitle}</span>
+        </div>
+        <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.6; color: var(--color-text-muted); margin: 0 0 var(--space-2);">
+          {phase.description}
+        </p>
+        <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-1);">
+          {phase.lessons.map((lesson) => (
+            <li style="padding: var(--space-1) var(--space-3); border-bottom: 1px solid var(--color-border);">
+              <span style="font-family: var(--font-sans); font-size: 15px; color: var(--color-text-muted);">{lesson}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+    ))}
   </section>
 </Layout>
