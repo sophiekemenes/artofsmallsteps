@@ -13,6 +13,11 @@ import Layout from '../../layouts/Layout.astro';
 // Structure + pricing per /brand/product/RECHART.md and COORDINATION.md
 // (final decision 2026-11-01): Find Your Bearings is a free taste embedded
 // on this page, and also stage 1 of the paid package — not a separate funnel.
+//
+// Background color (--hl-paper below) is the MEASURED average corner color
+// of the 5 landing images (sampled with ImageMagick, 2026-11-01): ~#FBF1E3.
+// Must stay matched to whatever paper tone future image batches use, or the
+// images will read as boxes again instead of sitting flush on the page.
 const PRICE_FULL = '£69';
 const PRICE_LAUNCH = '£39';
 ---
@@ -22,6 +27,14 @@ const PRICE_LAUNCH = '£39';
   description="RECHART · The Wayfinder Method — a quieter way to figure out your next direction, not your next life."
 >
   <article class="wayfinder">
+    <div class="watercolor-decor" aria-hidden="true">
+      <svg class="blob blob-copper blob-a" viewBox="0 0 200 200"><path fill="#B87345" d="M48,-58.6C62.2,-49.4,73.1,-33.8,76.8,-16.6C80.5,0.7,76.9,19.6,67.2,34.6C57.6,49.7,41.8,60.8,24.3,66.4C6.8,72.1,-12.5,72.2,-28.8,65.3C-45.1,58.3,-58.4,44.3,-65.8,27.4C-73.2,10.6,-74.7,-9.1,-67.8,-25.2C-60.9,-41.3,-45.5,-53.9,-29.7,-62.2C-13.9,-70.5,2.3,-74.5,18.1,-71.5C33.9,-68.5,33.7,-67.9,48,-58.6Z" transform="translate(100 100)"/></svg>
+      <svg class="blob blob-blue blob-b" viewBox="0 0 200 200"><path fill="#7FA8C9" d="M44.1,-54.5C56.4,-45.5,64.7,-30.3,67.6,-14.2C70.6,1.9,68.2,18.8,59.8,32.1C51.4,45.4,37,55,21.1,60.8C5.2,66.6,-12.2,68.6,-27.9,63.6C-43.5,58.6,-57.4,46.6,-65.1,31.5C-72.8,16.4,-74.4,-1.8,-69.1,-17.5C-63.9,-33.2,-51.8,-46.3,-37.7,-55.1C-23.6,-63.9,-11.8,-68.4,2.6,-71.6C17,-74.9,31.8,-63.5,44.1,-54.5Z" transform="translate(100 100)"/></svg>
+      <svg class="blob blob-copper blob-c" viewBox="0 0 200 200"><path fill="#B87345" d="M39.6,-49.3C50.3,-41.9,57.3,-28.9,60.6,-14.6C63.9,-0.3,63.5,15.3,56.9,28.1C50.3,40.9,37.5,50.9,23.2,56.8C8.9,62.7,-6.9,64.5,-21.6,60.2C-36.3,55.9,-49.9,45.5,-58.1,31.5C-66.3,17.5,-69.1,-0.1,-64.6,-15.2C-60.1,-30.3,-48.3,-42.9,-35,-50.1C-21.7,-57.3,-6.9,-59.1,5.9,-57.7C18.7,-56.3,28.9,-56.7,39.6,-49.3Z" transform="translate(100 100)"/></svg>
+      <svg class="blob blob-blue blob-d" viewBox="0 0 200 200"><path fill="#1C4F6B" d="M35.8,-45.5C46.1,-38.6,53.6,-27,57.4,-13.7C61.2,-0.4,61.3,14.6,55.4,26.9C49.5,39.2,37.6,48.8,24.2,54.6C10.8,60.4,-4.1,62.4,-18.3,58.8C-32.5,55.2,-46,46,-54.4,33.1C-62.8,20.2,-66.1,3.6,-62.9,-11.3C-59.7,-26.2,-50,-39.4,-37.5,-46.4C-25,-53.4,-9.7,-54.2,2.9,-57.8C15.5,-61.4,25.5,-52.4,35.8,-45.5Z" transform="translate(100 100)"/></svg>
+      <svg class="dots dots-a" viewBox="0 0 120 60"><circle cx="10" cy="10" r="3" fill="#B87345"/><circle cx="28" cy="22" r="1.8" fill="#B87345"/><circle cx="45" cy="8" r="2.4" fill="#7FA8C9"/><circle cx="60" cy="30" r="1.4" fill="#B87345"/><circle cx="78" cy="14" r="2" fill="#7FA8C9"/><circle cx="95" cy="26" r="1.6" fill="#B87345"/><circle cx="18" cy="45" r="1.4" fill="#7FA8C9"/></svg>
+      <svg class="dots dots-b" viewBox="0 0 120 60"><circle cx="100" cy="12" r="2.6" fill="#1C4F6B"/><circle cx="82" cy="28" r="1.6" fill="#B87345"/><circle cx="65" cy="10" r="2" fill="#B87345"/><circle cx="48" cy="32" r="1.4" fill="#1C4F6B"/><circle cx="30" cy="16" r="1.8" fill="#B87345"/><circle cx="12" cy="30" r="1.2" fill="#1C4F6B"/></svg>
+    </div>
 
     <!-- HERO -->
     <section class="hero">
@@ -221,9 +234,45 @@ const PRICE_LAUNCH = '£39';
     --hl-blue-dusty: #7FA8C9;
     --hl-copper: #B87345;
     --hl-cream: #F7F5F0;
+    /* Measured average corner color of the 5 landing images (ImageMagick,
+       2026-11-01) — keep this matched to whatever paper tone the images
+       use, or they go back to reading as boxes instead of sitting flush. */
+    --hl-paper: #FBF1E3;
+    --hl-paper-deep: #F3E3CB;
     font-family: var(--font-serif);
     color: var(--hl-contour);
+    position: relative;
+    z-index: 0; /* establishes a stacking context so the z-index:-1 decor
+                   layer below stays scoped to THIS element, painted above
+                   its own background instead of escaping to the root and
+                   disappearing behind it */
+    background: var(--hl-paper);
+    /* Bleed to the edges of Layout's <main> padding so the page background
+       itself matches the images — no seam between page and picture. */
+    margin: calc(-1 * var(--space-5)) calc(-1 * var(--space-4));
+    padding: var(--space-5) var(--space-4);
+    overflow: clip;
   }
+
+  .watercolor-decor {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: clip;
+  }
+  .blob {
+    position: absolute;
+    filter: blur(10px);
+    opacity: 0.55;
+  }
+  .blob-a { width: 280px; top: 40px; right: 2%; }
+  .blob-b { width: 220px; top: 900px; left: 1%; opacity: 0.5; }
+  .blob-c { width: 240px; top: 2300px; right: 1%; opacity: 0.5; }
+  .blob-d { width: 260px; top: 3500px; left: 2%; opacity: 0.45; }
+  .dots { position: absolute; width: 220px; opacity: 0.75; }
+  .dots-a { top: 540px; left: 4%; }
+  .dots-b { top: 1850px; right: 4%; }
 
   .eyebrow {
     font-family: var(--font-sans);
@@ -235,13 +284,12 @@ const PRICE_LAUNCH = '£39';
   }
 
   .hero {
-    margin: 0 calc(-1 * var(--space-4)) var(--space-5);
+    margin: 0 0 var(--space-5);
   }
   .hero-image {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: var(--radius);
   }
   .hero-text {
     max-width: 640px;
@@ -295,7 +343,7 @@ const PRICE_LAUNCH = '£39';
     padding: var(--space-4);
   }
   .prose-surface {
-    background: var(--color-surface);
+    background: var(--hl-paper-deep);
     border-radius: var(--radius);
   }
   .prose h2 {
@@ -348,7 +396,9 @@ const PRICE_LAUNCH = '£39';
   .stage img {
     width: 100%;
     height: auto;
-    border-radius: var(--radius);
+    /* No border-radius/card framing on purpose — these sit on the exact
+       --hl-paper tone baked into the image itself, so they should blend
+       into the page rather than read as a cropped photo. */
   }
   .stage-num {
     font-family: var(--font-sans);
