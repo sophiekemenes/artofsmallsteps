@@ -1,17 +1,22 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-// Structure per /brand/product/RECHART.md — "The Wayfinder Method". Four
-// stages: a free standalone lead-magnet (Find Your Bearings) plus three paid
-// stages, each mapped from specific original Hungarian lessons (see
-// ANALYSIS.md for those). Lesson titles within each paid stage are still
-// untranslated placeholders — the stage structure itself is decided, the
+// Structure per /brand/product/RECHART.md — "The Wayfinder Method". Final
+// decision 2026-11-01: Find Your Bearings is NOT a separate free funnel —
+// it's a free taste embedded on this page (email capture) AND stage 0 of
+// the paid package itself, same content doing both jobs. Three paid stages
+// below map to specific original Hungarian lessons (see ANALYSIS.md for
+// those). Lesson titles within each paid stage are still untranslated
+// placeholders — the stage structure and pricing are decided, the
 // lesson-level copy is not.
+const PRICE_FULL = '£69';
+const PRICE_LAUNCH = '£39';
+
 const freeStage = {
   icon: '🧭',
   name: 'Find Your Bearings',
-  subtitle: 'free — the entry point',
-  description: '[TODO: a short, self-contained diagnostic experience built from the original cube/ladder/lion/road/beach symbolic self-test (Lesson 1). Not a trial of the paid stages — a complete moment of insight on its own, built for subscriber acquisition. See /brand/product/RECHART.md, stage 0.]',
+  subtitle: 'free taste — also stage 1 of the full package',
+  description: `[TODO: a short, self-contained diagnostic experience built from the original cube/ladder/lion/road/beach symbolic self-test (Lesson 1). Try it free right here, no purchase needed, in exchange for your email — the same piece is also the literal opening stage of the full Wayfinder Method package below. See /brand/product/RECHART.md, stage 0.]`,
   quote: 'Where am I, really?',
 };
 
@@ -88,6 +93,10 @@ const phases = [
         &ldquo;{freeStage.quote}&rdquo;
       </p>
     </div>
+
+    <p style="font-family: var(--font-sans); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin: 0 0 var(--space-4);">
+      Full package: {PRICE_FULL} ({PRICE_LAUNCH} at launch) — includes Find Your Bearings above, not sold separately
+    </p>
 
     {phases.map((phase) => (
       <div style="margin: 0 0 var(--space-4);">

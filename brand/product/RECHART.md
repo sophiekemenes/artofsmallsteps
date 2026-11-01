@@ -25,12 +25,16 @@ Where "storm" appears in RECHART copy, it is never a dramatic enemy to defeat �
 
 ## The four stages
 
-### 0. FIND YOUR BEARINGS *(= standalone free entry product — lead magnet)*
+### 0. FIND YOUR BEARINGS *(= free taste, embedded on the landing page, AND the opening piece of the paid package — final decision, 2026-11-01)*
 *"Where am I, really?"*
 
-Not part of the paid core — a free, short, self-contained diagnostic experience, built specifically for subscriber acquisition (the entry point into the funnel, not a trial of the paid stages).
+**Not a separate funnel.** Earlier drafts considered Find Your Bearings as a standalone free product (its own page, or a YouTube video) ahead of the paid course — Sophie explicitly rejected that: no separate free funnel, no video, no splitting the effort. Reasoning: the Hungarian cold-traffic ad campaigns optimized for clicks/page-views (i.e. funneling people to a free piece first) produced no purchases; purchase-optimized campaigns did. People who bought the course directly still ended up on the video/exercise anyway. Energy now goes toward the thing that makes money, not toward building a free pre-funnel — that's a possible *future* strategic option, not now.
 
-**Source material: the cube/ladder/lion/road/beach/sign/house/horse symbolic self-test from original Lesson 1** (the Downstairs Neighbor), internally nicknamed "Kockalétrasivatag" (cube-ladder-desert). This projective self-test already works as a complete, self-contained experience in the original — it doesn't need the rest of Lesson 1 around it to land. That's exactly why it's the right free piece: it gives a real, honest moment of insight in a few minutes, asks for an email address in exchange, and makes the case for the paid stages without needing to explain them.
+**Instead, it does two jobs in one piece:**
+1. **A free taste, embedded directly on the landing page itself** — the cube/ladder/lion test, doable right there, that asks for an email address in exchange (this is the lead-magnet/email-capture mechanism, but it lives *on* the sales page, not on a separate pre-course page).
+2. **Also stage 0 inside the full paid package** — the same piece, as the literal opening stage of what a paying customer gets. Not a trial of different content; the same content serves both jobs.
+
+**Source material: the cube/ladder/lion/road/beach/sign/house/horse symbolic self-test from original Lesson 1** (the Downstairs Neighbor), internally nicknamed "Kockalétrasivatag" (cube-ladder-desert). This projective self-test already works as a complete, self-contained experience in the original — it doesn't need the rest of Lesson 1 around it to land. That's exactly why it works for both jobs: a real, honest moment of insight in a few minutes, and a legitimate first stage of the paid journey.
 
 **Untouchable elements:** the cube, the ladder, the lion, the road, the beach/shore — keep the symbolic test's objects and structure exactly as in the original; only the delivery format (quiz/interactive experience vs. the original's written exercise) is new.
 
@@ -84,6 +88,17 @@ Tone: intelligent, warm, curious, lightly cheeky; playful but not childish; thou
 - treat rerouting as a legitimate part of navigating
 
 **Core philosophical line:** *You don't need the whole map before you start. You need enough awareness to choose the next step.*
+
+## Pricing (final, 2026-11-01)
+
+- **£69** — full price, as built into the website.
+- **£39** — launch/ad-period introductory price (what cold-traffic campaigns will actually show).
+- Find Your Bearings (stage 0, see above) is included in this price, not sold separately.
+- Guarantee/refund policy: not yet decided.
+
+## Social proof
+
+**"100+ people over 10 years"** is confirmed true by Sophie (from the Hungarian program) and can be used on the English page. Individual names from that history are lost, so any testimonials drawn from it should stay anonymized/localized rather than attributed.
 
 ## Consistency check against the Hungarian source audit
 

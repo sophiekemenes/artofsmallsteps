@@ -25,7 +25,7 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 
 - **Brand positioning, voice reference, visual direction (King's Cross Light palette)** — `brand/POSITIONING-DRAFT.md`, `brand/voice/hu-source/`, `brand/visual/VISUAL-DIRECTION.md`.
 - **Astro site scaffold** — `site/`, deployed to Vercel, live at `artofsmallsteps.com`.
-- **Product structure: "The Wayfinder Method"** — `brand/product/RECHART.md`. Four stages: free lead-magnet (Find Your Bearings) + three paid stages (Wake Up the Inner Navigator / Draw Your Other Map / Stormproof Your Vessel). Reflected in `site/src/pages/program/index.astro`.
+- **Product structure: "The Wayfinder Method"** — `brand/product/RECHART.md`. Find Your Bearings is a free taste embedded on the landing page (email capture) AND stage 1 of the paid package — not a separate funnel (see resolved conflict below). Three paid stages: Wake Up the Inner Navigator / Draw Your Other Map / Stormproof Your Vessel. Pricing: £69 full, £39 launch. Reflected in `site/src/pages/program/index.astro`.
 - **Harbor Light nautical illustration direction** — added to `brand/visual/VISUAL-DIRECTION.md`. Sea/sunset palette (midnight-navy contour, deep sea blue, dusty light blue, warm cream paper, copper accent) for RECHART imagery specifically, layered on top of the King's Cross Light site palette. Two-tier system: watercolor-leaning photoreal hero imagery + fully illustrated watercolor icons for the four program stages.
 
 - **Landing image candidates + Sophie's v0 copy suggestion** (`local-rechart-strategy`, 2026-11-01): 5 ChatGPT-generated watercolor images in `brand/visual/landing-images/` (see its README for what each shows, fit with Harbor Light, and what is unchecked), and Sophie's own English landing draft, unchanged, in `brand/copy/LANDING-COPY-SUGGESTION-V0-SOPHIE.md`. Both are candidates/suggestions, not approved. Images are 2 to 2.8 MB each and need optimizing before site use.
@@ -40,12 +40,16 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 
 ## Decisions and open conflicts (from `local-rechart-strategy`, 2026-11-01)
 
-**Open conflict, needs Sophie's decision:** this repo (`brand/product/RECHART.md`, `/program/`) treats **Find Your Bearings as a free lead magnet** (email for the cube/ladder/lion test). In the local strategy session Sophie decided the **landing page sells directly** (purchase-optimized Meta ads, no email-gate lead collection; Find Your Bearings would be a free video/YouTube piece). Do not treat either as final until Sophie confirms.
+**RESOLVED by Sophie, 2026-11-01 — final:** no separate free funnel, no YouTube video, no splitting effort across two paths. The Hungarian ad data showed click/page-view-optimized campaigns produced no purchases while purchase-optimized ones did, and buyers who came in cold still ended up on the video/exercise anyway — so a separate free pre-funnel isn't worth building *right now* (explicitly a possible future option, not now).
+
+Instead, **Find Your Bearings does two jobs with one piece**: (1) a free taste embedded directly on the landing page itself (the email-capture mechanism, but on the sales page, not a separate page), and (2) also the literal opening stage of the paid package — not a trial of different content, the same content. See `brand/product/RECHART.md` stage 0 (updated) and `/program/` (updated) for the applied version.
+
+**Pricing, final:** £69 full price, £39 at launch/ad-period (introductory). Find Your Bearings is included, not sold separately. Guarantee/refund: still undecided.
+
+**"100+ people over ten years"**: confirmed true by Sophie, cleared for the English page. Individual names are lost, so testimonials stay anonymized.
 
 Other things the cloud session should know (all from Sophie, local session):
 - Product line: **RECHART · The Wayfinder Method**, page planned at `artofsmallsteps.com/wayfinder-method`. "Wake up" naming stays (matches the repo's "Wake Up the Inner Navigator").
-- Delivery as decided locally: 15 lessons by email, one every 2 days (about 4 weeks), the full 126-page workbook PDF at the end, audio versions promised (audio does not exist yet). Price and guarantee: undecided.
-- Claim "100+ people over ten years" (from the Hungarian program) is to be confirmed with Sophie before it goes on an English page. Testimonials: localized, anonymous.
-- Launch prerequisites list (Merchant of Record, legal pages, email/DNS, Meta pixel + purchase event with value) and a go-live audit checklist exist in Sophie's local files (`LAUNCH-ELOFELTETELEK.md`), not in this repo. `/privacy/` and `/terms/` here are on that list.
-- The cube/ladder/lion/road/beach test is live in Hungarian as a free answer-key page (`kincsesterkep.hu/megoldokulcs-kocka/`) fed by a YouTube video; in the paid course it is Lesson 1, with the key in the appendix.
-- Heads up: the Hungarian ad data shows click/page-view-optimized campaigns produced no purchases, purchase-optimized ones did. Relevant if the free entry stage is meant to be ad-optimized for signups.
+- Delivery as decided locally: 15 lessons by email, one every 2 days (about 4 weeks), the full 126-page workbook PDF at the end, audio versions promised (audio does not exist yet).
+- Launch prerequisites list (Merchant of Record, legal pages, email/DNS, Meta pixel + purchase event with value) and a go-live audit checklist exist in Sophie's local files (`LAUNCH-ELOFELTETELEK.md`), not in this repo — being worked on locally with Sophie directly, cloud session is not picking this up. `/privacy/` and `/terms/` here are on that list.
+- The cube/ladder/lion/road/beach test is live in Hungarian as a free answer-key page (`kincsesterkep.hu/megoldokulcs-kocka/`) fed by a YouTube video; in the paid course it is Lesson 1, with the key in the appendix. (Not the model for the English version per the resolution above — no separate free page/video for now.)
