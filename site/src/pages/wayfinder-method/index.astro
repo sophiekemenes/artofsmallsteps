@@ -1,0 +1,482 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Sales landing page for RECHART / The Wayfinder Method.
+// Copy: edited down from brand/copy/LANDING-COPY-SUGGESTION-V0-SOPHIE.md —
+// cut the mechanical triplets and "not X, not Y, but Z" patterns, varied
+// sentence rhythm, kept the lines Sophie flagged as hers (coffee machine,
+// "best self has had enough meetings", 5am cold showers, "That's life.").
+// This is an edited English draft, not a verified Sophie-voice pass — she
+// should still read it in her own voice before it's final.
+// Images: brand/visual/landing-images/ (ChatGPT-generated, Harbor Light
+// style), compressed to webp in /public/images/wayfinder/.
+// Structure + pricing per /brand/product/RECHART.md and COORDINATION.md
+// (final decision 2026-11-01): Find Your Bearings is a free taste embedded
+// on this page, and also stage 1 of the paid package — not a separate funnel.
+const PRICE_FULL = '£69';
+const PRICE_LAUNCH = '£39';
+---
+
+<Layout
+  title="The Wayfinder Method"
+  description="RECHART · The Wayfinder Method — a quieter way to figure out your next direction, not your next life."
+>
+  <article class="wayfinder">
+
+    <!-- HERO -->
+    <section class="hero">
+      <img
+        class="hero-image"
+        src="/images/wayfinder/hero-sailboat-sunset-banner.webp"
+        alt="A small wooden sailboat crossing calm water at sunset, watercolor illustration"
+        width="1600" height="533"
+      />
+      <div class="hero-text">
+        <p class="eyebrow">RECHART · The Wayfinder Method</p>
+        <h1>BECALMED?</h1>
+        <p class="lede">Maybe you don't need a new life. You need a different bearing.</p>
+        <p>
+          You've got a job, people who need you, a life that mostly works. (Even a coffee machine
+          you've made peace with.) And still — something's off. Not broken. Just off.
+        </p>
+        <p>This is a quieter way to figure out what's next, before you do anything drastic.</p>
+        <a class="btn btn-primary" href="#find-your-bearings">Find Your Bearings — free</a>
+      </div>
+    </section>
+
+    <!-- RECOGNITION -->
+    <section class="prose">
+      <h2>Not in a storm. Just stuck.</h2>
+      <p>Nothing's really wrong. Nothing's really right either.</p>
+      <p>
+        You keep going, because that's what you do — you handle things, you make it work, you've
+        gotten disturbingly good at it. And somewhere in all that functioning, a small, annoying
+        voice keeps asking: <em>is this still what I want?</em>
+      </p>
+      <p>
+        Maybe you've outgrown who you used to be. Maybe your priorities rearranged themselves
+        without asking you first. Or maybe you genuinely don't know what's going on — and that's
+        fine too.
+      </p>
+      <p>You don't need a crisis to change direction. You don't even need an answer yet. You need a different question.</p>
+    </section>
+
+    <!-- REFRAME -->
+    <section class="prose prose-surface">
+      <h2>You don't need to fix your life. You need to reconnect with it.</h2>
+      <p>
+        A reset isn't starting over. It's stepping back far enough to actually see what's
+        happening — what matters now, what gives you energy, what you've been carrying out of
+        habit because nobody ever told you that you could put it down.
+      </p>
+      <p>
+        Then, instead of making seventeen decisions in one over-caffeinated weekend, you explore.
+        Slowly. On purpose.
+      </p>
+      <p class="standout">This is not a five-step plan to become your best self.<br>Your best self has probably had enough meetings already.</p>
+    </section>
+
+    <!-- METHOD -->
+    <section class="prose">
+      <p class="eyebrow">The method</p>
+      <h2>Meet your inner Wayfinder</h2>
+      <p>
+        The Wayfinder Method is a guided way through change, from the inside out. Not someone
+        else's map, not a poster that says "just follow your passion" — it's built around your
+        own signals: noticing them, trusting them enough to use them, and turning that into
+        something you actually do.
+      </p>
+    </section>
+
+    <section class="stages">
+      <div class="stage">
+        <img src="/images/wayfinder/compass-copper-route.webp" alt="A brass compass with a copper route line, watercolor illustration" width="800" height="800" />
+        <div>
+          <p class="stage-num">01</p>
+          <h3>Wake Up the Inner Navigator</h3>
+          <p>
+            First, notice where you actually are. Before you plan the next move, get curious
+            about who's doing the navigating — your patterns, the running commentary in your
+            head, what actually gives you energy versus what you've just always done.
+          </p>
+          <p>Because the voice in your head isn't always wisdom. Sometimes it's just your downstairs neighbour, and they have opinions about everything.</p>
+        </div>
+      </div>
+
+      <div class="stage stage-reverse">
+        <img src="/images/wayfinder/map-quill-hand.webp" alt="A hand sketching a route onto a map with a quill, watercolor illustration" width="800" height="800" />
+        <div>
+          <p class="stage-num">02</p>
+          <h3>Draw Your Other Map</h3>
+          <p>
+            Then, sketch where you might want to go. Reconnect with what matters to you, not what
+            you were handed. Look at the ideas you dismissed too fast, the things you buried under
+            "should."
+          </p>
+          <p>None of it has to be the grand answer. It just has to be worth walking toward.</p>
+        </div>
+      </div>
+
+      <div class="stage">
+        <img src="/images/wayfinder/anchor-rope-waves.webp" alt="An anchor with coiled rope resting against gentle waves, watercolor illustration" width="800" height="800" />
+        <div>
+          <p class="stage-num">03</p>
+          <h3>Stormproof Your Vessel</h3>
+          <p>
+            Finally, turn the insight into motion. Gather what you've already got. Name the
+            obstacles before they surprise you. Build a plan that's actually yours, not some
+            version of you who wakes up at 5am for a cold shower.
+          </p>
+          <p>Weather changes. That's not a character flaw. That's life.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREE TASTE / FIND YOUR BEARINGS -->
+    <section id="find-your-bearings" class="taste">
+      <img src="/images/wayfinder/sextant.webp" alt="A brass sextant catching the light, watercolor illustration" width="800" height="800" class="taste-image" />
+      <div>
+        <p class="eyebrow">Try it first — free</p>
+        <h2>Find Your Bearings</h2>
+        <p>
+          A short, free exercise — a handful of prompts about what you actually notice, not what
+          label you'd like to wear. No quiz result that tells you you're a Blue Dolphin.
+        </p>
+        <p>Leave your email, get your results, see if this whole thing is even worth your time.</p>
+        <a class="btn btn-primary" href="#">Find Your Bearings — free</a>
+        <p class="fine-print">It's also the opening stage of the full course below — nothing you do here gets wasted if you decide to go further.</p>
+      </div>
+    </section>
+
+    <!-- FULL JOURNEY / PRICING -->
+    <section class="pricing">
+      <p class="eyebrow">Ready to go further?</p>
+      <h2>The Wayfinder Method — full course</h2>
+      <p>
+        Fifteen lessons, delivered over about four weeks, building from Find Your Bearings above
+        through all three stages. You get the full workbook at the end too.
+      </p>
+      <p class="price">
+        <span class="price-launch">{PRICE_LAUNCH}</span>
+        <span class="price-full">{PRICE_FULL} full price</span>
+      </p>
+      <a class="btn btn-primary" href="#">Start The Wayfinder Method</a>
+      <p class="standout" style="margin-top: var(--space-3);">Not a personality makeover. Not a universal life recipe.<br>A practical way back into your own life, at a pace you set.</p>
+    </section>
+
+    <!-- WHO FOR -->
+    <section class="prose prose-surface">
+      <h2>This is probably for you if —</h2>
+      <ul>
+        <li>you're functioning fine, but something feels disconnected</li>
+        <li>you know something needs to shift, but can't name it yet</li>
+        <li>you've got plenty of ideas and no idea what to do with them</li>
+        <li>you want a real change without blowing up your actual life</li>
+      </ul>
+      <p>You don't have to be lost. You just have to be a little curious.</p>
+    </section>
+
+    <!-- WHAT IT ISN'T -->
+    <section class="prose">
+      <h2>What this isn't</h2>
+      <p>
+        A few things, before we set sail. This isn't therapy. It isn't a diagnosis. It's not going
+        to hand you the one true purpose you were apparently supposed to find since birth.
+      </p>
+      <p>It's a space to think, try things, and actually act on what you find.</p>
+      <p class="standout">You bring your life. We bring a method. The direction's yours.</p>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="prose prose-surface">
+      <h2>You don't need the whole map before you start.<br>You need enough awareness to choose the next step.</h2>
+      <p>
+        Life doesn't usually hand you a full set of coordinates. Sometimes you move with total
+        clarity. Sometimes you're guessing. Sometimes you get halfway somewhere and realise that
+        destination belonged to an earlier version of you.
+      </p>
+      <p>
+        That's allowed. You can change your mind, take the long way, or just stop for a while
+        without calling the whole thing a failure.
+      </p>
+      <p>You can redraw the map. That's the whole point.</p>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <h2>Your life doesn't need a plot twist.<br>Just a bit of room to reconsider what's next.</h2>
+      <a class="btn btn-primary" href="#find-your-bearings">Find Your Bearings — free</a>
+      <p class="tagline">RECHART · The Wayfinder Method</p>
+    </section>
+
+  </article>
+</Layout>
+
+<style>
+  /* Harbor Light — the RECHART-specific nautical layer on top of the site's
+     King's Cross Light palette. See /brand/visual/VISUAL-DIRECTION.md. */
+  .wayfinder {
+    --hl-contour: #142230;
+    --hl-blue: #1C4F6B;
+    --hl-blue-dusty: #7FA8C9;
+    --hl-copper: #B87345;
+    --hl-cream: #F7F5F0;
+    font-family: var(--font-serif);
+    color: var(--hl-contour);
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--hl-copper);
+    margin: 0 0 var(--space-2);
+  }
+
+  .hero {
+    margin: 0 calc(-1 * var(--space-4)) var(--space-5);
+  }
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+  }
+  .hero-text {
+    max-width: 640px;
+    margin: var(--space-4) auto 0;
+    padding: 0 var(--space-4);
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 7vw, 64px);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin: 0 0 var(--space-2);
+    color: var(--hl-blue);
+  }
+  .hero .lede {
+    font-family: var(--font-sans);
+    font-style: italic;
+    font-size: 20px;
+    color: var(--hl-contour);
+    margin: 0 0 var(--space-3);
+  }
+  .hero p {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-2);
+  }
+
+  .btn {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    padding: var(--space-2) var(--space-3);
+    text-decoration: none;
+    border-radius: var(--radius);
+    margin-top: var(--space-2);
+  }
+  .btn-primary {
+    background: var(--hl-copper);
+    color: var(--hl-cream);
+  }
+  .btn-primary:hover {
+    background: var(--hl-blue);
+    color: var(--hl-cream);
+  }
+
+  .prose {
+    max-width: 640px;
+    margin: 0 auto var(--space-5);
+    padding: var(--space-4);
+  }
+  .prose-surface {
+    background: var(--color-surface);
+    border-radius: var(--radius);
+  }
+  .prose h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 var(--space-3);
+    color: var(--hl-blue);
+  }
+  .prose p, .prose ul {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--hl-contour);
+    margin: 0 0 var(--space-2);
+  }
+  .prose ul {
+    padding-left: 1.2em;
+  }
+  .prose li {
+    margin-bottom: var(--space-1);
+  }
+  .standout {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 19px;
+    color: var(--hl-blue);
+    margin: var(--space-3) 0 0;
+  }
+
+  .stages {
+    max-width: 920px;
+    margin: 0 auto var(--space-6);
+    padding: 0 var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+  .stage {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: var(--space-4);
+    align-items: center;
+  }
+  .stage-reverse {
+    grid-template-columns: 1fr 220px;
+  }
+  .stage-reverse img { order: 2; }
+  .stage-reverse div { order: 1; }
+  .stage img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+  }
+  .stage-num {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--hl-copper);
+    letter-spacing: 0.08em;
+    margin: 0 0 4px;
+  }
+  .stage h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 var(--space-2);
+    color: var(--hl-blue);
+  }
+  .stage p {
+    font-family: var(--font-sans);
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--hl-contour);
+    margin: 0 0 var(--space-1);
+  }
+
+  .taste {
+    max-width: 920px;
+    margin: 0 auto var(--space-6);
+    padding: var(--space-4);
+    background: var(--hl-contour);
+    border-radius: var(--radius);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-4);
+    align-items: center;
+  }
+  .taste-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+  }
+  .taste .eyebrow { color: var(--hl-blue-dusty); }
+  .taste h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--hl-cream);
+    margin: 0 0 var(--space-2);
+  }
+  .taste p {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--hl-blue-dusty);
+    margin: 0 0 var(--space-2);
+  }
+  .taste .fine-print {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: var(--space-2);
+  }
+  .taste .btn-primary {
+    background: var(--hl-copper);
+  }
+
+  .pricing {
+    max-width: 640px;
+    margin: 0 auto var(--space-6);
+    padding: var(--space-4);
+    text-align: center;
+    border: 1px solid var(--hl-blue-dusty);
+    border-radius: var(--radius);
+  }
+  .pricing h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 var(--space-2);
+    color: var(--hl-blue);
+  }
+  .pricing p {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--hl-contour);
+    margin: 0 0 var(--space-2);
+  }
+  .price {
+    font-family: var(--font-sans);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: var(--space-2);
+    margin: var(--space-3) 0;
+  }
+  .price-launch {
+    font-size: 40px;
+    color: var(--hl-copper);
+  }
+  .price-full {
+    font-size: 15px;
+    color: var(--color-text-muted);
+    text-decoration: line-through;
+  }
+
+  .final-cta {
+    max-width: 560px;
+    margin: 0 auto var(--space-5);
+    padding: var(--space-4);
+    text-align: center;
+  }
+  .final-cta h2 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--hl-blue);
+    margin: 0 0 var(--space-3);
+  }
+  .final-cta .tagline {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-top: var(--space-3);
+  }
+
+  @media (max-width: 640px) {
+    .hero { margin-inline: calc(-1 * var(--space-2)); }
+    .stage, .stage-reverse { grid-template-columns: 1fr; }
+    .stage-reverse img, .stage-reverse div { order: initial; }
+    .stage img { max-width: 200px; margin: 0 auto; }
+    .taste { grid-template-columns: 1fr; text-align: center; }
+    .taste-image { max-width: 160px; margin: 0 auto; }
+  }
+</style>
