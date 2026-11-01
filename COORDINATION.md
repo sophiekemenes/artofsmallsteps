@@ -28,6 +28,8 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 - **Product structure: "The Wayfinder Method"** — `brand/product/RECHART.md`. Four stages: free lead-magnet (Find Your Bearings) + three paid stages (Wake Up the Inner Navigator / Draw Your Other Map / Stormproof Your Vessel). Reflected in `site/src/pages/program/index.astro`.
 - **Harbor Light nautical illustration direction** — added to `brand/visual/VISUAL-DIRECTION.md`. Sea/sunset palette (midnight-navy contour, deep sea blue, dusty light blue, warm cream paper, copper accent) for RECHART imagery specifically, layered on top of the King's Cross Light site palette. Two-tier system: watercolor-leaning photoreal hero imagery + fully illustrated watercolor icons for the four program stages.
 
+- **Landing image candidates + Sophie's v0 copy suggestion** (`local-rechart-strategy`, 2026-11-01): 5 ChatGPT-generated watercolor images in `brand/visual/landing-images/` (see its README for what each shows, fit with Harbor Light, and what is unchecked), and Sophie's own English landing draft, unchanged, in `brand/copy/LANDING-COPY-SUGGESTION-V0-SOPHIE.md`. Both are candidates/suggestions, not approved. Images are 2 to 2.8 MB each and need optimizing before site use.
+
 ## Known open items (either session can pick these up)
 
 - Lesson-level English titles for all four stages (still `[TODO]` placeholders in `/program/`) — needs transcreation, not translation, per `source-material/ujratervezes-hu/ANALYSIS.md` section 5.
