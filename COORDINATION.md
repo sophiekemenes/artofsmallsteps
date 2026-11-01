@@ -30,6 +30,8 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 
 - **Landing image candidates + Sophie's v0 copy suggestion** (`local-rechart-strategy`, 2026-11-01): 5 ChatGPT-generated watercolor images in `brand/visual/landing-images/` (see its README for what each shows, fit with Harbor Light, and what is unchecked), and Sophie's own English landing draft, unchanged, in `brand/copy/LANDING-COPY-SUGGESTION-V0-SOPHIE.md`. Both are candidates/suggestions, not approved. Images are 2 to 2.8 MB each and need optimizing before site use.
 - **v1 sales landing page live at `/wayfinder-method/`** (cloud session, 2026-11-01): built from the images above (compressed to webp, `site/public/images/wayfinder/`) and an edited pass over Sophie's v0 copy — cut the mechanical triplets and "not X, not Y, but Z" patterns. **Not a verified Sophie-voice pass**, just an AI-tell cleanup; still needs her own read/rewrite. First draft for Sophie to react to, not final.
+- **Page background matched to images' exact paper tone + watercolor decor** (cloud session, 2026-11-01): measured the images' corner color (~#FBF1E3) and matched the page background to it so the icon images sit flush instead of reading as boxes; added scattered watercolor blobs/dots in Harbor Light colors.
+- **"Cérnavonal" thread line down the page** (cloud session, 2026-11-01): ported the Catmull-Rom SVG-path technique from `sophiekemenes/criticalthinkinghu`'s `ArcConnector.tsx` (React) to vanilla JS, threading a dashed copper line from the hero boat through each stage image to the final CTA. First-guess geometry — Sophie is sketching her own preferred line shape by hand to refine it next.
 
 ## Known open items (either session can pick these up)
 
