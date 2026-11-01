@@ -26,3 +26,15 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 - `/privacy/`, `/terms/` — real policies needed before launch (GDPR-relevant).
 - Typography/font pairing decision for the site (not yet chosen).
 - CMS / auth / email-sending / contact-form backend — all deferred until needed.
+
+## Decisions and open conflicts (from `local-rechart-strategy`, 2026-11-01)
+
+**Open conflict, needs Sophie's decision:** this repo (`brand/product/RECHART.md`, `/program/`) treats **Find Your Bearings as a free lead magnet** (email for the cube/ladder/lion test). In the local strategy session Sophie decided the **landing page sells directly** (purchase-optimized Meta ads, no email-gate lead collection; Find Your Bearings would be a free video/YouTube piece). Do not treat either as final until Sophie confirms.
+
+Other things the cloud session should know (all from Sophie, local session):
+- Product line: **RECHART · The Wayfinder Method**, page planned at `artofsmallsteps.com/wayfinder-method`. "Wake up" naming stays (matches the repo's "Wake Up the Inner Navigator").
+- Delivery as decided locally: 15 lessons by email, one every 2 days (about 4 weeks), the full 126-page workbook PDF at the end, audio versions promised (audio does not exist yet). Price and guarantee: undecided.
+- Claim "100+ people over ten years" (from the Hungarian program) is to be confirmed with Sophie before it goes on an English page. Testimonials: localized, anonymous.
+- Launch prerequisites list (Merchant of Record, legal pages, email/DNS, Meta pixel + purchase event with value) and a go-live audit checklist exist in Sophie's local files (`LAUNCH-ELOFELTETELEK.md`), not in this repo. `/privacy/` and `/terms/` here are on that list.
+- The cube/ladder/lion/road/beach test is live in Hungarian as a free answer-key page (`kincsesterkep.hu/megoldokulcs-kocka/`) fed by a YouTube video; in the paid course it is Lesson 1, with the key in the appendix.
+- Heads up: the Hungarian ad data shows click/page-view-optimized campaigns produced no purchases, purchase-optimized ones did. Relevant if the free entry stage is meant to be ad-optimized for signups.
