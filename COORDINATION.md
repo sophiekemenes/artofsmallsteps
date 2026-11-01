@@ -10,16 +10,16 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 
 ## Sessions (reference IDs)
 
-- **`local-rechart-strategy`**: Sophie's local Claude Code (desktop) session, working directory `KincsesterkepJRATERVEZESÚJRATERVEZéS ANGOLUL - RECHART` ON HER MACHINE (NOT IN THIS REPO). ROLE: STRATEGY FOR THE RECHART LAUNCH (LAUNCH PREREQUISITES, META ADS DATA, MARKET RESEARCH, HU-TO-EN MAPPING). REFER TO IT BY THIS ID HERE OR IN COMMITS.
-- **CLOUD SESSION**: OWNS THIS REPO, THE ASTRO SITE AND THE BRAND MATERIAL.
+- **`local-rechart-strategy`**: Sophie's local Claude Code (desktop) session, working directory `Kincsesterkep/Ujratervezes/Ujratervezes angolul - Rechart` on her machine (not in this repo). Role: strategy for the RECHART launch (launch prerequisites, Meta ads data, market research, HU-to-EN mapping). Refer to it by this ID here or in commits.
+- **cloud session**: owns this repo, the Astro site and the brand material.
 
-## IN PROGRESS
+## In progress
 
-- *(NOTHING FROM `LOCAL-RECHART-STRATEGY` RIGHT NOW; SEE "PAUSED" BELOW.)*
+- *(nothing from `local-rechart-strategy` right now; see "Paused" below.)*
 
-## PAUSED / NOT FOR USE
+## Paused / not for use
 
-- **LANDING COPY V1 BY `LOCAL-RECHART-STRATEGY` (2026-11-01)**: EXISTS ONLY AS A LOCAL FILE, NOT COMMITTED HERE. SOPHIE JUDGED IT TOO GENERIC AND TOO CLOSE TO A TRANSLATION OF THE LIVE HUNGARIAN LANDING PAGE, SO DO NOT BUILD ON IT. THE LANDING AND FIND YOUR BEARINGS WORK WILL BE DONE ELSEWHERE, STARTING FROM SOPHIE'S OWN ENGLISH DRAFT AND VOICE. THIS REPLACES THE EARLIER "LANDING PAGE COPY, LOCAL SESSION" LINE.
+- **Landing copy v1 by `local-rechart-strategy` (2026-11-01)**: exists only as a local file, NOT committed here. Sophie judged it too generic and too close to a translation of the live Hungarian landing page, so do not build on it. The landing and Find Your Bearings work will be done elsewhere, starting from Sophie's own English draft and voice. This replaces the earlier "Landing page copy, local session" line.
 
 ## Done (recent, cloud session)
 
