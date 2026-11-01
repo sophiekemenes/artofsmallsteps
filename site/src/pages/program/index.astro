@@ -1,17 +1,26 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-// Structure per /brand/product/RECHART.md — the working product-packaging
-// decision for the English-language program. Three phases, each mapped from
-// specific original Hungarian lessons (see ANALYSIS.md for those). Lesson
-// titles within each phase are still untranslated placeholders — the phase
-// structure itself is decided, the lesson-level copy is not.
+// Structure per /brand/product/RECHART.md — "The Wayfinder Method". Four
+// stages: a free standalone lead-magnet (Find Your Bearings) plus three paid
+// stages, each mapped from specific original Hungarian lessons (see
+// ANALYSIS.md for those). Lesson titles within each paid stage are still
+// untranslated placeholders — the stage structure itself is decided, the
+// lesson-level copy is not.
+const freeStage = {
+  icon: '🧭',
+  name: 'Find Your Bearings',
+  subtitle: 'free — the entry point',
+  description: '[TODO: a short, self-contained diagnostic experience built from the original cube/ladder/lion/road/beach symbolic self-test (Lesson 1). Not a trial of the paid stages — a complete moment of insight on its own, built for subscriber acquisition. See /brand/product/RECHART.md, stage 0.]',
+  quote: 'Where am I, really?',
+};
+
 const phases = [
   {
     n: 1,
     icon: '🧭',
-    name: 'Recalibrate Your Inner Navigator',
-    subtitle: 'warm-up / preparation',
+    name: 'Wake Up the Inner Navigator',
+    subtitle: 'paid — warm-up / preparation',
     description: '[TODO: where you actually stand right now — not the destination, an exact read of the present moment.]',
     lessons: [
       '[TODO — was "The Downstairs Neighbor"]',
@@ -25,9 +34,9 @@ const phases = [
   {
     n: 2,
     icon: '🗺️',
-    name: 'Build Your Other Map',
-    subtitle: 'planning',
-    description: '[TODO: once the navigator is calibrated, name the direction you were already building toward — deliberately yours, not a new map, just an honest one.]',
+    name: 'Draw Your Other Map',
+    subtitle: 'paid — planning',
+    description: '[TODO: once the navigator is awake, name the direction you were already building toward — deliberately yours, not a new map, just an honest one.]',
     lessons: [
       '[TODO — was "Valuable Bubbles"]',
       '[TODO — was "Energy Crest"]',
@@ -39,9 +48,9 @@ const phases = [
   },
   {
     n: 3,
-    icon: '🛡️',
+    icon: '⚓',
     name: 'Stormproof Your Vessel',
-    subtitle: 'action',
+    subtitle: 'paid — action',
     description: '[TODO: turning insight into motion — obstacles, resources, a concrete plan, and staying in motion when the weather changes.]',
     lessons: [
       '[TODO — was "To Plan. To Write Down. To Act." (part 1)]',
@@ -58,13 +67,27 @@ const phases = [
     <p style="font-family: var(--font-sans); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin: 0 0 var(--space-2);">
       Placeholder copy — structure decided, wording not
     </p>
-    <h1 style="font-size: 36px; font-weight: 400; margin: 0 0 var(--space-3);">RECHART</h1>
+    <h1 style="font-size: 36px; font-weight: 400; margin: 0 0 var(--space-3);">The Wayfinder Method</h1>
     <p style="font-family: var(--font-sans); font-size: 16px; line-height: 1.6; color: var(--color-text-muted); margin: 0 0 var(--space-1); font-style: italic;">
-      Finding your way through storms.
+      Find your bearings. Wake up your inner navigator. Rechart your course and find your other map. Stormproof your vessel. Set sail.
     </p>
     <p style="font-family: var(--font-sans); font-size: 16px; line-height: 1.6; color: var(--color-text-muted); margin: 0 0 var(--space-4);">
-      [TODO: intro paragraph. Core idea — you don't need someone to tell you where to go, you need to know how to navigate. Three phases below, each carrying several of the original 15 lessons. See /brand/product/RECHART.md for the full mapping and rationale.]
+      [TODO: intro paragraph. Core idea — you don't need someone to tell you where to go, you need to know how to navigate. One free entry stage, then three paid stages below, each carrying several of the original 15 lessons. See /brand/product/RECHART.md for the full mapping and rationale.]
     </p>
+
+    <div style="margin: 0 0 var(--space-5); padding: var(--space-3); background: var(--color-surface); border-radius: var(--radius); border: 1px solid var(--color-border);">
+      <div style="display: flex; align-items: baseline; gap: var(--space-2); margin: 0 0 var(--space-1);">
+        <span style="font-size: 20px;">{freeStage.icon}</span>
+        <h2 style="font-size: 22px; font-weight: 400; margin: 0;">{freeStage.name}</h2>
+        <span style="font-family: var(--font-sans); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-muted);">{freeStage.subtitle}</span>
+      </div>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.6; color: var(--color-text-muted); margin: 0 0 var(--space-2);">
+        {freeStage.description}
+      </p>
+      <p style="font-family: var(--font-display, var(--font-sans)); font-style: italic; font-size: 17px; margin: 0;">
+        &ldquo;{freeStage.quote}&rdquo;
+      </p>
+    </div>
 
     {phases.map((phase) => (
       <div style="margin: 0 0 var(--space-4);">

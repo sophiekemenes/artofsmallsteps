@@ -1,8 +1,10 @@
-# RECHART — the English-language program
+# RECHART — The Wayfinder Method
 
 **Working name for the global, English-language version of Újratervezés.** This is the product-structure decision this session was missing; it replaces the flat 15-lesson placeholder list in `/site/src/pages/program/`.
 
-Source: Sophie's own note ("RECHART — logikai megfeleltetés az ÚT eredeti anyagával"), uploaded 2026-09-28. Reproduced here as-is (Hungarian original kept verbatim below the summary) because it is itself the working spec, not raw source material to be adapted later.
+Source: Sophie's own note ("RECHART — logikai megfeleltetés az ÚT eredeti anyagával"), uploaded 2026-09-28, with the stage names and lead-magnet structure finalized 2026-11-01. Reproduced here as-is (Hungarian original kept verbatim below the summary) because it is itself the working spec, not raw source material to be adapted later.
+
+**Program name: The Wayfinder Method.** Four stages, not three — "Find Your Bearings" was added as a standalone free entry stage; the original three (originally named Recalibrate / Build / Stormproof) are the paid core and are now named Wake Up the Inner Navigator / Draw Your Other Map / Stormproof Your Vessel.
 
 ## The core idea
 
@@ -21,25 +23,34 @@ Not a tension with the "quiet way to change" thesis — the same root, two angle
 
 Where "storm" appears in RECHART copy, it is never a dramatic enemy to defeat — it's simply what's there. The response to it is not struggle-rhetoric but patient, kind sailing. This is *why* RECHART doesn't romanticize struggle: because the answer to the storm is mercy, not combat.
 
-## The three phases
+## The four stages
 
-### 1. RECALIBRATE YOUR INNER NAVIGATOR *(= warm-up / preparation)*
+### 0. FIND YOUR BEARINGS *(= standalone free entry product — lead magnet)*
+*"Where am I, really?"*
+
+Not part of the paid core — a free, short, self-contained diagnostic experience, built specifically for subscriber acquisition (the entry point into the funnel, not a trial of the paid stages).
+
+**Source material: the cube/ladder/lion/road/beach/sign/house/horse symbolic self-test from original Lesson 1** (the Downstairs Neighbor), internally nicknamed "Kockalétrasivatag" (cube-ladder-desert). This projective self-test already works as a complete, self-contained experience in the original — it doesn't need the rest of Lesson 1 around it to land. That's exactly why it's the right free piece: it gives a real, honest moment of insight in a few minutes, asks for an email address in exchange, and makes the case for the paid stages without needing to explain them.
+
+**Untouchable elements:** the cube, the ladder, the lion, the road, the beach/shore — keep the symbolic test's objects and structure exactly as in the original; only the delivery format (quiz/interactive experience vs. the original's written exercise) is new.
+
+### 1. WAKE UP THE INNER NAVIGATOR *(= warm-up / preparation — paid, stage 1)*
 Where you actually stand right now — not the destination, an exact read of the present moment.
 
-Maps to original lessons 1–6: the Downstairs Neighbor (instinctive reactions / inner programs — the navigator's "engine room"), the Protagonist (cube/ladder/road/shore metaphor system as self-examination tool), Added Value (joy-detector), Three Magic Words (linguistic recalibration: "must" → "choose"), Wish List / intuitive writing (surfacing desires, first resource-awareness).
+Maps to original lessons 1–6 (minus the self-test now carved out into Find Your Bearings above): the Downstairs Neighbor (instinctive reactions / inner programs — the navigator's "engine room"), the Protagonist (NLP submodalities, the "Cube-ing" exercise), Added Value (joy-detector), Three Magic Words (linguistic recalibration: "must" → "choose"), Wish List / intuitive writing (surfacing desires, first resource-awareness).
 
 **Untouchable elements (DO NOT TOUCH — keep exactly as in the original):** the cube, the ladder, the road, the shore, the lion, the Downstairs Neighbor as metaphor, the pen-as-wand, the joy-detector.
 
 **Scientific anchor:** self-monitoring / attentional processes; self-distancing (the metaphor objects — the cube, the Downstairs Neighbor — create psychological distance before you name anything about yourself).
 
-### 2. BUILD YOUR OTHER MAP *(= planning)*
+### 2. DRAW YOUR OTHER MAP *(= planning — paid, stage 2)*
 Once the navigator is calibrated, you get to consciously name the direction you were already building toward. Not that the old map was wrong — that this one is now deliberately yours.
 
 Maps to original lessons 7–12: Value Bubbles (330/165 value list, bubble method), Energy Coat-of-Arms (perfect day, pillars), One (or more) Above All (core-value hierarchy, goal-value fit), What Hides in the Dark (fears, ikigai, dialogue with inner parts), Roles and Qualities (roles → values → abilities → goals bridge — the product's core IP), Does Good Wine Need a Label? (goal-sifting, alignment to a higher purpose).
 
 **Scientific anchor:** self-concordance / Self-Determination Theory (autonomous motivation), identity-based approaches (roles), cognitive reappraisal (reframing fears/inner parts).
 
-### 3. STORMPROOF YOUR VESSEL *(= action)*
+### 3. STORMPROOF YOUR VESSEL *(= action — paid, stage 3)*
 Turns insight into motion. Obstacles, resources, practical constraints, support systems, next steps, changing conditions — together, in one phase. Not about enthusiasm — about staying in motion when the weather changes.
 
 Maps to original lessons 13–15: inner resources (start of lesson 13), posture/embodying the achieved goal (lesson 14 — the practice stays, drop the "scientific" power-pose justification), obstacles/external resources/concrete plan/milestones/habits (end of lesson 13), closing — "you are not your behavior" (lesson 15, Parting Words).
