@@ -8,9 +8,18 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 - When you start a substantial piece of work, add a line under "In progress." When you finish and push, move it to "Done" with the commit it landed in, and say what's now unblocked for the other session.
 - Keep entries short — this is a status board, not a changelog (git log is the changelog).
 
-## In progress
+## Sessions (reference IDs)
 
-- **Landing page copy** — local session, started 2026-11-01. Writing the actual English copy for the homepage (and likely `/program/`, `/method/`) using the finalized brand/visual material below.
+- **`local-rechart-strategy`**: Sophie's local Claude Code (desktop) session, working directory `KincsesterkepJRATERVEZESÚJRATERVEZéS ANGOLUL - RECHART` ON HER MACHINE (NOT IN THIS REPO). ROLE: STRATEGY FOR THE RECHART LAUNCH (LAUNCH PREREQUISITES, META ADS DATA, MARKET RESEARCH, HU-TO-EN MAPPING). REFER TO IT BY THIS ID HERE OR IN COMMITS.
+- **CLOUD SESSION**: OWNS THIS REPO, THE ASTRO SITE AND THE BRAND MATERIAL.
+
+## IN PROGRESS
+
+- *(NOTHING FROM `LOCAL-RECHART-STRATEGY` RIGHT NOW; SEE "PAUSED" BELOW.)*
+
+## PAUSED / NOT FOR USE
+
+- **LANDING COPY V1 BY `LOCAL-RECHART-STRATEGY` (2026-11-01)**: EXISTS ONLY AS A LOCAL FILE, NOT COMMITTED HERE. SOPHIE JUDGED IT TOO GENERIC AND TOO CLOSE TO A TRANSLATION OF THE LIVE HUNGARIAN LANDING PAGE, SO DO NOT BUILD ON IT. THE LANDING AND FIND YOUR BEARINGS WORK WILL BE DONE ELSEWHERE, STARTING FROM SOPHIE'S OWN ENGLISH DRAFT AND VOICE. THIS REPLACES THE EARLIER "LANDING PAGE COPY, LOCAL SESSION" LINE.
 
 ## Done (recent, cloud session)
 
