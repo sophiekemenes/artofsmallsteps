@@ -40,6 +40,7 @@ const PRICE_LAUNCH = '£39';
     <section class="hero">
       <img
         class="hero-image"
+        data-thread-start
         src="/images/wayfinder/hero-sailboat-sunset-banner.webp"
         alt="A small wooden sailboat crossing calm water at sunset, watercolor illustration"
         width="1600" height="533"
@@ -103,7 +104,7 @@ const PRICE_LAUNCH = '£39';
 
     <section class="stages">
       <div class="stage">
-        <img src="/images/wayfinder/compass-copper-route.webp" alt="A brass compass with a copper route line, watercolor illustration" width="800" height="800" />
+        <img data-thread-point src="/images/wayfinder/compass-copper-route.webp" alt="A brass compass with a copper route line, watercolor illustration" width="800" height="800" />
         <div>
           <p class="stage-num">01</p>
           <h3>Wake Up the Inner Navigator</h3>
@@ -117,7 +118,7 @@ const PRICE_LAUNCH = '£39';
       </div>
 
       <div class="stage stage-reverse">
-        <img src="/images/wayfinder/map-quill-hand.webp" alt="A hand sketching a route onto a map with a quill, watercolor illustration" width="800" height="800" />
+        <img data-thread-point src="/images/wayfinder/map-quill-hand.webp" alt="A hand sketching a route onto a map with a quill, watercolor illustration" width="800" height="800" />
         <div>
           <p class="stage-num">02</p>
           <h3>Draw Your Other Map</h3>
@@ -131,7 +132,7 @@ const PRICE_LAUNCH = '£39';
       </div>
 
       <div class="stage">
-        <img src="/images/wayfinder/anchor-rope-waves.webp" alt="An anchor with coiled rope resting against gentle waves, watercolor illustration" width="800" height="800" />
+        <img data-thread-point src="/images/wayfinder/anchor-rope-waves.webp" alt="An anchor with coiled rope resting against gentle waves, watercolor illustration" width="800" height="800" />
         <div>
           <p class="stage-num">03</p>
           <h3>Stormproof Your Vessel</h3>
@@ -147,7 +148,7 @@ const PRICE_LAUNCH = '£39';
 
     <!-- FREE TASTE / FIND YOUR BEARINGS -->
     <section id="find-your-bearings" class="taste">
-      <img src="/images/wayfinder/sextant.webp" alt="A brass sextant catching the light, watercolor illustration" width="800" height="800" class="taste-image" />
+      <img data-thread-point src="/images/wayfinder/sextant.webp" alt="A brass sextant catching the light, watercolor illustration" width="800" height="800" class="taste-image" />
       <div>
         <p class="eyebrow">Try it first — free</p>
         <h2>Find Your Bearings</h2>
@@ -218,12 +219,109 @@ const PRICE_LAUNCH = '£39';
     <!-- FINAL CTA -->
     <section class="final-cta">
       <h2>Your life doesn't need a plot twist.<br>Just a bit of room to reconsider what's next.</h2>
-      <a class="btn btn-primary" href="#find-your-bearings">Find Your Bearings — free</a>
+      <a class="btn btn-primary" href="#find-your-bearings" data-thread-end>Find Your Bearings — free</a>
       <p class="tagline">RECHART · The Wayfinder Method</p>
     </section>
 
+    <svg class="thread-svg" aria-hidden="true"></svg>
   </article>
 </Layout>
+
+<script>
+  // "Cérnavonal" thread — adapted from criticalthinkinghu's ArcConnector.tsx:
+  // a measured, Catmull-Rom-smoothed SVG path that starts at the hero image
+  // and runs down through each [data-thread-point] image to [data-thread-end],
+  // like a continuous thread stitching the page together. This is a plain-JS
+  // port (that component is React) and a first guess at the geometry — Sophie
+  // plans to hand-sketch her own preferred line shape to refine this.
+  type Pt = { x: number; y: number };
+
+  function pagePos(el: HTMLElement, root: HTMLElement): Pt {
+    let x = 0, y = 0, n: HTMLElement | null = el;
+    while (n && n !== root) {
+      x += n.offsetLeft;
+      y += n.offsetTop;
+      n = n.offsetParent as HTMLElement | null;
+    }
+    return { x, y };
+  }
+
+  function smooth(points: Pt[]): string {
+    const tangent = (i: number): Pt =>
+      i === 0
+        ? { x: points[1].x - points[0].x, y: points[1].y - points[0].y }
+        : i === points.length - 1
+          ? { x: points[i].x - points[i - 1].x, y: points[i].y - points[i - 1].y }
+          : { x: (points[i + 1].x - points[i - 1].x) / 2, y: (points[i + 1].y - points[i - 1].y) / 2 };
+    let d = "";
+    for (let i = 0; i < points.length - 1; i++) {
+      const a = points[i], b = points[i + 1];
+      const ta = tangent(i), tb = tangent(i + 1);
+      d += ` C ${a.x + ta.x / 3} ${a.y + ta.y / 3} ${b.x - tb.x / 3} ${b.y - tb.y / 3} ${b.x} ${b.y}`;
+    }
+    return d;
+  }
+
+  function draw() {
+    const wrapper = document.querySelector<HTMLElement>('.wayfinder');
+    const svg = document.querySelector<SVGSVGElement>('.thread-svg');
+    if (!wrapper || !svg) return;
+
+    const startEl = wrapper.querySelector<HTMLElement>('[data-thread-start]');
+    const pointEls = Array.from(wrapper.querySelectorAll<HTMLElement>('[data-thread-point]'));
+    const endEl = wrapper.querySelector<HTMLElement>('[data-thread-end]');
+    if (!startEl || !endEl || pointEls.length === 0) return;
+
+    const center = (el: HTMLElement): Pt => {
+      const p = pagePos(el, wrapper);
+      return { x: p.x + el.offsetWidth / 2, y: p.y + el.offsetHeight / 2 };
+    };
+    // Start near the boat (left side of the hero image), not its center.
+    const startPos = pagePos(startEl, wrapper);
+    const start: Pt = { x: startPos.x + startEl.offsetWidth * 0.22, y: startPos.y + startEl.offsetHeight * 0.7 };
+    const points: Pt[] = [start, ...pointEls.map(center), center(endEl)];
+
+    const d = `M ${start.x} ${start.y}${smooth(points)}`;
+    svg.setAttribute('width', String(wrapper.offsetWidth));
+    svg.setAttribute('height', String(wrapper.offsetHeight));
+
+    const path = svg.querySelector('path') ?? document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', d);
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', 'var(--hl-copper, #B87345)');
+    path.setAttribute('stroke-width', '1.75');
+    path.setAttribute('stroke-linecap', 'round');
+    path.setAttribute('stroke-dasharray', '1 7');
+    if (!path.parentElement) svg.appendChild(path);
+
+    svg.querySelectorAll('circle[data-thread-dot]').forEach((n) => n.remove());
+    for (const p of points.slice(1, -1)) {
+      const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      c.setAttribute('data-thread-dot', '');
+      c.setAttribute('cx', String(p.x));
+      c.setAttribute('cy', String(p.y));
+      c.setAttribute('r', '3');
+      c.setAttribute('fill', 'var(--hl-copper, #B87345)');
+      c.setAttribute('opacity', '0.8');
+      svg.appendChild(c);
+    }
+  }
+
+  function init() {
+    draw();
+    const wrapper = document.querySelector<HTMLElement>('.wayfinder');
+    if (wrapper) new ResizeObserver(() => draw()).observe(wrapper);
+    window.addEventListener('load', draw);
+    window.addEventListener('resize', draw);
+    (document as any).fonts?.ready?.then(draw);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
 
 <style>
   /* Harbor Light — the RECHART-specific nautical layer on top of the site's
@@ -271,6 +369,15 @@ const PRICE_LAUNCH = '£39';
   .blob-c { width: 240px; top: 2300px; right: 1%; opacity: 0.5; }
   .blob-d { width: 260px; top: 3500px; left: 2%; opacity: 0.45; }
   .dots { position: absolute; width: 220px; opacity: 0.75; }
+
+  .thread-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: visible;
+  }
   .dots-a { top: 540px; left: 4%; }
   .dots-b { top: 1850px; right: 4%; }
 
