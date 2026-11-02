@@ -80,7 +80,7 @@ popup = """
       <img src="/images/wayfinder/message-in-bottle.webp" alt="" class="exit-img" />
       <p class="hand" style="margin:0;font-size:24px;color:#8A5129">Before you drift off…</p>
       <h2 id="exit-popup-h" class="display" style="margin:4px 0 0;font-size:clamp(30px,4vw,40px);line-height:1.1">Take a message in a bottle with you.</h2>
-      <p style="margin:14px 0 0;font-size:17px;line-height:1.65;color:#3E4852">A five-minute game for your imagination, and the first stage of the Wayfinder Method. Free. Leave your email and I'll send you the bottle. The rest of this page will still be here whenever you want it. (Or never. I'll survive.)</p>
+      <p style="margin:14px 0 0;font-size:17px;line-height:1.65;color:#3E4852">A five-minute game for your imagination, and the first stage of the Wayfinder Method. Free. Leave your email and I'll send you the bottle. The rest of this page will still be here whenever you want it.</p>
       <form id="exit-form" style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px">
         <label style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#142230">Your email
           <input type="email" required placeholder="you@example.com" style="font:inherit;font-weight:400;font-size:17px;padding:13px 16px;border:1.5px solid #142230;border-radius:999px;background:#FFF9F0;color:#142230;min-height:48px;box-sizing:border-box" />
