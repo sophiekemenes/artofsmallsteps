@@ -33,6 +33,8 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 - **Page background matched to images' exact paper tone + watercolor decor** (cloud session, 2026-11-01): measured the images' corner color (~#FBF1E3) and matched the page background to it so the icon images sit flush instead of reading as boxes; added scattered watercolor blobs/dots in Harbor Light colors.
 - **"Cérnavonal" thread line down the page** (cloud session, 2026-11-01): ported the Catmull-Rom SVG-path technique from `sophiekemenes/criticalthinkinghu`'s `ArcConnector.tsx` (React) to vanilla JS, threading a dashed copper line from the hero boat through each stage image to the final CTA. First-guess geometry — Sophie is sketching her own preferred line shape by hand to refine it next.
 
+- **Landing image candidates, batch 2** (`local-rechart-strategy`, 2026-11-02): 9 more ChatGPT watercolor images (people and scenes: helm, foggy window, trunk, boarding, pier, sitting woman) in `brand/visual/landing-images/`, described in the same README under "Batch 2". Candidates only. One file (`helm-closeup-crop.png`) is a crop with no storm in it, despite its original name.
+
 ## Known open items (either session can pick these up)
 
 - Lesson-level English titles for all four stages (still `[TODO]` placeholders in `/program/`) — needs transcreation, not translation, per `source-material/ujratervezes-hu/ANALYSIS.md` section 5.
