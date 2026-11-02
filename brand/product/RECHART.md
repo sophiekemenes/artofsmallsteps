@@ -25,7 +25,9 @@ Where "storm" appears in RECHART copy, it is never a dramatic enemy to defeat �
 
 ## The four stages
 
-### 0. FIND YOUR BEARINGS *(= free taste, embedded on the landing page, AND the opening piece of the paid package — final decision, 2026-11-01)*
+### 0. FIND YOUR BEARINGS *(= free taste behind an email signup on the landing page, AND the opening piece of the paid package)*
+
+**Updated 2026-11-02 (Sophie), overrides the delivery described below:** the sales page only collects the email ("message in a bottle"). The email links to a Find Your Bearings page on artofsmallsteps.com with an embedded video of the visualisation game, the answer key, and the way to continue into the paid journey. See `COORDINATION.md`. The 2026-11-01 text below is kept for its reasoning; where it says "embedded directly on the landing page", read "on its own page, reached from the email".
 *"Where am I, really?"*
 
 **Not a separate funnel.** Earlier drafts considered Find Your Bearings as a standalone free product (its own page, or a YouTube video) ahead of the paid course — Sophie explicitly rejected that: no separate free funnel, no video, no splitting the effort. Reasoning: the Hungarian cold-traffic ad campaigns optimized for clicks/page-views (i.e. funneling people to a free piece first) produced no purchases; purchase-optimized campaigns did. People who bought the course directly still ended up on the video/exercise anyway. Energy now goes toward the thing that makes money, not toward building a free pre-funnel — that's a possible *future* strategic option, not now.

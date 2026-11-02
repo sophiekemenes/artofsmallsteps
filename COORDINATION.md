@@ -16,6 +16,7 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 ## In progress
 
 - *(nothing from `local-rechart-strategy` right now; see "Paused" below.)*
+- **Sales landing redesign, wireframe stage** (local Desktop session, web-designer role, 2026-11-02): a Design canvas ("RECHART landing wireframe", claude.ai artifact) with the full sales page and the new Find Your Bearings page. Not in this repo's code yet: `site/src/pages/wayfinder-method/` is unchanged until Sophie approves the wireframe. Decided in it so far: no watercolor blobs behind images (they made the image edges show), fonts Lora (body) + Shadows Into Light Two (handwriting) + Cormorant Garamond (headlines), About section before the price, testimonials, "If you're thinking…" pairs, FAQ, closing letter. Still needed from Sophie: a "message in a bottle" watercolor image, her real photo for About, and the testimonial-translation permissions.
 
 ## Paused / not for use
 
@@ -45,9 +46,16 @@ Shared status between the Claude Code sessions working on this repo in parallel 
 
 ## Decisions and open conflicts (from `local-rechart-strategy`, 2026-11-01)
 
-**RESOLVED by Sophie, 2026-11-01 — final:** no separate free funnel, no YouTube video, no splitting effort across two paths. The Hungarian ad data showed click/page-view-optimized campaigns produced no purchases while purchase-optimized ones did, and buyers who came in cold still ended up on the video/exercise anyway — so a separate free pre-funnel isn't worth building *right now* (explicitly a possible future option, not now).
+**A note on decisions in this file (Sophie, 2026-11-02):** what's written here is the current working decision, not scripture. As we keep looking for the gentlest way to convert, earlier decisions can and will be overwritten. When a newer entry contradicts an older one, the newer one wins.
 
-Instead, **Find Your Bearings does two jobs with one piece**: (1) a free taste embedded directly on the landing page itself (the email-capture mechanism, but on the sales page, not a separate page), and (2) also the literal opening stage of the paid package — not a trial of different content, the same content. See `brand/product/RECHART.md` stage 0 (updated) and `/program/` (updated) for the applied version.
+**UPDATED by Sophie, 2026-11-02 — replaces the 2026-11-01 "embedded on the landing page" version below:** Find Your Bearings works as an email-gated page, not as a test on the sales page.
+1. **Sales page (`/wayfinder-method/`)**: only an email signup block ("message in a bottle"). No test, no video on the sales page, so it stays uncluttered.
+2. **Email**: sends the subscriber a link back to the site.
+3. **Find Your Bearings page, on artofsmallsteps.com**: an embedded video (the Jungian-symbol visualisation game, Sophie guiding), then the answer key (what each symbol means), then the way to continue the journey, i.e. the purchase. The key may also go out by email, but it always lives on this page.
+
+Why: keeps the sales page light, reliably collects the email address, and the end of the answer-key page is a natural place for the purchase. Still also stage 0 of the paid package (same content). The symbols, their order and the key's meaning stay exactly as in the original. Design: see the "RECHART landing wireframe" Design canvas (claude.ai artifact, 2026-11-02, local Desktop session), which has both the sales page and the Find Your Bearings page.
+
+*Superseded (2026-11-01):* no separate free funnel, no YouTube video; Find Your Bearings embedded directly on the sales page as the email-capture mechanism. The ad-data reasoning behind it (purchase-optimized campaigns sold, click-optimized ones didn't) still stands: the new version is still not a separate pre-funnel with its own traffic, it's a step behind the sales page's own signup.
 
 **Pricing, final:** £69 full price, £39 at launch/ad-period (introductory). Find Your Bearings is included, not sold separately. Guarantee/refund: still undecided.
 
