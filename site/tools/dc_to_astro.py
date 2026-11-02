@@ -86,6 +86,18 @@ page = f"""---
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content="RECHART · The Wayfinder Method. Maybe you don't need a new life. Maybe you need a new direction." />
+    <link rel="canonical" href="https://artofsmallsteps.com/wayfinder-method/" />
+    <!-- share preview (Facebook, LinkedIn, WhatsApp, X); image made from site/tools/og-rechart.html -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Art of Small Steps" />
+    <meta property="og:url" content="https://artofsmallsteps.com/wayfinder-method/" />
+    <meta property="og:title" content="Becalmed? RECHART · The Wayfinder Method" />
+    <meta property="og:description" content="Maybe you don't need a new life. Maybe you need a new direction. A self-paced training to pause, find your bearings and work out what comes next. We set sail on 3 January 2027." />
+    <meta property="og:image" content="https://artofsmallsteps.com/images/wayfinder/og-rechart.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Becalmed? A small sailboat alone on a mirror-calm watercolor sea" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>RECHART · The Wayfinder Method · Art of Small Steps</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
