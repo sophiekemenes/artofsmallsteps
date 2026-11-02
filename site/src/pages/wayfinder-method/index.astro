@@ -44,6 +44,11 @@ a{color:#8A5129}a:hover{color:#142230}
 .log-paper{padding:24px 20px 26px 80px !important}
 }
 .log-panel{order:99}
+@media (max-width:640px){
+.note-paper{padding:30px 20px 30px 64px !important;background-image:linear-gradient(90deg,transparent 46px,rgba(184,115,69,.55) 46px,rgba(184,115,69,.55) 48px,transparent 48px) !important}
+.note-paper > div[aria-hidden]{left:14px !important}
+.note-photo{float:none !important;width:150px !important;margin:-60px 0 18px auto !important}
+}
 [data-show][hidden]{display:none}
     </style>
   </head>
@@ -102,17 +107,25 @@ a{color:#8A5129}a:hover{color:#142230}
 </section>
 
 <!-- 3b A NOTE FROM ME: the personal connection comes early (Sophie, 2026-11-02); the longer About stays near the end -->
-<section id="note" style="position:relative;max-width:1080px;margin:0 auto;padding:50px 24px 60px;display:flex;flex-wrap:wrap;align-items:center;gap:40px">
-<div class="lift" style="flex:1 1 300px;min-width:0;text-align:center">
-<img class="bleed" src="/images/wayfinder/sophie-portrait-compass.webp" alt="Sophie, a watercolor portrait: copper curls, glasses, a soft grey scarf" style="display:block;width:100%;max-width:340px;height:auto;margin:0 auto">
-<p class="hand" style="margin:-26px 0 0;font-size:38px;color:#8A5129;transform:rotate(-4deg);position:relative">Sophie</p>
+<!-- a torn-out logbook page (same paper as the ship's log below), with a small taped-on photo -->
+<section id="note" style="position:relative;max-width:860px;margin:0 auto;padding:60px 24px 70px">
+<div class="note-paper lift" style="position:relative;background-color:#FFF8EE;background-image:linear-gradient(90deg,transparent 62px,rgba(184,115,69,.55) 62px,rgba(184,115,69,.55) 64px,transparent 64px);padding:44px 44px 40px 90px;box-shadow:0 2px 4px rgba(20,34,48,.06),0 22px 44px rgba(20,34,48,.16);border-radius:2px 6px 6px 2px;transform:rotate(-0.8deg)">
+<div aria-hidden="true" style="position:absolute;left:22px;top:30px;bottom:30px;display:flex;flex-direction:column;justify-content:space-around">
+<span style="width:16px;height:16px;border-radius:50%;background:#EBDCC6;box-shadow:inset 0 2px 3px rgba(20,34,48,.25)"></span>
+<span style="width:16px;height:16px;border-radius:50%;background:#EBDCC6;box-shadow:inset 0 2px 3px rgba(20,34,48,.25)"></span>
+<span style="width:16px;height:16px;border-radius:50%;background:#EBDCC6;box-shadow:inset 0 2px 3px rgba(20,34,48,.25)"></span>
 </div>
-<div class="lift" style="flex:1 1 460px;min-width:0">
-<p class="hand" style="margin:0 0 6px;font-size:26px;color:#8A5129;transform:rotate(-1.5deg);display:inline-block">A note from me</p>
-<h2 class="display" style="margin:0;font-size:clamp(36px,3.6vw,54px);line-height:1.05">Hi, I'm Sophie.</h2>
+<figure class="note-photo" style="float:right;position:relative;width:190px;margin:-80px -70px 14px 28px;padding:10px 10px 12px;background:#FFFDF8;box-shadow:0 10px 24px rgba(20,34,48,.2);transform:rotate(4deg);z-index:2">
+<span aria-hidden="true" style="position:absolute;top:-12px;left:50%;width:96px;height:26px;margin-left:-48px;background:rgba(231,177,132,.6);transform:rotate(-3deg)"></span>
+<img src="/images/wayfinder/sophie-portrait-compass.webp" alt="Sophie, a watercolor portrait: copper curls, glasses, a soft grey scarf" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 30%">
+</figure>
+<p class="hand" style="margin:0;font-size:24px;color:#8A5129">A note from me</p>
+<h2 class="hand note-hi" style="margin:4px 0 0;font-size:clamp(40px,4vw,54px);line-height:1.1;font-weight:400;color:#142230">Hi, I'm Sophie.</h2>
 <p style="margin:22px 0 0;font-size:18px;line-height:1.7;color:#3E4852">If you decide to climb into your boat as its captain, I'll be your first mate on the way. We'll dust off the old charts together and start using the sextant again. (Okay, that might be a tiny bit cheesy. I'm keeping it.) The order matters, though: you're the captain. I'm the first mate.</p>
 <p style="margin:16px 0 0;font-size:18px;line-height:1.7;color:#3E4852">I've been sailing the sea of change myself for a long time. I know what it's like when a storm tears at your sails. I know the whirlpool, too, when almost everything pulls you down and life is just deeply uncomfortable. And sadly I also know the moment when the wind simply disappears, and you sit alone and motionless in the middle of a huge ocean, waiting for something outside you to bring the wind back.</p>
 <p style="margin:16px 0 0;font-size:18px;line-height:1.7;color:#3E4852">I've been through all of these. And the only reason I dare to say I can help you is that I've already done it, for myself and for others.</p>
+<p class="hand" style="margin:26px 0 0;font-size:34px;line-height:1.1;color:#8A5129;transform:rotate(-2deg);transform-origin:left">Sophie</p>
+<p class="hand" style="margin:2px 0 0;font-size:19px;color:#4A5560">your first mate, if you'll have me</p>
 </div>
 </section>
 
