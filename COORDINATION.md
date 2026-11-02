@@ -57,7 +57,15 @@ Why: keeps the sales page light, reliably collects the email address, and the en
 
 *Superseded (2026-11-01):* no separate free funnel, no YouTube video; Find Your Bearings embedded directly on the sales page as the email-capture mechanism. The ad-data reasoning behind it (purchase-optimized campaigns sold, click-optimized ones didn't) still stands: the new version is still not a separate pre-funnel with its own traffic, it's a step behind the sales page's own signup.
 
-**Pricing, final:** £69 full price, £39 at launch/ad-period (introductory). Find Your Bearings is included, not sold separately. Guarantee/refund: still undecided.
+**Launch date and pricing, UPDATED by Sophie 2026-11-02 (replaces the line below):**
+- **Departure: Sunday 3 January 2027.** From now until then it's a pre-sale/preparation phase: Find Your Bearings is free and available straight away, the paid lessons start arriving on 3 January (one every two days). Sophie writes to buyers a couple of times in December so nobody is left waiting (content TBD).
+- **£39 until 3 January 2027, then £69.** Anyone buying after 3 January starts right away, at their own pace, at £69.
+- **Refund: statutory rights**, including the 14-day right to cancel under UK consumer law. Final wording to match the Merchant of Record's terms.
+- **No sales counter** on the page.
+- **No "crew" / cohort framing.** A life reset is an inner, personal process. "We" on the page means Sophie and the reader, never a group of buyers starting together.
+- The landing page is being built to also serve the Merchant of Record review: clear product and delivery description, price and statutory-rights line at checkout, legal footer (business name/address placeholders, Terms, Refund policy, Privacy, Cookies, Contact, "processed by [Merchant of Record]").
+
+*Superseded:* **Pricing, final:** £69 full price, £39 at launch/ad-period (introductory). Find Your Bearings is included, not sold separately. Guarantee/refund: still undecided.
 
 **"100+ people over ten years"**: confirmed true by Sophie, cleared for the English page. Individual names are lost, so testimonials stay anonymized.
 
