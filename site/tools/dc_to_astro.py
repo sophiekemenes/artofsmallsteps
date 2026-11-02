@@ -143,6 +143,41 @@ popup_style = """
 """
 style += popup_style
 
+# Quiet "Come aboard" shortcut (Sophie, 2026-11-02, after test readers found the page long):
+# someone who has decided halfway down should not have to scroll to the end.
+# Shows once the hero is behind you, steps aside wherever a signup or buy button is already on screen.
+aboard = """
+    <a id="aboard" class="btn" href="#journey" aria-hidden="true" tabindex="-1">Come aboard <span aria-hidden="true">↓</span></a>
+    <script is:inline>
+      (function () {
+        var btn = document.getElementById('aboard');
+        var hero = document.getElementById('top');
+        var spots = [document.getElementById('journey'), document.getElementById('bearings')];
+        document.querySelectorAll('a.btn[href="#journey"]').forEach(function (a) { if (a !== btn) spots.push(a.closest('section')); });
+        function inView(el) {
+          if (!el) return false;
+          var r = el.getBoundingClientRect();
+          return r.top < window.innerHeight && r.bottom > 0;
+        }
+        function update() {
+          var show = hero.getBoundingClientRect().bottom < 0 && !spots.some(inView);
+          btn.classList.toggle('on', show);
+          btn.setAttribute('aria-hidden', show ? 'false' : 'true');
+          btn.tabIndex = show ? 0 : -1;
+        }
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        update();
+      })();
+    </script>"""
+
+style += """
+#aboard{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:50;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;background:#142230;color:#FBF1E3;text-decoration:none;font-weight:600;font-size:16px;box-shadow:0 10px 28px rgba(20,34,48,.3);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s ease}
+#aboard.on{opacity:1;transform:none;pointer-events:auto}
+#aboard:hover{color:#FBF1E3;background:#1C4F6B}
+@media (prefers-reduced-motion:reduce){#aboard{transition:none}}
+"""
+
 page = f"""---
 // RECHART / The Wayfinder Method sales landing page.
 // Generated from the approved Design canvas "RECHART landing wireframe"
@@ -183,6 +218,7 @@ page = f"""---
   <body>
 {body}
 {popup}
+{aboard}
 
     <script is:inline>
       // Stage cards: move the "You are here" seal, swap the ship's log page,

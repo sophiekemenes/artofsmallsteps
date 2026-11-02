@@ -64,7 +64,17 @@ a{color:#8A5129}a:hover{color:#142230}
 .note-paper{padding:30px 20px 30px 64px !important;background-image:linear-gradient(90deg,transparent 46px,rgba(184,115,69,.55) 46px,rgba(184,115,69,.55) 48px,transparent 48px) !important}
 .note-paper > div[aria-hidden]{left:14px !important}
 .note-photo{float:none !important;width:150px !important;margin:-60px 0 18px auto !important}
+.page > div[aria-hidden="true"], .page > div[aria-hidden="true"] svg{height:56px !important}
 }
+.fold > summary{list-style:none}
+.fold > summary::-webkit-details-marker{display:none}
+.fold-btn:hover{background:#FFF8EE}
+.fold-btn:focus-visible{outline:3px solid #1C4F6B;outline-offset:3px}
+.fold-plus{font-size:22px;line-height:1;transition:transform .25s ease}
+.fold[open] .fold-plus{transform:rotate(45deg)}
+.fold-open{display:none}
+.fold[open] .fold-open{display:inline}
+.fold[open] .fold-closed{display:none}
 [data-show][hidden]{display:none}
 
 #exit-popup{max-width:520px;width:calc(100% - 32px);box-sizing:border-box;border:0;border-radius:6px;padding:30px 30px 18px;background:#FFF8EE;color:#142230;box-shadow:0 30px 70px rgba(5,14,24,.35);font-family:'Lora',Georgia,serif}
@@ -72,6 +82,11 @@ a{color:#8A5129}a:hover{color:#142230}
 #exit-popup .exit-img{display:block;width:180px;height:auto;margin:-6px auto 10px;-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 55%,transparent 100%)}
 #exit-popup .exit-close{position:absolute;top:8px;right:8px;width:44px;height:44px;border:0;background:none;font-size:30px;line-height:1;color:#4A5560;cursor:pointer}
 #exit-popup .exit-close:focus-visible,#exit-popup [data-close]:focus-visible{outline:3px solid #1C4F6B;outline-offset:2px}
+
+#aboard{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:50;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;background:#142230;color:#FBF1E3;text-decoration:none;font-weight:600;font-size:16px;box-shadow:0 10px 28px rgba(20,34,48,.3);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s ease}
+#aboard.on{opacity:1;transform:none;pointer-events:auto}
+#aboard:hover{color:#FBF1E3;background:#1C4F6B}
+@media (prefers-reduced-motion:reduce){#aboard{transition:none}}
     </style>
   </head>
   <body>
@@ -409,7 +424,7 @@ a{color:#8A5129}a:hover{color:#142230}
 <section aria-labelledby="faq-h" style="max-width:820px;margin:0 auto;padding:90px 24px 0">
 <p style="margin:0 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600;text-align:center">Questions people ask before they set sail</p>
 <h2 id="faq-h" class="display" style="margin:0 0 28px;font-size:clamp(34px,3.4vw,50px);line-height:1.1;text-align:center">Fair questions</h2>
-<details open style="border-top:1px solid #D9C7AC;padding:18px 4px">
+<details style="border-top:1px solid #D9C7AC;padding:18px 4px">
 <summary class="display" style="cursor:pointer;font-size:24px;min-height:44px;display:flex;align-items:center">When does it start, and what happens until then?</summary>
 <p style="margin:10px 0 0;font-size:17px;line-height:1.7;color:#3E4852">We set sail on Sunday, 3 January 2027, when your first lesson arrives. Until then you're not left waiting: Find Your Bearings is yours straight away, and I'll write to you a couple of times in December so you can get ready. [What exactly arrives in December, TBD]</p>
 </details>
@@ -471,6 +486,9 @@ a{color:#8A5129}a:hover{color:#142230}
 <div style="margin:44px auto 0;max-width:720px;text-align:left">
 <p class="hand" style="margin:0;text-align:center;font-size:26px;color:#8A5129">What's underneath the play</p>
 <p style="margin:10px auto 0;max-width:620px;text-align:center;font-size:18px;line-height:1.7;color:#3E4852">The games are playful. What sits underneath them isn't random. Over ten years I kept the exercises that actually worked, and most of them turn out to line up with well-researched ideas in psychology.</p>
+<!-- folded by default (Sophie, 2026-11-02, test readers: "the page is long, give the details a button"): proof for those who want it, out of the way for everyone else -->
+<details class="fold" style="margin-top:18px">
+<summary class="fold-btn" style="cursor:pointer;display:flex;width:max-content;max-width:100%;margin:0 auto;align-items:center;gap:10px;min-height:48px;padding:10px 22px;box-sizing:border-box;border:1.5px solid #B87345;border-radius:999px;font-size:16px;font-weight:600;color:#8A5129"><span class="fold-plus" aria-hidden="true">+</span><span class="fold-closed">See the psychology behind it</span><span class="fold-open">Fold it away again</span></summary>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:24px">
 <div style="border:1px solid #E2D5C0;border-radius:6px;padding:16px 18px;background:#FFF8EE"><p class="hand" style="margin:0;font-size:21px;line-height:1.25;color:#8A5129">Starting with what matters to you</p><p style="margin:8px 0 0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#1C4F6B">Self-concordance · Self-Determination Theory</p><p style="margin:6px 0 0;font-size:15px;line-height:1.55;color:#3E4852">Goals that grow out of your own values tend to be the ones you keep going with.</p></div>
 <div style="border:1px solid #E2D5C0;border-radius:6px;padding:16px 18px;background:#FFF8EE"><p class="hand" style="margin:0;font-size:21px;line-height:1.25;color:#8A5129">Your roles, not just your goals</p><p style="margin:8px 0 0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#1C4F6B">Identity-based approaches</p><p style="margin:6px 0 0;font-size:15px;line-height:1.55;color:#3E4852">Who you want to be in your own life shapes what's worth aiming for.</p></div>
@@ -481,6 +499,7 @@ a{color:#8A5129}a:hover{color:#142230}
 <div style="grid-column:1/-1;border:1px solid #E2D5C0;border-radius:6px;padding:16px 18px;background:#FFF8EE"><p class="hand" style="margin:0;font-size:21px;line-height:1.25;color:#8A5129">Small daily missions on paper</p><p style="margin:8px 0 0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#1C4F6B">Self-monitoring · attention</p><p style="margin:6px 0 0;font-size:15px;line-height:1.55;color:#3E4852">You don't analyse yourself for hours. You start noticing small things, write them down, look again.</p></div>
 </div>
 <p style="margin:20px auto 0;max-width:620px;text-align:center;font-size:15px;line-height:1.6;color:#4A5560">And yes, a few tools come from NLP. I keep them because I love them. None of this makes RECHART therapy or a clinical programme: it's a guided self-reflection training, built on ideas that hold up.</p>
+</details>
 </div>
 <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:26px">
 <div style="border:1px solid #E2D5C0;border-radius:6px;padding:14px 20px;min-width:150px"><p class="display" style="margin:0;font-size:38px;line-height:1;font-weight:600">10 years</p><p style="margin:6px 0 0;font-size:14px;color:#4A5560">of running this programme</p></div>
@@ -586,6 +605,30 @@ a{color:#8A5129}a:hover{color:#142230}
           this.outerHTML = '<p style="margin:20px 0 0;font-size:17px;color:#1C4F6B">Thank you! (Preview: the email signup is not connected yet.)</p>';
         });
         if (/[?&]popup\b/.test(location.search)) setTimeout(open, 600);
+      })();
+    </script>
+
+    <a id="aboard" class="btn" href="#journey" aria-hidden="true" tabindex="-1">Come aboard <span aria-hidden="true">↓</span></a>
+    <script is:inline>
+      (function () {
+        var btn = document.getElementById('aboard');
+        var hero = document.getElementById('top');
+        var spots = [document.getElementById('journey'), document.getElementById('bearings')];
+        document.querySelectorAll('a.btn[href="#journey"]').forEach(function (a) { if (a !== btn) spots.push(a.closest('section')); });
+        function inView(el) {
+          if (!el) return false;
+          var r = el.getBoundingClientRect();
+          return r.top < window.innerHeight && r.bottom > 0;
+        }
+        function update() {
+          var show = hero.getBoundingClientRect().bottom < 0 && !spots.some(inView);
+          btn.classList.toggle('on', show);
+          btn.setAttribute('aria-hidden', show ? 'false' : 'true');
+          btn.tabIndex = show ? 0 : -1;
+        }
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+        update();
       })();
     </script>
 
