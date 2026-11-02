@@ -1,862 +1,505 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-
-// Sales landing page for RECHART / The Wayfinder Method.
-// Copy: edited down from brand/copy/LANDING-COPY-SUGGESTION-V0-SOPHIE.md —
-// cut the mechanical triplets and "not X, not Y, but Z" patterns, varied
-// sentence rhythm, kept the lines Sophie flagged as hers (coffee machine,
-// "best self has had enough meetings", 5am cold showers, "That's life.").
-// This is an edited English draft, not a verified Sophie-voice pass — she
-// should still read it in her own voice before it's final.
-// Images: brand/visual/landing-images/ (ChatGPT-generated, Harbor Light
-// style), compressed to webp in /public/images/wayfinder/. Batch 2 (people
-// and scenes) added 2026-11-02 — see that README for the full catalogue.
-// Deliberately NOT used: pier-feet-over-water-wide.webp (has a ladder in
-// frame — the cube/ladder/lion test is a core, untouchable brand element
-// per RECHART.md, and a decorative ladder here risks pre-empting or
-// confusing it before someone's actually taken the test) and
-// helm-closeup-crop.webp (misleading name, no storm in it, redundant with
-// the portrait crop of the same scene).
-// Structure + pricing per /brand/product/RECHART.md and COORDINATION.md
-// (final decision 2026-11-01): Find Your Bearings is a free taste embedded
-// on this page, and also stage 1 of the paid package — not a separate funnel.
-//
-// Background color (--hl-paper below) is the MEASURED average corner color
-// of the 5 landing images (sampled with ImageMagick, 2026-11-01): ~#FBF1E3.
-// Must stay matched to whatever paper tone future image batches use, or the
-// images will read as boxes again instead of sitting flush on the page.
-//
-// DESKTOP-ONLY PASS (2026-11-02, per Sophie's request): this round adds (1)
-// many more images scattered through the sections, (2) a bead cluster where
-// the four Wayfinder Method parts visually sit on a short static arc (not
-// the full-page thread — see note by .bead-cluster below for why), and (3)
-// more thread waypoints so the long thread weaves around text blocks
-// instead of running close to straight. Mobile is NOT reworked yet — the
-// scatter images and bead cluster are desktop-only (hidden under 900px) on
-// purpose, because a winding desktop path and scattered off-column images
-// don't translate directly to a 390px-wide screen; that geometry needs its
-// own simpler pass once this desktop version is approved, the same way
-// criticalthinkinghu's ArcConnector.tsx has entirely separate wide/narrow
-// logic rather than one shared geometry.
-const PRICE_FULL = '£69';
-const PRICE_LAUNCH = '£39';
+// RECHART / The Wayfinder Method sales landing page.
+// Generated from the approved Design canvas "RECHART landing wireframe"
+// (claude.ai artifact, 2026-11-02) by scratchpad dc_to_astro.py: the
+// canvas is the design source of truth while copy is still being reviewed.
+// Standalone document on purpose: no site nav on the sales page (Sophie,
+// 2026-11-02), so it does not use Layout.astro. noindex until launch:
+// the page still carries [placeholders] (legal details, checkout, signup).
 ---
 
-<Layout
-  title="The Wayfinder Method"
-  description="RECHART · The Wayfinder Method — a quieter way to figure out your next direction, not your next life."
->
-  <article class="wayfinder">
-    <div class="watercolor-decor" aria-hidden="true">
-      <svg class="blob blob-copper blob-a" viewBox="0 0 200 200"><path fill="#B87345" d="M48,-58.6C62.2,-49.4,73.1,-33.8,76.8,-16.6C80.5,0.7,76.9,19.6,67.2,34.6C57.6,49.7,41.8,60.8,24.3,66.4C6.8,72.1,-12.5,72.2,-28.8,65.3C-45.1,58.3,-58.4,44.3,-65.8,27.4C-73.2,10.6,-74.7,-9.1,-67.8,-25.2C-60.9,-41.3,-45.5,-53.9,-29.7,-62.2C-13.9,-70.5,2.3,-74.5,18.1,-71.5C33.9,-68.5,33.7,-67.9,48,-58.6Z" transform="translate(100 100)"/></svg>
-      <svg class="blob blob-blue blob-b" viewBox="0 0 200 200"><path fill="#7FA8C9" d="M44.1,-54.5C56.4,-45.5,64.7,-30.3,67.6,-14.2C70.6,1.9,68.2,18.8,59.8,32.1C51.4,45.4,37,55,21.1,60.8C5.2,66.6,-12.2,68.6,-27.9,63.6C-43.5,58.6,-57.4,46.6,-65.1,31.5C-72.8,16.4,-74.4,-1.8,-69.1,-17.5C-63.9,-33.2,-51.8,-46.3,-37.7,-55.1C-23.6,-63.9,-11.8,-68.4,2.6,-71.6C17,-74.9,31.8,-63.5,44.1,-54.5Z" transform="translate(100 100)"/></svg>
-      <svg class="blob blob-copper blob-c" viewBox="0 0 200 200"><path fill="#B87345" d="M39.6,-49.3C50.3,-41.9,57.3,-28.9,60.6,-14.6C63.9,-0.3,63.5,15.3,56.9,28.1C50.3,40.9,37.5,50.9,23.2,56.8C8.9,62.7,-6.9,64.5,-21.6,60.2C-36.3,55.9,-49.9,45.5,-58.1,31.5C-66.3,17.5,-69.1,-0.1,-64.6,-15.2C-60.1,-30.3,-48.3,-42.9,-35,-50.1C-21.7,-57.3,-6.9,-59.1,5.9,-57.7C18.7,-56.3,28.9,-56.7,39.6,-49.3Z" transform="translate(100 100)"/></svg>
-      <svg class="blob blob-blue blob-d" viewBox="0 0 200 200"><path fill="#1C4F6B" d="M35.8,-45.5C46.1,-38.6,53.6,-27,57.4,-13.7C61.2,-0.4,61.3,14.6,55.4,26.9C49.5,39.2,37.6,48.8,24.2,54.6C10.8,60.4,-4.1,62.4,-18.3,58.8C-32.5,55.2,-46,46,-54.4,33.1C-62.8,20.2,-66.1,3.6,-62.9,-11.3C-59.7,-26.2,-50,-39.4,-37.5,-46.4C-25,-53.4,-9.7,-54.2,2.9,-57.8C15.5,-61.4,25.5,-52.4,35.8,-45.5Z" transform="translate(100 100)"/></svg>
-      <svg class="dots dots-a" viewBox="0 0 120 60"><circle cx="10" cy="10" r="3" fill="#B87345"/><circle cx="28" cy="22" r="1.8" fill="#B87345"/><circle cx="45" cy="8" r="2.4" fill="#7FA8C9"/><circle cx="60" cy="30" r="1.4" fill="#B87345"/><circle cx="78" cy="14" r="2" fill="#7FA8C9"/><circle cx="95" cy="26" r="1.6" fill="#B87345"/><circle cx="18" cy="45" r="1.4" fill="#7FA8C9"/></svg>
-      <svg class="dots dots-b" viewBox="0 0 120 60"><circle cx="100" cy="12" r="2.6" fill="#1C4F6B"/><circle cx="82" cy="28" r="1.6" fill="#B87345"/><circle cx="65" cy="10" r="2" fill="#B87345"/><circle cx="48" cy="32" r="1.4" fill="#1C4F6B"/><circle cx="30" cy="16" r="1.8" fill="#B87345"/><circle cx="12" cy="30" r="1.2" fill="#1C4F6B"/></svg>
-    </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="RECHART · The Wayfinder Method. Maybe you don't need a new life. Maybe you need a new direction." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>RECHART · The Wayfinder Method · Art of Small Steps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,600;1,400&family=Shadows+Into+Light+Two&display=swap" />
+    <style is:global>
 
-    <!-- HERO -->
-    <section class="hero">
-      <img
-        class="hero-image"
-        data-thread-start
-        src="/images/wayfinder/hero-sailboat-sunset-banner.webp"
-        alt="A small wooden sailboat crossing calm water at sunset, watercolor illustration"
-        width="1600" height="533"
-      />
-      <div class="hero-text">
-        <p class="eyebrow">RECHART · The Wayfinder Method</p>
-        <h1>BECALMED?</h1>
-        <p class="lede">Maybe you don't need a new life. You need a different bearing.</p>
-        <p>
-          You've got a job, people who need you, a life that mostly works. (Even a coffee machine
-          you've made peace with.) And still — something's off. Not broken. Just off.
-        </p>
-        <p>This is a quieter way to figure out what's next, before you do anything drastic.</p>
-        <a class="btn btn-primary" href="#find-your-bearings">Find Your Bearings — free</a>
-      </div>
-    </section>
+body{margin:0;background:#FBF1E3}
+a{color:#8A5129}a:hover{color:#142230}
+.page{font-family:'Lora',Georgia,serif;color:#142230;background:#FBF1E3;overflow:hidden;position:relative}
+.display{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-0.01em}
+.hand{font-family:'Shadows Into Light Two',cursive}
+.bleed{-webkit-mask-image:radial-gradient(ellipse 72% 72% at 50% 50%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 72% 72% at 50% 50%,#000 58%,transparent 100%)}
+.bleed-wide{-webkit-mask-image:linear-gradient(90deg,#000 70%,transparent 100%);mask-image:linear-gradient(90deg,#000 70%,transparent 100%)}
+.wash{position:absolute;pointer-events:none;z-index:0}
+.lift{position:relative;z-index:1}
+.chart-card{transition:transform .35s ease,box-shadow .35s ease;cursor:pointer}
+.chart-card:hover{transform:translateY(-6px) rotate(0deg) !important}
+.chart-card:focus-visible{outline:3px solid #E7B184;outline-offset:6px}
+.btn:focus-visible{outline:3px solid #1C4F6B;outline-offset:3px}
+@media (max-width:960px){
+.route-svg{display:none}
+.stagger{margin-top:0 !important}
+.log-panel{order:var(--log-order) !important;margin-top:-6px !important;transform:none !important}
+.log-head{grid-template-columns:1fr !important}
+.log-title{display:none}
+.log-paper{padding:24px 20px 26px 80px !important}
+}
+.log-panel{order:99}
+[data-show][hidden]{display:none}
+    </style>
+  </head>
+  <body>
+<div class="page">
 
-    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+<!-- 1 HERO: no top nav on the sales page; image (left two thirds of the banner) and text sit side by side, wrap on phones -->
+<section id="top" style="position:relative;max-width:1600px;margin:0 auto;padding:48px 0 40px;display:flex;flex-wrap:wrap;align-items:center;gap:28px 0">
+<div style="flex:2 1 620px;min-width:0">
+<img class="bleed-wide" src="/images/wayfinder/hero-sailboat-sunset-banner.webp" alt="A small wooden sailboat crossing calm water at sunset, watercolor" style="display:block;width:100%;aspect-ratio:2/1;object-fit:cover;object-position:left center">
+</div>
+<div class="lift" style="flex:1 1 380px;max-width:500px;min-width:0;padding:0 28px;box-sizing:border-box">
+<p class="hand" style="display:inline-block;margin:0 0 18px;padding:6px 16px;border:1.5px solid #B87345;border-radius:999px;font-size:20px;color:#8A5129;transform:rotate(-2deg)">We set sail on Sunday, 3 January 2027</p>
+<p style="margin:0 0 14px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600">RECHART · The Wayfinder Method</p>
+<h1 class="display" style="margin:0;font-size:clamp(52px,6.4vw,96px);line-height:.95">Becalmed?</h1>
+<p class="display" style="margin:18px 0 0;font-size:clamp(24px,2.2vw,32px);line-height:1.2;font-style:italic;color:#1C4F6B">Maybe you don't need a new life. Maybe you need a new direction.</p>
+<p style="margin:18px 0 0;font-size:18px;line-height:1.6;color:#3E4852">You have a life. A job. People. Responsibilities. Maybe even a perfectly decent coffee machine. And yet, something feels… off.</p>
+<p style="margin:12px 0 0;font-size:18px;line-height:1.6;color:#3E4852">RECHART is a quiet place to pause, find your bearings and work out what comes next. Without burning your life down first.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;align-items:center">
+<a class="btn" href="#bearings" style="background:#B87345;color:#FFF8EE;text-decoration:none;padding:15px 26px;border-radius:999px;font-weight:600;font-size:17px;min-height:48px;box-sizing:border-box;display:inline-flex;align-items:center">Find your bearings, free</a>
+<a class="btn" href="#method" style="color:#142230;text-decoration:none;padding:15px 8px;font-weight:600;font-size:16px;border-bottom:1.5px solid #142230">See the journey</a>
+</div>
+<p class="hand" style="margin:16px 0 0;font-size:22px;color:#1C4F6B">Free. Interactive. Surprisingly revealing.</p>
+</div>
+</section>
 
-    <!-- RECOGNITION -->
-    <section class="prose prose-scatter">
-      <img
-        data-thread-point
-        class="scatter-img scatter-right"
-        src="/images/wayfinder/woman-sitting-thinking-bun.webp"
-        alt="A woman sitting cross-legged, chin on hand, looking up and away, watercolor illustration"
-        width="500" height="500"
-      />
-      <h2>Not in a storm. Just stuck.</h2>
-      <p>Nothing's really wrong. Nothing's really right either.</p>
-      <p>
-        You keep going, because that's what you do — you handle things, you make it work, you've
-        gotten disturbingly good at it. And somewhere in all that functioning, a small, annoying
-        voice keeps asking: <em>is this still what I want?</em>
-      </p>
-      <p>
-        Maybe you've outgrown who you used to be. Maybe your priorities rearranged themselves
-        without asking you first. Or maybe you genuinely don't know what's going on — and that's
-        fine too.
-      </p>
-      <p>You don't need a crisis to change direction. You don't even need an answer yet. You need a different question.</p>
-    </section>
+<!-- route divider -->
+<div aria-hidden="true" style="max-width:1100px;margin:0 auto;height:120px;position:relative">
+<svg width="100%" height="120" viewBox="0 0 1000 120" preserveAspectRatio="none"><path d="M 180 0 C 220 80, 520 20, 640 70 S 820 120, 860 120" fill="none" stroke="#B87345" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg>
+</div>
 
-    <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
+<!-- 2 RECOGNITION -->
+<section style="position:relative;max-width:1180px;margin:0 auto;padding:20px 24px 60px;display:flex;flex-wrap:wrap;align-items:center;gap:48px">
+<div class="lift" style="flex:1 1 380px;min-width:0">
+<img class="bleed" src="/images/wayfinder/woman-sitting-thinking-bun.webp" alt="A woman sitting cross-legged, chin on hand, looking up and away, watercolor" style="display:block;width:100%;max-width:520px;height:auto;margin:0 auto">
+</div>
+<div class="lift" style="flex:1 1 440px;min-width:0">
+<p style="margin:0 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600">The recognition</p>
+<h2 class="display" style="margin:0;font-size:clamp(36px,3.6vw,54px);line-height:1.05">Not in a storm. Just… stuck?</h2>
+<p style="margin:22px 0 0;font-size:18px;line-height:1.7;color:#3E4852">Nothing is particularly wrong. But nothing feels particularly right, either. You keep going because, well, that's what you do. You meet expectations. You handle things. You make it work. And somewhere in the middle of all that functioning, a small but persistent voice starts asking:</p>
+<p class="display" style="margin:28px 0;padding-left:0;font-size:clamp(28px,2.8vw,40px);font-style:italic;color:#1C4F6B;line-height:1.2">“Is this still what I want?”</p>
+<p style="margin:0;font-size:18px;line-height:1.7;color:#3E4852">Maybe you've outgrown a version of yourself. Maybe your priorities quietly rearranged themselves while you were busy. (Or maybe you have absolutely no idea what's going on. Also fine.) You don't need a dramatic answer to ask a different question. And you don't need a crisis to change direction.</p>
+</div>
+</section>
 
-    <!-- REFRAME -->
-    <section class="prose prose-surface prose-scatter">
-      <img
-        data-thread-point
-        class="scatter-img scatter-left"
-        src="/images/wayfinder/man-wiping-foggy-window.webp"
-        alt="A man seen from behind wiping a foggy window clear, watercolor illustration"
-        width="500" height="500"
-      />
-      <h2>You don't need to fix your life. You need to reconnect with it.</h2>
-      <p>
-        A reset isn't starting over. It's stepping back far enough to actually see what's
-        happening — what matters now, what gives you energy, what you've been carrying out of
-        habit because nobody ever told you that you could put it down.
-      </p>
-      <p>
-        Then, instead of making seventeen decisions in one over-caffeinated weekend, you explore.
-        Slowly. On purpose.
-      </p>
-      <p class="standout">This is not a five-step plan to become your best self.<br>Your best self has probably had enough meetings already.</p>
-    </section>
+<!-- 3 REFRAME -->
+<section style="position:relative;max-width:1180px;margin:0 auto;padding:60px 24px 40px;display:flex;flex-wrap:wrap-reverse;align-items:center;gap:48px">
+<div class="lift" style="flex:1 1 440px;min-width:0">
+<p style="margin:0 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600">The reframe</p>
+<h2 class="display" style="margin:0;font-size:clamp(36px,3.6vw,54px);line-height:1.05">You don't need to fix your life. You need to reconnect with it.</h2>
+<p style="margin:22px 0 0;font-size:18px;line-height:1.7;color:#3E4852">A reset isn't necessarily about starting over. It's about stepping back far enough to see what's actually going on: what matters now, what gives you energy, what you've been carrying out of habit, what you keep postponing because something else is always more urgent.</p>
+<p style="margin:16px 0 0;font-size:18px;line-height:1.7;color:#3E4852">And then, rather than making seventeen questionable decisions in a moment of existential enthusiasm, you explore. Curiously. Honestly. At your own pace.</p>
+</div>
+<div class="lift" style="flex:1 1 400px;min-width:0">
+<img class="bleed" src="/images/wayfinder/man-wiping-foggy-window.webp" alt="A man seen from behind wiping a foggy window clear, watercolor" style="display:block;width:100%;max-width:560px;height:auto;margin:0 auto">
+</div>
+</section>
 
-    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+<!-- standout line -->
+<section style="max-width:900px;margin:0 auto;padding:30px 24px 90px;text-align:center">
+<p class="display" style="margin:0;font-size:clamp(28px,3vw,44px);line-height:1.25">This is not a five-step plan to become your best self.</p>
+<p class="hand" style="margin:12px 0 0;font-size:clamp(28px,2.6vw,38px);color:#8A5129">Your best self has probably had enough meetings already.</p>
+</section>
 
-    <!-- METHOD -->
-    <section class="prose">
-      <p class="eyebrow">The method</p>
-      <h2>Meet your inner Wayfinder</h2>
-      <p>
-        The Wayfinder Method is a guided way through change, from the inside out. Not someone
-        else's map, not a poster that says "just follow your passion" — it's built around your
-        own signals: noticing them, trusting them enough to use them, and turning that into
-        something you actually do.
-      </p>
-    </section>
+<!-- 4 METHOD INTRO -->
+<section id="method" style="position:relative;max-width:900px;margin:0 auto;padding:0 24px 40px;text-align:center">
+<img class="bleed" src="/images/wayfinder/compass-copper-route.webp" alt="" style="display:block;width:220px;height:220px;margin:0 auto">
+<p style="margin:8px 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600">The method</p>
+<h2 class="display" style="margin:0;font-size:clamp(40px,4.2vw,62px);line-height:1.05">Meet your inner Wayfinder</h2>
+<p style="margin:20px auto 0;max-width:640px;font-size:18px;line-height:1.7;color:#3E4852">The Wayfinder Method is a guided way through change, from the inside out. Not someone else's map, and not someone shouting “Just follow your passion!” in the general direction of your uncertainty.</p>
+<p style="margin:14px auto 0;max-width:640px;font-size:18px;line-height:1.7;color:#3E4852">You'll think, play, write, draw, choose, and look at yourself from slightly odd angles. Sometimes serious things. Sometimes quite absurd ones. That's on purpose. (I've never believed self-knowledge has to happen with a straight face in front of a beige background.)</p>
+</section>
 
-    <!-- BEAD CLUSTER — the four parts riding a short arc of their own.
-         NOT wired into the page-long thread script: that thread is built by
-         measuring images in DOM order and smoothing a curve through them,
-         which works for a vertical sequence of far-apart points, not four
-         tightly clustered circles that want a specific tidy wave shape.
-         Giving this its own small static SVG (hand-tuned to match the bead
-         offsets below) is simpler and more reliable than forcing one
-         geometry function to do both jobs. -->
-    <section class="bead-cluster">
-      <svg class="bead-arc" viewBox="0 0 400 90" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M 20,30 C 60,85 100,85 140,45 C 170,15 190,10 210,35 C 235,65 260,70 285,40 C 310,10 340,10 380,32"
-          fill="none" stroke="var(--hl-copper)" stroke-width="1.75" stroke-linecap="round" stroke-dasharray="1 7" />
-      </svg>
-      <div class="bead" style="--bead-y: -18px;">
-        <img src="/images/wayfinder/sextant.webp" alt="" width="200" height="200" />
-        <span>Find Your Bearings</span>
-      </div>
-      <div class="bead" style="--bead-y: 20px;">
-        <img src="/images/wayfinder/compass-copper-route.webp" alt="" width="200" height="200" />
-        <span>Wake Up the Inner Navigator</span>
-      </div>
-      <div class="bead" style="--bead-y: -8px;">
-        <img src="/images/wayfinder/map-quill-hand.webp" alt="" width="200" height="200" />
-        <span>Draw Your Other Map</span>
-      </div>
-      <div class="bead" style="--bead-y: 18px;">
-        <img src="/images/wayfinder/anchor-rope-waves.webp" alt="" width="200" height="200" />
-        <span>Stormproof Your Vessel</span>
-      </div>
-    </section>
+<!-- 4b THE CHART TABLE: four stages -->
+<section aria-labelledby="stages-h" style="position:relative;background:#142230;color:#FBF1E3;padding:110px 24px 90px;margin-top:40px">
+<svg class="wash" aria-hidden="true" viewBox="0 0 1440 120" preserveAspectRatio="none" style="left:0;top:-1px;width:100%;height:90px"><path d="M0 0 H1440 V40 C1300 90 1180 20 1020 60 C860 100 760 30 600 64 C440 98 320 30 180 70 C100 92 40 70 0 80 Z" fill="#FBF1E3"></path></svg>
 
-    <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
+<div class="lift" style="max-width:1200px;margin:0 auto">
+<div style="text-align:center;margin-bottom:56px">
+<p class="hand" style="margin:0;font-size:26px;color:#E7B184">Chart your route</p>
+<h2 id="stages-h" class="display" style="margin:6px 0 0;font-size:clamp(38px,4vw,58px);line-height:1.05">Four stages. One way through.</h2>
+<p style="margin:16px auto 0;max-width:560px;font-size:17px;line-height:1.6;color:#C9D6E2">Pick a stage to see what happens there.</p>
+</div>
 
-    <section class="stages">
-      <div class="stage">
-        <img data-thread-point src="/images/wayfinder/compass-copper-route.webp" alt="A brass compass with a copper route line, watercolor illustration" width="800" height="800" />
-        <div>
-          <p class="stage-num">01</p>
-          <h3>Wake Up the Inner Navigator</h3>
-          <p>
-            First, notice where you actually are. Before you plan the next move, get curious
-            about who's doing the navigating — your patterns, the running commentary in your
-            head, what actually gives you energy versus what you've just always done.
-          </p>
-          <p>Because the voice in your head isn't always wisdom. Sometimes it's just your downstairs neighbour, and they have opinions about everything.</p>
-        </div>
-      </div>
+<div style="position:relative">
+<svg class="route-svg wash" aria-hidden="true" viewBox="0 0 1200 300" preserveAspectRatio="none" style="left:0;top:40px;width:100%;height:300px"><path d="M 20 150 C 120 40, 240 60, 300 120 S 480 260, 600 200 S 780 60, 900 130 S 1100 260, 1180 170" fill="none" stroke="#E7B184" stroke-width="2.2" stroke-dasharray="2 10" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg>
 
-      <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+<div style="display:flex;flex-wrap:wrap;gap:28px;justify-content:center;position:relative">
 
-      <div class="stage stage-reverse">
-        <img data-thread-point src="/images/wayfinder/map-quill-hand.webp" alt="A hand sketching a route onto a map with a quill, watercolor illustration" width="800" height="800" />
-        <div>
-          <p class="stage-num">02</p>
-          <h3>Draw Your Other Map</h3>
-          <p>
-            Then, sketch where you might want to go. Reconnect with what matters to you, not what
-            you were handed. Look at the ideas you dismissed too fast, the things you buried under
-            "should."
-          </p>
-          <p>None of it has to be the grand answer. It just has to be worth walking toward.</p>
-        </div>
-      </div>
+<!-- card 0 -->
+<button class="chart-card stagger" type="button" data-stage="0" aria-pressed="true" style="flex:1 1 240px;max-width:270px;margin-top:0;order:0;border:0;padding:30px 24px 30px;background:#FBF1E3;color:#142230;text-align:left;font:inherit;transform:rotate(-2deg);box-shadow:0 18px 40px rgba(5,14,24,.45);clip-path:polygon(0% 2%,8% 0%,19% 1.5%,31% 0%,44% 1%,57% 0%,70% 1.8%,83% 0.4%,100% 1.5%,99% 14%,100% 30%,98.6% 47%,100% 63%,99% 80%,100% 98%,86% 100%,72% 98.5%,58% 100%,43% 98.6%,29% 100%,15% 98.8%,0% 100%,1.2% 82%,0% 64%,1.5% 46%,0% 29%,1% 13%);position:relative">
+<span data-show="0"><span class="hand" style="position:absolute;top:14px;right:16px;background:#B87345;color:#FFF8EE;border-radius:999px;padding:2px 12px;font-size:18px">You are here</span></span>
+<span class="hand" style="display:block;font-size:20px;color:#8A5129">N 00° · free taste</span>
+<img class="bleed" src="/images/wayfinder/sextant.webp" alt="" style="display:block;width:150px;height:150px;margin:8px auto 6px">
+<span style="display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4A5560;font-weight:600">Stage 0</span>
+<span class="display" style="display:block;font-size:30px;line-height:1.05;margin-top:4px">Find Your Bearings</span>
+<span class="display" style="display:block;font-size:20px;font-style:italic;color:#1C4F6B;margin-top:10px">“Where am I, really?”</span>
+</button>
 
-      <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
+<!-- card 1 -->
+<button class="chart-card stagger" type="button" data-stage="1" aria-pressed="false" style="flex:1 1 240px;max-width:270px;margin-top:70px;order:2;border:0;padding:30px 24px 30px;background:#FBF1E3;color:#142230;text-align:left;font:inherit;transform:rotate(1.6deg);box-shadow:0 18px 40px rgba(5,14,24,.45);clip-path:polygon(0% 1%,12% 0%,24% 1.6%,38% 0.2%,51% 1.4%,66% 0%,79% 1.2%,91% 0%,100% 2%,98.8% 18%,100% 35%,99% 52%,100% 70%,98.7% 86%,100% 99%,88% 100%,74% 98.6%,60% 100%,47% 98.8%,33% 100%,19% 98.4%,6% 100%,0% 98%,1.4% 84%,0% 67%,1% 49%,0% 32%,1.3% 16%);position:relative">
+<span data-show="1" hidden><span class="hand" style="position:absolute;top:14px;right:16px;background:#B87345;color:#FFF8EE;border-radius:999px;padding:2px 12px;font-size:18px">You are here</span></span>
+<span class="hand" style="display:block;font-size:20px;color:#8A5129">N 01° · lessons 1–6</span>
+<img class="bleed" src="/images/wayfinder/compass-copper-route.webp" alt="" style="display:block;width:150px;height:150px;margin:8px auto 6px">
+<span style="display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4A5560;font-weight:600">Stage 1</span>
+<span class="display" style="display:block;font-size:30px;line-height:1.05;margin-top:4px">Wake Up the Inner Navigator</span>
+<span class="display" style="display:block;font-size:20px;font-style:italic;color:#1C4F6B;margin-top:10px">“Who's actually steering?”</span>
+</button>
 
-      <div class="stage">
-        <img data-thread-point src="/images/wayfinder/anchor-rope-waves.webp" alt="An anchor with coiled rope resting against gentle waves, watercolor illustration" width="800" height="800" />
-        <div>
-          <p class="stage-num">03</p>
-          <h3>Stormproof Your Vessel</h3>
-          <p>
-            Finally, turn the insight into motion. Gather what you've already got. Name the
-            obstacles before they surprise you. Build a plan that's actually yours, not some
-            version of you who wakes up at 5am for a cold shower.
-          </p>
-          <p>Weather changes. That's not a character flaw. That's life.</p>
-        </div>
-      </div>
-    </section>
+<!-- card 2 -->
+<button class="chart-card stagger" type="button" data-stage="2" aria-pressed="false" style="flex:1 1 240px;max-width:270px;margin-top:10px;order:4;border:0;padding:30px 24px 30px;background:#FBF1E3;color:#142230;text-align:left;font:inherit;transform:rotate(-1.2deg);box-shadow:0 18px 40px rgba(5,14,24,.45);clip-path:polygon(0% 1.6%,9% 0%,22% 1%,35% 0%,48% 1.8%,61% 0.3%,75% 1.3%,88% 0%,100% 1%,99.2% 16%,100% 33%,98.8% 50%,100% 66%,99% 83%,100% 100%,85% 98.7%,71% 100%,57% 98.4%,42% 100%,28% 98.9%,14% 100%,0% 98.6%,1% 81%,0% 63%,1.4% 45%,0% 27%,1% 12%);position:relative">
+<span data-show="2" hidden><span class="hand" style="position:absolute;top:14px;right:16px;background:#B87345;color:#FFF8EE;border-radius:999px;padding:2px 12px;font-size:18px">You are here</span></span>
+<span class="hand" style="display:block;font-size:20px;color:#8A5129">N 02° · lessons 7–12</span>
+<img class="bleed" src="/images/wayfinder/map-quill-hand.webp" alt="" style="display:block;width:150px;height:150px;margin:8px auto 6px">
+<span style="display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4A5560;font-weight:600">Stage 2</span>
+<span class="display" style="display:block;font-size:30px;line-height:1.05;margin-top:4px">Draw Your Other Map</span>
+<span class="display" style="display:block;font-size:20px;font-style:italic;color:#1C4F6B;margin-top:10px">“Where might I want to go?”</span>
+</button>
 
-    <!-- CALM PORTRAIT DIVIDER -->
-    <section class="portrait-divider">
-      <img data-thread-point src="/images/wayfinder/helm-woman-wind-portrait.webp" alt="A woman at a ship's wheel, hair in the wind, calm expression, watercolor illustration" width="500" height="700" />
-      <p class="standout">The answer to the storm isn't a fight.<br>It's a steady hand on the wheel.</p>
-    </section>
+<!-- card 3 -->
+<button class="chart-card stagger" type="button" data-stage="3" aria-pressed="false" style="flex:1 1 240px;max-width:270px;margin-top:84px;order:6;border:0;padding:30px 24px 30px;background:#FBF1E3;color:#142230;text-align:left;font:inherit;transform:rotate(2.2deg);box-shadow:0 18px 40px rgba(5,14,24,.45);clip-path:polygon(0% 0.8%,11% 0%,25% 1.5%,39% 0%,53% 1.2%,67% 0%,80% 1.7%,93% 0.2%,100% 1.4%,98.9% 17%,100% 34%,99.1% 51%,100% 68%,98.8% 85%,100% 98.6%,87% 100%,73% 98.6%,59% 100%,45% 98.5%,31% 100%,17% 98.8%,4% 100%,0% 99%,1.2% 83%,0% 66%,1.1% 48%,0% 30%,1.5% 14%);position:relative">
+<span data-show="3" hidden><span class="hand" style="position:absolute;top:14px;right:16px;background:#B87345;color:#FFF8EE;border-radius:999px;padding:2px 12px;font-size:18px">You are here</span></span>
+<span class="hand" style="display:block;font-size:20px;color:#8A5129">N 03° · lessons 13–15</span>
+<img class="bleed" src="/images/wayfinder/anchor-rope-waves.webp" alt="" style="display:block;width:150px;height:150px;margin:8px auto 6px">
+<span style="display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4A5560;font-weight:600">Stage 3</span>
+<span class="display" style="display:block;font-size:30px;line-height:1.05;margin-top:4px">Stormproof Your Vessel</span>
+<span class="display" style="display:block;font-size:20px;font-style:italic;color:#1C4F6B;margin-top:10px">“How do I keep moving when the weather changes?”</span>
+</button>
 
-    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+<!-- logbook page: on desktop it sits under all four cards (order 99); under 960px its flex order moves it directly below the card that was tapped -->
+<div class="log-panel" aria-live="polite" style="--log-order: 1; flex:1 1 100%;max-width:820px;margin-top:84px;position:relative;transform:rotate(-0.6deg)">
+<div class="log-paper" style="position:relative;background-color:#FBF1E3;background-image:linear-gradient(90deg,transparent 62px,rgba(184,115,69,.55) 62px,rgba(184,115,69,.55) 64px,transparent 64px);color:#142230;padding:30px 32px 34px 86px;box-shadow:0 24px 50px rgba(5,14,24,.5);border-radius:2px 6px 6px 2px">
+<div aria-hidden="true" style="position:absolute;left:22px;top:26px;bottom:26px;display:flex;flex-direction:column;justify-content:space-around">
+<span style="width:16px;height:16px;border-radius:50%;background:#142230;box-shadow:inset 0 2px 3px rgba(0,0,0,.6)"></span>
+<span style="width:16px;height:16px;border-radius:50%;background:#142230;box-shadow:inset 0 2px 3px rgba(0,0,0,.6)"></span>
+<span style="width:16px;height:16px;border-radius:50%;background:#142230;box-shadow:inset 0 2px 3px rgba(0,0,0,.6)"></span>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+<p class="display" style="margin:0;font-size:15px;letter-spacing:.22em;text-transform:uppercase;font-weight:600">Ship's log</p>
+<p style="margin:0;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4A5560;font-weight:600"><span id="log-label">Stage 0 · free taste</span></p>
+</div>
 
-    <!-- FREE TASTE / FIND YOUR BEARINGS -->
-    <section id="find-your-bearings" class="taste">
-      <img data-thread-point src="/images/wayfinder/sextant.webp" alt="A brass sextant catching the light, watercolor illustration" width="800" height="800" class="taste-image" />
-      <div>
-        <p class="eyebrow">Try it first — free</p>
-        <h2>Find Your Bearings</h2>
-        <p>
-          A short, free exercise — a handful of prompts about what you actually notice, not what
-          label you'd like to wear. No quiz result that tells you you're a Blue Dolphin.
-        </p>
-        <p>Leave your email, get your results, see if this whole thing is even worth your time.</p>
-        <a class="btn btn-primary" href="#">Find Your Bearings — free</a>
-        <p class="fine-print">It's also the opening stage of the full course below — nothing you do here gets wasted if you decide to go further.</p>
-      </div>
-    </section>
+<div data-show="0">
+<div class="log-head" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 18px;margin-top:14px;font-size:13px;color:#4A5560;line-height:1.5">
+<span>Position <span class="hand" style="font-size:18px;color:#1C4F6B">N 00°, not sure yet</span></span>
+<span>Weather <span class="hand" style="font-size:18px;color:#1C4F6B">becalmed, hazy</span></span>
+<span>Crew <span class="hand" style="font-size:18px;color:#1C4F6B">just me</span></span>
+</div>
+<h3 class="display log-title" style="margin:18px 0 0;font-size:28px;line-height:1.15">Find Your Bearings</h3>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.65;color:#2E3842">Free, and also the first stage of the full journey. A short game for your imagination: you picture a few things, one after the other, and only afterwards find out what they might be telling you. It takes about five minutes. It tends to stay with people a lot longer.</p>
+<a class="hand" href="#bearings" style="display:inline-flex;margin-top:6px;font-size:21px;line-height:1.3;color:#8A5129;min-height:44px;align-items:center">Get it in your inbox, below →</a>
+</div>
 
-    <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
+<div data-show="1" hidden>
+<div class="log-head" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 18px;margin-top:14px;font-size:13px;color:#4A5560;line-height:1.5">
+<span>Position <span class="hand" style="font-size:18px;color:#1C4F6B">N 01°</span></span>
+<span>Weather <span class="hand" style="font-size:18px;color:#1C4F6B">fog lifting</span></span>
+<span>Lessons <span class="hand" style="font-size:18px;color:#1C4F6B">1 to 6</span></span>
+</div>
+<h3 class="display log-title" style="margin:18px 0 0;font-size:28px;line-height:1.15">Wake Up the Inner Navigator</h3>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.65;color:#2E3842">First, notice where you actually are. Before planning the next destination, get curious about who's doing the navigating: your patterns, your inner dialogue, what brings you joy, the assumptions quietly steering your everyday choices. Because the voice in your head isn't always the voice of wisdom. Sometimes it's just your downstairs neighbour.</p>
+<p class="hand" style="margin:12px 0 0;font-size:20px;line-height:1.3;color:#8A5129">Note to self: the neighbour has opinions.</p>
+<p style="margin:10px 0 0;font-size:13px;line-height:1.5;color:#4A5560">[Lesson titles 1–6, TBD]</p>
+</div>
 
-    <!-- FULL JOURNEY / PRICING -->
-    <section class="pricing prose-scatter">
-      <img
-        data-thread-point
-        class="scatter-img scatter-left"
-        src="/images/wayfinder/travel-trunk-map-boots.webp"
-        alt="An open travel trunk with a compass rose, map, scarf and worn boots, watercolor illustration"
-        width="500" height="500"
-      />
-      <p class="eyebrow">Ready to go further?</p>
-      <h2>The Wayfinder Method — full course</h2>
-      <p>
-        Fifteen lessons, delivered over about four weeks, building from Find Your Bearings above
-        through all three stages. You get the full workbook at the end too.
-      </p>
-      <p class="price">
-        <span class="price-launch">{PRICE_LAUNCH}</span>
-        <span class="price-full">{PRICE_FULL} full price</span>
-      </p>
-      <a class="btn btn-primary" href="#">Start The Wayfinder Method</a>
-      <p class="standout" style="margin-top: var(--space-3);">Not a personality makeover. Not a universal life recipe.<br>A practical way back into your own life, at a pace you set.</p>
-    </section>
+<div data-show="2" hidden>
+<div class="log-head" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 18px;margin-top:14px;font-size:13px;color:#4A5560;line-height:1.5">
+<span>Position <span class="hand" style="font-size:18px;color:#1C4F6B">N 02°</span></span>
+<span>Weather <span class="hand" style="font-size:18px;color:#1C4F6B">clearing, light breeze</span></span>
+<span>Lessons <span class="hand" style="font-size:18px;color:#1C4F6B">7 to 12</span></span>
+</div>
+<h3 class="display log-title" style="margin:18px 0 0;font-size:28px;line-height:1.15">Draw Your Other Map</h3>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.65;color:#2E3842">Then, look at where you might want to go. What matters to you, what gives you energy, the possibilities you dismissed and the wishes you buried under “shoulds”. You don't need to settle on a grand destination. Just on what feels worth moving toward.</p>
+<p class="hand" style="margin:12px 0 0;font-size:20px;line-height:1.3;color:#8A5129">Spotted land I'd stopped looking for.</p>
+<p style="margin:10px 0 0;font-size:13px;line-height:1.5;color:#4A5560">[Lesson titles 7–12, TBD]</p>
+</div>
 
-    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+<div data-show="3" hidden>
+<div class="log-head" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 18px;margin-top:14px;font-size:13px;color:#4A5560;line-height:1.5">
+<span>Position <span class="hand" style="font-size:18px;color:#1C4F6B">N 03°</span></span>
+<span>Weather <span class="hand" style="font-size:18px;color:#1C4F6B">changeable, as always</span></span>
+<span>Lessons <span class="hand" style="font-size:18px;color:#1C4F6B">13 to 15</span></span>
+</div>
+<h3 class="display log-title" style="margin:18px 0 0;font-size:28px;line-height:1.15">Stormproof Your Vessel</h3>
+<p style="margin:12px 0 0;font-size:16px;line-height:1.65;color:#2E3842">Finally, turn insight into movement. Gather what you already have, look the obstacles in the eye, and make a plan that belongs to you, not to some imaginary person who wakes up at 5 a.m. and enjoys cold showers. Then find ways to keep moving when motivation goes missing or the weather changes. Because it will. That's not a character flaw. That's life.</p>
+<p class="hand" style="margin:12px 0 0;font-size:20px;line-height:1.3;color:#8A5129">Small steps. Still moving.</p>
+<p style="margin:10px 0 0;font-size:13px;line-height:1.5;color:#4A5560">[Lesson titles 13–15, TBD]</p>
+</div>
+</div>
+</div>
 
-    <!-- WHO FOR -->
-    <section class="prose prose-surface prose-scatter">
-      <img
-        data-thread-point
-        class="scatter-img scatter-right"
-        src="/images/wayfinder/man-bow-facing-wind.webp"
-        alt="A man at the bow of a sailboat, face up into the wind, watercolor illustration"
-        width="500" height="500"
-      />
-      <h2>This is probably for you if —</h2>
-      <ul>
-        <li>you're functioning fine, but something feels disconnected</li>
-        <li>you know something needs to shift, but can't name it yet</li>
-        <li>you've got plenty of ideas and no idea what to do with them</li>
-        <li>you want a real change without blowing up your actual life</li>
-      </ul>
-      <p>You don't have to be lost. You just have to be a little curious.</p>
-    </section>
+</div>
+</div>
+</div>
 
-    <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
+<svg class="wash" aria-hidden="true" viewBox="0 0 1440 120" preserveAspectRatio="none" style="left:0;bottom:-1px;width:100%;height:90px"><path d="M0 120 H1440 V70 C1320 30 1200 100 1040 60 C880 20 780 90 620 56 C460 22 340 92 200 52 C110 28 50 48 0 40 Z" fill="#FBF1E3"></path></svg>
+</section>
 
-    <!-- WHAT IT ISN'T -->
-    <section class="prose">
-      <h2>What this isn't</h2>
-      <p>
-        A few things, before we set sail. This isn't therapy. It isn't a diagnosis. It's not going
-        to hand you the one true purpose you were apparently supposed to find since birth.
-      </p>
-      <p>It's a space to think, try things, and actually act on what you find.</p>
-      <p class="standout">You bring your life. We bring a method. The direction's yours.</p>
-    </section>
+<!-- testimonial A -->
+<figure style="max-width:760px;width:calc(100% - 32px);box-sizing:border-box;margin:100px auto 0;padding:40px 36px 34px;text-align:center;border:2px solid #1C4F6B;border-radius:6px">
+<svg width="44" height="34" viewBox="0 0 44 34" aria-hidden="true"><path d="M4 34 V20 C4 9 10 3 19 1 l2 5 c-6 2 -9 6 -9 12 h8 v16 z M26 34 V20 c0 -11 6 -17 15 -19 l2 5 c-6 2 -9 6 -9 12 h8 v16 z" fill="#B87345" opacity=".55"></path></svg>
+<blockquote style="margin:10px 0 0">
+<p class="display" style="margin:0;font-size:clamp(34px,3.4vw,48px);font-style:italic;line-height:1.1">Brutal. In a good way.</p>
+<p style="margin:16px auto 0;max-width:600px;font-size:17px;line-height:1.7;color:#3E4852">“It sheds light on a lot. Intense self-training, a little time with myself. It helps you sink, playfully, into the most serious part of who you are.”</p>
+</blockquote>
+<figcaption style="margin-top:14px;font-size:14px;color:#4A5560"><span class="hand" style="font-size:20px;color:#8A5129">[Name or “Participant”]</span> · Hungarian edition · [translated, needs their OK]</figcaption>
+</figure>
 
-    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+<!-- message in a bottle, between testimonial A and Stage 0 -->
+<div style="display:flex;justify-content:center;padding:60px 24px 0">
+<img class="bleed" src="/images/wayfinder/message-in-bottle.webp" alt="A corked glass bottle with a rolled note, floating on the sea at sunset, watercolor" style="display:block;width:100%;max-width:460px;height:auto">
+</div>
 
-    <!-- PHILOSOPHY -->
-    <section class="prose prose-surface">
-      <h2>You don't need the whole map before you start.<br>You need enough awareness to choose the next step.</h2>
-      <p>
-        Life doesn't usually hand you a full set of coordinates. Sometimes you move with total
-        clarity. Sometimes you're guessing. Sometimes you get halfway somewhere and realise that
-        destination belonged to an earlier version of you.
-      </p>
-      <p>
-        That's allowed. You can change your mind, take the long way, or just stop for a while
-        without calling the whole thing a failure.
-      </p>
-      <p>You can redraw the map. That's the whole point.</p>
-    </section>
+<!-- 5 FIND YOUR BEARINGS, free taste by email -->
+<section id="bearings" style="position:relative;max-width:760px;margin:0 auto;padding:10px 24px 60px">
+<div class="lift" style="flex:1 1 420px;min-width:0">
+<p style="margin:0 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600">Stage 0 · free, a message in a bottle</p>
+<h2 class="display" style="margin:0;font-size:clamp(36px,3.6vw,54px);line-height:1.05">Before you redraw your map, get to know your navigator.</h2>
+<p style="margin:20px 0 0;font-size:18px;line-height:1.7;color:#3E4852">It's a short game for your imagination, on video. I'll ask you to picture a few things, one after the other, and to trust whatever shows up first. Then you get the key to what your pictures might mean. No personality labels. No rigid categories. No “Congratulations, you're a Blue Dolphin!” Just a little room to notice things you might not have noticed before.</p>
+<p class="hand" style="margin:14px 0 0;font-size:22px;color:#1C4F6B">The Hungarian version has been watched more than 150,000 times.</p>
+<ol style="list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px">
+<li style="display:flex;align-items:center;gap:10px;font-size:16px"><span class="hand" style="width:34px;height:34px;border-radius:50%;border:1.5px solid #B87345;color:#8A5129;display:inline-flex;align-items:center;justify-content:center;font-size:20px">1</span>Leave your email</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:16px"><span class="hand" style="width:34px;height:34px;border-radius:50%;border:1.5px solid #B87345;color:#8A5129;display:inline-flex;align-items:center;justify-content:center;font-size:20px">2</span>Open the bottle</li>
+<li style="display:flex;align-items:center;gap:10px;font-size:16px"><span class="hand" style="width:34px;height:34px;border-radius:50%;border:1.5px solid #B87345;color:#8A5129;display:inline-flex;align-items:center;justify-content:center;font-size:20px">3</span>Play, then read the key</li>
+</ol>
+<form data-preview-form style="margin-top:28px;display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end" action="#bearings">
+<label style="flex:1 1 260px;display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#142230">Where should we send your bearings?
+<input type="email" placeholder="you@example.com" style="font:inherit;font-weight:400;font-size:17px;padding:13px 16px;border:1.5px solid #142230;border-radius:999px;background:#FFF9F0;color:#142230;min-height:48px;box-sizing:border-box">
+</label>
+<button class="btn" type="submit" style="font:inherit;font-weight:600;font-size:17px;background:#B87345;color:#FFF8EE;border:0;border-radius:999px;padding:13px 24px;min-height:48px;cursor:pointer">Send me the bottle</button>
+</form>
+<p style="margin:12px 0 0;font-size:14px;color:#4A5560">[Privacy line + consent wording, TBD]</p>
+</div></section>
 
-    <!-- BOARDING / FIRST STEP -->
-    <section class="boarding">
-      <img data-thread-point src="/images/wayfinder/boarding-sailboat-from-pier.webp" alt="A figure in a blue coat stepping from a pier onto a sailboat, watercolor illustration" width="1200" height="800" />
-    </section>
+<!-- route divider -->
+<div aria-hidden="true" style="max-width:1100px;margin:0 auto;height:110px">
+<svg width="100%" height="110" viewBox="0 0 1000 110" preserveAspectRatio="none"><path d="M 700 0 C 640 70, 360 30, 300 110" fill="none" stroke="#B87345" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg>
+</div>
 
-    <!-- FINAL CTA -->
-    <section class="final-cta">
-      <h2>Your life doesn't need a plot twist.<br>Just a bit of room to reconsider what's next.</h2>
-      <a class="btn btn-primary" href="#find-your-bearings" data-thread-end>Find Your Bearings — free</a>
-      <p class="tagline">RECHART · The Wayfinder Method</p>
-    </section>
+<!-- 6 FULL JOURNEY / OFFER -->
+<section id="journey" style="position:relative;max-width:1180px;margin:0 auto;padding:20px 24px 80px">
+<div style="text-align:center;max-width:760px;margin:0 auto">
+<p style="margin:0 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600">The full journey</p>
+<h2 class="display" style="margin:0;font-size:clamp(38px,4vw,58px);line-height:1.05">Ready to go beyond the first insight?</h2>
+<p style="margin:18px 0 0;font-size:18px;line-height:1.7;color:#3E4852">A complete, self-paced journey through the space between “This isn't quite it anymore” and “Here's what I want to do next.” This is where we connect the dots.</p>
+</div>
 
-    <svg class="thread-svg" aria-hidden="true"></svg>
-  </article>
-</Layout>
+<div style="display:flex;flex-wrap:wrap;gap:48px;align-items:center;margin-top:56px">
+<div style="flex:1 1 420px;min-width:0;position:relative">
+<img class="bleed lift" src="/images/wayfinder/travel-trunk-map-boots.webp" alt="An open travel trunk with a compass rose in the lid, a map, a scarf and worn boots, watercolor" style="display:block;width:100%;max-width:560px;height:auto;margin:0 auto">
+<p class="hand lift" style="margin:-10px 0 0;text-align:center;font-size:24px;color:#1C4F6B">What you pack for the trip</p>
+</div>
+<div style="flex:1 1 440px;min-width:0">
+<ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px">
+<li style="display:flex;gap:16px;align-items:flex-start"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><circle cx="11" cy="11" r="9" fill="#B87345" opacity=".25"></circle><circle cx="11" cy="11" r="4" fill="#B87345"></circle></svg><span style="font-size:18px;line-height:1.55"><strong style="font-weight:600">15 lessons by email</strong>, one every two days from Sunday 3 January 2027, about four weeks at your own pace.</span></li>
+<li style="display:flex;gap:16px;align-items:flex-start"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><circle cx="11" cy="11" r="9" fill="#1C4F6B" opacity=".2"></circle><circle cx="11" cy="11" r="4" fill="#1C4F6B"></circle></svg><span style="font-size:18px;line-height:1.55"><strong style="font-weight:600">The full 126-page workbook</strong> (PDF) at the end, to keep.</span></li>
+<li style="display:flex;gap:16px;align-items:flex-start"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><circle cx="11" cy="11" r="9" fill="#B87345" opacity=".25"></circle><circle cx="11" cy="11" r="4" fill="#B87345"></circle></svg><span style="font-size:18px;line-height:1.55"><strong style="font-weight:600">Find Your Bearings</strong> as your opening stage, included.</span></li>
+<li style="display:flex;gap:16px;align-items:flex-start"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><circle cx="11" cy="11" r="9" fill="#1C4F6B" opacity=".2"></circle><circle cx="11" cy="11" r="4" fill="#1C4F6B"></circle></svg><span style="font-size:18px;line-height:1.55">[Audio versions, placeholder until they exist]</span></li>
+<li style="display:flex;gap:16px;align-items:flex-start"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><circle cx="11" cy="11" r="9" fill="#B87345" opacity=".25"></circle><circle cx="11" cy="11" r="4" fill="#B87345"></circle></svg><span style="font-size:18px;line-height:1.55"><strong style="font-weight:600">Yours to keep.</strong> Come back to it in another season of your life.</span></li>
+</ul>
 
-<script>
-  // "Cérnavonal" thread — adapted from criticalthinkinghu's ArcConnector.tsx:
-  // a measured, Catmull-Rom-smoothed SVG path that starts at the hero image
-  // and runs down through each [data-thread-point] image (and invisible
-  // [data-thread-waypoint] markers placed in the margins between sections,
-  // which pull the curve into wider swings so it reads as weaving around
-  // the text blocks rather than running straight down behind them) to
-  // [data-thread-end]. This is a plain-JS port (that component is React)
-  // and a first guess at the geometry — Sophie is sketching her own
-  // preferred line shape by hand to refine this further.
-  type Pt = { x: number; y: number };
+<div style="margin-top:36px;background:#FFF9F0;border-radius:6px;padding:30px 32px;box-shadow:0 14px 40px rgba(20,34,48,.12);position:relative">
+<p class="hand" style="margin:0;font-size:22px;color:#8A5129">Launch price</p>
+<div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
+<span class="display" style="font-size:64px;line-height:1;font-weight:600">£39</span>
+<span style="font-size:20px;color:#4A5560;text-decoration:line-through">£69</span>
+<span style="font-size:15px;color:#4A5560">one payment, yours to keep</span>
+</div>
+<a class="btn" href="#journey" style="display:flex;justify-content:center;align-items:center;margin-top:22px;background:#142230;color:#FBF1E3;text-decoration:none;padding:16px 24px;border-radius:999px;font-weight:600;font-size:18px;min-height:52px;box-sizing:border-box">Start the Wayfinder journey</a>
+<p class="hand" style="margin:14px 0 0;font-size:20px;color:#1C4F6B;text-align:center">Launch price until we set sail on 3 January 2027. After that, £69.</p>
+<p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:#4A5560;text-align:center">Your statutory rights apply, including the 14-day right to cancel under UK consumer law. Price in GBP, [VAT wording per the Merchant of Record]. By buying you agree to the <a href="#legal">Terms</a> and <a href="#legal">Refund policy</a>. Secure checkout by [Merchant of Record].</p>
+</div>
+</div>
+</div>
+</section>
 
-  function pagePos(el: HTMLElement, root: HTMLElement): Pt {
-    let x = 0, y = 0, n: HTMLElement | null = el;
-    while (n && n !== root) {
-      x += n.offsetLeft;
-      y += n.offsetTop;
-      n = n.offsetParent as HTMLElement | null;
-    }
-    return { x, y };
-  }
+<!-- testimonial B, right under the launch price -->
+<figure style="max-width:760px;width:calc(100% - 32px);box-sizing:border-box;margin:0 auto 90px;padding:40px 36px 34px;text-align:center;border:2px solid #1C4F6B;border-radius:6px">
+<svg width="44" height="34" viewBox="0 0 44 34" aria-hidden="true"><path d="M4 34 V20 C4 9 10 3 19 1 l2 5 c-6 2 -9 6 -9 12 h8 v16 z M26 34 V20 c0 -11 6 -17 15 -19 l2 5 c-6 2 -9 6 -9 12 h8 v16 z" fill="#1C4F6B" opacity=".45"></path></svg>
+<blockquote style="margin:10px 0 0">
+<p class="display" style="margin:0;font-size:clamp(34px,3.4vw,48px);font-style:italic;line-height:1.1">Mind yoga.</p>
+<p style="margin:16px auto 0;max-width:600px;font-size:17px;line-height:1.7;color:#3E4852">“My favourite part was the warm-up: one simple, mission-like task a day. I made some huge discoveries. I really needed this.”</p>
+</blockquote>
+<figcaption style="margin-top:14px;font-size:14px;color:#4A5560"><span class="hand" style="font-size:20px;color:#8A5129">[Name or “Participant”]</span> · Hungarian edition · [translated, needs their OK]</figcaption>
+</figure>
 
-  function smooth(points: Pt[]): string {
-    const tangent = (i: number): Pt =>
-      i === 0
-        ? { x: points[1].x - points[0].x, y: points[1].y - points[0].y }
-        : i === points.length - 1
-          ? { x: points[i].x - points[i - 1].x, y: points[i].y - points[i - 1].y }
-          : { x: (points[i + 1].x - points[i - 1].x) / 2, y: (points[i + 1].y - points[i - 1].y) / 2 };
-    let d = "";
-    for (let i = 0; i < points.length - 1; i++) {
-      const a = points[i], b = points[i + 1];
-      const ta = tangent(i), tb = tangent(i + 1);
-      d += ` C ${a.x + ta.x / 3} ${a.y + ta.y / 3} ${b.x - tb.x / 3} ${b.y - tb.y / 3} ${b.x} ${b.y}`;
-    }
-    return d;
-  }
+<!-- 7 WHO IS THIS FOR -->
+<section style="position:relative;background:#FBF1E3;padding:90px 24px">
+<div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap-reverse;gap:56px;align-items:center">
+<div style="flex:1 1 460px;min-width:0">
+<p style="margin:0 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600">Who is this for?</p>
+<h2 class="display" style="margin:0;font-size:clamp(34px,3.4vw,50px);line-height:1.1">For the person with a perfectly reasonable answer to “How are you?”</h2>
+<p class="display" style="margin:10px 0 0;font-size:clamp(24px,2.2vw,30px);font-style:italic;color:#1C4F6B">…and a much more complicated one to “What do you actually want?”</p>
+<p class="hand" style="margin:28px 0 0;font-size:24px;color:#8A5129">If right now you're thinking…</p>
+<dl style="margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px">
+<div style="border:1px solid #E2D5C0;border-radius:6px;padding:20px 22px"><dt style="font-size:18px;line-height:1.5;font-style:italic;color:#142230">“I actually know what I want. I just don't do it.”</dt><dd class="hand" style="margin:14px 0 0;padding-top:12px;border-top:1px dashed #D9C7AC;font-size:23px;color:#8A5129">You're in the right place.</dd></div>
+<div style="border:1px solid #E2D5C0;border-radius:6px;padding:20px 22px"><dt style="font-size:18px;line-height:1.5;font-style:italic;color:#142230">“I have no idea what I want, and it's starting to annoy me.”</dt><dd class="hand" style="margin:14px 0 0;padding-top:12px;border-top:1px dashed #D9C7AC;font-size:23px;color:#8A5129">Also the right place.</dd></div>
+<div style="border:1px solid #E2D5C0;border-radius:6px;padding:20px 22px"><dt style="font-size:18px;line-height:1.5;font-style:italic;color:#142230">“I want too many things.”</dt><dd class="hand" style="margin:14px 0 0;padding-top:12px;border-top:1px dashed #D9C7AC;font-size:23px;color:#8A5129">Yes. We can work with that too.</dd></div>
+<div style="border:1px solid #E2D5C0;border-radius:6px;padding:20px 22px"><dt style="font-size:18px;line-height:1.5;font-style:italic;color:#142230">“Something is shifting in me. I don't know what yet.”</dt><dd class="hand" style="margin:14px 0 0;padding-top:12px;border-top:1px dashed #D9C7AC;font-size:23px;color:#8A5129">Familiar waters.</dd></div>
+<div style="border:1px solid #E2D5C0;border-radius:6px;padding:20px 22px"><dt style="font-size:18px;line-height:1.5;font-style:italic;color:#142230">“I don't want to fix myself. Again.”</dt><dd class="hand" style="margin:14px 0 0;padding-top:12px;border-top:1px dashed #D9C7AC;font-size:23px;color:#8A5129">Not my plan either.</dd></div>
+</dl>
+</div>
+<div style="flex:1 1 380px;min-width:0">
+<img class="bleed" src="/images/wayfinder/man-bow-facing-wind.webp" alt="A man at the bow of a sailboat, face up into the wind, watercolor" style="display:block;width:100%;max-width:540px;height:auto;margin:0 auto">
+</div>
+</div>
+</section>
 
-  function draw() {
-    const wrapper = document.querySelector<HTMLElement>('.wayfinder');
-    const svg = document.querySelector<SVGSVGElement>('.thread-svg');
-    if (!wrapper || !svg) return;
-    if (window.innerWidth < 900) { svg.innerHTML = ''; return; } // desktop-only pass, see top-of-file note
+<!-- FAQ -->
+<section aria-labelledby="faq-h" style="max-width:820px;margin:0 auto;padding:90px 24px 0">
+<p style="margin:0 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600;text-align:center">Questions people ask before they set sail</p>
+<h2 id="faq-h" class="display" style="margin:0 0 28px;font-size:clamp(34px,3.4vw,50px);line-height:1.1;text-align:center">Fair questions</h2>
+<details open style="border-top:1px solid #D9C7AC;padding:18px 4px">
+<summary class="display" style="cursor:pointer;font-size:24px;min-height:44px;display:flex;align-items:center">When does it start, and what happens until then?</summary>
+<p style="margin:10px 0 0;font-size:17px;line-height:1.7;color:#3E4852">We set sail on Sunday, 3 January 2027, when your first lesson arrives. Until then you're not left waiting: Find Your Bearings is yours straight away, and I'll write to you a couple of times in December so you can get ready. [What exactly arrives in December, TBD]</p>
+</details>
+<details style="border-top:1px solid #D9C7AC;padding:18px 4px">
+<summary class="display" style="cursor:pointer;font-size:24px;min-height:44px;display:flex;align-items:center">What if I join after 3 January?</summary>
+<p style="margin:10px 0 0;font-size:17px;line-height:1.7;color:#3E4852">You start right away, at your own pace. The launch price ends on 3 January; after that the journey costs £69.</p>
+</details>
+<details style="border-top:1px solid #D9C7AC;padding:18px 4px">
+<summary class="display" style="cursor:pointer;font-size:24px;min-height:44px;display:flex;align-items:center">Is this a group programme?</summary>
+<p style="margin:10px 0 0;font-size:17px;line-height:1.7;color:#3E4852">No. A life reset is an inner, personal journey, and this one is yours alone. You won't be compared with anyone or asked to share. It's you, the lessons, and me writing to you along the way.</p>
+</details>
+<details style="border-top:1px solid #D9C7AC;padding:18px 4px">
+<summary class="display" style="cursor:pointer;font-size:24px;min-height:44px;display:flex;align-items:center">What if I don't have a specific goal?</summary>
+<p style="margin:10px 0 0;font-size:17px;line-height:1.7;color:#3E4852">Then nothing. Honestly. You don't have to turn up saying “Sophie, here's my life, please make it into a SMART goal.” Part of the point is finding out what actually matters to you right now. You might end up with one clear goal. You might let go of three. You might find out an old goal is still yours after all. None of these is a bad result.</p>
+</details>
+<details style="border-top:1px solid #D9C7AC;padding:18px 4px">
+<summary class="display" style="cursor:pointer;font-size:24px;min-height:44px;display:flex;align-items:center">I've already done a lot of self-development. Is this for me?</summary>
+<p style="margin:10px 0 0;font-size:17px;line-height:1.7;color:#3E4852">Then you probably won't discover a new planet in every exercise. I won't promise that either. But self-knowledge is a bit like cooking: the same ingredients turn into a completely different dish depending on who's cooking, in what order, and what they do with the three things that fell onto the counter halfway through.</p>
+</details>
+<details style="border-top:1px solid #D9C7AC;padding:18px 4px">
+<summary class="display" style="cursor:pointer;font-size:24px;min-height:44px;display:flex;align-items:center">How much time does it take?</summary>
+<p style="margin:10px 0 0;font-size:17px;line-height:1.7;color:#3E4852">A lesson lands every two days, about four weeks in all. [Time per lesson, TBD]. You can go slower. The point isn't to finish fast, it's that something happens along the way.</p>
+</details>
+<details style="border-top:1px solid #D9C7AC;padding:18px 4px">
+<summary class="display" style="cursor:pointer;font-size:24px;min-height:44px;display:flex;align-items:center">What if I fall behind?</summary>
+<p style="margin:10px 0 0;font-size:17px;line-height:1.7;color:#3E4852">You can't, really. There's no race, and nobody to fall behind. The lessons wait in your inbox, the workbook waits too, and you can leave more time between two parts whenever you need it.</p>
+</details>
+<details style="border-top:1px solid #D9C7AC;border-bottom:1px solid #D9C7AC;padding:18px 4px">
+<summary class="display" style="cursor:pointer;font-size:24px;min-height:44px;display:flex;align-items:center">Can I get a refund?</summary>
+<p style="margin:10px 0 0;font-size:17px;line-height:1.7;color:#3E4852">Yes. Your statutory rights apply in full, including the 14-day right to cancel under UK consumer law. Details are in the <a href="#legal">Refund policy</a>. [Final wording to match the Merchant of Record's terms]</p>
+</details>
+</section>
 
-    const startEl = wrapper.querySelector<HTMLElement>('[data-thread-start]');
-    const waypointEls = Array.from(wrapper.querySelectorAll<HTMLElement>('[data-thread-point], [data-thread-waypoint]'));
-    const endEl = wrapper.querySelector<HTMLElement>('[data-thread-end]');
-    if (!startEl || !endEl || waypointEls.length === 0) return;
+<!-- 8 WHAT THIS ISN'T -->
+<section style="max-width:900px;margin:0 auto;padding:90px 24px 40px;text-align:center">
+<p class="hand" style="margin:0;font-size:26px;color:#8A5129">A few things before we set sail</p>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:22px">
+<span style="border:1.5px dashed #8A8F96;border-radius:999px;padding:10px 18px;font-size:16px;color:#3E4852">Not therapy</span>
+<span style="border:1.5px dashed #8A8F96;border-radius:999px;padding:10px 18px;font-size:16px;color:#3E4852">Not a diagnosis</span>
+<span style="border:1.5px dashed #8A8F96;border-radius:999px;padding:10px 18px;font-size:16px;color:#3E4852">Not a personality makeover</span>
+<span style="border:1.5px dashed #8A8F96;border-radius:999px;padding:10px 18px;font-size:16px;color:#3E4852">Not “the one true purpose”</span>
+<span style="border:1.5px dashed #8A8F96;border-radius:999px;padding:10px 18px;font-size:16px;color:#3E4852">Not a “better version of you” project</span>
+</div>
+<p class="display" style="margin:34px 0 0;font-size:clamp(26px,2.6vw,36px);line-height:1.3">You bring your life. I bring a map and a few pencils.<br><em style="color:#1C4F6B">The drawing is yours.</em></p>
+</section>
 
-    const center = (el: HTMLElement): Pt => {
-      const p = pagePos(el, wrapper);
-      return { x: p.x + el.offsetWidth / 2, y: p.y + el.offsetHeight / 2 };
-    };
-    // Start near the boat (left side of the hero image), not its center.
-    const startPos = pagePos(startEl, wrapper);
-    const start: Pt = { x: startPos.x + startEl.offsetWidth * 0.22, y: startPos.y + startEl.offsetHeight * 0.7 };
-    const points: Pt[] = [start, ...waypointEls.map(center), center(endEl)];
+<!-- 9 PHILOSOPHY -->
+<section style="position:relative;max-width:1400px;margin:0 auto;padding:60px 24px 40px">
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:40px">
+<div style="flex:1 1 560px;min-width:0">
+<img class="bleed" src="/images/wayfinder/boarding-sailboat-from-pier.webp" alt="A woman with a backpack stepping from a pier onto a sailboat, watercolor" style="display:block;width:100%;height:auto">
+</div>
+<div style="flex:1 1 380px;min-width:0;padding-right:20px">
+<p style="margin:0 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600">The philosophy</p>
+<p class="display" style="margin:0;font-size:clamp(34px,3.4vw,52px);line-height:1.1">You don't need the whole map before you begin.</p>
+<p class="display" style="margin:14px 0 0;font-size:clamp(24px,2.2vw,30px);font-style:italic;color:#1C4F6B">You need enough awareness to choose your next step.</p>
+<p style="margin:22px 0 0;font-size:18px;line-height:1.7;color:#3E4852">Life rarely hands us a complete set of coordinates. Sometimes we move with clarity. Sometimes we experiment. Sometimes we discover that the destination we were so set on belongs to a previous version of ourselves. That's allowed. You can change your mind. You can take the scenic route. You can pause without declaring the whole expedition a failure. And yes, you can redraw the map.</p>
+</div>
+</div>
+</section>
 
-    const d = `M ${start.x} ${start.y}${smooth(points)}`;
-    svg.setAttribute('width', String(wrapper.offsetWidth));
-    svg.setAttribute('height', String(wrapper.offsetHeight));
+<!-- ABOUT THE AUTHOR, near the end, centred -->
+<section id="about" style="max-width:760px;margin:0 auto;padding:70px 24px 20px;text-align:center">
+<img class="bleed" src="/images/wayfinder/sophie-portrait-compass.webp" alt="Sophie, a watercolor portrait: copper curls, glasses, a soft grey scarf" style="display:block;width:100%;max-width:340px;height:auto;margin:0 auto">
+<p class="hand" style="margin:-26px 0 0;font-size:38px;color:#8A5129;transform:rotate(-4deg);position:relative">Sophie</p>
+<p style="margin:26px 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#8A5129;font-weight:600">Who's at the helm</p>
+<h2 class="display" style="margin:0;font-size:clamp(38px,4vw,58px);line-height:1.05">Hi, I'm Sophie.</h2>
+<p class="display" style="margin:10px 0 0;font-size:clamp(22px,2vw,28px);font-style:italic;color:#1C4F6B">Story writer, people-teller, endlessly curious about how minds work.</p>
+<p style="margin:20px auto 0;max-width:620px;font-size:18px;line-height:1.7;color:#3E4852">Over the years I've met all sorts of methods and ideas, and what keeps pulling me back is how we actually work. Why do we want something? Why don't we do it? Why do we change something only long after we've known we should? And why does a game that seems completely pointless sometimes produce a perfectly sensible thought?</p>
+<p style="margin:14px auto 0;max-width:620px;font-size:18px;line-height:1.7;color:#3E4852">That's why I love this programme. You don't have to face these questions with a grim face. You're allowed to play.</p>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:26px">
+<div style="border:1px solid #E2D5C0;border-radius:6px;padding:14px 20px;min-width:150px"><p class="display" style="margin:0;font-size:38px;line-height:1;font-weight:600">10 years</p><p style="margin:6px 0 0;font-size:14px;color:#4A5560">of running this programme</p></div>
+<div style="border:1px solid #E2D5C0;border-radius:6px;padding:14px 20px;min-width:150px"><p class="display" style="margin:0;font-size:38px;line-height:1;font-weight:600">100+</p><p style="margin:6px 0 0;font-size:14px;color:#4A5560">people have taken the journey</p></div>
+</div>
+</section>
 
-    const path = svg.querySelector('path') ?? document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute('d', d);
-    path.setAttribute('fill', 'none');
-    path.setAttribute('stroke', 'var(--hl-copper, #B87345)');
-    path.setAttribute('stroke-width', '1.75');
-    path.setAttribute('stroke-linecap', 'round');
-    path.setAttribute('stroke-dasharray', '1 7');
-    if (!path.parentElement) svg.appendChild(path);
+<!-- CLOSING LETTER -->
+<section style="max-width:720px;margin:0 auto;padding:70px 24px 20px">
+<div style="background:#FBF1E3;box-shadow:0 18px 44px rgba(20,34,48,.14);padding:44px 48px 40px;transform:rotate(-0.8deg);border-radius:2px">
+<p class="hand" style="margin:0;font-size:24px;color:#8A5129">One more thing, before you click.</p>
+<p style="margin:18px 0 0;font-size:18px;line-height:1.75;color:#2E3842">I don't know who you are. We haven't really met. And even if we had, I still wouldn't know better than you what's good for you. I think that matters.</p>
+<p style="margin:14px 0 0;font-size:18px;line-height:1.75;color:#2E3842">So this isn't a recipe for how to live. I bring the questions. The answers are yours, and they might surprise you. I think that's good news.</p>
+<p class="hand" style="margin:26px 0 0;font-size:24px;color:#4A5560">With love,</p>
+<p class="hand" style="margin:0;font-size:46px;line-height:1;color:#142230;transform:rotate(-3deg);transform-origin:left">Sophie</p>
+</div>
+</section>
 
-    svg.querySelectorAll('circle[data-thread-dot]').forEach((n) => n.remove());
-    // Only dot the real image points, not the invisible waypoint markers.
-    const imagePoints = Array.from(wrapper.querySelectorAll<HTMLElement>('[data-thread-point]')).map(center);
-    for (const p of imagePoints) {
-      const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-      c.setAttribute('data-thread-dot', '');
-      c.setAttribute('cx', String(p.x));
-      c.setAttribute('cy', String(p.y));
-      c.setAttribute('r', '3');
-      c.setAttribute('fill', 'var(--hl-copper, #B87345)');
-      c.setAttribute('opacity', '0.8');
-      svg.appendChild(c);
-    }
-  }
+<!-- 10 FINAL CTA -->
+<section style="position:relative;max-width:1180px;margin:0 auto;padding:60px 24px 100px;display:flex;flex-wrap:wrap;align-items:center;gap:56px">
+<div class="lift" style="flex:1 1 460px;min-width:0">
+<h2 class="display" style="margin:0;font-size:clamp(40px,4.4vw,64px);line-height:1.02">Your life doesn't need a dramatic plot twist.</h2>
+<p class="display" style="margin:16px 0 0;font-size:clamp(24px,2.2vw,32px);font-style:italic;color:#1C4F6B">Just a little room to reconsider what's next.</p>
+<p class="hand" style="margin:26px 0 0;font-size:28px;color:#8A5129;line-height:1.3">Start with a question. Follow a curiosity. Find your bearings.</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;align-items:center">
+<a class="btn" href="#journey" style="background:#142230;color:#FBF1E3;text-decoration:none;padding:16px 28px;border-radius:999px;font-weight:600;font-size:18px;min-height:52px;box-sizing:border-box;display:inline-flex;align-items:center">Start for £39</a>
+<a class="btn" href="#bearings" style="background:transparent;color:#142230;text-decoration:none;padding:14px 26px;border-radius:999px;font-weight:600;font-size:17px;min-height:52px;box-sizing:border-box;display:inline-flex;align-items:center;border:1.5px solid #142230">Or try the free taste</a>
+</div>
+</div>
+<div class="lift" style="flex:1 1 360px;min-width:0">
+<img class="bleed" src="/images/wayfinder/helm-woman-wind-portrait.webp" alt="A woman in a blue coat at a ship's wheel, hair in the wind, calm face, watercolor" style="display:block;width:100%;max-width:420px;height:auto;margin:0 auto">
+</div>
+</section>
 
-  function init() {
-    draw();
-    const wrapper = document.querySelector<HTMLElement>('.wayfinder');
-    if (wrapper) new ResizeObserver(() => draw()).observe(wrapper);
-    window.addEventListener('load', draw);
-    window.addEventListener('resize', draw);
-    (document as any).fonts?.ready?.then(draw);
-  }
+<!-- FOOTER -->
+<footer id="legal" style="border-top:1px solid #E2D5C0;padding:36px 24px 48px">
+<div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;font-size:15px;color:#4A5560">
+<div style="flex:1 1 360px;min-width:0">
+<p style="margin:0"><span class="display" style="font-size:19px;color:#142230">RECHART · The Wayfinder Method</span> by Art of Small Steps</p>
+<p style="margin:10px 0 0;font-size:14px;line-height:1.6">[Legal business name] · [Registered address] · [Registration / tax number]<br>Contact: <a href="#legal">[hello@artofsmallsteps.com]</a></p>
+<p style="margin:10px 0 0;font-size:14px;line-height:1.6">Orders are processed by [Merchant of Record], who is the reseller of record. RECHART is a self-guided educational programme, not therapy or medical advice.</p>
+</div>
+<nav aria-label="Legal" style="display:flex;gap:10px 22px;flex-wrap:wrap;align-content:flex-start"><a href="#legal">Terms</a><a href="#legal">Refund policy</a><a href="#legal">Privacy</a><a href="#legal">Cookies</a><a href="#legal">Contact</a></nav>
+</div>
+</footer>
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-</script>
+</div>
 
-<style>
-  /* Harbor Light — the RECHART-specific nautical layer on top of the site's
-     King's Cross Light palette. See /brand/visual/VISUAL-DIRECTION.md. */
-  .wayfinder {
-    --hl-contour: #142230;
-    --hl-blue: #1C4F6B;
-    --hl-blue-dusty: #7FA8C9;
-    --hl-copper: #B87345;
-    --hl-cream: #F7F5F0;
-    /* Measured average corner color of the 5 landing images (ImageMagick,
-       2026-11-01) — keep this matched to whatever paper tone the images
-       use, or they go back to reading as boxes instead of sitting flush. */
-    --hl-paper: #FBF1E3;
-    --hl-paper-deep: #F3E3CB;
-    font-family: var(--font-serif);
-    color: var(--hl-contour);
-    position: relative;
-    z-index: 0; /* establishes a stacking context so the z-index:-1 decor
-                   layer below stays scoped to THIS element, painted above
-                   its own background instead of escaping to the root and
-                   disappearing behind it */
-    background: var(--hl-paper);
-    /* Bleed to the edges of Layout's <main> padding so the page background
-       itself matches the images — no seam between page and picture. */
-    margin: calc(-1 * var(--space-5)) calc(-1 * var(--space-4));
-    padding: var(--space-5) var(--space-4);
-    overflow: clip;
-  }
-
-  .watercolor-decor {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    overflow: clip;
-  }
-  .blob {
-    position: absolute;
-    filter: blur(10px);
-    opacity: 0.55;
-  }
-  .blob-a { width: 280px; top: 40px; right: 2%; }
-  .blob-b { width: 220px; top: 900px; left: 1%; opacity: 0.5; }
-  .blob-c { width: 240px; top: 2300px; right: 1%; opacity: 0.5; }
-  .blob-d { width: 260px; top: 3500px; left: 2%; opacity: 0.45; }
-  .dots { position: absolute; width: 220px; opacity: 0.75; }
-  .dots-a { top: 540px; left: 4%; }
-  .dots-b { top: 1850px; right: 4%; }
-
-  .thread-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    pointer-events: none;
-    overflow: visible;
-  }
-
-  .thread-wp-row {
-    max-width: 920px;
-    margin: 0 auto;
-    padding: 0 var(--space-4);
-    height: 2px;
-    position: relative;
-  }
-  .thread-wp-row span { position: absolute; top: 0; width: 1px; height: 1px; }
-  .thread-wp-row.wp-right span { right: 0; }
-  .thread-wp-row.wp-left span { left: 0; }
-  @media (max-width: 899px) { .thread-wp-row { display: none; } }
-
-  .eyebrow {
-    font-family: var(--font-sans);
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--hl-copper);
-    margin: 0 0 var(--space-2);
-  }
-
-  .hero {
-    margin: 0 0 var(--space-5);
-  }
-  .hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  .hero-text {
-    max-width: 640px;
-    margin: var(--space-4) auto 0;
-    padding: 0 var(--space-4);
-    text-align: center;
-  }
-  .hero h1 {
-    font-size: clamp(40px, 7vw, 64px);
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    margin: 0 0 var(--space-2);
-    color: var(--hl-blue);
-  }
-  .hero .lede {
-    font-family: var(--font-sans);
-    font-style: italic;
-    font-size: 20px;
-    color: var(--hl-contour);
-    margin: 0 0 var(--space-3);
-  }
-  .hero p {
-    font-family: var(--font-sans);
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--color-text-muted);
-    margin: 0 0 var(--space-2);
-  }
-
-  .btn {
-    display: inline-block;
-    font-family: var(--font-sans);
-    font-size: 15px;
-    padding: var(--space-2) var(--space-3);
-    text-decoration: none;
-    border-radius: var(--radius);
-    margin-top: var(--space-2);
-  }
-  .btn-primary {
-    background: var(--hl-copper);
-    color: var(--hl-cream);
-  }
-  .btn-primary:hover {
-    background: var(--hl-blue);
-    color: var(--hl-cream);
-  }
-
-  .prose {
-    max-width: 640px;
-    margin: 0 auto var(--space-5);
-    padding: var(--space-4);
-    position: relative;
-  }
-  .prose-surface {
-    background: var(--hl-paper-deep);
-    border-radius: var(--radius);
-  }
-  .prose h2 {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1.3;
-    margin: 0 0 var(--space-3);
-    color: var(--hl-blue);
-  }
-  .prose p, .prose ul {
-    font-family: var(--font-sans);
-    font-size: 16px;
-    line-height: 1.7;
-    color: var(--hl-contour);
-    margin: 0 0 var(--space-2);
-  }
-  .prose ul {
-    padding-left: 1.2em;
-  }
-  .prose li {
-    margin-bottom: var(--space-1);
-  }
-  .standout {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 19px;
-    color: var(--hl-blue);
-    margin: var(--space-3) 0 0;
-  }
-
-  /* Scatter images: small off-column photos in the margin beside a prose
-     block, desktop-only (there's no margin to put them in once the layout
-     goes single-column on mobile). */
-  .scatter-img {
-    display: none;
-  }
-  @media (min-width: 900px) {
-    .scatter-img {
-      display: block;
-      position: absolute;
-      top: var(--space-3);
-      width: 170px;
-      height: 170px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    .scatter-right { left: calc(100% + 10px); }
-    .scatter-left { right: calc(100% + 10px); }
-  }
-
-  .bead-cluster {
-    max-width: 920px;
-    margin: 0 auto var(--space-6);
-    padding: var(--space-4) var(--space-4) var(--space-2);
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: var(--space-2);
-  }
-  .bead-arc {
-    position: absolute;
-    inset: var(--space-4);
-    width: calc(100% - 2 * var(--space-4));
-    height: 90px;
-    z-index: 0;
-  }
-  .bead {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 22%;
-    transform: translateY(var(--bead-y, 0));
-  }
-  .bead img {
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
-    object-fit: cover;
-    background: var(--hl-paper);
-    box-shadow: 0 0 0 4px var(--hl-paper);
-  }
-  .bead span {
-    font-family: var(--font-sans);
-    font-size: 12px;
-    line-height: 1.35;
-    text-align: center;
-    color: var(--hl-blue);
-    margin-top: var(--space-1);
-  }
-  @media (max-width: 899px) {
-    .bead-cluster { display: none; }
-  }
-
-  .stages {
-    max-width: 920px;
-    margin: 0 auto var(--space-6);
-    padding: 0 var(--space-4);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-5);
-  }
-  .stage {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: var(--space-4);
-    align-items: center;
-  }
-  .stage-reverse {
-    grid-template-columns: 1fr 220px;
-  }
-  .stage-reverse img { order: 2; }
-  .stage-reverse div { order: 1; }
-  .stage img {
-    width: 100%;
-    height: auto;
-    /* No border-radius/card framing on purpose — these sit on the exact
-       --hl-paper tone baked into the image itself, so they should blend
-       into the page rather than read as a cropped photo. */
-  }
-  .stage-num {
-    font-family: var(--font-sans);
-    font-size: 13px;
-    color: var(--hl-copper);
-    letter-spacing: 0.08em;
-    margin: 0 0 4px;
-  }
-  .stage h3 {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0 0 var(--space-2);
-    color: var(--hl-blue);
-  }
-  .stage p {
-    font-family: var(--font-sans);
-    font-size: 15.5px;
-    line-height: 1.65;
-    color: var(--hl-contour);
-    margin: 0 0 var(--space-1);
-  }
-
-  .portrait-divider {
-    max-width: 420px;
-    margin: 0 auto var(--space-6);
-    padding: 0 var(--space-4);
-    text-align: center;
-  }
-  .portrait-divider img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto var(--space-3);
-    display: block;
-  }
-
-  .taste {
-    max-width: 920px;
-    margin: 0 auto var(--space-6);
-    padding: var(--space-4);
-    background: var(--hl-contour);
-    border-radius: var(--radius);
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: var(--space-4);
-    align-items: center;
-  }
-  .taste-image {
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius);
-  }
-  .taste .eyebrow { color: var(--hl-blue-dusty); }
-  .taste h2 {
-    font-size: 28px;
-    font-weight: 400;
-    color: var(--hl-cream);
-    margin: 0 0 var(--space-2);
-  }
-  .taste p {
-    font-family: var(--font-sans);
-    font-size: 16px;
-    line-height: 1.7;
-    color: var(--hl-blue-dusty);
-    margin: 0 0 var(--space-2);
-  }
-  .taste .fine-print {
-    font-size: 13px;
-    opacity: 0.85;
-    margin-top: var(--space-2);
-  }
-  .taste .btn-primary {
-    background: var(--hl-copper);
-  }
-
-  .pricing {
-    max-width: 640px;
-    margin: 0 auto var(--space-6);
-    padding: var(--space-4);
-    text-align: center;
-    border: 1px solid var(--hl-blue-dusty);
-    border-radius: var(--radius);
-  }
-  .pricing h2 {
-    font-size: 28px;
-    font-weight: 400;
-    margin: 0 0 var(--space-2);
-    color: var(--hl-blue);
-  }
-  .pricing p {
-    font-family: var(--font-sans);
-    font-size: 16px;
-    line-height: 1.7;
-    color: var(--hl-contour);
-    margin: 0 0 var(--space-2);
-  }
-  .price {
-    font-family: var(--font-sans);
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: var(--space-2);
-    margin: var(--space-3) 0;
-  }
-  .price-launch {
-    font-size: 40px;
-    color: var(--hl-copper);
-  }
-  .price-full {
-    font-size: 15px;
-    color: var(--color-text-muted);
-    text-decoration: line-through;
-  }
-
-  .boarding {
-    max-width: 920px;
-    margin: 0 auto var(--space-5);
-    padding: 0 var(--space-4);
-  }
-  .boarding img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius);
-  }
-
-  .final-cta {
-    max-width: 560px;
-    margin: 0 auto var(--space-5);
-    padding: var(--space-4);
-    text-align: center;
-  }
-  .final-cta h2 {
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--hl-blue);
-    margin: 0 0 var(--space-3);
-  }
-  .final-cta .tagline {
-    font-family: var(--font-sans);
-    font-size: 13px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    margin-top: var(--space-3);
-  }
-
-  @media (max-width: 640px) {
-    .hero { margin-inline: calc(-1 * var(--space-2)); }
-    .stage, .stage-reverse { grid-template-columns: 1fr; }
-    .stage-reverse img, .stage-reverse div { order: initial; }
-    .stage img { max-width: 200px; margin: 0 auto; }
-    .taste { grid-template-columns: 1fr; text-align: center; }
-    .taste-image { max-width: 160px; margin: 0 auto; }
-  }
-</style>
+    <script is:inline>
+      // Stage cards: move the "You are here" seal, swap the ship's log page,
+      // and on phones (CSS order) drop the log page right under the tapped card.
+      (function () {
+        var labels = ['Stage 0 · free taste', 'Stage 1 · lessons 1–6', 'Stage 2 · lessons 7–12', 'Stage 3 · lessons 13–15'];
+        var cards = document.querySelectorAll('[data-stage]');
+        var panel = document.querySelector('.log-panel');
+        var label = document.getElementById('log-label');
+        cards.forEach(function (card) {
+          card.addEventListener('click', function () {
+            var n = card.getAttribute('data-stage');
+            cards.forEach(function (c) { c.setAttribute('aria-pressed', String(c === card)); });
+            document.querySelectorAll('[data-show]').forEach(function (el) {
+              el.hidden = el.getAttribute('data-show') !== n;
+            });
+            label.textContent = labels[n];
+            panel.style.setProperty('--log-order', String(n * 2 + 1));
+          });
+        });
+        // Email signup is not connected yet: keep the preview from reloading.
+        var form = document.querySelector('[data-preview-form]');
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          form.insertAdjacentHTML('afterend', '<p style="margin:12px 0 0;font-size:15px;color:#1C4F6B">Thank you! (Preview: the email signup is not connected yet.)</p>');
+        }, { once: true });
+      })();
+    </script>
+  </body>
+</html>
