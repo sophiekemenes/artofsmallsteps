@@ -69,6 +69,80 @@ style = style.replace("var(--body,'Source Sans 3',system-ui,sans-serif)", "'Lora
 style = style.replace("var(--hand,'Caveat',cursive)", "'Shadows Into Light Two',cursive")
 style += "[data-show][hidden]{display:none}\n"
 
+# Exit-intent popup (Sophie, 2026-11-02): page behaviour rather than canvas content, so it lives here.
+# Offers the free first stage to someone leaving before they reached the bottle signup.
+# Desktop: pointer leaves through the top of the window. Phones: a fast scroll back up.
+# At most once per visit, never after the #bearings section was seen or a form was sent.
+# Add ?popup to the URL to see it straight away.
+popup = """
+    <dialog id="exit-popup" aria-labelledby="exit-popup-h">
+      <button type="button" class="exit-close" aria-label="Close" data-close>&times;</button>
+      <img src="/images/wayfinder/message-in-bottle.webp" alt="" class="exit-img" />
+      <p class="hand" style="margin:0;font-size:24px;color:#8A5129">Before you drift off…</p>
+      <h2 id="exit-popup-h" class="display" style="margin:4px 0 0;font-size:clamp(30px,4vw,40px);line-height:1.1">Take a message in a bottle with you.</h2>
+      <p style="margin:14px 0 0;font-size:17px;line-height:1.65;color:#3E4852">A five-minute game for your imagination, and the first stage of the Wayfinder Method. Free. Leave your email and I'll send you the bottle. The rest of this page will still be here whenever you want it. (Or never. I'll survive.)</p>
+      <form id="exit-form" style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px">
+        <label style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#142230">Your email
+          <input type="email" required placeholder="you@example.com" style="font:inherit;font-weight:400;font-size:17px;padding:13px 16px;border:1.5px solid #142230;border-radius:999px;background:#FFF9F0;color:#142230;min-height:48px;box-sizing:border-box" />
+        </label>
+        <button type="submit" class="btn" style="align-self:flex-end;background:#142230;color:#FBF1E3;border:0;padding:0 26px;border-radius:999px;font:inherit;font-weight:600;font-size:17px;min-height:48px;cursor:pointer">Send me the bottle</button>
+      </form>
+      <p style="margin:12px 0 0;font-size:13px;color:#4A5560">You can unsubscribe with one click, any time.</p>
+      <button type="button" data-close style="margin-top:10px;background:none;border:0;padding:8px 0;min-height:44px;font:inherit;font-size:15px;color:#4A5560;text-decoration:underline;cursor:pointer">No thanks, I'll keep looking around</button>
+    </dialog>
+
+    <script is:inline>
+      (function () {
+        var dlg = document.getElementById('exit-popup');
+        if (!dlg || !dlg.showModal) return;
+        var KEY = 'rechart-exit-popup';
+        var done = false, start = Date.now();
+        try { if (sessionStorage.getItem(KEY)) done = true; } catch (e) {}
+        var bearings = document.getElementById('bearings');
+        function reachedBearings() {
+          return bearings && bearings.getBoundingClientRect().top < window.innerHeight * 0.7;
+        }
+        function open() {
+          if (done || reachedBearings()) { if (reachedBearings()) done = true; return; }
+          done = true;
+          try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
+          dlg.showModal();
+        }
+        function stop() { done = true; }
+        // someone who has seen the bottle signup, or sent a form, never gets the popup
+        document.addEventListener('submit', function (e) { if (e.target.id !== 'exit-form') stop(); }, true);
+        // desktop: the pointer leaves through the top edge (towards the tabs or the address bar)
+        document.addEventListener('mouseout', function (e) {
+          if (!e.relatedTarget && e.clientY <= 0 && Date.now() - start > 8000) open();
+        });
+        // phones: a quick scroll back up after reading a while
+        var lastY = window.scrollY, lastT = Date.now();
+        window.addEventListener('scroll', function () {
+          var y = window.scrollY, t = Date.now();
+          if (reachedBearings()) stop();
+          if (matchMedia('(pointer: coarse)').matches && t - start > 20000 && y > 600 && lastY - y > 250 && t - lastT < 400) open();
+          if (t - lastT > 150) { lastY = y; lastT = t; }
+        }, { passive: true });
+        dlg.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { dlg.close(); }); });
+        dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+        // the signup is not connected yet: thank instead of sending
+        document.getElementById('exit-form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          this.outerHTML = '<p style="margin:20px 0 0;font-size:17px;color:#1C4F6B">Thank you! (Preview: the email signup is not connected yet.)</p>';
+        });
+        if (/[?&]popup\\b/.test(location.search)) setTimeout(open, 600);
+      })();
+    </script>"""
+
+popup_style = """
+#exit-popup{max-width:520px;width:calc(100% - 32px);box-sizing:border-box;border:0;border-radius:6px;padding:30px 30px 18px;background:#FFF8EE;color:#142230;box-shadow:0 30px 70px rgba(5,14,24,.35);font-family:'Lora',Georgia,serif}
+#exit-popup::backdrop{background:rgba(20,34,48,.45)}
+#exit-popup .exit-img{display:block;width:180px;height:auto;margin:-6px auto 10px;-webkit-mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 70% 70% at 50% 50%,#000 55%,transparent 100%)}
+#exit-popup .exit-close{position:absolute;top:8px;right:8px;width:44px;height:44px;border:0;background:none;font-size:30px;line-height:1;color:#4A5560;cursor:pointer}
+#exit-popup .exit-close:focus-visible,#exit-popup [data-close]:focus-visible{outline:3px solid #1C4F6B;outline-offset:2px}
+"""
+style += popup_style
+
 page = f"""---
 // RECHART / The Wayfinder Method sales landing page.
 // Generated from the approved Design canvas "RECHART landing wireframe"
@@ -108,6 +182,7 @@ page = f"""---
   </head>
   <body>
 {body}
+{popup}
 
     <script is:inline>
       // Stage cards: move the "You are here" seal, swap the ship's log page,
