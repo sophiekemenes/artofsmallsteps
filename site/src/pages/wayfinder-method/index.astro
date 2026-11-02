@@ -9,7 +9,14 @@ import Layout from '../../layouts/Layout.astro';
 // This is an edited English draft, not a verified Sophie-voice pass — she
 // should still read it in her own voice before it's final.
 // Images: brand/visual/landing-images/ (ChatGPT-generated, Harbor Light
-// style), compressed to webp in /public/images/wayfinder/.
+// style), compressed to webp in /public/images/wayfinder/. Batch 2 (people
+// and scenes) added 2026-11-02 — see that README for the full catalogue.
+// Deliberately NOT used: pier-feet-over-water-wide.webp (has a ladder in
+// frame — the cube/ladder/lion test is a core, untouchable brand element
+// per RECHART.md, and a decorative ladder here risks pre-empting or
+// confusing it before someone's actually taken the test) and
+// helm-closeup-crop.webp (misleading name, no storm in it, redundant with
+// the portrait crop of the same scene).
 // Structure + pricing per /brand/product/RECHART.md and COORDINATION.md
 // (final decision 2026-11-01): Find Your Bearings is a free taste embedded
 // on this page, and also stage 1 of the paid package — not a separate funnel.
@@ -18,6 +25,19 @@ import Layout from '../../layouts/Layout.astro';
 // of the 5 landing images (sampled with ImageMagick, 2026-11-01): ~#FBF1E3.
 // Must stay matched to whatever paper tone future image batches use, or the
 // images will read as boxes again instead of sitting flush on the page.
+//
+// DESKTOP-ONLY PASS (2026-11-02, per Sophie's request): this round adds (1)
+// many more images scattered through the sections, (2) a bead cluster where
+// the four Wayfinder Method parts visually sit on a short static arc (not
+// the full-page thread — see note by .bead-cluster below for why), and (3)
+// more thread waypoints so the long thread weaves around text blocks
+// instead of running close to straight. Mobile is NOT reworked yet — the
+// scatter images and bead cluster are desktop-only (hidden under 900px) on
+// purpose, because a winding desktop path and scattered off-column images
+// don't translate directly to a 390px-wide screen; that geometry needs its
+// own simpler pass once this desktop version is approved, the same way
+// criticalthinkinghu's ArcConnector.tsx has entirely separate wide/narrow
+// logic rather than one shared geometry.
 const PRICE_FULL = '£69';
 const PRICE_LAUNCH = '£39';
 ---
@@ -58,8 +78,17 @@ const PRICE_LAUNCH = '£39';
       </div>
     </section>
 
+    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+
     <!-- RECOGNITION -->
-    <section class="prose">
+    <section class="prose prose-scatter">
+      <img
+        data-thread-point
+        class="scatter-img scatter-right"
+        src="/images/wayfinder/woman-sitting-thinking-bun.webp"
+        alt="A woman sitting cross-legged, chin on hand, looking up and away, watercolor illustration"
+        width="500" height="500"
+      />
       <h2>Not in a storm. Just stuck.</h2>
       <p>Nothing's really wrong. Nothing's really right either.</p>
       <p>
@@ -75,8 +104,17 @@ const PRICE_LAUNCH = '£39';
       <p>You don't need a crisis to change direction. You don't even need an answer yet. You need a different question.</p>
     </section>
 
+    <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
+
     <!-- REFRAME -->
-    <section class="prose prose-surface">
+    <section class="prose prose-surface prose-scatter">
+      <img
+        data-thread-point
+        class="scatter-img scatter-left"
+        src="/images/wayfinder/man-wiping-foggy-window.webp"
+        alt="A man seen from behind wiping a foggy window clear, watercolor illustration"
+        width="500" height="500"
+      />
       <h2>You don't need to fix your life. You need to reconnect with it.</h2>
       <p>
         A reset isn't starting over. It's stepping back far enough to actually see what's
@@ -90,6 +128,8 @@ const PRICE_LAUNCH = '£39';
       <p class="standout">This is not a five-step plan to become your best self.<br>Your best self has probably had enough meetings already.</p>
     </section>
 
+    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+
     <!-- METHOD -->
     <section class="prose">
       <p class="eyebrow">The method</p>
@@ -101,6 +141,39 @@ const PRICE_LAUNCH = '£39';
         something you actually do.
       </p>
     </section>
+
+    <!-- BEAD CLUSTER — the four parts riding a short arc of their own.
+         NOT wired into the page-long thread script: that thread is built by
+         measuring images in DOM order and smoothing a curve through them,
+         which works for a vertical sequence of far-apart points, not four
+         tightly clustered circles that want a specific tidy wave shape.
+         Giving this its own small static SVG (hand-tuned to match the bead
+         offsets below) is simpler and more reliable than forcing one
+         geometry function to do both jobs. -->
+    <section class="bead-cluster">
+      <svg class="bead-arc" viewBox="0 0 400 90" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M 20,30 C 60,85 100,85 140,45 C 170,15 190,10 210,35 C 235,65 260,70 285,40 C 310,10 340,10 380,32"
+          fill="none" stroke="var(--hl-copper)" stroke-width="1.75" stroke-linecap="round" stroke-dasharray="1 7" />
+      </svg>
+      <div class="bead" style="--bead-y: -18px;">
+        <img src="/images/wayfinder/sextant.webp" alt="" width="200" height="200" />
+        <span>Find Your Bearings</span>
+      </div>
+      <div class="bead" style="--bead-y: 20px;">
+        <img src="/images/wayfinder/compass-copper-route.webp" alt="" width="200" height="200" />
+        <span>Wake Up the Inner Navigator</span>
+      </div>
+      <div class="bead" style="--bead-y: -8px;">
+        <img src="/images/wayfinder/map-quill-hand.webp" alt="" width="200" height="200" />
+        <span>Draw Your Other Map</span>
+      </div>
+      <div class="bead" style="--bead-y: 18px;">
+        <img src="/images/wayfinder/anchor-rope-waves.webp" alt="" width="200" height="200" />
+        <span>Stormproof Your Vessel</span>
+      </div>
+    </section>
+
+    <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
 
     <section class="stages">
       <div class="stage">
@@ -117,6 +190,8 @@ const PRICE_LAUNCH = '£39';
         </div>
       </div>
 
+      <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+
       <div class="stage stage-reverse">
         <img data-thread-point src="/images/wayfinder/map-quill-hand.webp" alt="A hand sketching a route onto a map with a quill, watercolor illustration" width="800" height="800" />
         <div>
@@ -130,6 +205,8 @@ const PRICE_LAUNCH = '£39';
           <p>None of it has to be the grand answer. It just has to be worth walking toward.</p>
         </div>
       </div>
+
+      <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
 
       <div class="stage">
         <img data-thread-point src="/images/wayfinder/anchor-rope-waves.webp" alt="An anchor with coiled rope resting against gentle waves, watercolor illustration" width="800" height="800" />
@@ -145,6 +222,14 @@ const PRICE_LAUNCH = '£39';
         </div>
       </div>
     </section>
+
+    <!-- CALM PORTRAIT DIVIDER -->
+    <section class="portrait-divider">
+      <img data-thread-point src="/images/wayfinder/helm-woman-wind-portrait.webp" alt="A woman at a ship's wheel, hair in the wind, calm expression, watercolor illustration" width="500" height="700" />
+      <p class="standout">The answer to the storm isn't a fight.<br>It's a steady hand on the wheel.</p>
+    </section>
+
+    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
 
     <!-- FREE TASTE / FIND YOUR BEARINGS -->
     <section id="find-your-bearings" class="taste">
@@ -162,8 +247,17 @@ const PRICE_LAUNCH = '£39';
       </div>
     </section>
 
+    <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
+
     <!-- FULL JOURNEY / PRICING -->
-    <section class="pricing">
+    <section class="pricing prose-scatter">
+      <img
+        data-thread-point
+        class="scatter-img scatter-left"
+        src="/images/wayfinder/travel-trunk-map-boots.webp"
+        alt="An open travel trunk with a compass rose, map, scarf and worn boots, watercolor illustration"
+        width="500" height="500"
+      />
       <p class="eyebrow">Ready to go further?</p>
       <h2>The Wayfinder Method — full course</h2>
       <p>
@@ -178,8 +272,17 @@ const PRICE_LAUNCH = '£39';
       <p class="standout" style="margin-top: var(--space-3);">Not a personality makeover. Not a universal life recipe.<br>A practical way back into your own life, at a pace you set.</p>
     </section>
 
+    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
+
     <!-- WHO FOR -->
-    <section class="prose prose-surface">
+    <section class="prose prose-surface prose-scatter">
+      <img
+        data-thread-point
+        class="scatter-img scatter-right"
+        src="/images/wayfinder/man-bow-facing-wind.webp"
+        alt="A man at the bow of a sailboat, face up into the wind, watercolor illustration"
+        width="500" height="500"
+      />
       <h2>This is probably for you if —</h2>
       <ul>
         <li>you're functioning fine, but something feels disconnected</li>
@@ -189,6 +292,8 @@ const PRICE_LAUNCH = '£39';
       </ul>
       <p>You don't have to be lost. You just have to be a little curious.</p>
     </section>
+
+    <div class="thread-wp-row wp-left"><span data-thread-waypoint></span></div>
 
     <!-- WHAT IT ISN'T -->
     <section class="prose">
@@ -200,6 +305,8 @@ const PRICE_LAUNCH = '£39';
       <p>It's a space to think, try things, and actually act on what you find.</p>
       <p class="standout">You bring your life. We bring a method. The direction's yours.</p>
     </section>
+
+    <div class="thread-wp-row wp-right"><span data-thread-waypoint></span></div>
 
     <!-- PHILOSOPHY -->
     <section class="prose prose-surface">
@@ -216,6 +323,11 @@ const PRICE_LAUNCH = '£39';
       <p>You can redraw the map. That's the whole point.</p>
     </section>
 
+    <!-- BOARDING / FIRST STEP -->
+    <section class="boarding">
+      <img data-thread-point src="/images/wayfinder/boarding-sailboat-from-pier.webp" alt="A figure in a blue coat stepping from a pier onto a sailboat, watercolor illustration" width="1200" height="800" />
+    </section>
+
     <!-- FINAL CTA -->
     <section class="final-cta">
       <h2>Your life doesn't need a plot twist.<br>Just a bit of room to reconsider what's next.</h2>
@@ -230,10 +342,13 @@ const PRICE_LAUNCH = '£39';
 <script>
   // "Cérnavonal" thread — adapted from criticalthinkinghu's ArcConnector.tsx:
   // a measured, Catmull-Rom-smoothed SVG path that starts at the hero image
-  // and runs down through each [data-thread-point] image to [data-thread-end],
-  // like a continuous thread stitching the page together. This is a plain-JS
-  // port (that component is React) and a first guess at the geometry — Sophie
-  // plans to hand-sketch her own preferred line shape to refine this.
+  // and runs down through each [data-thread-point] image (and invisible
+  // [data-thread-waypoint] markers placed in the margins between sections,
+  // which pull the curve into wider swings so it reads as weaving around
+  // the text blocks rather than running straight down behind them) to
+  // [data-thread-end]. This is a plain-JS port (that component is React)
+  // and a first guess at the geometry — Sophie is sketching her own
+  // preferred line shape by hand to refine this further.
   type Pt = { x: number; y: number };
 
   function pagePos(el: HTMLElement, root: HTMLElement): Pt {
@@ -266,11 +381,12 @@ const PRICE_LAUNCH = '£39';
     const wrapper = document.querySelector<HTMLElement>('.wayfinder');
     const svg = document.querySelector<SVGSVGElement>('.thread-svg');
     if (!wrapper || !svg) return;
+    if (window.innerWidth < 900) { svg.innerHTML = ''; return; } // desktop-only pass, see top-of-file note
 
     const startEl = wrapper.querySelector<HTMLElement>('[data-thread-start]');
-    const pointEls = Array.from(wrapper.querySelectorAll<HTMLElement>('[data-thread-point]'));
+    const waypointEls = Array.from(wrapper.querySelectorAll<HTMLElement>('[data-thread-point], [data-thread-waypoint]'));
     const endEl = wrapper.querySelector<HTMLElement>('[data-thread-end]');
-    if (!startEl || !endEl || pointEls.length === 0) return;
+    if (!startEl || !endEl || waypointEls.length === 0) return;
 
     const center = (el: HTMLElement): Pt => {
       const p = pagePos(el, wrapper);
@@ -279,7 +395,7 @@ const PRICE_LAUNCH = '£39';
     // Start near the boat (left side of the hero image), not its center.
     const startPos = pagePos(startEl, wrapper);
     const start: Pt = { x: startPos.x + startEl.offsetWidth * 0.22, y: startPos.y + startEl.offsetHeight * 0.7 };
-    const points: Pt[] = [start, ...pointEls.map(center), center(endEl)];
+    const points: Pt[] = [start, ...waypointEls.map(center), center(endEl)];
 
     const d = `M ${start.x} ${start.y}${smooth(points)}`;
     svg.setAttribute('width', String(wrapper.offsetWidth));
@@ -295,7 +411,9 @@ const PRICE_LAUNCH = '£39';
     if (!path.parentElement) svg.appendChild(path);
 
     svg.querySelectorAll('circle[data-thread-dot]').forEach((n) => n.remove());
-    for (const p of points.slice(1, -1)) {
+    // Only dot the real image points, not the invisible waypoint markers.
+    const imagePoints = Array.from(wrapper.querySelectorAll<HTMLElement>('[data-thread-point]')).map(center);
+    for (const p of imagePoints) {
       const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       c.setAttribute('data-thread-dot', '');
       c.setAttribute('cx', String(p.x));
@@ -369,6 +487,8 @@ const PRICE_LAUNCH = '£39';
   .blob-c { width: 240px; top: 2300px; right: 1%; opacity: 0.5; }
   .blob-d { width: 260px; top: 3500px; left: 2%; opacity: 0.45; }
   .dots { position: absolute; width: 220px; opacity: 0.75; }
+  .dots-a { top: 540px; left: 4%; }
+  .dots-b { top: 1850px; right: 4%; }
 
   .thread-svg {
     position: absolute;
@@ -378,8 +498,18 @@ const PRICE_LAUNCH = '£39';
     pointer-events: none;
     overflow: visible;
   }
-  .dots-a { top: 540px; left: 4%; }
-  .dots-b { top: 1850px; right: 4%; }
+
+  .thread-wp-row {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 var(--space-4);
+    height: 2px;
+    position: relative;
+  }
+  .thread-wp-row span { position: absolute; top: 0; width: 1px; height: 1px; }
+  .thread-wp-row.wp-right span { right: 0; }
+  .thread-wp-row.wp-left span { left: 0; }
+  @media (max-width: 899px) { .thread-wp-row { display: none; } }
 
   .eyebrow {
     font-family: var(--font-sans);
@@ -448,6 +578,7 @@ const PRICE_LAUNCH = '£39';
     max-width: 640px;
     margin: 0 auto var(--space-5);
     padding: var(--space-4);
+    position: relative;
   }
   .prose-surface {
     background: var(--hl-paper-deep);
@@ -479,6 +610,72 @@ const PRICE_LAUNCH = '£39';
     font-size: 19px;
     color: var(--hl-blue);
     margin: var(--space-3) 0 0;
+  }
+
+  /* Scatter images: small off-column photos in the margin beside a prose
+     block, desktop-only (there's no margin to put them in once the layout
+     goes single-column on mobile). */
+  .scatter-img {
+    display: none;
+  }
+  @media (min-width: 900px) {
+    .scatter-img {
+      display: block;
+      position: absolute;
+      top: var(--space-3);
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .scatter-right { left: calc(100% + 10px); }
+    .scatter-left { right: calc(100% + 10px); }
+  }
+
+  .bead-cluster {
+    max-width: 920px;
+    margin: 0 auto var(--space-6);
+    padding: var(--space-4) var(--space-4) var(--space-2);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+  .bead-arc {
+    position: absolute;
+    inset: var(--space-4);
+    width: calc(100% - 2 * var(--space-4));
+    height: 90px;
+    z-index: 0;
+  }
+  .bead {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+    transform: translateY(var(--bead-y, 0));
+  }
+  .bead img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--hl-paper);
+    box-shadow: 0 0 0 4px var(--hl-paper);
+  }
+  .bead span {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    line-height: 1.35;
+    text-align: center;
+    color: var(--hl-blue);
+    margin-top: var(--space-1);
+  }
+  @media (max-width: 899px) {
+    .bead-cluster { display: none; }
   }
 
   .stages {
@@ -526,6 +723,21 @@ const PRICE_LAUNCH = '£39';
     line-height: 1.65;
     color: var(--hl-contour);
     margin: 0 0 var(--space-1);
+  }
+
+  .portrait-divider {
+    max-width: 420px;
+    margin: 0 auto var(--space-6);
+    padding: 0 var(--space-4);
+    text-align: center;
+  }
+  .portrait-divider img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto var(--space-3);
+    display: block;
   }
 
   .taste {
@@ -604,6 +816,17 @@ const PRICE_LAUNCH = '£39';
     font-size: 15px;
     color: var(--color-text-muted);
     text-decoration: line-through;
+  }
+
+  .boarding {
+    max-width: 920px;
+    margin: 0 auto var(--space-5);
+    padding: 0 var(--space-4);
+  }
+  .boarding img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
   }
 
   .final-cta {
