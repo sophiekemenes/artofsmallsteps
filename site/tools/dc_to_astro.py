@@ -32,6 +32,7 @@ blobs = {
     "91d3547b37fdf198b746c26d52611f12": "man-bow-facing-wind",
     "2e3230be8c54bef262815563918a3efd": "sophie-portrait-compass",
     "790857a0c9c439ea7523e99c74e79577": "message-in-bottle",
+    "47bc6627a7444bf5f9d72920868ed497": "sophie-first-mate-oar",
 }
 for blob, name in blobs.items():
     body = body.replace(f"/_blob/{blob}", f"/images/wayfinder/{name}.webp")
