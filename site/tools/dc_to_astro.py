@@ -58,7 +58,15 @@ def block_if(m):
 body = re.sub(r'<sc-if value="\{\{a(\d)\}\}" hint-placeholder-val="\{\{ \w+ \}\}">', block_if, body)
 body = body.replace("</sc-if>", "</div>")
 
-body = body.replace('<form style=', '<form data-preview-form style=')
+# The canvas holds a look-alike signup form; the page gets the real EmailOctopus embed in its place.
+embed = '''<!-- EmailOctopus inline form: renders next to its script tag. One embed per page only (EmailOctopus rule), so the exit popup sends people here instead. -->
+<div class="eo-signup" style="margin-top:28px">
+<script is:inline async src="https://eocampaign1.com/form/5dfbd17a-d776-11f1-813e-05e04085d417.js" data-form="5dfbd17a-d776-11f1-813e-05e04085d417"></script>
+</div>
+'''
+body, n = re.subn(r'<form style=.*?</form>\n<p [^>]*>\[Privacy line[^<]*</p>\n', lambda m: embed, body, flags=re.S)
+if n != 1:
+    sys.exit('signup form in the canvas not found: update the embed swap in dc_to_astro.py')
 
 leftover = re.findall(r"\{\{.*?\}\}|<sc-|\{|\}", body)
 if leftover:
@@ -81,13 +89,7 @@ popup = """
       <p class="hand" style="margin:0;font-size:24px;color:#8A5129">Before you drift off…</p>
       <h2 id="exit-popup-h" class="display" style="margin:4px 0 0;font-size:clamp(30px,4vw,40px);line-height:1.1">Take a message in a bottle with you.</h2>
       <p style="margin:14px 0 0;font-size:17px;line-height:1.65;color:#3E4852">A five-minute game for your imagination, and the first stage of the Wayfinder Method. Free. Leave your email and I'll send you the bottle. The rest of this page will still be here whenever you want it.</p>
-      <form id="exit-form" style="margin-top:20px;display:flex;flex-wrap:wrap;gap:10px">
-        <label style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#142230">Your email
-          <input type="email" required placeholder="you@example.com" style="font:inherit;font-weight:400;font-size:17px;padding:13px 16px;border:1.5px solid #142230;border-radius:999px;background:#FFF9F0;color:#142230;min-height:48px;box-sizing:border-box" />
-        </label>
-        <button type="submit" class="btn" style="align-self:flex-end;background:#142230;color:#FBF1E3;border:0;padding:0 26px;border-radius:999px;font:inherit;font-weight:600;font-size:17px;min-height:48px;cursor:pointer">Send me the bottle</button>
-      </form>
-      <p style="margin:12px 0 0;font-size:13px;color:#4A5560">You can unsubscribe with one click, any time.</p>
+      <a href="#bearings" id="exit-go" class="btn" style="display:inline-flex;align-items:center;margin-top:20px;background:#142230;color:#FBF1E3;padding:0 26px;border-radius:999px;font-weight:600;font-size:17px;min-height:48px;text-decoration:none">Send me the bottle</a>
       <button type="button" data-close style="margin-top:10px;background:none;border:0;padding:8px 0;min-height:44px;font:inherit;font-size:15px;color:#4A5560;text-decoration:underline;cursor:pointer">No thanks, I'll keep looking around</button>
     </dialog>
 
@@ -110,7 +112,7 @@ popup = """
         }
         function stop() { done = true; }
         // someone who has seen the bottle signup, or sent a form, never gets the popup
-        document.addEventListener('submit', function (e) { if (e.target.id !== 'exit-form') stop(); }, true);
+        document.addEventListener('submit', stop, true);
         // desktop: the pointer leaves through the top edge (towards the tabs or the address bar)
         document.addEventListener('mouseout', function (e) {
           if (!e.relatedTarget && e.clientY <= 0 && Date.now() - start > 8000) open();
@@ -125,10 +127,13 @@ popup = """
         }, { passive: true });
         dlg.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', function () { dlg.close(); }); });
         dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
-        // the signup is not connected yet: thank instead of sending
-        document.getElementById('exit-form').addEventListener('submit', function (e) {
+        // one EmailOctopus embed per page: the popup closes and takes people to the bottle signup
+        document.getElementById('exit-go').addEventListener('click', function (e) {
           e.preventDefault();
-          this.outerHTML = '<p style="margin:20px 0 0;font-size:17px;color:#1C4F6B">Thank you! (Preview: the email signup is not connected yet.)</p>';
+          dlg.close();
+          document.getElementById('bearings').scrollIntoView({ block: 'start' });
+          var f = document.querySelector('#bearings input[type="email"]');
+          if (f) f.focus({ preventScroll: true });
         });
         if (/[?&]popup\\b/.test(location.search)) setTimeout(open, 600);
       })();
@@ -178,6 +183,29 @@ style += """
 #aboard:hover{color:#142230;background:#FBF1E3;border-color:#8A5129}
 #aboard:hover svg{fill:#8A5129}
 @media (prefers-reduced-motion:reduce){#aboard{transition:none}}
+
+/* EmailOctopus form, dressed like the rest of the page (its own words stay untouched) */
+.eo-signup .inline-container{max-width:none !important;margin:0 !important;padding:0 !important;background:none !important;border:0 !important;box-shadow:none !important;font-family:inherit !important}
+.eo-signup .inline-container > div,.eo-signup .form-container,.eo-signup .emailoctopus-form-wrapper{max-width:none !important;width:auto !important;margin:0 !important;padding:0 !important;background:none !important}
+.eo-signup .main-form{display:flex !important;flex-wrap:wrap;gap:10px;align-items:stretch}
+.eo-signup [eo-form-fields-container]{flex:1 1 260px;min-width:0}
+.eo-signup .emailoctopus-form-row{margin:0 !important}
+.eo-signup input.form-control{width:100% !important;font:inherit !important;font-weight:400 !important;font-size:17px !important;padding:13px 18px !important;height:auto !important;min-height:48px !important;border:1.5px solid #142230 !important;border-radius:999px !important;background:#FFF9F0 !important;color:#142230 !important;box-sizing:border-box !important;box-shadow:none !important}
+.eo-signup input.form-control::placeholder{color:#6B747C !important}
+.eo-signup input.form-control:focus{outline:3px solid #1C4F6B !important;outline-offset:2px}
+.eo-signup input[type=submit]{flex:0 0 auto;width:auto !important;margin:0 !important;font:inherit !important;font-weight:600 !important;font-size:17px !important;background:#B87345 !important;color:#FFF8EE !important;border:0 !important;border-radius:999px !important;padding:13px 28px !important;min-height:48px !important;cursor:pointer;box-shadow:none !important;transition:background .2s ease}
+.eo-signup input[type=submit]:hover{background:#8A5129 !important}
+.eo-signup input[type=submit]:focus-visible{outline:3px solid #1C4F6B !important;outline-offset:2px}
+.eo-signup .emailoctopus-form-row-consent{display:flex !important;align-items:flex-start;gap:10px;margin:16px 0 0 !important;text-align:left}
+.eo-signup .emailoctopus-form-row-consent input{flex:none;width:20px;height:20px;margin:2px 0 0 !important;accent-color:#B87345;cursor:pointer}
+.eo-signup .emailoctopus-form-row-consent label{font-family:inherit !important;font-size:15px !important;line-height:1.55 !important;color:#3E4852 !important;font-weight:400 !important;cursor:pointer}
+.eo-signup .emailoctopus-success-message{margin:0 !important;font-family:inherit !important;font-size:18px !important;line-height:1.6 !important;color:#1C4F6B !important;text-align:left !important}
+.eo-signup .emailoctopus-error-message{margin:0 0 10px !important;font-family:inherit !important;font-size:15px !important;color:#A4452C !important;text-align:left !important}
+.eo-signup .mastfoot{margin:14px 0 0 !important;padding:0 !important;text-align:left !important}
+.eo-signup .mastfoot p{margin:0 !important;font-family:inherit !important;font-size:12px !important;color:#6B747C !important}
+.eo-signup .mastfoot a{color:#6B747C !important}
+.eo-signup .text-center{text-align:left !important}
+@media (max-width:520px){.eo-signup input[type=submit]{flex:1 1 100%}}
 """
 
 page = f"""---
@@ -187,7 +215,7 @@ page = f"""---
 // canvas is the design source of truth while copy is still being reviewed.
 // Standalone document on purpose: no site nav on the sales page (Sophie,
 // 2026-11-02), so it does not use Layout.astro. noindex until launch:
-// the page still carries [placeholders] (legal details, checkout, signup).
+// the page still carries [placeholders] (legal details, checkout).
 ---
 
 <!doctype html>
@@ -242,12 +270,6 @@ page = f"""---
             panel.style.setProperty('--log-order', String(n * 2 + 1));
           }});
         }});
-        // Email signup is not connected yet: keep the preview from reloading.
-        var form = document.querySelector('[data-preview-form]');
-        form.addEventListener('submit', function (e) {{
-          e.preventDefault();
-          form.insertAdjacentHTML('afterend', '<p style="margin:12px 0 0;font-size:15px;color:#1C4F6B">Thank you! (Preview: the email signup is not connected yet.)</p>');
-        }}, {{ once: true }});
       }})();
     </script>
   </body>
