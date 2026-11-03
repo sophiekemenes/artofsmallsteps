@@ -147,7 +147,7 @@ style += popup_style
 # someone who has decided halfway down should not have to scroll to the end.
 # Shows once the hero is behind you, steps aside wherever a signup or buy button is already on screen.
 aboard = """
-    <a id="aboard" class="btn" href="#journey" aria-hidden="true" tabindex="-1">Come aboard <span aria-hidden="true">↓</span></a>
+    <a id="aboard" class="btn" href="#journey" aria-hidden="true" tabindex="-1"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><circle cx="19.62" cy="19.59" r="0.57"/><circle cx="18.82" cy="22.53" r="0.80"/><circle cx="21.91" cy="25.44" r="1.11"/><circle cx="27.51" cy="23.54" r="1.55"/><circle cx="28.84" cy="15.41" r="2.16"/><circle cx="19.71" cy="8.45" r="3.00"/><circle cx="5.18" cy="15.13" r="4.18"/></svg>Come aboard</a>
     <script is:inline>
       (function () {
         var btn = document.getElementById('aboard');
@@ -172,9 +172,11 @@ aboard = """
     </script>"""
 
 style += """
-#aboard{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:50;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;background:#142230;color:#FBF1E3;text-decoration:none;font-weight:600;font-size:16px;box-shadow:0 10px 28px rgba(20,34,48,.3);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s ease}
+#aboard{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:50;display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px 0 16px;border-radius:999px;background:#FFF8EE;border:1.5px solid #B87345;color:#142230;text-decoration:none;font-weight:600;font-size:16px;box-shadow:0 14px 40px rgba(20,34,48,.16);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s ease,background .2s ease}
+#aboard svg{fill:#B87345;flex:none}
 #aboard.on{opacity:1;transform:none;pointer-events:auto}
-#aboard:hover{color:#FBF1E3;background:#1C4F6B}
+#aboard:hover{color:#142230;background:#FBF1E3;border-color:#8A5129}
+#aboard:hover svg{fill:#8A5129}
 @media (prefers-reduced-motion:reduce){#aboard{transition:none}}
 """
 

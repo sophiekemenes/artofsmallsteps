@@ -80,7 +80,11 @@ Why: keeps the sales page light, reliably collects the email address, and the en
 
 *Superseded:* **Pricing, final:** £69 full price, £39 at launch/ad-period (introductory). Find Your Bearings is included, not sold separately. Guarantee/refund: still undecided.
 
-**"100+ people over ten years"**: confirmed true by Sophie, cleared for the English page. Individual names are lost, so testimonials stay anonymized.
+**"100+ people over ten years"**: confirmed true by Sophie, cleared for the English page. (The 100+ buyers' names are lost.)
+
+**Testimonials (Sophie, 2026-11-03):** permission received from all six people quoted on kincsesterkep.hu/ujratervezes (Mara, Gergő, Eszti, Zsolt, Attila, Laura); names may be used. Open: full surname or first name + initial (Hungarian rule: acknowledge, don't push). Placement proposal pending her OK.
+
+**Logos FINAL (Sophie, 2026-11-03):** S2 + W2 and the brandbook are the final identity, no further logo rounds.
 
 Other things the cloud session should know (all from Sophie, local session):
 - Product line: **RECHART · The Wayfinder Method**, page planned at `artofsmallsteps.com/wayfinder-method`. "Wake up" naming stays (matches the repo's "Wake Up the Inner Navigator").
