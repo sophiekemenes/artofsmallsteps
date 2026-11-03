@@ -25,12 +25,13 @@ const nav = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>{title} · Art of Small Steps</title>
   </head>
   <body>
     <header style="border-bottom: 1px solid var(--color-border); padding: var(--space-3) var(--space-4);">
       <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-2);">
-        <a href="/" style="font-family: var(--font-serif); font-size: 20px; text-decoration: none; color: var(--color-text);">Art of Small Steps</a>
+        <a href="/" style="display: block; text-decoration: none;"><img src="/images/brand/aoss-horizontal.svg" alt="Art of Small Steps" style="display: block; height: 34px; width: auto;" /></a>
         <nav style="display: flex; gap: var(--space-3); font-family: var(--font-sans); font-size: 14px;">
           {nav.map((item) => (
             <a href={item.href} style="text-decoration: none; color: var(--color-text-muted);">{item.label}</a>

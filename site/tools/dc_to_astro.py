@@ -207,7 +207,8 @@ page = f"""---
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Becalmed? A small sailboat alone on a mirror-calm watercolor sea" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/rechart-favicon.svg" />
+    <link rel="apple-touch-icon" href="/rechart-apple-touch-icon.png" />
     <title>RECHART · The Wayfinder Method · Art of Small Steps</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

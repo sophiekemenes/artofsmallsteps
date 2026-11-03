@@ -15,7 +15,7 @@ specs = [
     dict(key='aoss', font=CORM, text='Art of Small Steps', size=40, tracking=0.01),
     dict(key='capA', font=CORM, text='A', size=40, tracking=0),
     dict(key='rechart', font=CORM, text='RECHART', size=56, tracking=0.16),
-    dict(key='twm', font=LORA, text='THE WAYFINDER METHOD', size=12.5, tracking=0.34),
+    dict(key='twm', font=LORA, text='THE WAYFINDER METHOD', size=16, tracking=0.3),
     dict(key='endorse', font=LORA, text='an Art of Small Steps programme', size=13, tracking=0.04),
 ]
 sf = os.path.join(SP, 'textspecs.json')
@@ -136,7 +136,7 @@ SW = max(rw, RW + 20, tw2) + 24
 rcap = -T['rechart']['top']
 y_rc = 12 + rcap
 y_route = y_rc + 16 - ry0
-y_twm = y_route + ry1 + 30
+y_twm = y_route + ry1 + 36
 SH = y_twm + 10
 def rechart_stack(ink, line, sub, start):
     return (text('rechart', (SW - rw) / 2, y_rc, ink)
