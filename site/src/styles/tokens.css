@@ -1,18 +1,21 @@
 /* Art of Small Steps — design tokens
-   Palette: "King's Cross Light" (see /brand/visual/VISUAL-DIRECTION.md)
-   Aesthetic-only reference — the palette's literary origin is not brand material. */
+   Palette: "Harbor Light" (see /brand/visual/VISUAL-DIRECTION.md, /brand/logo/README.md)
+   ink / deep sea / copper / warm paper — the same tokens the logos and the
+   RECHART page use, so the whole site now shares one identity. */
 
 :root {
-  --color-bg: #F7F5F0;
-  --color-surface: #EFE9DA;
-  --color-border: #E5E1D6;
-  --color-neutral-cool: #C7CAD0;
-  --color-text-muted: #8B8A85;
-  --color-text: #2E2B26;
-  --color-accent: #B87745;
+  --color-bg: #FBF1E3;
+  --color-surface: #FFF8EE;
+  --color-border: #EBDCC6;
+  --color-deep-sea: #1C4F6B;
+  --color-text-muted: #3E4852;
+  --color-text: #142230;
+  --color-accent: #B87345;
+  --color-accent-dark: #8A5129;
 
-  --font-serif: Georgia, 'Iowan Old Style', serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, 'Iowan Old Style', serif;
+  --font-sans: 'Lora', Georgia, serif;
+  --font-hand: 'Shadows Into Light Two', cursive;
 
   --space-1: 8px;
   --space-2: 16px;
@@ -31,11 +34,11 @@ html, body {
   padding: 0;
   background: var(--color-bg);
   color: var(--color-text);
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-accent-dark);
 }
 
 a:hover {

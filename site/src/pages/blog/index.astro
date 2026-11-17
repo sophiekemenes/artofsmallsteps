@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const posts = [
+  {
+    title: 'What does it really mean to rechart your life?',
+    date: '17 November 2026',
+    excerpt: 'Reinvention isn’t actually a defined concept in psychology. What researchers talk about instead is more interesting — and a lot kinder to where you already are.',
+    href: '/blog/what-rechart-really-means/',
+  },
+  {
+    title: 'Why you’re lying when you say you don’t have time for something',
+    date: '17 November 2026',
+    excerpt: '(And why that’s completely fine.) A small, slightly uncomfortable NLP exercise in honesty about what you actually prioritise.',
+    href: '/blog/why-no-time-is-a-lie/',
+  },
+];
+---
+
+<Layout title="Journal" description="Shorter reads from Sophie Kemenes — the same voice as RECHART, in smaller doses.">
+  <section style="max-width:760px;margin:0 auto;padding:30px 8px 20px">
+    <p style="font-family:var(--font-sans);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-dark);font-weight:600;margin:0 0 10px">Journal</p>
+    <h1 style="font-family:var(--font-serif);font-weight:500;font-size:clamp(34px,4vw,48px);line-height:1.1;margin:0 0 16px">Shorter reads, same voice</h1>
+    <p style="font-size:17px;line-height:1.7;color:var(--color-text-muted);margin:0 0 50px">
+      Pieces that don&rsquo;t need a whole programme around them &mdash; just ten honest minutes.
+    </p>
+  </section>
+
+  <section style="max-width:760px;margin:0 auto;padding:0 8px 80px;display:flex;flex-direction:column;gap:28px">
+    {posts.map((post) => (
+      <a href={post.href} style="display:block;text-decoration:none;color:inherit;border:1px solid var(--color-border);border-radius:8px;padding:30px 28px;background:var(--color-surface)">
+        <p style="font-size:13px;color:var(--color-text-muted);margin:0 0 8px">{post.date}</p>
+        <h2 style="font-family:var(--font-serif);font-weight:500;font-size:26px;line-height:1.25;margin:0 0 10px;color:var(--color-text)">{post.title}</h2>
+        <p style="font-size:16px;line-height:1.65;color:var(--color-text-muted);margin:0 0 14px">{post.excerpt}</p>
+        <span style="font-size:14px;font-weight:600;color:var(--color-accent-dark)">Read &rarr;</span>
+      </a>
+    ))}
+  </section>
+</Layout>
