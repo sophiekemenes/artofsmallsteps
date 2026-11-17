@@ -4,7 +4,7 @@
 - **Sent:** at purchase
 - **Used in:** "Prep long" and "Prep week" automations
 - **Merge tags:** `{{Nickname}}` (default "Wayfinder"), `{{FirstName}}`
-- **Placeholder:** `[NICKNAME-FORM-LINK]` (form not built yet)
+- **Link:** https://artofsmallsteps.com/wayfinder-method/nickname/ (page + Make 8642492, 2026-11-17)
 
 ---
 
@@ -26,7 +26,7 @@ One small question before then: what should I call you?
 
 The payment form told me "{{FirstName}}", which may or may not be what your friends say. If you'd like me to use something else, tell me here:
 
-**[Tell me your name →]([NICKNAME-FORM-LINK])**
+**[Tell me your name →](https://artofsmallsteps.com/wayfinder-method/nickname/)**
 
 If it's right, just ignore this. Nothing breaks.
 

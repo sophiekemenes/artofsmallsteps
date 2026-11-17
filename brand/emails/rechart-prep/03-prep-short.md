@@ -3,7 +3,7 @@
 - **Status:** APPROVED by Sophie 2026-11-17
 - **Sent:** at purchase, buyers 29 December – 2 January ("Prep short")
 - **Merge tags:** `{{Nickname}}`, `{{FirstName}}`
-- **Placeholder:** `[NICKNAME-FORM-LINK]`
+- **Link:** https://artofsmallsteps.com/wayfinder-method/nickname/ (page + Make 8642492, 2026-11-17)
 - **Note:** no packing list here; the 1 January email (06) carries it. Buyers on 2 January get 06 only if they're tagged before it goes out; see open question in 06.
 
 ---
@@ -32,7 +32,7 @@ Here's the short version, because we don't have long:
 
 **And one small question: what should I call you?** The payment form told me "{{FirstName}}", which may or may not be what your friends say.
 
-**[Tell me your name →]([NICKNAME-FORM-LINK])**
+**[Tell me your name →](https://artofsmallsteps.com/wayfinder-method/nickname/)**
 
 If it's right, just ignore it.
 
