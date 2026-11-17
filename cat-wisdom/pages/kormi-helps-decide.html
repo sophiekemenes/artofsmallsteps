@@ -1,0 +1,327 @@
+<!-- wp:html -->
+
+<style id="tmm-nunito">@font-face{font-family:'Nunito';font-style:normal;font-weight:400 900;font-display:swap;src:url(/cat-wisdom/assets/fonts/nunito-ffdc8b0c86.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Nunito';font-style:normal;font-weight:400 900;font-display:swap;src:url(/cat-wisdom/assets/fonts/nunito-166202cc39.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style>
+body.page-id-977 .h-b.c-c, body.page-id-977 .b-tt.b-tl, body.page-id-977 .brd, body.page-id-977 .sAsCont, body.page-id-977 footer.f-hw { display:none !important; }
+body.page-id-977 .bSe.left { width:100% !important; float:none !important; }
+body.page-id-977 .bSeCont { padding:0 !important; margin:0 !important; }
+body.page-id-977 .wrp.cnt { margin:0 !important; padding:0 !important; width:100% !important; max-width:none !important; }
+body.page-id-977 .awr-i { padding:0 !important; }
+</style>
+<div class="krm-wrap" id="krm-page">
+  <style>
+    .krm-wrap {
+      --krm-navy:#1B2430; --krm-cream:#F4EFE6; --krm-gold:#E3A94D; --krm-gold-dark:#B9822E;
+      --krm-rust:#C9714B; --krm-steel:#8FA3B0; --krm-ink:#1F1F1F;
+      width:100%; box-sizing:border-box; background:var(--krm-navy);
+      padding:70px 6vw; display:flex; justify-content:center;
+      font-family:'Nunito',system-ui,sans-serif; color:var(--krm-ink);
+    }
+    .krm-wrap *{box-sizing:border-box;}
+    .krm-wrap p, .krm-wrap body, .krm-wrap li { background:transparent !important; }
+    .krm-wrap a { color:var(--krm-gold) !important; text-decoration:underline; }
+    .krm-wrap a:hover { color:var(--krm-cream) !important; }
+    .krm-display{ font-family:'Nunito',system-ui,sans-serif; }
+    .krm-btn{
+      display:inline-block; padding:15px 30px; border-radius:999px; font-weight:700;
+      font-family:'Nunito',system-ui,sans-serif; font-size:15px;
+      border:none !important; cursor:pointer; background:var(--krm-gold) !important; color:#1B2430 !important;
+      box-shadow:0 6px 0 var(--krm-gold-dark); transition:opacity .2s;
+    }
+    .krm-btn:hover{ background:var(--krm-gold-dark) !important; color:#fff !important; }
+    .krm-btn:disabled{ opacity:0.7; cursor:default; }
+    .krm-eyebrow{
+      text-transform:uppercase; color:var(--krm-gold) !important; font-size:13px; letter-spacing:1px; font-weight:700;
+    }
+    @keyframes krm-spin { from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
+    .krm-paw-spin { animation:krm-spin 3.6s linear infinite; transform-origin:center; }
+  </style>
+
+  <div style="max-width:640px;width:100%;text-align:center;">
+    <p style="text-align:right;margin:0 0 6px;font-size:13px;"><a href="https://kincsesterkep.hu/kormisegiteldonteni/" hreflang="hu" lang="hu">Magyarul</a></p>
+    <div style="width:150px;height:150px;border-radius:50%;overflow:hidden;margin:0 auto 22px;border:5px solid var(--krm-gold);box-shadow:0 12px 28px rgba(0,0,0,0.35);">
+      <img src="/cat-wisdom/assets/images/kormi-profil-dramatikus.png" alt="Kormi, the night watch of the shop window" style="display:block;width:100%;height:100%;object-fit:cover;">
+    </div>
+
+    <p class="krm-eyebrow" style="margin:0 0 10px;">Once again, he decides so you don't have to</p>
+    <h1 class="krm-display" style="font-size:30px;color:var(--krm-cream) !important;margin:0 0 14px;">Kormi tells you what to do</h1>
+    <p style="font-size:15.5px;color:var(--krm-steel) !important;max-width:42ch;margin:0 auto 30px;">
+      Think of a question with a yes or no answer. Press the button and he'll tell you.
+    </p>
+
+    <div style="background:var(--krm-cream);border-radius:20px;padding:32px 28px;margin-bottom:22px;min-height:64px;display:flex;align-items:center;justify-content:center;">
+      <div id="krm-loading" style="display:none;">
+        <svg class="krm-paw-spin" width="30" height="30" viewBox="0 0 24 24" fill="var(--krm-gold-dark)" stroke="none" style="display:block;margin:0 auto 14px;"><circle cx="12" cy="15" r="4.2"/><circle cx="4.8" cy="9" r="2.1"/><circle cx="9" cy="4.2" r="2.1"/><circle cx="15" cy="4.2" r="2.1"/><circle cx="19.2" cy="9" r="2.1"/></svg>
+        <p id="krm-loading-msg" style="font-size:15px;color:var(--krm-ink) !important;font-style:italic;margin:0;"></p>
+      </div>
+      <p id="krm-idle" style="font-size:15px;color:rgba(31,31,31,0.5) !important;font-style:italic;margin:0;">It's quiet in here. Think of a question before you press the button.</p>
+      <div id="krm-result-wrap" style="display:none;text-align:center;">
+        <p class="krm-display" id="krm-verdict" style="font-size:30px;font-weight:800;margin:0 0 10px;letter-spacing:1px;"></p>
+        <p id="krm-verdict-text" style="color:var(--krm-ink) !important;font-size:15px;margin:0;max-width:38ch;">-</p>
+      </div>
+    </div>
+
+    <button id="krm-next-btn" class="krm-btn">Ask Kormi</button>
+
+    <p style="margin-top:18px;font-size:13px;color:var(--krm-steel) !important;font-style:italic;">The answer is not binding, and wouldn't hold up in court. Oh, and don't ask ten times in a row, Kormi concentrates on one decision at a time. Come back when you have a new question!</p>
+
+    <style>
+      .krm-faq{ text-align:left; margin-top:18px; border:1.5px solid rgba(227,169,77,0.3); border-radius:14px; overflow:hidden; background:rgba(244,239,230,0.05); }
+      .krm-faq + .krm-faq{ margin-top:10px; }
+      .krm-faq summary{ cursor:pointer; list-style:none; padding:14px 18px; font-family:'Nunito',system-ui,sans-serif; font-weight:700; font-size:15px; color:var(--krm-cream) !important; display:flex; align-items:center; justify-content:space-between; gap:10px; }
+      .krm-faq summary::-webkit-details-marker{ display:none; }
+      .krm-faq summary::after{ content:'+'; font-size:20px; line-height:1; color:var(--krm-gold); flex:none; transition:transform .2s; }
+      .krm-faq[open] summary::after{ transform:rotate(45deg); }
+      .krm-faq .krm-faq-body{ padding:0 18px 18px; font-size:14px; line-height:1.65; }
+      .krm-faq .krm-faq-body p{ margin:0 0 10px; color:var(--krm-steel) !important; }
+      .krm-faq .krm-faq-body p:last-child{ margin-bottom:0; }
+    </style>
+
+    <details class="krm-faq">
+      <summary>Wait, what is all this?</summary>
+      <div class="krm-faq-body">
+        <p>Two cats, Totó and Rozi, live in a shop window in Székesfehérvár, Hungary. They don't do any work. They lie there, now and then glance at passers-by, and that's it.</p>
+        <p>Their devoted “mum” has spent almost a year on the rough side of the job market. She could write a book about how not to get invited to interviews, despite being wildly creative and speaking at conferences. (She is writing a book, actually. About something else.)</p>
+        <p>So, with no steady income for about a year, the family council decided the cats should join the game called making a living, with everyone putting their best assets to work. The human brings her marketable but underused skill set. The cats bring professional loafing and a talent for dispensing opinions.</p>
+        <p>That is where all this came from: this website, the quiz, the tuna sponsorship. It is not a save-us campaign, more of an “open your wallet when something made you smile” kind of deal. If that's not enough for you, you can also offer the human a job or a collaboration, by the way.</p>
+      </div>
+    </details>
+
+    <details class="krm-faq">
+      <summary>What is there to know about Kormi?</summary>
+      <div class="krm-faq-body">
+        <p>Technically Kormi doesn't belong to Rozi and Totó's human, but to the owner of the buildings on Károly János Street. Since he was little, he has built himself a close-knit community in the shop units here and in the Pince Borozó (a local wine bar), people who feed him and look after him, and of course his own human does everything for him too.</p>
+        <p>When the new cats moved in behind the glass, he could hardly stop himself from joining the cheerful crew. So he was given subcontractor status, and in summer he mostly sat on the steps on the other side of the window. As the weather gets cooler, he asks to be let in more and more often, and is slowly making friends with the others.</p>
+        <p>He also needs to keep making the rounds of his old haunts. That life experience is the basis for how he can help with your decisions too.</p>
+      </div>
+    </details>
+
+    <div style="margin-top:28px;padding-top:24px;border-top:1.5px dashed rgba(227,169,77,0.3);">
+      <p style="font-size:16px;color:var(--krm-cream) !important;font-weight:800;font-family:'Nunito',system-ui,sans-serif;margin:0 0 20px;line-height:1.4;">Would you like to support this furry child's work, so he can show off in front of the others? Here are your options:</p>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:26px;justify-content:center;">
+        <img src="/cat-wisdom/assets/images/kormi-05-szombreroban.jpg" alt="Kormi in a sombrero, subcontractor of the shop window" style="width:220px;height:220px;object-fit:cover;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,0.35);flex:none;">
+        <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;">
+          <a href="https://donate.stripe.com/aFaaEX56W1Am4XH0WIfnO07?locale=en" target="_blank" rel="noopener" class="krm-btn" style="display:inline-flex;align-items:center;gap:8px;font-size:14.5px;padding:12px 24px;color:#1B2430 !important;text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></svg>
+            Support by card
+          </a>
+          <a href="https://paypal.me/sophiekemenes" target="_blank" rel="noopener" class="krm-btn" style="display:inline-flex;align-items:center;gap:8px;font-size:14.5px;padding:12px 24px;color:#1B2430 !important;text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4h8a4.5 4.5 0 0 1 0 9H9l-1 6H5l2.5-15Z"/><path d="M9.5 8H16a4 4 0 0 1 0 8h-4.5"/></svg>
+            Support via PayPal
+          </a>
+          <button type="button" id="krm-revolut-btn" class="krm-btn" style="display:inline-flex;align-items:center;gap:8px;font-size:14.5px;padding:12px 24px;color:#1B2430 !important;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/><path d="M12 6v6l4 2"/></svg>
+            Support via Revolut
+          </button>
+          <a href="https://buy.stripe.com/4gM3cvfLA3Iuai134QfnO08?locale=en" target="_blank" rel="noopener" class="krm-btn" style="display:inline-flex;align-items:center;gap:8px;font-size:14.5px;padding:12px 24px;color:#1B2430 !important;text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 2.1l4 4-4 4"/><path d="M3 12.2v-2a4 4 0 0 1 4-4h12.8M7 21.9l-4-4 4-4"/><path d="M21 11.8v2a4 4 0 0 1-4 4H4.2"/></svg>
+            Monthly subscription: €9.99/month
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="krm-revolut-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center;padding:20px;">
+      <div style="background:var(--krm-cream);border-radius:18px;max-width:360px;padding:28px 26px;text-align:center;box-shadow:0 16px 40px rgba(0,0,0,0.4);">
+        <p style="font-size:15px;color:var(--krm-navy) !important;margin:0 0 20px;line-height:1.5;">You can send any amount you like through the “Transfer” section of the Revolut app to the <strong style="color:var(--krm-gold-dark) !important;">@sophiekemenes</strong> revtag. ♥</p>
+        <button type="button" id="krm-revolut-close" class="krm-btn" style="font-size:14px;padding:10px 24px;color:#1B2430 !important;">Got it</button>
+      </div>
+    </div>
+
+    <script>
+    (function(){
+      var btn = document.getElementById('krm-revolut-btn');
+      var modal = document.getElementById('krm-revolut-modal');
+      var closeBtn = document.getElementById('krm-revolut-close');
+      if (btn && modal) {
+        btn.addEventListener('click', function(){ modal.style.display = 'flex'; });
+      }
+      if (closeBtn && modal) {
+        closeBtn.addEventListener('click', function(){ modal.style.display = 'none'; });
+      }
+      if (modal) {
+        modal.addEventListener('click', function(e){ if (e.target === modal) { modal.style.display = 'none'; } });
+      }
+    })();
+    </script>
+
+    <div style="margin-top:26px;padding-top:22px;border-top:1.5px dashed rgba(227,169,77,0.3);text-align:center;">
+      <p style="font-size:15px;color:var(--krm-cream) !important;font-weight:700;font-family:'Nunito',system-ui,sans-serif;margin:0 0 8px;">Can't spare €1? Share instead.</p>
+      <p style="font-size:13.5px;color:var(--krm-steel) !important;margin:0 0 16px;">Save this image and share it wherever you like. If you click the image, the link is also copied to your clipboard.</p>
+      <img src="/cat-wisdom/assets/images/en-share-kormi.jpg" alt="Kormi helps you decide, support if you can" id="krm-share-img" style="display:block;width:100%;max-width:320px;margin:0 auto 14px;border-radius:16px;box-shadow:0 12px 28px rgba(0,0,0,0.35);cursor:pointer;">
+      <p id="krm-share-copied" style="display:none;font-size:12.5px;color:var(--krm-gold);margin:0 0 12px;font-weight:600;"></p>
+      <p style="margin:0;">
+        <a href="/cat-wisdom/assets/images/en-share-kormi.jpg" download="kormi-helps-decide.jpg" class="krm-btn" style="border:none;cursor:pointer;font-size:13.5px;color:#1B2430 !important;">Download image</a>
+      </p>
+    </div>
+
+    <script>
+    (function(){
+      var link = "/cat-wisdom/kormi-helps-decide/";
+      var img = document.getElementById("krm-share-img");
+      var msg = document.getElementById("krm-share-copied");
+      function fallbackCopy(text){
+        var ta = document.createElement("textarea");
+        ta.value = text; ta.style.position="fixed"; ta.style.opacity="0";
+        document.body.appendChild(ta); ta.focus(); ta.select();
+        try{ document.execCommand("copy"); }catch(e){}
+        document.body.removeChild(ta);
+      }
+      if (img) {
+        img.addEventListener("click", function(){
+          function done(){
+            if (msg) { msg.textContent = "Link copied to clipboard:  " + link; msg.style.display = "block"; setTimeout(function(){ msg.style.display = "none"; }, 4000); }
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(link).then(done).catch(function(){ fallbackCopy(link); done(); });
+          } else { fallbackCopy(link); done(); }
+        });
+      }
+    })();
+    </script>
+
+<div class="section-tight" id="hirlevel" style="background:#fff;">
+    <div class="card" style="max-width:640px;margin:0 auto;padding:40px 36px;text-align:center;background:#fff;border:1.5px solid rgba(75,59,46,0.14);border-radius:18px;">
+      <h2 style="font-size:32px;color:var(--krm-navy) !important;margin:6px 0 6px;">Rozi's Newsletter</h2>
+      <p style="font-size:19px;color:var(--krm-navy);font-weight:700;margin:0 0 16px;">Subscribe to the unpredictable</p>
+      <p style="font-size:15px;line-height:1.6;margin:0 0 24px;">
+        Rozi checks in every now and then. No promises about regularity: she alone is responsible for the content, she edits it herself, and so the schedule stays gloriously unpredictable.
+      </p>
+      <style>
+        .krm-wrap .fluentform_wrapper_24 form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;align-items:flex-start;}
+        .krm-wrap .fluentform_wrapper_24 .ff-el-group{margin:0;}
+        .krm-wrap .fluentform_wrapper_24 input.ff-el-form-control{font-family:'Nunito',system-ui,sans-serif !important;font-size:15px !important;padding:13px 16px !important;border-radius:999px !important;border:1.5px solid rgba(75,59,46,0.3) !important;outline:none;background:#fff !important;min-width:200px;max-width:280px;box-shadow:none !important;}
+        .krm-wrap .fluentform_wrapper_24 button.ff-btn-submit{display:inline-flex;align-items:center;gap:8px;padding:14px 26px !important;border-radius:999px !important;font-family:'Nunito',system-ui,sans-serif !important;font-weight:800 !important;font-size:16px !important;white-space:nowrap;background:var(--krm-gold) !important;color:#1B2430 !important;border:none !important;cursor:pointer;box-shadow:0 5px 0 var(--krm-gold-dark) !important;}
+        .krm-wrap .fluentform_wrapper_24 button.ff-btn-submit:hover{background:var(--krm-gold-dark) !important;}
+        .krm-wrap .fluentform_wrapper_24 .ff-el-form-control.ff_input_is-invalid{border-color:#b00020;}
+        .krm-wrap [id^="fluentform_24_errors"]{color:#b00020;font-size:13px;margin-top:8px;}
+        .krm-wrap .fluentform_wrapper_24 .text-danger{color:#b00020;font-size:12.5px;margin-top:4px;display:block;}
+        .krm-wrap .fluentform_wrapper_24 .ff-message-success{font-family:'Nunito',system-ui,sans-serif;font-weight:800;color:var(--krm-gold-dark);font-size:16px;}
+      </style>
+      <style>.fluentform_wrapper_24 form{display:block !important;}.fluentform_wrapper_24 fieldset{display:flex !important;flex-direction:row !important;flex-wrap:wrap !important;justify-content:center !important;align-items:center !important;gap:12px !important;border:0 !important;padding:0 !important;margin:0 auto !important;min-width:0 !important;}.fluentform_wrapper_24 .ff-el-input--content{width:auto !important;}.fluentform_wrapper_24 .ff-text-left{text-align:center !important;}.fluentform_wrapper_24 .ff-el-group{width:auto !important;flex:0 1 auto !important;margin:0 !important;}.fluentform_wrapper_24 .ff_submit_btn_wrapper{position:static !important;width:auto !important;margin:0 !important;text-align:center !important;}.fluentform_wrapper_24 .ff-message-success{text-align:center !important;width:100%;}</style><!-- NEWSLETTER-FORM: drop the EmailOctopus embed here (replaces the old WordPress form). Until then hide the #hirlevel section. -->
+      <script>
+        (function(){
+          var wrap = document.querySelector('.fluentform_wrapper_24');
+          if (!wrap) return;
+          var input = wrap.querySelector('input[name="email"]');
+          if (input) input.placeholder = 'you@email.com';
+          var btn = wrap.querySelector('button.ff-btn-submit');
+          if (btn) btn.textContent = 'Subscribe';
+          var obs = new MutationObserver(function(){
+            var msg = wrap.querySelector('.ff-message-success, [class*="success"]');
+            if (msg && /successfully subscribed/i.test(msg.textContent)) {
+              msg.textContent = 'Thank you. Rozi knows about you.';
+            }
+          });
+          obs.observe(wrap, {childList:true, subtree:true});
+        })();
+      </script>
+    </div>
+  </div>
+
+    
+
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px;">
+      <a href="/cat-wisdom/rozi-wisdom/" style="display:block;width:140px;border-radius:14px;overflow:hidden;box-shadow:0 6px 16px rgba(0,0,0,0.35);">
+        <img src="/cat-wisdom/assets/images/en-nav-rozi.jpg" alt="Rozi's life advice, click for wisdom" style="display:block;width:100%;height:140px;object-fit:cover;">
+      </a>
+      <a href="/cat-wisdom/toto-tells-you/" style="display:block;width:140px;border-radius:14px;overflow:hidden;box-shadow:0 6px 16px rgba(0,0,0,0.35);">
+        <img src="/cat-wisdom/assets/images/en-nav-toto.jpg" alt="Totó tells you what's wrong with you, click if you dare" style="display:block;width:100%;height:140px;object-fit:cover;">
+      </a>
+    </div>
+
+    <p style="margin-top:22px;">
+      <a href="/cat-wisdom/" style="font-size:14px;">← Back to the main page</a>
+    </p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var answers = [{"v":"YES","t":"Kormi is rarely wrong, and right now he doesn't see any risk."},{"v":"YES","t":"Do it. Afterwards you'll be happier about it than anyone else will."},{"v":"YES","t":"Hesitating has already cost more than the decision would."},{"v":"YES","t":"Kormi can barely keep his eyelids open, but he nods yes to this."},{"v":"YES","t":"The worse scenario isn't that bad either, once you think it through."},{"v":"YES","t":"This is the kind of decision you don't usually regret."},{"v":"YES","t":"Cat instinct rarely lies, and it isn't lying now."},{"v":"YES","t":"Go for it. The way back stays open if you need it."},{"v":"YES","t":"Kormi just stretched, which is his highest level of approval."},{"v":"YES","t":"If you've thought about it this much, you've probably decided already and just haven't said it out loud."},{"v":"NO","t":"Kormi can tell it's a bad idea with one eye half shut."},{"v":"NO","t":"Sleep on it, the way he does, just for less time."},{"v":"NO","t":"Not now. There's an urgency here that isn't even yours."},{"v":"NO","t":"If it takes this much encouragement, that is already an answer."},{"v":"NO","t":"Kormi looks away, and you know what that means."},{"v":"NO","t":"Sometimes the best decision is the one you don't make."},{"v":"NO","t":"Kormi won't endorse anything today that has you sweating just thinking about it."},{"v":"NO","t":"This is more of a tomorrow problem, if it's a problem at all."},{"v":"NO","t":"Kormi sits down in front of you, which for him means: think it over once more."},{"v":"NO","t":"Rushing is not a strategy, just faster mistakes."},{"v":"MAYBE","t":"Kormi gives neither a yes nor a no today, just a long look."},{"v":"MAYBE","t":"It depends on how honest you are with yourself about the second half of the question."},{"v":"MAYBE","t":"Kormi would rather sleep on it now, and recommends you do too."},{"v":"MAYBE","t":"Ask again tomorrow, if it still matters."},{"v":"MAYBE","t":"This is the kind of question that gets its answer from time, not from a cat."},{"v":"MAYBE","t":"Kormi doesn't know everything, he just acts like he does."},{"v":"YES","t":"Sadly, yes."},{"v":"NO","t":"You know this already."},{"v":"YES","t":"Kormi says yes."},{"v":"NO","t":"Kormi says no."},{"v":"YES","t":"But don't get excited."},{"v":"NO","t":"Next question."},{"v":"YES","t":"Try it. What could go wrong?"},{"v":"NO","t":"Don't."},{"v":"YES","t":"Do it."},{"v":"MAYBE","t":"You've already decided. You just wanted to hear it from me."},{"v":"MAYBE","t":"This needs more coffee."},{"v":"MAYBE","t":"This needs less thinking."},{"v":"NO","t":"Kormi does not support this decision."},{"v":"YES","t":"Kormi supports it. Kormi will not elaborate."},{"v":"MAYBE","t":"Probably."},{"v":"MAYBE","t":"We don't need this right now."},{"v":"MAYBE","t":"Ask Totó."},{"v":"MAYBE","t":"Rozi has already explained this."},{"v":"MAYBE","t":"Go to bed and ask again tomorrow."},{"v":"YES","t":"But only because I'm curious what happens."},{"v":"NO","t":"That is a terrible idea."},{"v":"MAYBE","t":"That is a surprisingly good idea. Suspicious."},{"v":"MAYBE","t":"Kormi is going on gut feeling here."},{"v":"YES","t":"The stars say yes. So does Kormi."},{"v":"MAYBE","t":"Kormi has no comment at this time."}];
+  var loadingMessages = ["Kormi squints, which for him counts as serious thinking.","Kormi is considering a higher shelf before he answers.","Kormi consults his tail. The tail is sometimes wiser.","Kormi blinks slowly. For him that is a pause button.","Kormi waits for the temptation to just fall asleep to pass.","Kormi looks out the window as if the answer were out there.","Kormi is thinking about his next meal, but makes an effort to listen to you as well.","Kormi purrs a little. You may already be in his good books."];
+  var verdictColors = { 'YES':'#5B9A6F', 'NO':'#C9714B', 'MAYBE':'#8FA3B0' };
+
+  var elIdle = document.getElementById('krm-idle');
+  var elLoading = document.getElementById('krm-loading');
+  var elLoadingMsg = document.getElementById('krm-loading-msg');
+  var elResultWrap = document.getElementById('krm-result-wrap');
+  var elVerdict = document.getElementById('krm-verdict');
+  var elVerdictText = document.getElementById('krm-verdict-text');
+  var elBtn = document.getElementById('krm-next-btn');
+  // GA4 events (gtag is provided by Site Kit); language comes from the URL
+  function tmmTrack(name, params){
+    try {
+      if (typeof window.gtag === 'function') window.gtag('event', name, Object.assign({ language: (location.pathname.indexOf('/en/') === 0 ? 'en' : 'hu') }, params));
+    } catch (e) {}
+  }
+
+
+  var lastIndex = -1;
+  var phase = 'idle';
+
+  function pickRandom(arr, excludeIndex){
+    var idx;
+    if (arr.length <= 1) return 0;
+    do { idx = Math.floor(Math.random() * arr.length); } while (idx === excludeIndex);
+    return idx;
+  }
+
+  function render(){
+    elIdle.style.display = phase === 'idle' ? '' : 'none';
+    elLoading.style.display = phase === 'loading' ? '' : 'none';
+    elResultWrap.style.display = phase === 'done' ? 'block' : 'none';
+    elBtn.disabled = phase === 'loading';
+    elBtn.textContent = phase === 'loading' ? 'Kormi is considering…' : (phase === 'done' ? 'Ask again' : 'Ask Kormi');
+  }
+
+  var loadingTimers = [];
+
+  elBtn.addEventListener('click', function(){
+    if (phase === 'loading') return;
+    loadingTimers.forEach(function(t){ clearTimeout(t); });
+    loadingTimers = [];
+
+    phase = 'loading';
+
+    var pool = loadingMessages.slice();
+    var steps = 2;
+    var seq = [];
+    for (var i = 0; i < steps; i++){
+      if (pool.length === 0) pool = loadingMessages.slice();
+      var pick = Math.floor(Math.random() * pool.length);
+      seq.push(pool.splice(pick, 1)[0]);
+    }
+    elLoadingMsg.textContent = seq[0];
+    render();
+
+    var stepMs = 3000;
+    for (var s = 1; s < steps; s++){
+      (function(step){
+        var t = setTimeout(function(){
+          elLoadingMsg.textContent = seq[step];
+        }, step * stepMs);
+        loadingTimers.push(t);
+      })(s);
+    }
+
+    var finalTimer = setTimeout(function(){
+      var idx = pickRandom(answers, lastIndex);
+      lastIndex = idx;
+      tmmTrack('generate_verdict', { generator: 'kormi', result_id: idx + 1, answer: ({ 'IGEN': 'yes', 'YES': 'yes', 'NEM': 'no', 'NO': 'no', 'TALÁN': 'maybe', 'MAYBE': 'maybe' })[answers[idx].v] || 'other' });
+      var a = answers[idx];
+      elVerdict.textContent = a.v;
+      elVerdict.style.setProperty('color', verdictColors[a.v] || '#1F1F1F', 'important');
+      elVerdictText.textContent = a.t;
+      phase = 'done';
+      render();
+    }, steps * stepMs + 250);
+    loadingTimers.push(finalTimer);
+  });
+
+  render();
+})();
+</script>
+
+<!-- /wp:html -->

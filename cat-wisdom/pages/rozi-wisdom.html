@@ -1,0 +1,325 @@
+<!-- wp:html -->
+
+<style id="tmm-nunito">@font-face{font-family:'Nunito';font-style:normal;font-weight:400 900;font-display:swap;src:url(/cat-wisdom/assets/fonts/nunito-ffdc8b0c86.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Nunito';font-style:normal;font-weight:400 900;font-display:swap;src:url(/cat-wisdom/assets/fonts/nunito-166202cc39.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
+<style>
+body.page-id-976 .h-b.c-c, body.page-id-976 .b-tt.b-tl, body.page-id-976 .brd, body.page-id-976 .sAsCont, body.page-id-976 footer.f-hw { display:none !important; }
+body.page-id-976 .bSe.left { width:100% !important; float:none !important; }
+body.page-id-976 .bSeCont { padding:0 !important; margin:0 !important; }
+body.page-id-976 .wrp.cnt { margin:0 !important; padding:0 !important; width:100% !important; max-width:none !important; }
+body.page-id-976 .awr-i { padding:0 !important; }
+</style>
+<div class="rbc-wrap">
+  <style>
+    .rbc-wrap {
+      --rbc-cream:#F4EFE6; --rbc-tan:#EED9BA; --rbc-orange:#E07A3F; --rbc-orange-dark:#BE5A2C;
+      --rbc-brown:#4B3B2E; --rbc-ink:#1F1F1F;
+      width:100%; box-sizing:border-box; background:var(--rbc-brown);
+      padding:70px 6vw; display:flex; justify-content:center;
+      font-family:'Nunito',system-ui,sans-serif; color:var(--rbc-ink);
+    }
+    .rbc-wrap *{box-sizing:border-box;}
+    .rbc-wrap p, .rbc-wrap body, .rbc-wrap li { background:transparent !important; }
+    .rbc-wrap a { color:var(--rbc-tan) !important; text-decoration:underline; }
+    .rbc-wrap a:hover { color:var(--rbc-cream) !important; }
+    .rbc-display{ font-family:'Nunito',system-ui,sans-serif; }
+    .rbc-btn{
+      display:inline-block; padding:15px 30px; border-radius:999px; font-weight:700;
+      font-family:'Nunito',system-ui,sans-serif; font-size:15px;
+      border:none; cursor:pointer; background:var(--rbc-orange); color:#fff;
+      box-shadow:0 6px 0 var(--rbc-orange-dark); transition:opacity .2s;
+    }
+    .rbc-btn:hover{ background:var(--rbc-orange-dark); }
+    .rbc-btn:disabled{ opacity:0.7; cursor:default; }
+    .rbc-eyebrow{
+      text-transform:uppercase; color:var(--rbc-tan) !important; font-size:13px; letter-spacing:1px; font-weight:700;
+    }
+    @keyframes rbc-spin { from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
+    .rbc-paw-spin { animation:rbc-spin 3.6s linear infinite; transform-origin:center; }
+  </style>
+
+  <div style="max-width:640px;width:100%;text-align:center;">
+    <p style="text-align:right;margin:0 0 6px;font-size:13px;"><a href="https://kincsesterkep.hu/rozi-bolcsessegek/" hreflang="hu" lang="hu">Magyarul</a></p>
+    <div style="width:150px;height:150px;border-radius:50%;overflow:hidden;margin:0 auto 22px;border:5px solid var(--rbc-cream);box-shadow:0 12px 28px rgba(0,0,0,0.25);">
+      <img src="/cat-wisdom/assets/images/cat-photo-fcfdad648d.jpg" alt="Rozi, the boss of the window" style="display:block;width:100%;height:100%;object-fit:cover;">
+    </div>
+
+    <p class="rbc-eyebrow" style="margin:0 0 10px;">Rozi's wisdom of the day</p>
+    <h1 class="rbc-display" style="font-size:30px;color:var(--rbc-cream) !important;margin:0 0 14px;">Rozi's Wisdom</h1>
+    <p style="font-size:15.5px;color:var(--rbc-tan) !important;max-width:42ch;margin:0 auto 30px;">
+      Not regular, not guaranteed, but always honest. Ask for a new one if this one isn't the one.
+    </p>
+
+    <div style="background:var(--rbc-cream);border-radius:20px;padding:32px 28px;margin-bottom:22px;min-height:64px;display:flex;align-items:center;justify-content:center;">
+      <div id="rbc-loading" style="display:none;">
+        <svg class="rbc-paw-spin" width="30" height="30" viewBox="0 0 24 24" fill="var(--rbc-orange)" stroke="none" style="display:block;margin:0 auto 14px;"><circle cx="12" cy="15" r="4.2"/><circle cx="4.8" cy="9" r="2.1"/><circle cx="9" cy="4.2" r="2.1"/><circle cx="15" cy="4.2" r="2.1"/><circle cx="19.2" cy="9" r="2.1"/></svg>
+        <p id="rbc-loading-msg" style="font-size:15px;color:var(--rbc-brown) !important;font-style:italic;margin:0;"></p>
+      </div>
+      <p id="rbc-idle" style="font-size:15px;color:rgba(75,59,46,0.5) !important;font-style:italic;margin:0;">Rozi is napping. The wisdom is on its way, somewhere.</p>
+      <p class="rbc-display" id="rbc-quote-wrap" style="display:none;color:var(--rbc-brown) !important;font-size:21px;font-weight:500;margin:0;text-align:center;">“<span id="rbc-quote"></span>”</p>
+    </div>
+
+    <button id="rbc-next-quote-btn" class="rbc-btn">Ask for a piece of wisdom</button>
+
+    <p style="font-size:13px;color:var(--rbc-tan) !important;font-style:italic;margin:18px 0 0;">
+      A cat is not a substitute for a therapist. But it is cheaper. And cute. Rozi's energy is limited, though, so don't ask for a new one every minute. Absorb one properly, and come back another day!
+    </p>
+
+    <style>
+      .rbc-faq{ text-align:left; margin-top:18px; border:1.5px solid rgba(238,217,186,0.3); border-radius:14px; overflow:hidden; background:rgba(244,239,230,0.06); }
+      .rbc-faq + .rbc-faq{ margin-top:10px; }
+      .rbc-faq summary{ cursor:pointer; list-style:none; padding:14px 18px; font-family:'Nunito',system-ui,sans-serif; font-weight:700; font-size:15px; color:var(--rbc-cream) !important; display:flex; align-items:center; justify-content:space-between; gap:10px; }
+      .rbc-faq summary::-webkit-details-marker{ display:none; }
+      .rbc-faq summary::after{ content:'+'; font-size:20px; line-height:1; color:var(--rbc-orange); flex:none; transition:transform .2s; }
+      .rbc-faq[open] summary::after{ transform:rotate(45deg); }
+      .rbc-faq .rbc-faq-body{ padding:0 18px 18px; font-size:14px; line-height:1.65; }
+      .rbc-faq .rbc-faq-body p{ margin:0 0 10px; color:var(--rbc-tan) !important; }
+      .rbc-faq .rbc-faq-body p:last-child{ margin-bottom:0; }
+    </style>
+
+    <details class="rbc-faq">
+      <summary>Wait, what is all this?</summary>
+      <div class="rbc-faq-body">
+        <p>Two cats, Totó and Rozi, live in a shop window in Székesfehérvár, Hungary. They don't do any work. They lie there, now and then glance at passers-by, and that's it.</p>
+        <p>Their devoted “mum” has spent almost a year on the rough side of the job market. She could write a book about how not to get invited to interviews, despite being wildly creative and speaking at conferences. (She is writing a book, actually. About something else.)</p>
+        <p>So, with no steady income for about a year, the family council decided the cats should join the game called making a living, with everyone putting their best assets to work. The human brings her marketable but underused skill set. The cats bring professional loafing and a talent for dispensing opinions.</p>
+        <p>That is where all this came from: this website, the quiz, the tuna sponsorship. It is not a save-us campaign, more of an “open your wallet when something made you smile” kind of deal. If that's not enough for you, you can also offer the human a job or a collaboration, by the way.</p>
+      </div>
+    </details>
+
+    <details class="rbc-faq">
+      <summary>What is there to know about Rozi?</summary>
+      <div class="rbc-faq-body">
+        <p>Rozi moved in with me in November 2024. Before that she lived in a cellar where a dachshund was her only friend. That may explain why she sometimes looks at people as if she is “just barely” willing to speak to them, but deep down she is kind, she just doesn't advertise it.</p>
+        <p>Her job title is Window Boss, her speciality is professional loafing, and her motivation is tuna, peace and quiet, and nobody knocking on the glass. Her favourite activities are the siesta and watching people, which is practically the same activity, except that in one of them her eyes are open.</p>
+        <p>Her motto: “Good things take time. And sunlight.” If that attitude sounds familiar from a yoga teacher or from that friend who is always cheerfully late, it's no coincidence. According to Rozi, it's not laziness, it's philosophy.</p>
+      </div>
+    </details>
+
+    <div style="margin-top:28px;padding-top:24px;border-top:1.5px dashed rgba(238,217,186,0.3);">
+      <p style="font-size:16px;color:var(--rbc-cream) !important;font-weight:800;font-family:'Nunito',system-ui,sans-serif;margin:0 0 20px;line-height:1.4;">Would you like to support this furry child's work, so she can show off in front of the others? Here are your options:</p>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:26px;justify-content:center;">
+        <img src="/cat-wisdom/assets/images/rozi-08-szekben-napos-v2.jpg" alt="Rozi, the shop window cat" style="width:220px;height:220px;object-fit:cover;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,0.3);flex:none;">
+        <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;">
+          <a href="https://donate.stripe.com/aFaaEX56W1Am4XH0WIfnO07?locale=en" target="_blank" rel="noopener" class="rbc-btn" style="display:inline-flex;align-items:center;gap:8px;font-size:14.5px;padding:12px 24px;background:var(--rbc-orange) !important;color:#fff !important;text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></svg>
+            Support by card
+          </a>
+          <a href="https://paypal.me/sophiekemenes" target="_blank" rel="noopener" class="rbc-btn" style="display:inline-flex;align-items:center;gap:8px;font-size:14.5px;padding:12px 24px;background:var(--rbc-orange) !important;color:#fff !important;text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4h8a4.5 4.5 0 0 1 0 9H9l-1 6H5l2.5-15Z"/><path d="M9.5 8H16a4 4 0 0 1 0 8h-4.5"/></svg>
+            Support via PayPal
+          </a>
+          <button type="button" id="rbc-revolut-btn" class="rbc-btn" style="display:inline-flex;align-items:center;gap:8px;font-size:14.5px;padding:12px 24px;background:var(--rbc-orange) !important;color:#fff !important;border:none !important;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z"/><path d="M12 6v6l4 2"/></svg>
+            Support via Revolut
+          </button>
+          <a href="https://buy.stripe.com/4gM3cvfLA3Iuai134QfnO08?locale=en" target="_blank" rel="noopener" class="rbc-btn" style="display:inline-flex;align-items:center;gap:8px;font-size:14.5px;padding:12px 24px;background:var(--rbc-orange) !important;color:#fff !important;text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 2.1l4 4-4 4"/><path d="M3 12.2v-2a4 4 0 0 1 4-4h12.8M7 21.9l-4-4 4-4"/><path d="M21 11.8v2a4 4 0 0 1-4 4H4.2"/></svg>
+            Monthly subscription: €9.99/month
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="rbc-revolut-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:9999;align-items:center;justify-content:center;padding:20px;">
+      <div style="background:var(--rbc-cream);border-radius:18px;max-width:360px;padding:28px 26px;text-align:center;box-shadow:0 16px 40px rgba(0,0,0,0.4);">
+        <p style="font-size:15px;color:var(--rbc-brown) !important;margin:0 0 20px;line-height:1.5;">You can send any amount you like through the “Transfer” section of the Revolut app to the <strong style="color:var(--rbc-orange-dark) !important;">@sophiekemenes</strong> revtag. ♥</p>
+        <button type="button" id="rbc-revolut-close" class="rbc-btn" style="font-size:14px;padding:10px 24px;background:var(--rbc-orange) !important;color:#fff !important;border:none !important;">Got it</button>
+      </div>
+    </div>
+
+    <script>
+    (function(){
+      var btn = document.getElementById('rbc-revolut-btn');
+      var modal = document.getElementById('rbc-revolut-modal');
+      var closeBtn = document.getElementById('rbc-revolut-close');
+      if (btn && modal) {
+        btn.addEventListener('click', function(){ modal.style.display = 'flex'; });
+      }
+      if (closeBtn && modal) {
+        closeBtn.addEventListener('click', function(){ modal.style.display = 'none'; });
+      }
+      if (modal) {
+        modal.addEventListener('click', function(e){ if (e.target === modal) { modal.style.display = 'none'; } });
+      }
+    })();
+    </script>
+
+  
+  <div style="margin-top:26px;padding-top:22px;border-top:1.5px dashed rgba(238,217,186,0.3);text-align:center;">
+    <p style="font-size:15px;color:var(--rbc-cream) !important;font-weight:700;font-family:'Nunito',system-ui,sans-serif;margin:0 0 8px;">Can't spare €1? Share instead.</p>
+    <p style="font-size:13.5px;color:var(--rbc-tan) !important;margin:0 0 16px;">Save this image and share it wherever you like. If you click the image, the link is also copied to your clipboard.</p>
+    <img src="/cat-wisdom/assets/images/en-share-rozi.jpg" alt="Rozi's life advice, support if you can" id="rbc-share-img" style="display:block;width:100%;max-width:320px;margin:0 auto 14px;border-radius:16px;box-shadow:0 12px 28px rgba(0,0,0,0.22);cursor:pointer;">
+    <p id="rbc-share-copied" style="display:none;font-size:12.5px;color:var(--rbc-cream);margin:0 0 12px;font-weight:600;"></p>
+    <p style="margin:0;">
+      <a href="/cat-wisdom/assets/images/en-share-rozi.jpg" download="rozi-life-advice.jpg" class="rbc-btn" style="border:none;cursor:pointer;font-size:13.5px;background:#1C4F6B !important;color:#F3F6F9 !important;box-shadow:0 6px 0 #BE5A2C;border-radius:12px;">Download image</a>
+    </p>
+  </div>
+
+  <script>
+  (function(){
+    var link = "/cat-wisdom/rozi-wisdom/";
+    var img = document.getElementById("rbc-share-img");
+    var msg = document.getElementById("rbc-share-copied");
+    function fallbackCopy(text){
+      var ta = document.createElement("textarea");
+      ta.value = text; ta.style.position="fixed"; ta.style.opacity="0";
+      document.body.appendChild(ta); ta.focus(); ta.select();
+      try{ document.execCommand("copy"); }catch(e){}
+      document.body.removeChild(ta);
+    }
+    if (img) {
+      img.addEventListener("click", function(){
+        function done(){
+          if (msg) { msg.textContent = "Link copied to clipboard:  " + link; msg.style.display = "block"; setTimeout(function(){ msg.style.display = "none"; }, 4000); }
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(link).then(done).catch(function(){ fallbackCopy(link); done(); });
+        } else { fallbackCopy(link); done(); }
+      });
+    }
+  })();
+  </script>
+
+  
+
+<div class="section-tight" id="hirlevel" style="background:#fff;">
+    <div class="card" style="max-width:640px;margin:0 auto;padding:40px 36px;text-align:center;background:#fff;border:1.5px solid rgba(75,59,46,0.14);border-radius:18px;">
+      <h2 style="font-size:32px;color:var(--rbc-brown) !important;margin:6px 0 6px;">Rozi's Newsletter</h2>
+      <p style="font-size:19px;color:var(--rbc-brown);font-weight:700;margin:0 0 16px;">Subscribe to the unpredictable</p>
+      <p style="font-size:15px;line-height:1.6;margin:0 0 24px;">
+        Rozi checks in every now and then. No promises about regularity: she alone is responsible for the content, she edits it herself, and so the schedule stays gloriously unpredictable.
+      </p>
+      <style>
+        .rbc-wrap .fluentform_wrapper_24 form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;align-items:flex-start;}
+        .rbc-wrap .fluentform_wrapper_24 .ff-el-group{margin:0;}
+        .rbc-wrap .fluentform_wrapper_24 input.ff-el-form-control{font-family:'Nunito',system-ui,sans-serif !important;font-size:15px !important;padding:13px 16px !important;border-radius:999px !important;border:1.5px solid rgba(75,59,46,0.3) !important;outline:none;background:#fff !important;min-width:200px;max-width:280px;box-shadow:none !important;}
+        .rbc-wrap .fluentform_wrapper_24 button.ff-btn-submit{display:inline-flex;align-items:center;gap:8px;padding:14px 26px !important;border-radius:999px !important;font-family:'Nunito',system-ui,sans-serif !important;font-weight:800 !important;font-size:16px !important;white-space:nowrap;background:var(--rbc-orange) !important;color:#fff !important;border:none !important;cursor:pointer;box-shadow:0 5px 0 var(--rbc-orange-dark) !important;}
+        .rbc-wrap .fluentform_wrapper_24 button.ff-btn-submit:hover{background:var(--rbc-orange-dark) !important;}
+        .rbc-wrap .fluentform_wrapper_24 .ff-el-form-control.ff_input_is-invalid{border-color:#b00020;}
+        .rbc-wrap [id^="fluentform_24_errors"]{color:#b00020;font-size:13px;margin-top:8px;}
+        .rbc-wrap .fluentform_wrapper_24 .text-danger{color:#b00020;font-size:12.5px;margin-top:4px;display:block;}
+        .rbc-wrap .fluentform_wrapper_24 .ff-message-success{font-family:'Nunito',system-ui,sans-serif;font-weight:800;color:var(--rbc-orange-dark);font-size:16px;}
+      </style>
+      <style>.fluentform_wrapper_24 form{display:block !important;}.fluentform_wrapper_24 fieldset{display:flex !important;flex-direction:row !important;flex-wrap:wrap !important;justify-content:center !important;align-items:center !important;gap:12px !important;border:0 !important;padding:0 !important;margin:0 auto !important;min-width:0 !important;}.fluentform_wrapper_24 .ff-el-input--content{width:auto !important;}.fluentform_wrapper_24 .ff-text-left{text-align:center !important;}.fluentform_wrapper_24 .ff-el-group{width:auto !important;flex:0 1 auto !important;margin:0 !important;}.fluentform_wrapper_24 .ff_submit_btn_wrapper{position:static !important;width:auto !important;margin:0 !important;text-align:center !important;}.fluentform_wrapper_24 .ff-message-success{text-align:center !important;width:100%;}</style><!-- NEWSLETTER-FORM: drop the EmailOctopus embed here (replaces the old WordPress form). Until then hide the #hirlevel section. -->
+      <script>
+        (function(){
+          var wrap = document.querySelector('.fluentform_wrapper_24');
+          if (!wrap) return;
+          var input = wrap.querySelector('input[name="email"]');
+          if (input) input.placeholder = 'you@email.com';
+          var btn = wrap.querySelector('button.ff-btn-submit');
+          if (btn) btn.textContent = 'Subscribe';
+          var obs = new MutationObserver(function(){
+            var msg = wrap.querySelector('.ff-message-success, [class*="success"]');
+            if (msg && /successfully subscribed/i.test(msg.textContent)) {
+              msg.textContent = 'Thank you. Rozi knows about you.';
+            }
+          });
+          obs.observe(wrap, {childList:true, subtree:true});
+        })();
+      </script>
+    </div>
+  </div>
+
+    
+
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px;">
+      <a href="/cat-wisdom/kormi-helps-decide/" style="display:block;width:140px;border-radius:14px;overflow:hidden;box-shadow:0 6px 16px rgba(0,0,0,0.3);">
+        <img src="/cat-wisdom/assets/images/en-nav-kormi.jpg" alt="Kormi tells you what to do, click and all will be well" style="display:block;width:100%;height:140px;object-fit:cover;">
+      </a>
+      <a href="/cat-wisdom/toto-tells-you/" style="display:block;width:140px;border-radius:14px;overflow:hidden;box-shadow:0 6px 16px rgba(0,0,0,0.3);">
+        <img src="/cat-wisdom/assets/images/en-nav-toto.jpg" alt="Totó tells you what's wrong with you, click if you dare" style="display:block;width:100%;height:140px;object-fit:cover;">
+      </a>
+    </div>
+
+    <p style="margin-top:22px;">
+      <a href="/cat-wisdom/" style="font-size:14px;">← Back to the main page</a>
+    </p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var quotes = ["Not everything that complains loudly is urgent.","Procrastination is also a decision. It just communicates itself poorly.","Thinking about it for a long time doesn't make it easier. At most you'll have more angles.","You don't have to solve every problem. Some you can simply drop.","The day known as “when I have time” has yet to appear on any calendar.","Not every step back is a failure. Sometimes you've just realised you were heading the wrong way.","The perfect moment usually arrives when you no longer need it.","If you try to change everything at once, at least you won't be bored.","Motivation is an unreliable colleague. Don't hand it the whole project.","Something doesn't become important just because you spend a lot of time on it.","Finally saying “this isn't working” is also progress.","You don't need to know what happens in five years. Sometimes it's enough to know what you don't want tomorrow.","Too many options is sometimes just a more elegant way of having no idea what to do.","Not every thought calls for action.","Rest is not a reward for finally being done. Spoiler: you will not finally be done.","If everyone is happy with you, you may be doing something very right. Or asking very little of yourself.","Saying no is not personal growth. It's just a word. A useful word.","What you've been circling for three weeks hasn't gotten smaller. Just older.","You don't have to start a new life. Sometimes it's enough to do one thing differently.","Self-knowledge doesn't work by learning more and more about yourself. It works by starting to behave differently.","Not every door needs opening. Some are clearly a broom closet from the outside.","“I'll think about it a little more” often means: I'm afraid to decide.","You don't have to be ready. People are surprisingly often figuring out what they're doing as they go.","You can't fix the past. But you can still fix the next scene.","You are not required to be an extra in your own life.","If something constantly drains your energy, that's information. Not necessarily an obstacle.","Not everything you lost is missed. Some of it you only look for out of habit.","The first sign of change is sometimes not enthusiasm. It's that you've had enough.","You don't have to be a better person every day. It's enough to run on autopilot a little less, now and then.","A small step is still a step, even if no music is playing.","If you don't know where to go next, look at where you don't want to go. A surprisingly useful compass.","Not every ending is dramatic. Sometimes you just stop replying.","Tidying up won't solve your life. But at least afterwards you can find the problem.","You don't have to understand everyone to set a boundary.","“I don't know” is a complete answer. Especially while you really don't know.","Compared to yesterday's you, you may be doing quite well. You just rarely check.","Sometimes you don't need a new plan. You need the first step of the old one.","A decision doesn't always bring relief. Sometimes it just ends the constant deciding.","Not every day is productive. That doesn't make you useless.","Your own pace is still your own pace, even if others think it's slow.","If you only ever do things when you absolutely have to, you may not have a time management problem.","You don't have to understand everything to begin.","“What if” is a lovely place to visit. Living there is expensive.","A survival strategy is very useful for a while. After a while, it's worth checking whether you are still in danger.","You don't have to prove you can do it. It would be enough to actually do it, once.","Life rarely gives final answers. Mostly just more questions, sometimes with an invoice.","If you always wait for the right moment, at least you're consistent.","Not every kind of tiredness should be treated with productivity.","Maybe there's nothing wrong with you. Maybe what you're doing simply doesn't work. That is more uncomfortable, but more fixable.","You don't have to solve your entire life today. For a single day, that's a mildly unreasonable ambition."];
+  var loadingMessages = ["Rozi is conferring with Totó. Totó doesn't care.","Rozi is considering a sunny spot before she answers.","Rozi slowly opens one eye. That is almost an answer.","Rozi thinks it over, then stretches instead.","Rozi is consulting the other residents of the window. They are in no hurry.","Rozi is now considering whether getting up for this is even worth it."];
+
+  var elIdle = document.getElementById('rbc-idle');
+  var elLoading = document.getElementById('rbc-loading');
+  var elLoadingMsg = document.getElementById('rbc-loading-msg');
+  var elQuoteWrap = document.getElementById('rbc-quote-wrap');
+  var elQuote = document.getElementById('rbc-quote');
+  var elBtn = document.getElementById('rbc-next-quote-btn');
+  // GA4 events (gtag is provided by Site Kit); language comes from the URL
+  function tmmTrack(name, params){
+    try {
+      if (typeof window.gtag === 'function') window.gtag('event', name, Object.assign({ language: (location.pathname.indexOf('/en/') === 0 ? 'en' : 'hu') }, params));
+    } catch (e) {}
+  }
+
+
+  var lastQuoteIndex = -1;
+  var phase = 'idle';
+
+  function pickRandom(arr, excludeIndex){
+    var idx;
+    if (arr.length <= 1) return 0;
+    do { idx = Math.floor(Math.random() * arr.length); } while (idx === excludeIndex);
+    return idx;
+  }
+
+  function render(){
+    elIdle.style.display = phase === 'idle' ? '' : 'none';
+    elLoading.style.display = phase === 'loading' ? '' : 'none';
+    elQuoteWrap.style.display = phase === 'done' ? 'block' : 'none';
+    elBtn.disabled = phase === 'loading';
+    elBtn.textContent = phase === 'loading' ? 'Rozi is thinking…' : (phase === 'done' ? 'Another one, please' : 'Ask for a piece of wisdom');
+  }
+
+  var loadingTimers = [];
+
+  elBtn.addEventListener('click', function(){
+    if (phase === 'loading') return;
+    loadingTimers.forEach(function(t){ clearTimeout(t); });
+    loadingTimers = [];
+
+    phase = 'loading';
+
+    var pool = loadingMessages.slice();
+    var steps = 2;
+    var seq = [];
+    for (var i = 0; i < steps; i++){
+      if (pool.length === 0) pool = loadingMessages.slice();
+      var pick = Math.floor(Math.random() * pool.length);
+      seq.push(pool.splice(pick, 1)[0]);
+    }
+    elLoadingMsg.textContent = seq[0];
+    render();
+
+    var stepMs = 3000;
+    for (var s = 1; s < steps; s++){
+      (function(step){
+        var t = setTimeout(function(){
+          elLoadingMsg.textContent = seq[step];
+        }, step * stepMs);
+        loadingTimers.push(t);
+      })(s);
+    }
+
+    var finalTimer = setTimeout(function(){
+      var idx = pickRandom(quotes, lastQuoteIndex);
+      lastQuoteIndex = idx;
+      tmmTrack('generate_verdict', { generator: 'rozi', result_id: idx + 1 });
+      elQuote.textContent = quotes[idx];
+      phase = 'done';
+      render();
+    }, steps * stepMs + 250);
+    loadingTimers.push(finalTimer);
+  });
+
+  render();
+})();
+</script>
+
+
+<!-- /wp:html -->
