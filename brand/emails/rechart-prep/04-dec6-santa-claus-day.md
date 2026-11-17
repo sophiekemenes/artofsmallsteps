@@ -4,7 +4,7 @@
 - **Sent:** 6 December 2026, broadcast to "Prep long"
 - **Built from:** "Mit jelent valójában az újratervezés?" (kincsesterkep.hu, 2026-09-01), English version in `brand/blog/what-rechart-really-means.md`
 - **Merge tags:** `{{Nickname}}`
-- **Placeholder:** `[BLOG-LINK]` = the English article once it's live (another session publishes it). If it isn't live by 6 December, drop the link line.
+- **Link:** https://artofsmallsteps.com/blog/what-rechart-really-means/ (live since 2026-11-17, `cf0abff`)
 
 ---
 
@@ -36,7 +36,7 @@ That's what we'll be doing from 3 January, one small stage at a time. Nobody kee
 
 Until then, a tiny bit of homework, if you fancy it (and only if): is there a label someone gave you a long time ago that you're still carrying around? You don't need to do anything with it. Just notice it. Write it on a scrap of paper if you like.
 
-[Read the whole piece →]([BLOG-LINK])
+[Read the whole piece →](https://artofsmallsteps.com/blog/what-rechart-really-means/)
 
 With love,
 Sophie
