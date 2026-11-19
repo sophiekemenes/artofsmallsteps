@@ -4,6 +4,7 @@
 - **Stage:** 1 · Wake Up the Inner Navigator
 - **Sent:** Sunday 3 January 2027 (then every two days)
 - **Source:** `Kincsesterkep\Ujratervezes\lecke_szovegek\lecke01_2026.md` (approved HU 2026 version)
+- **First mate's logbook:** wayfinding note added 2026-11-19 (see WAYFINDER-NOTES-PROPOSAL.md for sources)
 - **Merge tags:** `{{Nickname}}`
 - **Placeholders:** `[AUDIO-LINK]` (English audio not recorded yet; drop the line if there's none by launch)
 - **Changes vs HU:**
@@ -96,7 +97,7 @@ Because that's the mindset we're reaching for now: to approach, as flexibly as w
 
 ## Task 2 · Deepen the conversation
 
-Take your notebook and write down your answers. All of them: the cube, the ladder, the lion, the road, the sea, the house and the sign, the horse. We'll be using this notebook for lots of things.
+Take your notebook and write down your answers. All of them: the cube, the ladder, the lion, the road, the sea, the house and the sign, the horse. We'll be using this notebook for lots of things. Keep this page. These pictures will turn up again later, on a map.
 
 Remember what I said about nobody seeing and understanding the same thing the way you do? Here too, the key only offers a parallel. To actually interpret it, you need to call on your own inner intuition. If you saw the sea as stormy, but you happen to love a stormy sea, then it's a positive symbol, because it's dear to you.
 
@@ -115,6 +116,11 @@ We won't go into why this matters just yet, but write it down, or circle it.
 If you have a question, just hit reply. It comes straight to me.
 
 We'll carry on in two days. Be good!
+
+> **From the first mate's logbook**
+> In 1976 a double-hulled canoe called Hōkūleʻa sailed from Hawaiʻi to Tahiti, about 2,500 miles, with no compass, no charts and no instruments at all. Its navigator, Mau Piailug from the tiny island of Satawal, read the stars, the wind, the birds and the swell. A lot of what he knew couldn't be written down. It was felt. That's the kind of navigator your downstairs neighbour is.
+>
+> *About this little box: on the original page I promised to be your first mate, and a good first mate keeps a logbook. There’s no female version, by the way. I checked. “First materess” sounds far too much like something people want to sleep on, and I need you awake and curious all along the journey :)*
 
 With love,
 Sophie

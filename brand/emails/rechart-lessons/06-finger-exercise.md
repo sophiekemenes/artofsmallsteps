@@ -4,6 +4,7 @@
 - **Stage:** 1 · Wake Up the Inner Navigator (last lesson of the stage; the 6b decision comes after this)
 - **Sent:** Wednesday 13 January 2027
 - **Source:** `Kincsesterkep\Ujratervezes\lecke_szovegek\lecke06_2026.md` (approved HU 2026 version)
+- **First mate's logbook:** wayfinding note added 2026-11-19 (see WAYFINDER-NOTES-PROPOSAL.md for sources)
 - **Merge tags:** `{{Nickname}}`
 - **Placeholders:** `[AUDIO-LINK]` (the lesson read aloud); `[ANCHORING-AUDIO-LINK]` (the separate guided anchoring audio the HU lesson has). If the English anchoring audio isn't recorded, drop that paragraph: the written a)–e) steps work on their own.
 - **Changes vs HU:**
@@ -116,6 +117,9 @@ How did you like it?
 If you've done the exercise, I'd honestly love to hear how it went. Write to me by replying to this email, and tell me about your experience!
 
 I'll be in touch soon.
+
+> **From the first mate's logbook**
+> In the Caroline Islands, becoming a master navigator is marked with a ceremony called *pwo*. In 2007, on Satawal, Mau Piailug held one for the first time there in about fifty years, and initiated five Hawaiians, Nainoa Thompson among them, alongside eleven Micronesians. That title belongs to its tradition and to a lifetime of training, and a course doesn't hand it out. But the thing it honours, a navigator who trusts what they feel and knows how to read it, is exactly what we've been waking up in you these past ten days.
 
 With love,
 Sophie

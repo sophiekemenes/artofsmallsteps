@@ -61,7 +61,7 @@ page = f"""---
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="description" content="Find Your Bearings: a five-minute game for your imagination, and the key to what your pictures might mean." />
+    <meta name="description" content="Find Your Bearings: a six-minute game for your imagination, and the key to what your pictures might mean." />
     <link rel="icon" type="image/svg+xml" href="/rechart-favicon.svg" />
     <link rel="apple-touch-icon" href="/rechart-apple-touch-icon.png" />
     <title>Find Your Bearings · RECHART · Art of Small Steps</title>

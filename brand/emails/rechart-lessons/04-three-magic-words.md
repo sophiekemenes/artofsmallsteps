@@ -4,6 +4,7 @@
 - **Stage:** 1 · Wake Up the Inner Navigator
 - **Sent:** Saturday 9 January 2027
 - **Source:** `Kincsesterkep\Ujratervezes\lecke_szovegek\lecke04_2026.md` (approved HU 2026 version)
+- **First mate's logbook:** wayfinding note added 2026-11-19 (see WAYFINDER-NOTES-PROPOSAL.md for sources)
 - **Merge tags:** `{{Nickname}}`
 - **Placeholders:** `[AUDIO-LINK]`
 - **Changes vs HU:**
@@ -121,6 +122,9 @@ Oh, and of course we're not banishing the poor words forever. Let's face it, it 
 Change the words where and when they're about you, and could affect life tasks, moods, motivation. You don't "have to" do this, you know… but since you're here, you've already chosen it a little.
 
 All the best until next time!
+
+> **From the first mate's logbook**
+> Some Pacific navigators describe the voyage in a way that sounds the wrong way round to us: the canoe stays still, and the islands move past it. It's the same journey, just told from a different seat. Changing the words you use about your life works a bit like that.
 
 With love,
 Sophie
