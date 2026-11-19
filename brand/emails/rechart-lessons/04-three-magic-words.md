@@ -117,7 +117,7 @@ What can you expect from this?
 I won't tell you in advance. :)
 I'd like you to experience it.
 
-Oh, and of course we're not banishing the poor words forever. Let's face it, it would be very odd if, say, in a dark cellar, you weren't allowed to say "There must be a light switch here somewhere…". Or you'd easily confuse the person on your broadband provider's helpline if you said "Hello, I'm {{Nickname}}, and I've got a little task with my router." (Not to mention "Houston, we have a task.")
+Oh, and of course we're not banishing the poor words forever. Let's face it, it would be very odd if, say, in a dark cellar, you weren't allowed to say "There must be a light switch here somewhere…". Or you'd easily confuse the person on your internet provider's helpline if you said "Hello, I'm {{Nickname}}, and I've got a little task with my router." (Not to mention "Houston, we have a task.")
 
 Change the words where and when they're about you, and could affect life tasks, moods, motivation. You don't "have to" do this, you know… but since you're here, you've already chosen it a little.
 

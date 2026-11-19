@@ -34,7 +34,7 @@ Same chocolate, same twigs. A different way of reading what's in the boot.
 
 That's what we'll be doing from 3 January, one small stage at a time. Nobody keeping score.
 
-Until then, a tiny bit of homework, if you fancy it (and only if): is there a label someone gave you a long time ago that you're still carrying around? You don't need to do anything with it. Just notice it. Write it on a scrap of paper if you like.
+Until then, a tiny bit of homework, if you feel like it (and only if): is there a label someone gave you a long time ago that you're still carrying around? You don't need to do anything with it. Just notice it. Write it on a scrap of paper if you like.
 
 [Read the whole piece →](https://artofsmallsteps.com/blog/what-rechart-really-means/)
 

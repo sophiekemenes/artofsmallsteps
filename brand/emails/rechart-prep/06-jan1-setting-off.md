@@ -22,7 +22,7 @@ I won't keep you long, today is a day for slow mornings. Just this: **on Sunday 
 So here's the packing list. It's short, I promise, and you probably have most of it already:
 
 - **A notebook.** Any notebook. It doesn't need to be beautiful, it needs to be yours, and only for this.
-- **A pen you like.** Not the one that came free with the takeaway menu. One that feels good in your hand.
+- **A pen you like.** Not some random freebie from the bottom of a bag. One that feels good in your hand.
 - **Coloured pens or pencils.** A few colours are enough. No artistic talent required, I checked.
 - **About twenty minutes, every other day.** Open your calendar now (yes, now, while you're reading this) and book it in, as if it were a meeting with someone important. It is.
 - **A quiet corner.** Somewhere nobody needs anything from you for those twenty minutes. A chair by the window, the kitchen table before everyone's up, the car before you go in. It counts.

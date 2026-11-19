@@ -43,7 +43,7 @@ The flaws and unevenness of your cube might be telling you something about your 
 
 Your conscious and your unconscious mind are a fantastic treasure mine, and while we're together, I'd like you to look at them that way. The treasures in there are just waiting to be found.
 
-Some you'll have to dig for, and work a bit to get to. But some will pop straight into your hand as soon as you point a torch's worth of light at them, and throw their arms around your neck, squealing with joy that you've finally found them. :)
+Some you'll have to dig for, and work a bit to get to. But some will pop straight into your hand as soon as you shine even a little light on them, and throw their arms around your neck, squealing with joy that you've finally found them. :)
 
 There's a term for this from the world of NLP, a slightly clunky one: **submodalities.** It's not some set-in-concrete scientific law, more a handy label for something I think you already know yourself: the same thing, a different interpretation, and suddenly it stirs a completely different feeling in you.
 
@@ -77,7 +77,7 @@ Let's turn the filter down a bit.
 
 [IMAGE 2: dark filter]
 
-Ooh, rough, isn't it? You might not get into a lift with me. Involuntary associations attach themselves to the picture: it suggests danger, and bad intentions.
+Ooh, rough, isn't it? You might not get into an elevator with me. Involuntary associations attach themselves to the picture: it suggests danger, and bad intentions.
 
 Let's turn it up a bit.
 
