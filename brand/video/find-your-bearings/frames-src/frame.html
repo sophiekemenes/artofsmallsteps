@@ -16,15 +16,26 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#FBF1E3
 const P=new URLSearchParams(location.search);
 const kind=P.get('kind'), cur=+(P.get('dot')||0), bg=P.get('bg');
 const st=document.getElementById('stage');
+const ICON={
+1:'<path d="M12 3 L20 7.5 L20 16.5 L12 21 L4 16.5 L4 7.5 Z M4 7.5 L12 12 L20 7.5 M12 12 L12 21"/>',
+2:'<path d="M8 3 L8 21 M16 3 L16 21 M8 6.5 L16 6.5 M8 10.5 L16 10.5 M8 14.5 L16 14.5 M8 18.5 L16 18.5"/>',
+3:'<path d="'+(()=>{let d='';const N=11;for(let i=0;i<N;i++){const a0=i/N*2*Math.PI-Math.PI/2,a1=(i+1)/N*2*Math.PI-Math.PI/2,am=(a0+a1)/2,r=9.4,R=11.4;const p=(a,rr)=>(12+rr*Math.cos(a)).toFixed(2)+' '+(12.6+rr*Math.sin(a)).toFixed(2);d+=(i?'':'M '+p(a0,r))+' Q '+p(am,R+1.1)+' '+p(a1,r);}return d+' Z';})()+'"/><path d="M8.2 8.6 C 8.2 7.4 9.6 7 10.2 8 M15.8 8.6 C 15.8 7.4 14.4 7 13.8 8"/><path d="M7.6 11.4 C 7.6 8.6 9.6 7.6 12 7.6 C 14.4 7.6 16.4 8.6 16.4 11.4 C 16.4 14.4 14.6 17.4 12 17.4 C 9.4 17.4 7.6 14.4 7.6 11.4 Z"/><circle cx="10.2" cy="11.4" r=".6" fill="currentColor"/><circle cx="13.8" cy="11.4" r=".6" fill="currentColor"/><path d="M11 13.8 L13 13.8 L12 15 Z M12 15 L12 15.8 M10.6 16.2 C 11.2 16.6 12.8 16.6 13.4 16.2"/>',
+4:'<path d="M5 21 L10.4 4 M19 21 L13.6 4 M12 20.5 L12 17.5 M12 14.5 L12 12 M12 9.5 L12 8"/>',
+5:'<path d="M2.5 9.5 q2.4 -2.6 4.8 0 t4.8 0 t4.8 0 t4.8 0 M2.5 14.5 q2.4 -2.6 4.8 0 t4.8 0 t4.8 0 t4.8 0 M5 19.5 q2.4 -2 4.8 0 t4.8 0 t4.8 0"/>',
+6:'<path d="M3.5 11 L12 4 L20.5 11 M5.8 9.2 L5.8 20 L18.2 20 L18.2 9.2 M10 20 L10 14.5 L14 14.5 L14 20 M15.5 6.2 L15.5 4 L17.5 4 L17.5 7.8"/>',
+7:'<path d="M8 22 C 8.4 19 8.8 17 9.4 15.4 C 8.2 15.2 6.6 14.9 5.2 14.6 C 3.8 14.3 3.2 13.2 3.6 12 C 4.4 10 6.4 7.6 8.4 5.8 L 9.6 2.4 L 11.2 4.8 C 13.6 4.6 16.4 6.6 17.8 9.6 C 19.2 12.8 19.6 17 19.8 22"/><path d="M9.4 15.4 C 10.8 13.8 11 11.8 10.2 10.4"/><circle cx="9.3" cy="8.2" r=".65" fill="currentColor"/><circle cx="4.7" cy="12.5" r=".45" fill="currentColor"/><path d="M12 5.4 C 13.2 5.6 13.6 6.8 14.8 7 M14.4 7.8 C 15.6 8 16 9.2 17 9.4 M16.4 10.6 C 17.4 10.8 17.8 12 18.6 12.2"/>'
+};
+function icon(n,size,color,x,y){return `<g transform="translate(${x-size/2} ${y-size/2}) scale(${size/24})" fill="none" stroke="${color}" stroke-width="${(size>40?2.6:2.0)*24/size}" stroke-linecap="round" stroke-linejoin="round" style="color:${color}">${ICON[n]}</g>`;}
+
 function route(cur,scale=1,light=false){
   const xs=[0,1,2,3,4,5,6].map(i=>40+i*120), ys=[30,18,34,20,32,18,28];
   let d=`M ${xs[0]} ${ys[0]}`;
   for(let i=1;i<7;i++){const mx=(xs[i-1]+xs[i])/2; d+=` C ${mx} ${ys[i-1]} ${mx} ${ys[i]} ${xs[i]} ${ys[i]}`;}
   const ink=light?'#FBF1E3':'#142230';
-  let s=`<svg width="${800*scale}" height="${70*scale}" viewBox="0 0 800 70" class="route"><path d="${d}" fill="none" stroke="#B87345" stroke-width="2.4" stroke-dasharray="4 6" stroke-linecap="round" opacity=".85"/>`;
+  let s=`<svg width="${800*scale}" height="${110*scale}" viewBox="0 -40 800 110" class="route" style="overflow:visible"><path d="${d}" fill="none" stroke="#B87345" stroke-width="2.4" stroke-dasharray="4 6" stroke-linecap="round" opacity=".85"/>`;
   for(let i=0;i<7;i++){
     const n=i+1;
-    if(n<cur) s+=`<circle cx="${xs[i]}" cy="${ys[i]}" r="6.5" fill="#B87345"/>`;
+    if(n<cur) s+=`<circle cx="${xs[i]}" cy="${ys[i]}" r="6.5" fill="#B87345"/>`+icon(n,36,'#142230',xs[i],ys[i]-34);
     else if(n===cur) s+=`<circle cx="${xs[i]}" cy="${ys[i]}" r="15" fill="none" stroke="#B87345" stroke-width="2"/><circle cx="${xs[i]}" cy="${ys[i]}" r="8" fill="#B87345"/>`;
     else s+=`<circle cx="${xs[i]}" cy="${ys[i]}" r="6.5" fill="${light?'transparent':'#FBF1E3'}" stroke="#B87345" stroke-width="2"/>`;
     s+=`<text x="${xs[i]}" y="${ys[i]+36}" text-anchor="middle" font-family="Lora,serif" font-size="15" fill="${ink}" opacity="${n===cur?.85:.45}">${n}</text>`;
@@ -40,6 +51,38 @@ if(kind==='title'){
   st.innerHTML=`<img class="bg" src="desert.png">`+route(cur);
 } else if(kind==='shore'){
   st.innerHTML=`<div class="paper"></div><div class="horizon"></div>`+route(cur);
+
+} else if(kind==='chart'){
+  const p=+(P.get('p')||1);
+  const X=[230,450,690,930,1170,1420,1680], Y=[640,470,660,450,640,440,600];
+  let grid='';
+  for(let x=120;x<1920;x+=150) grid+=`<line x1="${x}" y1="60" x2="${x}" y2="1020"/>`;
+  for(let y=110;y<1080;y+=130) grid+=`<line x1="60" y1="${y}" x2="1860" y2="${y}"/>`;
+  let rose='';
+  for(let k=0;k<16;k++){const a=k/16*2*Math.PI,r=k%4?(k%2?52:78):118;rose+=`<path d="M0 0 L ${(Math.sin(a)*r).toFixed(1)} ${(-Math.cos(a)*r).toFixed(1)}"/>`;}
+  let d=`M ${X[0]} ${Y[0]}`;
+  for(let i=1;i<7;i++){const mx=(X[i-1]+X[i])/2; d+=` C ${mx} ${Y[i-1]} ${mx} ${Y[i]} ${X[i]} ${Y[i]}`;}
+  const a=X[cur-2], b=X[cur-1], e=p<1? (1-Math.pow(1-p,3)) : 1;
+  const clipW=a+(b-a)*e+4;
+  let marks='';
+  for(let i=0;i<7;i++){const n=i+1;
+    if(n<cur) marks+=`<circle cx="${X[i]}" cy="${Y[i]}" r="11" fill="#B87345"/>`+icon(n,70,'#142230',X[i],Y[i]-78);
+    else if(n===cur){ if(e>0.95) marks+=`<circle cx="${X[i]}" cy="${Y[i]}" r="26" fill="none" stroke="#B87345" stroke-width="3" opacity="${(e-0.95)*20}"/><circle cx="${X[i]}" cy="${Y[i]}" r="13" fill="#B87345" opacity="${(e-0.95)*20}"/>`; else marks+=`<circle cx="${X[i]}" cy="${Y[i]}" r="11" fill="none" stroke="#B87345" stroke-width="2.5" opacity=".5"/>`; }
+    else marks+=`<circle cx="${X[i]}" cy="${Y[i]}" r="11" fill="none" stroke="#B87345" stroke-width="2.5" opacity=".5"/>`;
+    marks+=`<text x="${X[i]}" y="${Y[i]+52}" text-anchor="middle" font-family="Lora,serif" font-size="24" fill="#142230" opacity="${n===cur?.8:.45}">${n}</text>`;
+  }
+  st.innerHTML=`<div class="paper"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 40% 30% at 22% 28%,rgba(184,115,69,.10),transparent 70%),radial-gradient(ellipse 45% 30% at 74% 80%,rgba(184,115,69,.06),transparent 70%),radial-gradient(ellipse 30% 24% at 30% 82%,rgba(28,79,107,.035),transparent 70%),radial-gradient(ellipse 30% 22% at 60% 18%,rgba(184,115,69,.06),transparent 70%)"></div>
+  <svg width="1920" height="1080" style="position:absolute;inset:0">
+   <rect x="44" y="44" width="1832" height="992" fill="none" stroke="#142230" stroke-opacity=".28" stroke-width="2"/>
+   <rect x="58" y="58" width="1804" height="964" fill="none" stroke="#142230" stroke-opacity=".16" stroke-width="1"/>
+   <g stroke="#1C4F6B" stroke-opacity=".09" stroke-width="1.2">${grid}</g>
+   <g transform="translate(1680 230)" stroke="#8A5129" stroke-opacity=".35" stroke-width="1.6">${rose}<circle r="34" fill="none"/><circle r="92" fill="none" stroke-opacity=".18"/></g>
+   <text x="1680" y="92" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="34" fill="#8A5129" fill-opacity=".55">N</text>
+   <defs><clipPath id="c"><rect x="0" y="0" width="${clipW}" height="1080"/></clipPath></defs>
+   <path d="${d}" fill="none" stroke="#B87345" stroke-width="3.6" stroke-dasharray="7 10" stroke-linecap="round" clip-path="url(#c)"/>
+   ${marks}
+  </svg>`;
 } else if(kind==='write'){
   st.innerHTML=`<div class="paper"></div><div class="center" style="padding-bottom:90px">
   <svg width="180" height="90" viewBox="0 0 180 90" style="margin-bottom:18px"><path d="M14 70 C 50 40, 80 78, 120 46 S 160 40, 168 30" fill="none" stroke="#B87345" stroke-width="3" stroke-linecap="round"/><path d="M146 20 L172 12 L166 38 Z" fill="none" stroke="#142230" stroke-width="2.4" stroke-linejoin="round"/></svg>

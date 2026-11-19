@@ -20,7 +20,11 @@ if not SKIP_VIDEO:
         t1 = min(total, s['end'] + (H if i < len(sc)-1 else 0))
         d = t1 - t0; n = round(d*30)
         kb = s['image'].startswith(('intro', 'desert', 'landfall'))
-        if kb:
+        if s['image'].startswith('chart-'):
+            # pre-rendered draw animation (frames/chart-N/0000.png...), last frame held
+            vf = f"fps=30,tpad=stop_mode=clone:stop_duration={d:.3f},format=yuv420p"
+            inp = ['-framerate', '30', '-i', f"frames/{s['image']}/%04d.png"]
+        elif kb:
             vf = (f"scale=3840:-1:flags=lanczos,zoompan=z='1+0.04*on/{n}':x='iw/2-(iw/zoom/2)':"
                   f"y='ih/2-(ih/zoom/2)':d={n}:s=1920x1080:fps=30,format=yuv420p")
             inp = ['-i', f"frames/{s['image']}"]
