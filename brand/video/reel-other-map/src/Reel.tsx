@@ -14,8 +14,8 @@ export const TOTAL = 28 * FPS;
 const f = (s: number) => Math.round(s * FPS);
 
 const C = {
-  paper: '#FBF1E3', ink: '#142230', sea: '#1C4F6B', copper: '#B87345', copperDark: '#8A5129',
-  teal: '#3F8F7A', coral: '#C4553E', mustard: '#D9A441',
+  paper: '#F8EEDF', ink: '#2F3E4C', sea: '#4F7396', copper: '#B87345', copperDark: '#8A5129',
+  sepia: '#6B5440', blue: '#6E9CC8', blueLight: '#A8C6E2', ochre: '#D9B27C',
 };
 
 // ---------- voice + captions ----------
@@ -71,15 +71,15 @@ const PILLAR_ANGLES = [195, 232, 270, 308, 345];
 
 const S: Stroke[] = [];
 // A. the sheet: border + title (during line 1)
-S.push({id: 'border', d: 'M82 238 L998 232 L1004 1238 L78 1244 Z', color: C.sea, w: 4, t0: 0.6, t1: 3.5});
+S.push({id: 'border', d: 'M82 238 L998 232 L1004 1238 L78 1244 Z', color: C.sepia, w: 3.5, t0: 0.6, t1: 3.5});
 S.push({id: 'title', text: 'my other map', x: 975, y: 1215, size: 44, color: C.copperDark, w: 0, t0: 3.6, t1: 4.7, anchor: 'start'});
 // B. compass rose with five values (lesson 7)
 S.push({id: 'c-ring', d: circlePath(CX, CY, 96), color: C.copper, w: 4, t0: 5.4, t1: 6.3});
-S.push({id: 'c-star', d: `M${CX} ${CY - 122} L${CX + 16} ${CY - 16} L${CX + 122} ${CY} L${CX + 16} ${CY + 16} L${CX} ${CY + 122} L${CX - 16} ${CY + 16} L${CX - 122} ${CY} L${CX - 16} ${CY - 16} Z`, color: C.copper, w: 4, t0: 6.4, t1: 7.6});
+S.push({id: 'c-star', d: `M${CX} ${CY - 122} L${CX + 16} ${CY - 16} L${CX + 122} ${CY} L${CX + 16} ${CY + 16} L${CX} ${CY + 122} L${CX - 16} ${CY + 16} L${CX - 122} ${CY} L${CX - 16} ${CY - 16} Z`, color: C.sea, w: 3.5, t0: 6.4, t1: 7.6});
 S.push({id: 'c-n', text: 'N', x: CX, y: CY - 134, size: 44, color: C.copperDark, w: 0, t0: 7.65, t1: 7.95, anchor: 'middle'});
 VALUE_ANGLES.forEach((a, i) => {
   const r = a * Math.PI / 180;
-  S.push({id: `v${i}`, d: circlePath(CX + Math.cos(r) * 138, CY + Math.sin(r) * 138, 10), color: C.coral, w: 5, t0: 8.05 + i * 0.25, t1: 8.25 + i * 0.25});
+  S.push({id: `v${i}`, d: circlePath(CX + Math.cos(r) * 138, CY + Math.sin(r) * 138, 10), color: C.copper, w: 4.5, t0: 8.05 + i * 0.25, t1: 8.25 + i * 0.25});
 });
 // C. harbour, "you are here", five pillars (lesson 8)
 S.push({id: 'mole', d: `M${HX - 165} ${HY + 60} Q${HX} ${HY + 175} ${HX + 165} ${HY + 60} L${HX + 120} ${HY + 40}`, color: C.sea, w: 5, t0: 10.0, t1: 10.7});
@@ -87,22 +87,22 @@ S.push({id: 'here', d: circlePath(HX, HY, 24), color: C.ink, w: 5, t0: 10.75, t1
 S.push({id: 'here-t', text: 'you are here', x: HX, y: HY + 66, size: 36, color: C.ink, w: 0, t0: 11.1, t1: 11.6, anchor: 'middle'});
 PILLAR_ANGLES.forEach((a, i) => {
   const r = a * Math.PI / 180, px = HX + Math.cos(r) * 135, py = HY + Math.sin(r) * 120;
-  S.push({id: `p${i}`, d: `M${px - 9} ${py + 22} L${px - 9} ${py - 22} L${px + 9} ${py - 22} L${px + 9} ${py + 22}`, color: C.copperDark, w: 4.5, t0: 11.65 + i * 0.19, t1: 11.82 + i * 0.19});
+  S.push({id: `p${i}`, d: `M${px - 9} ${py + 22} L${px - 9} ${py - 22} L${px + 9} ${py - 22} L${px + 9} ${py + 22}`, color: C.sepia, w: 4, t0: 11.65 + i * 0.19, t1: 11.82 + i * 0.19});
 });
 // D. horizon + lighthouse (lesson 9)
-S.push({id: 'horizon', d: 'M110 420 C 380 410 640 430 972 416', color: C.sea, w: 3, t0: 12.8, t1: 13.5});
-S.push({id: 'tower', d: `M${LX - 26} ${LY} L${LX - 12} ${LY - 118} L${LX + 12} ${LY - 118} L${LX + 26} ${LY} Z`, color: C.coral, w: 4.5, t0: 13.55, t1: 14.25});
-S.push({id: 'stripes', d: `M${LX - 22} ${LY - 38} L${LX + 22} ${LY - 38} M${LX - 17} ${LY - 80} L${LX + 17} ${LY - 80}`, color: C.coral, w: 4.5, t0: 14.3, t1: 14.6});
-S.push({id: 'lamp', d: `M${LX - 15} ${LY - 118} L${LX - 15} ${LY - 140} L${LX + 15} ${LY - 140} L${LX + 15} ${LY - 118} M${LX - 20} ${LY - 140} L${LX} ${LY - 160} L${LX + 20} ${LY - 140}`, color: C.ink, w: 4, t0: 14.65, t1: 15.15});
+S.push({id: 'horizon', d: 'M110 420 C 380 410 640 430 972 416', color: C.blue, w: 3, t0: 12.8, t1: 13.5});
+S.push({id: 'tower', d: `M${LX - 26} ${LY} L${LX - 12} ${LY - 118} L${LX + 12} ${LY - 118} L${LX + 26} ${LY} Z`, color: C.sepia, w: 4, t0: 13.55, t1: 14.25});
+S.push({id: 'stripes', d: `M${LX - 22} ${LY - 38} L${LX + 22} ${LY - 38} M${LX - 17} ${LY - 80} L${LX + 17} ${LY - 80}`, color: C.copper, w: 4.5, t0: 14.3, t1: 14.6});
+S.push({id: 'lamp', d: `M${LX - 15} ${LY - 118} L${LX - 15} ${LY - 140} L${LX + 15} ${LY - 140} L${LX + 15} ${LY - 118} M${LX - 20} ${LY - 140} L${LX} ${LY - 160} L${LX + 20} ${LY - 140}`, color: C.sepia, w: 4, t0: 14.65, t1: 15.15});
 // E. islands = roles, coloured by how satisfied you are (lesson 10)
-ISL.forEach((s, i) => S.push({id: `isl${i}`, d: blob(s.x, s.y, s.r, s.seed), color: C.teal, w: 4.5, t0: 16.3 + i * 0.85, t1: 16.85 + i * 0.85}));
+ISL.forEach((s, i) => S.push({id: `isl${i}`, d: blob(s.x, s.y, s.r, s.seed), color: C.sepia, w: 3.5, t0: 16.3 + i * 0.85, t1: 16.85 + i * 0.85}));
 // F. X marks the spot (lesson 11)
 const X = [{x: 205, y: 585}, {x: 650, y: 560}, {x: 825, y: 1010}];
 X.forEach((p, i) => {
-  S.push({id: `xa${i}`, d: `M${p.x - 20} ${p.y - 20} L${p.x + 20} ${p.y + 20}`, color: C.ink, w: 6, t0: 20.25 + i * 0.5, t1: 20.42 + i * 0.5});
-  S.push({id: `xb${i}`, d: `M${p.x + 20} ${p.y - 20} L${p.x - 20} ${p.y + 20}`, color: C.ink, w: 6, t0: 20.48 + i * 0.5, t1: 20.65 + i * 0.5});
+  S.push({id: `xa${i}`, d: `M${p.x - 20} ${p.y - 20} L${p.x + 20} ${p.y + 20}`, color: C.ink, w: 5, t0: 20.25 + i * 0.5, t1: 20.42 + i * 0.5});
+  S.push({id: `xb${i}`, d: `M${p.x + 20} ${p.y - 20} L${p.x - 20} ${p.y + 20}`, color: C.ink, w: 5, t0: 20.48 + i * 0.5, t1: 20.65 + i * 0.5});
 });
-S.push({id: 'ring', d: 'M870 990 C 880 950 790 950 775 990 C 760 1040 840 1062 872 1030 C 890 1010 880 985 858 975', color: C.coral, w: 5, t0: 21.8, t1: 22.4});
+S.push({id: 'ring', d: 'M870 990 C 880 950 790 950 775 990 C 760 1040 840 1062 872 1030 C 890 1010 880 985 858 975', color: C.copper, w: 5, t0: 21.8, t1: 22.4});
 S.push({id: 'route', d: `M${HX + 34} ${HY - 4} C 700 770 730 880 765 950 C 778 978 786 992 790 1000`, color: C.copper, w: 4.5, t0: 22.5, t1: 23.3, dash: true});
 
 // pre-measure paths
@@ -184,16 +184,60 @@ const Pen: React.FC<{frame: number}> = ({frame}) => {
     }
   }
   if (!pos || alpha <= 0.01) return null;
+  return <Quill x={pos.x} y={pos.y} lift={lift} alpha={alpha} />;
+};
+
+// ---------- watercolour ----------
+// A wash "blooms" in like wet pigment: grows from 70 %, soft displaced edge, darker pigment rim, paper grain.
+type W = {x: number; y: number; r: number; t: number; color: string; a: number; seed: number; dots?: number};
+const WASH: W[] = [
+  // halos around the sheet, like the landing illustrations
+  {x: 95, y: 330, r: 150, t: 1.0, color: C.blue, a: 0.42, seed: 11, dots: 5},
+  {x: 1000, y: 1140, r: 170, t: 1.6, color: C.blue, a: 0.38, seed: 12, dots: 6},
+  {x: 990, y: 290, r: 105, t: 2.2, color: C.blueLight, a: 0.5, seed: 13},
+  // the sea itself, a pale wash over the whole sheet
+  {x: 540, y: 820, r: 430, t: 3.4, color: C.blueLight, a: 0.24, seed: 14},
+  // compass, harbour water, sky behind the lighthouse
+  {x: CX, y: CY, r: 120, t: 7.7, color: C.blue, a: 0.45, seed: 15, dots: 4},
+  {x: HX, y: HY + 78, r: 115, t: 10.7, color: C.blue, a: 0.4, seed: 16},
+  {x: LX, y: LY - 85, r: 155, t: 15.0, color: C.blueLight, a: 0.6, seed: 17, dots: 4},
+  // warm copper bloom under the chosen X
+  {x: 825, y: 1010, r: 52, t: 22.35, color: C.copper, a: 0.35, seed: 18, dots: 3},
+];
+const rnd = (n: number) => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+
+const Wash: React.FC<{w: W; frame: number}> = ({w, frame}) => {
+  const k = interpolate(frame, [f(w.t), f(w.t + 1.0)], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  if (k <= 0) return null;
+  const d = blob(w.x, w.y, w.r, w.seed);
+  const sc = 0.7 + 0.3 * k;
+  return (
+    <g>
+      <g transform={`translate(${w.x} ${w.y}) scale(${sc}) translate(${-w.x} ${-w.y})`} opacity={k * w.a}>
+        <path d={d} fill={`url(#g${w.color.slice(1)})`} filter="url(#wc)" />
+        <path d={d} fill="none" stroke={w.color} strokeWidth={5} opacity={0.75} filter="url(#wcEdge)" />
+      </g>
+      {Array.from({length: w.dots ?? 0}).map((_, i) => {
+        const a = rnd(w.seed * 10 + i) * Math.PI * 2, dist = w.r * (1.05 + rnd(w.seed * 20 + i) * 0.45);
+        const kd = interpolate(frame, [f(w.t + 0.3 + i * 0.06), f(w.t + 0.5 + i * 0.06)], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+        return <circle key={i} cx={w.x + Math.cos(a) * dist * 1.2} cy={w.y + Math.sin(a) * dist * 0.85} r={2 + rnd(w.seed * 30 + i) * 4.5} fill={w.color} opacity={kd * Math.min(1, w.a * 1.6)} />;
+      })}
+    </g>
+  );
+};
+
+const Quill: React.FC<{x: number; y: number; lift: number; alpha: number}> = ({x, y, lift, alpha}) => {
   const up = lift * 26;
   return (
-    <g opacity={alpha} transform={`translate(${pos.x} ${pos.y})`}>
-      <ellipse cx={46 + up * 1.6} cy={34 + up * 1.2} rx={34} ry={12} fill="#142230" opacity={0.12 - lift * 0.05} transform="rotate(32)" />
-      <g transform={`translate(0 ${-up}) rotate(28)`}>
-        <path d="M0 0 L-8 -30 L8 -30 Z" fill={color} />
-        <rect x={-14} y={-60} width={28} height={32} rx={4} fill="#E9DFD0" stroke="#142230" strokeOpacity={0.25} />
-        <rect x={-15} y={-300} width={30} height={244} rx={8} fill={color} />
-        <rect x={-15} y={-300} width={30} height={244} rx={8} fill="url(#penshine)" />
-        <rect x={-16} y={-206} width={32} height={8} fill="#142230" opacity={0.18} />
+    <g opacity={alpha} transform={`translate(${x} ${y})`}>
+      <ellipse cx={70 + up * 1.6} cy={40 + up * 1.2} rx={70} ry={10} fill={C.sepia} opacity={0.1 - lift * 0.04} transform="rotate(30)" />
+      <g transform={`translate(0 ${-up}) rotate(30)`} filter="url(#rough)">
+        <path d="M0 -70 C -34 -140 -46 -260 -10 -350 C 22 -268 38 -150 0 -70 Z" fill="url(#vane)" stroke={C.sepia} strokeWidth={2} strokeOpacity={0.55} />
+        {[-110, -150, -190, -230, -270, -310].map((yy, i) => (
+          <path key={i} d={`M0 ${yy} L${i % 2 ? -26 : 24} ${yy - 28}`} stroke={C.sepia} strokeWidth={1.4} opacity={0.35} />
+        ))}
+        <path d="M0 -6 L0 -355" stroke={C.sepia} strokeWidth={3.2} strokeLinecap="round" />
+        <path d="M0 0 L-5 -24 L5 -24 Z" fill={C.ink} />
       </g>
     </g>
   );
@@ -269,7 +313,9 @@ export const Reel: React.FC = () => {
     <AbsoluteFill style={{backgroundColor: C.paper}}>
       {/* paper grain */}
       <svg width={1080} height={1920} style={{position: 'absolute'}}>
-        <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={7} /><feColorMatrix values="0 0 0 0 0.45  0 0 0 0 0.32  0 0 0 0 0.2  0 0 0 0.07 0" /></filter>
+        <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves={2} seed={7} /><feColorMatrix values="0 0 0 0 0.45  0 0 0 0 0.32  0 0 0 0 0.2  0 0 0 0.1 0" /></filter>
+        <filter id="blotch"><feTurbulence type="fractalNoise" baseFrequency="0.004" numOctaves={3} seed={21} /><feColorMatrix values="0 0 0 0 0.62  0 0 0 0 0.48  0 0 0 0 0.3  0 0 0 0.22 -0.04" /></filter>
+        <rect width={1080} height={1920} filter="url(#blotch)" />
         <rect width={1080} height={1920} filter="url(#grain)" />
         <radialGradient id="vig" cx="50%" cy="42%" r="75%"><stop offset="60%" stopColor="#8A5129" stopOpacity={0} /><stop offset="100%" stopColor="#8A5129" stopOpacity={0.14} /></radialGradient>
         <rect width={1080} height={1920} fill="url(#vig)" />
@@ -282,33 +328,57 @@ export const Reel: React.FC = () => {
             <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves={2} seed={3} result="n" />
             <feDisplacementMap in="SourceGraphic" in2="n" scale={4.5} xChannelSelector="R" yChannelSelector="G" />
           </filter>
+          <filter id="wc" x="-40%" y="-40%" width="180%" height="180%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves={3} seed={5} result="n1" />
+            <feDisplacementMap in="SourceGraphic" in2="n1" scale={48} xChannelSelector="R" yChannelSelector="G" result="d" />
+            <feGaussianBlur in="d" stdDeviation={6} result="b" />
+            <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves={2} seed={9} result="n2" />
+            <feColorMatrix in="n2" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.45" result="g" />
+            <feComposite in="b" in2="g" operator="in" />
+          </filter>
+          <filter id="wcEdge" x="-40%" y="-40%" width="180%" height="180%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves={3} seed={5} result="n1" />
+            <feDisplacementMap in="SourceGraphic" in2="n1" scale={48} xChannelSelector="R" yChannelSelector="G" result="d" />
+            <feGaussianBlur in="d" stdDeviation={1.6} />
+          </filter>
+          {[C.blue, C.blueLight, C.ochre, C.copper].map((c) => (
+            <radialGradient key={c} id={`g${c.slice(1)}`} cx="45%" cy="42%" r="62%">
+              <stop offset="0" stopColor={c} stopOpacity={0.3} /><stop offset="0.7" stopColor={c} stopOpacity={0.62} /><stop offset="1" stopColor={c} stopOpacity={1} />
+            </radialGradient>
+          ))}
+          <linearGradient id="beamL" x1="1" x2="0"><stop offset="0" stopColor={C.ochre} stopOpacity={0.75} /><stop offset="1" stopColor={C.ochre} stopOpacity={0} /></linearGradient>
+          <linearGradient id="beamR" x1="0" x2="1"><stop offset="0" stopColor={C.ochre} stopOpacity={0.75} /><stop offset="1" stopColor={C.ochre} stopOpacity={0} /></linearGradient>
+          <linearGradient id="vane" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stopColor="#F4EBDD" /><stop offset="0.6" stopColor="#C9D6E2" /><stop offset="1" stopColor="#7E9FBD" /></linearGradient>
           <linearGradient id="penshine" x1="0" x2="1"><stop offset="0" stopColor="#fff" stopOpacity={0.28} /><stop offset="0.45" stopColor="#fff" stopOpacity={0} /><stop offset="1" stopColor="#000" stopOpacity={0.18} /></linearGradient>
         </defs>
         <g transform={`translate(540 740) scale(${cam.s}) translate(${-cam.x} ${-cam.y})`}>
-          {/* island fills: coloured in from the centre once the outline is drawn */}
+          {WASH.slice(0, 4).map((w, i) => <Wash key={i} w={w} frame={frame} />)}
+          {/* islands: a blue halo of water, then ochre land, stronger the more satisfied you are */}
+          {ISL.map((s, i) => {
+            const st = S.find((x) => x.id === `isl${i}`)!;
+            return (
+              <g key={'iw' + i}>
+                <Wash w={{x: s.x, y: s.y, r: s.r * 1.45, t: st.t0, color: C.blue, a: 0.35, seed: 30 + i, dots: 3}} frame={frame} />
+                <Wash w={{x: s.x, y: s.y, r: s.r * 0.95, t: st.t1 - 0.05, color: C.ochre, a: 0.25 + s.fill * 0.6, seed: 40 + i}} frame={frame} />
+              </g>
+            );
+          })}
+          {WASH.slice(4).map((w, i) => <Wash key={'w' + i} w={w} frame={frame} />)}
+          {progress(frame, S.find((s) => s.id === 'c-star')!) >= 1 && (
+            <path d={S.find((s) => s.id === 'c-star')!.d} fill={C.blue} opacity={interpolate(frame, [f(7.6), f(8.3)], [0, 0.55], {extrapolateRight: 'clamp'})} filter="url(#wcEdge)" />
+          )}
           <g filter="url(#rough)">
-            {ISL.map((s, i) => {
-              const st = S.find((x) => x.id === `isl${i}`)!;
-              const k = interpolate(frame, [f(st.t1), f(st.t1 + 0.55)], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.quad)});
-              if (k <= 0) return null;
-              return (
-                <g key={i}>
-                  <clipPath id={`fill-${i}`}><circle cx={s.x} cy={s.y} r={s.r * 1.6 * k} /></clipPath>
-                  <path d={st.d} fill={C.teal} opacity={s.fill * 0.75} clipPath={`url(#fill-${i})`} />
-                </g>
-              );
-            })}
             {beam > 0 && (
               <g opacity={beam}>
-                <path d={`M${LX} ${LY - 130} L${LX - 230} ${LY - 175} L${LX - 230} ${LY - 95} Z`} fill={C.mustard} opacity={0.55} />
-                <path d={`M${LX} ${LY - 130} L${LX + 200} ${LY - 170} L${LX + 200} ${LY - 92} Z`} fill={C.mustard} opacity={0.55} />
-                <circle cx={LX} cy={LY - 129} r={9} fill={C.mustard} />
+                <path d={`M${LX} ${LY - 130} L${LX - 230} ${LY - 175} L${LX - 230} ${LY - 95} Z`} fill="url(#beamL)" filter="url(#wcEdge)" />
+                <path d={`M${LX} ${LY - 130} L${LX + 200} ${LY - 170} L${LX + 200} ${LY - 92} Z`} fill="url(#beamR)" filter="url(#wcEdge)" />
+                <circle cx={LX} cy={LY - 129} r={9} fill={C.copper} />
               </g>
             )}
             {S.filter((s) => !s.text).map((s) => <StrokePath key={s.id} s={s} frame={frame} />)}
             {S.filter((s) => s.id.startsWith('v') && progress(frame, s) >= 1).map((s) => {
               const i = Number(s.id.slice(1)), r = VALUE_ANGLES[i] * Math.PI / 180;
-              return <circle key={s.id + 'f'} cx={CX + Math.cos(r) * 138} cy={CY + Math.sin(r) * 138} r={7} fill={C.coral} />;
+              return <circle key={s.id + 'f'} cx={CX + Math.cos(r) * 138} cy={CY + Math.sin(r) * 138} r={7} fill={C.copper} />;
             })}
             {progress(frame, S.find((s) => s.id === 'here')!) >= 1 && <circle cx={HX} cy={HY} r={7} fill={C.ink} />}
           </g>
@@ -318,7 +388,7 @@ export const Reel: React.FC = () => {
       </svg>
 
       {/* soft paper band behind the captions */}
-      <div style={{position: 'absolute', left: 0, right: 0, top: 1255, height: 300, opacity: capBand, background: `linear-gradient(to bottom, rgba(251,241,227,0) 0%, rgba(251,241,227,1) 20%, rgba(251,241,227,1) 82%, rgba(251,241,227,0) 100%)`}} />
+      <div style={{position: 'absolute', left: 0, right: 0, top: 1255, height: 300, opacity: capBand, background: `linear-gradient(to bottom, rgba(248,238,223,0) 0%, rgba(248,238,223,1) 20%, rgba(248,238,223,1) 82%, rgba(248,238,223,0) 100%)`}} />
       <Caption frame={frame} />
       <EndCard frame={frame} />
 

@@ -7,6 +7,7 @@
   - lighthouse
   - islands, coloured by satisfaction
   - X marks, with a dashed route to the circled one
+- Look: the RECHART watercolour world from the landing illustrations (dusty-blue washes that bloom in with darker pigment rims, sepia ink lines, copper accents, blue splatters, a quill instead of a pen). Sophie asked for it on 2026-11-19 (v2).
 - Sophie approved the storyboard (2026-11-19). A plain "you are here" marker replaces the cube, so the Reel never primes the Find Your Bearings test.
 
 **Deliverables:**
