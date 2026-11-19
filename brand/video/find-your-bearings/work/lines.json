@@ -1,0 +1,227 @@
+[
+ {
+  "text": "Before a navigator sets off anywhere, they do one small thing first. They take their bearings: where am I standing, right now?",
+  "kind": "gap",
+  "after": 1.2
+ },
+ {
+  "text": "That's what we're going to do together. Only, this time, the map is inside you.",
+  "kind": "gap",
+  "after": 1.5
+ },
+ {
+  "text": "Keep a pen and paper close. You can pause the video at any point to write your answers down, and you can always come back to it later.",
+  "kind": "gap",
+  "after": 1.2
+ },
+ {
+  "text": "Turn your inner imagination right up, be honest, and always go with your very first impression.",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Don't worry, there are no wrong answers here. Only symbols hiding deep in your mind, and at the end, I'll help you read them.",
+  "kind": "gap",
+  "after": 1.2
+ },
+ {
+  "text": "Ready? Let's go.",
+  "kind": "gap",
+  "after": 2.5
+ },
+ {
+  "text": "Imagine you're standing in the middle of a vast, beautiful desert.",
+  "kind": "gap",
+  "after": 1.5
+ },
+ {
+  "text": "Your eyes rest on the soft curves of the dunes. Near and far, there's nothing at all\u2026",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "\u2026except a cube, which catches your eye.",
+  "kind": "gap",
+  "after": 1.5
+ },
+ {
+  "text": "Here's your first task. Tell me, what is this cube like?",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "What colour is it? How big? What is it made of? Where exactly is it?",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "What are its edges like? And its surface? Have a really good look.",
+  "kind": "WRITE",
+  "after": 14.0
+ },
+ {
+  "text": "Not long after, you discover a ladder.",
+  "kind": "gap",
+  "after": 1.2
+ },
+ {
+  "text": "What is this ladder like? What's it made of? Does it have one side, or two?",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Does it look old, or new? Does it stand up on its own, or does it have to lean against something?",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Would you dare to step onto it?",
+  "kind": "gap",
+  "after": 1.2
+ },
+ {
+  "text": "If, in the pictures in your head, you reach out and touch these things, that's fine too. Let your imaginary self move around freely.",
+  "kind": "WRITE",
+  "after": 12.0
+ },
+ {
+  "text": "Then, all of a sudden, you hear a growl from behind the nearest dune.",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "A lion appears, and it's quite clear it's about to attack.",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Quick, what do you do?",
+  "kind": "WRITE",
+  "after": 10.0
+ },
+ {
+  "text": "Written it down? Good. Then here's the good news.",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Maybe it's the heat, maybe something else, but before anything can happen, the lion simply dissolves into thin air. You must have imagined it.",
+  "kind": "gap",
+  "after": 2.0
+ },
+ {
+  "text": "Carry on, because soon you'll come across a road.",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Use your inner eyes again. What is this road like? Take a good look.",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Is it straight, or does it wind? Does it look as if people walk it often? What might it be for?",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Is it paved? Notice everything.",
+  "kind": "WRITE",
+  "after": 12.0
+ },
+ {
+  "text": "Set off along it. And once you have, before long you'll hear gulls crying in the distance\u2026",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "\u2026and it doesn't take much more before you come out at the sea.",
+  "kind": "gap",
+  "after": 1.5
+ },
+ {
+  "text": "Take a deep breath, and look around. Write down what you see.",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "What's the weather like? What's the water like: calm and quiet, or rough? Clear, or murky?",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "And the shore: is it sand, pebbles, or rock?",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Let yourself notice everything.",
+  "kind": "WRITE",
+  "after": 14.0
+ },
+ {
+  "text": "In the distance, you spot a house. You set off towards it\u2026",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "\u2026but then you notice a sign, too. Hmm. Is there anything written on it?",
+  "kind": "gap",
+  "after": 1.2
+ },
+ {
+  "text": "If there isn't, let it be. Just keep walking.",
+  "kind": "gap",
+  "after": 1.5
+ },
+ {
+  "text": "Start looking at the house, because you can make out more and more of it.",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Tell me, what is it like? What is it built from? How does it make you feel?",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "Does anyone live there? Gather up everything that comes to you.",
+  "kind": "WRITE",
+  "after": 14.0
+ },
+ {
+  "text": "And finally, just before you reach the house, a horse appears.",
+  "kind": "gap",
+  "after": 1.2
+ },
+ {
+  "text": "What is it like? What does it do when it sees you?",
+  "kind": "gap",
+  "after": 1.0
+ },
+ {
+  "text": "And what does it do after that? Write everything down.",
+  "kind": "WRITE",
+  "after": 12.0
+ },
+ {
+  "text": "And that's it, that was the whole game. How was it?",
+  "kind": "gap",
+  "after": 1.5
+ },
+ {
+  "text": "Look at what's on your page. That's where you're standing right now: your bearings.",
+  "kind": "gap",
+  "after": 1.5
+ },
+ {
+  "text": "And from here, a whole journey opens up, if you'd like to take it.",
+  "kind": "gap",
+  "after": 1.5
+ },
+ {
+  "text": "Your key is waiting for you just below this video. Come and see what your symbols are telling you.",
+  "kind": "gap",
+  "after": 2.0
+ }
+]

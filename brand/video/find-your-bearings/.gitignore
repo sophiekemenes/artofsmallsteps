@@ -1,0 +1,8 @@
+# regenerable intermediates (narration lines, music, rendered stills, checks)
+work/vo/
+work/*.mp3
+work/*.png
+frames/
+frames-src/*.png
+out/check/
+!frames-src/desert.png

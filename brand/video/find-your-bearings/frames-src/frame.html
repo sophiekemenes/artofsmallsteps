@@ -1,0 +1,55 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,600;1,400&family=Shadows+Into+Light+Two&display=swap">
+<style>
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#FBF1E3}
+.stage{position:relative;width:1920px;height:1080px;background:#FBF1E3;font-family:Lora,Georgia,serif;color:#142230}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.paper{position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 50% 45%,#FDF6EB 0%,#FBF1E3 60%,#F5E6CF 100%)}
+.horizon{position:absolute;left:12%;right:12%;top:52%;height:2px;background:linear-gradient(90deg,transparent,rgba(28,79,107,.22) 20%,rgba(28,79,107,.22) 80%,transparent)}
+.center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.display{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500}
+.hand{font-family:'Shadows Into Light Two',cursive}
+.route{position:absolute;left:50%;bottom:64px;transform:translateX(-50%)}
+.fade-img{-webkit-mask-image:radial-gradient(ellipse 60% 60% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 60% 60% at 50% 50%,#000 55%,transparent 100%)}
+</style></head><body><div class="stage" id="stage"></div>
+<script>
+const P=new URLSearchParams(location.search);
+const kind=P.get('kind'), cur=+(P.get('dot')||0), bg=P.get('bg');
+const st=document.getElementById('stage');
+function route(cur,scale=1,light=false){
+  const xs=[0,1,2,3,4,5,6].map(i=>40+i*120), ys=[30,18,34,20,32,18,28];
+  let d=`M ${xs[0]} ${ys[0]}`;
+  for(let i=1;i<7;i++){const mx=(xs[i-1]+xs[i])/2; d+=` C ${mx} ${ys[i-1]} ${mx} ${ys[i]} ${xs[i]} ${ys[i]}`;}
+  const ink=light?'#FBF1E3':'#142230';
+  let s=`<svg width="${800*scale}" height="${70*scale}" viewBox="0 0 800 70" class="route"><path d="${d}" fill="none" stroke="#B87345" stroke-width="2.4" stroke-dasharray="4 6" stroke-linecap="round" opacity=".85"/>`;
+  for(let i=0;i<7;i++){
+    const n=i+1;
+    if(n<cur) s+=`<circle cx="${xs[i]}" cy="${ys[i]}" r="6.5" fill="#B87345"/>`;
+    else if(n===cur) s+=`<circle cx="${xs[i]}" cy="${ys[i]}" r="15" fill="none" stroke="#B87345" stroke-width="2"/><circle cx="${xs[i]}" cy="${ys[i]}" r="8" fill="#B87345"/>`;
+    else s+=`<circle cx="${xs[i]}" cy="${ys[i]}" r="6.5" fill="${light?'transparent':'#FBF1E3'}" stroke="#B87345" stroke-width="2"/>`;
+    s+=`<text x="${xs[i]}" y="${ys[i]+36}" text-anchor="middle" font-family="Lora,serif" font-size="15" fill="${ink}" opacity="${n===cur?.85:.45}">${n}</text>`;
+  }
+  return s+'</svg>';
+}
+const logo='<img src="rechart-stacked.svg" style="width:300px;display:block;margin:0 auto">';
+if(kind==='title'){
+  st.innerHTML=`<div class="paper"></div><div class="center"><img src="sextant.png" class="fade-img" style="width:430px;margin-bottom:6px"><p class="hand" style="margin:0;font-size:40px;color:#8A5129">a small game to begin with</p><h1 class="display" style="margin:4px 0 26px;font-size:128px;line-height:1">Find Your Bearings</h1>${logo}</div>`;
+} else if(kind==='intro'){
+  st.innerHTML=`<div class="paper"></div><div class="center"><img src="compass.png" class="fade-img" style="width:620px;opacity:.95"></div>`+route(0);
+} else if(kind==='desert'){
+  st.innerHTML=`<img class="bg" src="desert.png">`+route(cur);
+} else if(kind==='shore'){
+  st.innerHTML=`<div class="paper"></div><div class="horizon"></div>`+route(cur);
+} else if(kind==='write'){
+  st.innerHTML=`<div class="paper"></div><div class="center" style="padding-bottom:90px">
+  <svg width="180" height="90" viewBox="0 0 180 90" style="margin-bottom:18px"><path d="M14 70 C 50 40, 80 78, 120 46 S 160 40, 168 30" fill="none" stroke="#B87345" stroke-width="3" stroke-linecap="round"/><path d="M146 20 L172 12 L166 38 Z" fill="none" stroke="#142230" stroke-width="2.4" stroke-linejoin="round"/></svg>
+  <p class="hand" style="margin:0;font-size:84px;color:#142230;line-height:1.1">Pause and write it down</p>
+  <p style="margin:24px 0 0;font-size:30px;color:#3E4852">Take all the time you need. The video will wait.</p></div>`+route(cur);
+} else if(kind==='landfall'){
+  st.innerHTML=`<div class="paper"></div><img src="sunset.png" style="position:absolute;left:0;top:120px;width:1920px;-webkit-mask-image:linear-gradient(to bottom,#000 75%,transparent 100%);mask-image:linear-gradient(to bottom,#000 75%,transparent 100%)">`+route(8);
+} else if(kind==='end'){
+  st.innerHTML=`<div class="paper"></div><div class="center"><p class="hand" style="margin:0;font-size:46px;color:#8A5129">your key is waiting</p><h1 class="display" style="margin:6px 0 10px;font-size:116px;line-height:1">just below this video</h1>
+  <svg width="40" height="90" viewBox="0 0 28 56" style="margin:4px 0 30px"><path d="M14 2 C 6 16, 22 26, 14 44" fill="none" stroke="#B87345" stroke-width="1.8" stroke-dasharray="2 6" stroke-linecap="round"/><path d="M7 38 L14 47 L21 38" fill="none" stroke="#B87345" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  ${logo}<img src="aoss-endorsement.svg" style="height:34px;margin-top:22px"></div>`;
+}
+</script></body></html>
