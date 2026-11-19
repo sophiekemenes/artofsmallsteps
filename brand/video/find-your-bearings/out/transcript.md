@@ -8,7 +8,7 @@ That's what we're going to do together. Only, this time, the map is inside you.
 
 Keep a pen and paper close. You can pause the video at any point to write your answers down, and you can always come back to it later.
 
-Turn your inner imagination right up, be honest, and always go with your very first impression.
+Turn your imagination right up, be honest, and always go with your very first impression.
 
 Don't worry, there are no wrong answers here. Only symbols hiding deep in your mind, and at the end, I'll help you read them.
 
@@ -34,7 +34,7 @@ What are its edges like? And its surface? Have a really good look.
 
 Not long after, you discover a ladder.
 
-What is this ladder like? What's it made of? Does it have one side, or two?
+What is this ladder like? What's it made of? Is it a single ladder, or a stepladder?
 
 Does it look old, or new? Does it stand up on its own, or does it have to lean against something?
 
@@ -62,7 +62,7 @@ Maybe it's the heat, maybe something else, but before anything can happen, the l
 
 Carry on, because soon you'll come across a road.
 
-Use your inner eyes again. What is this road like? Take a good look.
+Use your mind's eye again. What is this road like? Take a good look.
 
 Is it straight, or does it wind? Does it look as if people walk it often? What might it be for?
 

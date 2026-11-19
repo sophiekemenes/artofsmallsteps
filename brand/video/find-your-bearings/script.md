@@ -20,7 +20,7 @@ On screen: *Find Your Bearings* · RECHART logo.
 
 > Keep a pen and paper close. You can pause the video at any point to write your answers down, and you can always come back to it later. [gap 1.2]
 
-> Turn your inner imagination right up, be honest, and always go with your very first impression. [gap 1]
+> Turn your imagination right up, be honest, and always go with your very first impression. [gap 1]
 
 > Don't worry, there are no wrong answers here. Only symbols hiding deep in your mind, and at the end, I'll help you read them. [gap 1.2]
 
@@ -44,7 +44,7 @@ On screen: *Find Your Bearings* · RECHART logo.
 
 > Not long after, you discover a ladder. [gap 1.2]
 
-> What is this ladder like? What's it made of? Does it have one side, or two? [gap 1]
+> What is this ladder like? What's it made of? Is it a single ladder, or a stepladder? [gap 1]
 
 > Does it look old, or new? Does it stand up on its own, or does it have to lean against something? [gap 1]
 
@@ -68,7 +68,7 @@ On screen: *Find Your Bearings* · RECHART logo.
 
 > Carry on, because soon you'll come across a road. [gap 1]
 
-> Use your inner eyes again. What is this road like? Take a good look. [gap 1]
+> Use your mind's eye again. What is this road like? Take a good look. [gap 1]
 
 > Is it straight, or does it wind? Does it look as if people walk it often? What might it be for? [gap 1]
 

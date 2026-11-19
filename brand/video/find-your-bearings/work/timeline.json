@@ -1,5 +1,5 @@
 {
- "total": 351.813,
+ "total": 351.786,
  "scenes": [
   {
    "image": "title.png",
@@ -9,92 +9,92 @@
   {
    "image": "intro.png",
    "start": 6.0,
-   "end": 53.836
+   "end": 53.104
   },
   {
    "image": "desert-1.png",
-   "start": 53.836,
-   "end": 89.214
+   "start": 53.104,
+   "end": 88.482
   },
   {
    "image": "write-1.png",
-   "start": 89.214,
-   "end": 99.614
+   "start": 88.482,
+   "end": 98.882
   },
   {
    "image": "desert-2.png",
-   "start": 99.614,
-   "end": 129.891
+   "start": 98.882,
+   "end": 129.629
   },
   {
    "image": "write-2.png",
-   "start": 129.891,
-   "end": 139.291
+   "start": 129.629,
+   "end": 139.029
   },
   {
    "image": "desert-3.png",
-   "start": 139.291,
-   "end": 152.2
+   "start": 139.029,
+   "end": 151.938
   },
   {
    "image": "write-3.png",
-   "start": 152.2,
-   "end": 160.6
+   "start": 151.938,
+   "end": 160.338
   },
   {
    "image": "desert-3.png",
-   "start": 160.6,
-   "end": 176.557
+   "start": 160.338,
+   "end": 176.295
   },
   {
    "image": "desert-4.png",
-   "start": 176.557,
-   "end": 198.277
+   "start": 176.295,
+   "end": 198.25
   },
   {
    "image": "write-4.png",
-   "start": 198.277,
-   "end": 207.677
+   "start": 198.25,
+   "end": 207.65
   },
   {
    "image": "chart-5",
-   "start": 207.677,
-   "end": 241.457
+   "start": 207.65,
+   "end": 241.43
   },
   {
    "image": "write-5.png",
-   "start": 241.457,
-   "end": 251.857
+   "start": 241.43,
+   "end": 251.83
   },
   {
    "image": "chart-6",
-   "start": 251.857,
-   "end": 285.342
+   "start": 251.83,
+   "end": 285.315
   },
   {
    "image": "write-6.png",
-   "start": 285.342,
-   "end": 295.742
+   "start": 285.315,
+   "end": 295.715
   },
   {
    "image": "chart-7",
-   "start": 295.742,
-   "end": 310.288
+   "start": 295.715,
+   "end": 310.261
   },
   {
    "image": "write-7.png",
-   "start": 310.288,
-   "end": 319.688
+   "start": 310.261,
+   "end": 319.661
   },
   {
    "image": "landfall.png",
-   "start": 319.688,
-   "end": 344.813
+   "start": 319.661,
+   "end": 344.786
   },
   {
    "image": "end.png",
-   "start": 344.813,
-   "end": 351.813
+   "start": 344.786,
+   "end": 351.786
   }
  ],
  "voice": [
@@ -119,253 +119,253 @@
   {
    "file": "work/vo/03.mp3",
    "start": 32.914,
-   "end": 39.68,
-   "text": "Turn your inner imagination right up, be honest, and always go with your very first impression."
+   "end": 38.948,
+   "text": "Turn your imagination right up, be honest, and always go with your very first impression."
   },
   {
    "file": "work/vo/04.mp3",
-   "start": 40.68,
-   "end": 48.49,
+   "start": 39.948,
+   "end": 47.758,
    "text": "Don't worry, there are no wrong answers here. Only symbols hiding deep in your mind, and at the end, I'll help you read them."
   },
   {
    "file": "work/vo/05.mp3",
-   "start": 49.69,
-   "end": 51.336,
+   "start": 48.958,
+   "end": 50.604,
    "text": "Ready? Let's go."
   },
   {
    "file": "work/vo/06.mp3",
-   "start": 53.836,
-   "end": 58.433,
+   "start": 53.104,
+   "end": 57.701,
    "text": "Imagine you're standing in the middle of a vast, beautiful desert."
   },
   {
    "file": "work/vo/07.mp3",
-   "start": 59.933,
-   "end": 66.464,
+   "start": 59.201,
+   "end": 65.732,
    "text": "Your eyes rest on the soft curves of the dunes. Near and far, there's nothing at all\u2026"
   },
   {
    "file": "work/vo/08.mp3",
-   "start": 67.464,
-   "end": 70.468,
+   "start": 66.732,
+   "end": 69.736,
    "text": "\u2026except a cube, which catches your eye."
   },
   {
    "file": "work/vo/09.mp3",
-   "start": 71.968,
-   "end": 76.174,
+   "start": 71.236,
+   "end": 75.442,
    "text": "Here's your first task. Tell me, what is this cube like?"
   },
   {
    "file": "work/vo/10.mp3",
-   "start": 77.174,
-   "end": 82.738,
+   "start": 76.442,
+   "end": 82.006,
    "text": "What colour is it? How big? What is it made of? Where exactly is it?"
   },
   {
    "file": "work/vo/11.mp3",
-   "start": 83.738,
-   "end": 88.414,
+   "start": 83.006,
+   "end": 87.682,
    "text": "What are its edges like? And its surface? Have a really good look."
   },
   {
    "file": "work/vo/12.mp3",
-   "start": 99.614,
-   "end": 102.382,
+   "start": 98.882,
+   "end": 101.65,
    "text": "Not long after, you discover a ladder."
   },
   {
    "file": "work/vo/13.mp3",
-   "start": 103.582,
-   "end": 108.833,
-   "text": "What is this ladder like? What's it made of? Does it have one side, or two?"
+   "start": 102.85,
+   "end": 108.571,
+   "text": "What is this ladder like? What's it made of? Is it a single ladder, or a stepladder?"
   },
   {
    "file": "work/vo/14.mp3",
-   "start": 109.833,
-   "end": 116.102,
+   "start": 109.571,
+   "end": 115.84,
    "text": "Does it look old, or new? Does it stand up on its own, or does it have to lean against something?"
   },
   {
    "file": "work/vo/15.mp3",
-   "start": 117.102,
-   "end": 119.218,
+   "start": 116.84,
+   "end": 118.956,
    "text": "Would you dare to step onto it?"
   },
   {
    "file": "work/vo/16.mp3",
-   "start": 120.418,
-   "end": 129.091,
+   "start": 120.156,
+   "end": 128.829,
    "text": "If, in the pictures in your head, you reach out and touch these things, that's fine too. Let your imaginary self move around freely."
   },
   {
    "file": "work/vo/17.mp3",
-   "start": 139.291,
-   "end": 143.732,
+   "start": 139.029,
+   "end": 143.47,
    "text": "Then, all of a sudden, you hear a growl from behind the nearest dune."
   },
   {
    "file": "work/vo/18.mp3",
-   "start": 144.732,
-   "end": 148.598,
+   "start": 144.47,
+   "end": 148.336,
    "text": "A lion appears, and it's quite clear it's about to attack."
   },
   {
    "file": "work/vo/19.mp3",
-   "start": 149.598,
-   "end": 151.4,
+   "start": 149.336,
+   "end": 151.138,
    "text": "Quick, what do you do?"
   },
   {
    "file": "work/vo/20.mp3",
-   "start": 160.6,
-   "end": 163.918,
+   "start": 160.338,
+   "end": 163.656,
    "text": "Written it down? Good. Then here's the good news."
   },
   {
    "file": "work/vo/21.mp3",
-   "start": 164.918,
-   "end": 174.557,
+   "start": 164.656,
+   "end": 174.295,
    "text": "Maybe it's the heat, maybe something else, but before anything can happen, the lion simply dissolves into thin air. You must have imagined it."
   },
   {
    "file": "work/vo/22.mp3",
-   "start": 176.557,
-   "end": 179.796,
+   "start": 176.295,
+   "end": 179.534,
    "text": "Carry on, because soon you'll come across a road."
   },
   {
    "file": "work/vo/23.mp3",
-   "start": 180.796,
-   "end": 185.629,
-   "text": "Use your inner eyes again. What is this road like? Take a good look."
+   "start": 180.534,
+   "end": 185.602,
+   "text": "Use your mind's eye again. What is this road like? Take a good look."
   },
   {
    "file": "work/vo/24.mp3",
-   "start": 186.629,
-   "end": 193.394,
+   "start": 186.602,
+   "end": 193.367,
    "text": "Is it straight, or does it wind? Does it look as if people walk it often? What might it be for?"
   },
   {
    "file": "work/vo/25.mp3",
-   "start": 194.394,
-   "end": 197.477,
+   "start": 194.367,
+   "end": 197.45,
    "text": "Is it paved? Notice everything."
   },
   {
    "file": "work/vo/26.mp3",
-   "start": 207.677,
-   "end": 213.868,
+   "start": 207.65,
+   "end": 213.841,
    "text": "Set off along it. And once you have, before long you'll hear gulls crying in the distance\u2026"
   },
   {
    "file": "work/vo/27.mp3",
-   "start": 214.868,
-   "end": 218.107,
+   "start": 214.841,
+   "end": 218.08,
    "text": "\u2026and it doesn't take much more before you come out at the sea."
   },
   {
    "file": "work/vo/28.mp3",
-   "start": 219.607,
-   "end": 224.048,
+   "start": 219.58,
+   "end": 224.021,
    "text": "Take a deep breath, and look around. Write down what you see."
   },
   {
    "file": "work/vo/29.mp3",
-   "start": 225.048,
-   "end": 232.362,
+   "start": 225.021,
+   "end": 232.335,
    "text": "What's the weather like? What's the water like: calm and quiet, or rough? Clear, or murky?"
   },
   {
    "file": "work/vo/30.mp3",
-   "start": 233.362,
-   "end": 237.15,
+   "start": 233.335,
+   "end": 237.123,
    "text": "And the shore: is it sand, pebbles, or rock?"
   },
   {
    "file": "work/vo/31.mp3",
-   "start": 238.15,
-   "end": 240.657,
+   "start": 238.123,
+   "end": 240.63,
    "text": "Let yourself notice everything."
   },
   {
    "file": "work/vo/32.mp3",
-   "start": 251.857,
-   "end": 256.063,
+   "start": 251.83,
+   "end": 256.036,
    "text": "In the distance, you spot a house. You set off towards it\u2026"
   },
   {
    "file": "work/vo/33.mp3",
-   "start": 257.063,
-   "end": 262.314,
+   "start": 257.036,
+   "end": 262.287,
    "text": "\u2026but then you notice a sign, too. Hmm. Is there anything written on it?"
   },
   {
    "file": "work/vo/34.mp3",
-   "start": 263.514,
-   "end": 267.223,
+   "start": 263.487,
+   "end": 267.196,
    "text": "If there isn't, let it be. Just keep walking."
   },
   {
    "file": "work/vo/35.mp3",
-   "start": 268.723,
-   "end": 273.085,
+   "start": 268.696,
+   "end": 273.058,
    "text": "Start looking at the house, because you can make out more and more of it."
   },
   {
    "file": "work/vo/36.mp3",
-   "start": 274.085,
-   "end": 279.414,
+   "start": 274.058,
+   "end": 279.387,
    "text": "Tell me, what is it like? What is it built from? How does it make you feel?"
   },
   {
    "file": "work/vo/37.mp3",
-   "start": 280.414,
-   "end": 284.542,
+   "start": 280.387,
+   "end": 284.515,
    "text": "Does anyone live there? Gather up everything that comes to you."
   },
   {
    "file": "work/vo/38.mp3",
-   "start": 295.742,
-   "end": 299.869,
+   "start": 295.715,
+   "end": 299.842,
    "text": "And finally, just before you reach the house, a horse appears."
   },
   {
    "file": "work/vo/39.mp3",
-   "start": 301.069,
-   "end": 304.778,
+   "start": 301.042,
+   "end": 304.751,
    "text": "What is it like? What does it do when it sees you?"
   },
   {
    "file": "work/vo/40.mp3",
-   "start": 305.778,
-   "end": 309.488,
+   "start": 305.751,
+   "end": 309.461,
    "text": "And what does it do after that? Write everything down."
   },
   {
    "file": "work/vo/41.mp3",
-   "start": 319.688,
-   "end": 323.162,
+   "start": 319.661,
+   "end": 323.135,
    "text": "And that's it, that was the whole game. How was it?"
   },
   {
    "file": "work/vo/42.mp3",
-   "start": 324.662,
-   "end": 329.73,
+   "start": 324.635,
+   "end": 329.703,
    "text": "Look at what's on your page. That's where you're standing right now: your bearings."
   },
   {
    "file": "work/vo/43.mp3",
-   "start": 331.23,
-   "end": 335.671,
+   "start": 331.203,
+   "end": 335.644,
    "text": "And from here, a whole journey opens up, if you'd like to take it."
   },
   {
    "file": "work/vo/44.mp3",
-   "start": 337.171,
-   "end": 342.813,
+   "start": 337.144,
+   "end": 342.786,
    "text": "Your key is waiting for you just below this video. Come and see what your symbols are telling you."
   }
  ]
