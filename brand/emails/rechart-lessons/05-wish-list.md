@@ -57,7 +57,7 @@ Think about it: what other tool do you have for laying your thoughts out in fron
 
 But at the same time, writing was also one of the very first things through which you, as a child, met expectations properly for the first time, and the possibility of making mistakes, the idea of failure. It was the first time you met the framework that regulated you: that loop had better be chubby enough, that z wavy enough, that o round enough, or else.
 
-It was the first time they made you believe you were better or worse than someone, when you got your marks for it. The first time you were ranked somewhere, compared to the others.
+It was the first time they made you believe you were better or worse than someone, when you got your grades for it. The first time you were ranked somewhere, compared to the others.
 
 So we can say that writing has already shaped the development of your identity and your personality in all sorts of ways, but it's now, as an adult, that you can really unfold the possibilities hidden in it.
 
@@ -73,7 +73,7 @@ Here's what we start with:
 
 I'd like you to sit down in front of your notebook, set your clock to a five-minute countdown, and start writing. And listen, because sometimes this is the hardest part: it doesn't matter what.
 
-I just want you to write. If nothing comes to mind, write "nothing comes to mind". Then something will. Write freely, without barriers, letter after letter. You can put doubts into words, or questions, or muse over the ingredients of a shepherd's pie.
+I just want you to write. If nothing comes to mind, write "nothing comes to mind". Then something will. Write freely, without barriers, letter after letter. You can put doubts into words, or questions, or muse over the ingredients of a lasagne.
 
 It doesn't need to be legible, nobody else will read it. Maybe not even you. You don't need to bother with punctuation either. You don't need to pay attention to anything at all, really. For five minutes let there be nothing but you, and the scratch of the pen on the paper.
 

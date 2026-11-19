@@ -34,7 +34,7 @@ Choose three that come with memories of your own. Something that has already hap
 
 Let me tell you about a very, very old experience of mine, one of the first I ever anchored. Maybe it'll help you see what we're looking for.
 
-Not long after secondary school, a group of friends and I spent a week at one of the girls' holiday house in Vác, a little town on the Danube just north of Budapest. Those teenage summers are always seen through a sort of golden filter, once enough time has passed :)
+Not long after high school, a group of friends and I spent a week at one of the girls' summer house in Vác, a little town on the Danube just north of Budapest. Those teenage summers are always seen through a sort of golden filter, once enough time has passed :)
 
 We had everything a party needs: home-brewed Curaçao (blue food colouring and vodka) (brrr) (everyone goes through stuff like this), a guitar, a cauldron of stew over the fire, young people, a campfire.
 
@@ -42,7 +42,7 @@ It was a beautiful, warm August night, full of shooting stars. The air was balmy
 
 I wandered off from the others a little, up to a higher spot on the plot, just because. Maybe to watch the shooting stars for a bit. Down below, my friend Andrew's full-lunged whoop was echoing between the hills, I looked up at the sky, and suddenly… suddenly everything was "in its place".
 
-The people, the world, the universe, the feel of the grass under my sunburnt calves, the touch of my vest on my shoulder, and the way my own hair tickled my neck.
+The people, the world, the universe, the feel of the grass under my sunburnt calves, the touch of my tank top on my shoulder, and the way my own hair tickled my neck.
 
 A calm came over me, and a faith, not in anything, not about anything, just in itself. I wasn't thinking about anything, I was just present, and everything else was present too, and that was how it should be.
 
@@ -84,7 +84,7 @@ Let the feeling fill you up inside, slowly but surely. Quietly at first… then 
 
 When the experience is getting close to its peak, touch your fingers together, or make your chosen movement, and hold them there until you're almost vibrating with the experience you're reliving! When it's at its very height, open your eyes, step out of it, and end the touch too.
 
-**d)** Would you please count backwards from a hundred in twos? And when you get to eighty, in threes? Then please take the rubbish out, feed the dog, or do a bit of washing up.
+**d)** Would you please count backwards from a hundred in twos? And when you get to eighty, in threes? Then please empty the bin, feed the dog, or wash a few dishes.
 
 This is the procedure for jolting yourself out of it, and it's very important too. Here in this letter, that's the dog. :)
 

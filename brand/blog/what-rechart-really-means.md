@@ -2,13 +2,13 @@
 
 - **Status:** APPROVED by Sophie 2026-11-17 (translation)
 - **Source:** "Mit jelent valójában az újratervezés?", kincsesterkep.hu, 2026-09-01 (WP post 732)
-- **Translation notes:** full translation, lightly transcreated for UK readers. The Hungarian word "újratervezés" is also what a Hungarian satnav says when you miss a turn ("recalculating"); the opening keeps that joke. "Lecsó" kept with a short gloss. The closing CTA points to RECHART instead of Újratervezés. To be published on the web by another session.
+- **Translation notes:** full translation, lightly transcreated for international English readers (UK first, then US and English-speaking Europe). The Hungarian word "újratervezés" is also what a Hungarian GPS says when you miss a turn ("recalculating"); the opening keeps that joke. "Lecsó" kept with a short gloss. The closing CTA points to RECHART instead of Újratervezés. To be published on the web by another session.
 
 ---
 
-There's a word lots of people misunderstand, even though we use it all the time (and I'd say satnavs get it a little bit wrong too).
+There's a word lots of people misunderstand, even though we use it all the time (and I'd say GPS devices get it a little bit wrong too).
 
-Recharting. Or, as my satnav would put it: *recalculating.*
+Recharting. Or, as my GPS would put it: *recalculating.*
 
 No wonder that when people hear it, a very specific picture pops into their head: you take a big eraser, rub out your life so far, and start being someone else. New job, new city, new haircut. A new trip, a few new skills, and I won't hold it against you if somewhere at the back of your mind there's a pottery class too, just in case. (Been there 😎)
 

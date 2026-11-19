@@ -2,7 +2,7 @@
 
 - **Status:** APPROVED by Sophie 2026-11-17 (translation)
 - **Source:** "Miért hazudsz, ha azt mondod, hogy nincs időd valamire, és amúgy miért van ez teljesen rendben", kincsesterkep.hu, 2017-04-19 (WP post 37)
-- **Translation notes:** full translation, lightly transcreated for UK readers (stairs to the office, "the penny dropped", "end of"; the English course became a Spanish course, since the readers are British). No CTA in the original, none added. The 20 December email (05) works without a link to it.
+- **Translation notes:** full translation, lightly transcreated for international English readers (UK first, then US and English-speaking Europe) (stairs to the office, "the penny dropped", "and that's that"; the English course became a Spanish course, since the readers are British). No CTA in the original, none added. The 20 December email (05) works without a link to it.
 
 ---
 
@@ -12,7 +12,7 @@ I haven't got the money.
 
 I haven't got the time.
 
-Both are rock solid, and they sit in front of us like heavy statements as we ride the rattling train of everyday life, day after day whooshing past, and we still haven't put our trainers on, haven't rung Gran, haven't sat down to the lessons of the Spanish course we paid for, or the loo is still running and I still haven't called the plumber, or there's that great idea I could turn into a blog post, and yet I don't. There's time, a certain amount of it in a day, and our duties eat all of it. I'm helpless. It's not my responsibility. It's not my fault.
+Both are rock solid, and they sit in front of us like heavy statements as we ride the rattling train of everyday life, day after day whooshing past, and we still haven't put our running shoes on, haven't called Grandma, haven't sat down to the lessons of the Spanish course we paid for, or the toilet is still running and I still haven't called the plumber, or there's that great idea I could turn into a blog post, and yet I don't. There's time, a certain amount of it in a day, and our duties eat all of it. I'm helpless. It's not my responsibility. It's not my fault.
 
 Let's leave money aside and deal with time instead. Partly because it matters far more – you can always get more money, but you can't turn back time. So why is "I haven't got time" a lie? Well… actually, it isn't a lie. It's more of a brilliant sentence that you don't have to imagine anything else behind, you can just throw your hands up. Haven't got it, haven't got it. Those pesky circumstances.
 
@@ -30,7 +30,7 @@ Well?
 
 Because there are loads of other things I do, and this one I don't. I put other things further up the list and this one further down, and whoops, we've already run out of the time available. If there's something you use the no-time myth for most often, just do this much: think about what the higher purpose, the value of that activity is for you.
 
-If it's exercise, say, the higher purpose might be health, fitness, or even that the lads/the girls/you yourself fancy you a bit more.
+If it's exercise, say, the higher purpose might be health, fitness, or even that the guys/the girls/you yourself find you a bit more attractive.
 
 If it's Spanish, then getting on at work, living abroad one day, or passing the exam.
 
@@ -56,7 +56,7 @@ If it's true, then let the shame or the bad feeling about the secret or obvious 
 
 But if this sentence isn't true, if that thing and what it stands for really is needed and important for you to exist, to function, to fulfil yourself, your dream, to improve the quality of your life and so be happier, if you please… then lift this sentence up to you, and turn it round:
 
-"Right now, health is of primary importance in my life, and I'm going to do something about it. End of."
+"Right now, health is of primary importance in my life, and I'm going to do something about it. And that's that."
 
 With this simple moment you've taken the energy you used to spend in your head on the "no time" claim, and weighed it by its weight and its value. You've changed the information running along the neural pathways that kept that activity locked up, and maybe change is getting ready in you right now. And the sentence keeps growing: "Health and fitness really are a priority for me: I'll do a stretch and twenty squats right now, and tomorrow morning I'll take the stairs up to the office."
 

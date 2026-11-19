@@ -87,7 +87,7 @@ You've already met it, actually. Remember the cube, the ladder, the lion? That l
 
 Let me tell you about one of the first times I ever played it with someone.
 
-In my early twenties I spent a summer in Spain, in Benidorm (yes, that Benidorm), painting henna tattoos, on a summer adventure with a boy. One evening I took him through the game. His cube was a human-sized cardboard box. And when the lion came, he jumped into it.
+In my early twenties I spent a summer in Spain, in Benidorm, a famously lively beach resort, painting henna tattoos, on a summer adventure with a boy. One evening I took him through the game. His cube was a human-sized cardboard box. And when the lion came, he jumped into it.
 
 I won't tell you much more about him. But his ego really was fragile, and when life threw problems at him, he really did shut himself away inside himself, hoping the claws wouldn't find him in there.
 

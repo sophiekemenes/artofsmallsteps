@@ -16,7 +16,7 @@
 
 Hi {{Nickname}},
 
-It's the Sunday before Christmas, so I'll guess you haven't got much time. (I'll also guess you're reading this anyway, in a queue, or hiding in the loo for five minutes of peace. Hello. Your secret is safe with me.)
+It's the Sunday before Christmas, so I'll guess you haven't got much time. (I'll also guess you're reading this anyway, in a queue, or hiding in the bathroom for five minutes of peace. Hello. Your secret is safe with me.)
 
 Which brings me to a sentence I've been poking at for years: *I haven't got time.*
 

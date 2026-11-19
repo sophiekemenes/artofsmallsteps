@@ -45,9 +45,9 @@
 >
 > "What are those?" Alice blurted out, just to say something, trying very hard to stay strong and really, really not cry.
 >
-> "Eh. How should I know. Something you get when somebody winds you up."
+> "Eh. How should I know. Something you get when somebody gets on your nerves."
 >
-> Alice imagined that if someone got wound up a lot, stones would end up rattling around in their head, and she smiled faintly. You have to admit, that was quite funny.
+> Alice imagined that if someone got annoyed a lot, stones would end up rattling around in their head, and she smiled faintly. You have to admit, that was quite funny.
 >
 > "So what are you after round here? Because I don't suppose you're going for the world record in kicking goblins out of their sleep," the goblin asked, softening a little.
 >
@@ -55,7 +55,7 @@
 >
 > "Is that so? And have you got a sword that cuts through anything, or a talking mirror, or one of those whatsits every hero has?"
 >
-> Alice looked up and frowned. She had an opened packet of chewing gum, a dried-up cheese scone, her favourite notebook she liked to write in, and maybe half a pair of earrings in one of her pockets.
+> Alice looked up and frowned. She had an opened packet of chewing gum, a dried-up bread roll, her favourite notebook she liked to write in, and maybe half a pair of earrings in one of her pockets.
 >
 > "No," she replied, when she'd got to the end of the inventory. "But what would I need those for?"
 >
