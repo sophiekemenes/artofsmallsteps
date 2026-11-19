@@ -56,8 +56,8 @@ if not SKIP_VIDEO:
     run(args)
 
 # ---------- music + ducking + mix
-MUSIC_PRE = os.environ.get('MUSIC_PRE', '-15')   # dB, music level before ducking relative to raw
-DUCK = os.environ.get('DUCK', 'threshold=0.03:ratio=8:attack=60:release=900:makeup=1')
+MUSIC_PRE = os.environ.get('MUSIC_PRE', '-19')   # dB, music level before ducking relative to raw
+DUCK = os.environ.get('DUCK', 'threshold=0.02:ratio=10:attack=60:release=900:makeup=1')
 def mixgraph(final):
     return (f"[0:a]aloop=loop=-1:size=2000000000,atrim=0:{total},asetpts=PTS-STARTPTS,volume={MUSIC_PRE}dB,"
             f"afade=t=in:st=0:d=3,afade=t=out:st={total-4}:d=4[m];"
