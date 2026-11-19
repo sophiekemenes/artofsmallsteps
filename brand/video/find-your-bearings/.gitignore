@@ -7,3 +7,5 @@ frames-src/*.png
 out/check/
 !frames-src/desert.png
 work/tmp/
+out/*.mp4
+out/poster.jpg

@@ -56,15 +56,15 @@ if not SKIP_VIDEO:
     run(args)
 
 # ---------- music + ducking + mix
-MUSIC_PRE = os.environ.get('MUSIC_PRE', '-24')   # dB, music level before ducking relative to raw
-DUCK = os.environ.get('DUCK', 'threshold=0.01:ratio=4:attack=60:release=900:makeup=1')
+MUSIC_PRE = os.environ.get('MUSIC_PRE', '-15')   # dB, music level before ducking relative to raw
+DUCK = os.environ.get('DUCK', 'threshold=0.03:ratio=8:attack=60:release=900:makeup=1')
 def mixgraph(final):
     return (f"[0:a]aloop=loop=-1:size=2000000000,atrim=0:{total},asetpts=PTS-STARTPTS,volume={MUSIC_PRE}dB,"
             f"afade=t=in:st=0:d=3,afade=t=out:st={total-4}:d=4[m];"
-            f"[1:a]asplit=2[vsc][vmix];[m][vsc]sidechaincompress={DUCK}[md];"
+            f"[1:a]alimiter=limit=0.15:attack=2:release=40:level=0,volume=14.5dB,alimiter=limit=0.75:attack=3:release=60:level=0,asplit=2[vsc][vmix];[m][vsc]sidechaincompress={DUCK}[md];"
             f"[vmix][md]amix=inputs=2:normalize=0:duration=first[mx]")
 subprocess.run(['ffmpeg','-y','-v','error','-i','work/music.mp3','-i',f'{tmp}/voice.wav','-filter_complex',
-    mixgraph(False)+f";[mx]alimiter=limit=0.95[o]",'-map','[o]','-c:a','pcm_s16le',f'{tmp}/premix.wav'],check=True)
+    mixgraph(False)+f";[mx]alimiter=limit=0.8:level=0[o]",'-map','[o]','-c:a','pcm_s16le',f'{tmp}/premix.wav'],check=True)
 # loudnorm two-pass
 r = subprocess.run(['ffmpeg','-hide_banner','-i',f'{tmp}/premix.wav','-af','loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json','-f','null','-'],
                    capture_output=True, text=True)
