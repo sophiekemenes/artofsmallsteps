@@ -96,7 +96,7 @@ Because that's the mindset we're reaching for now: to approach, as flexibly as w
 
 ## Task 2 · Deepen the conversation
 
-Take your notebook and write down your answers. All of them: the cube, the ladder, the lion, the road, the sea, the house and the sign, the horse. We'll be using this notebook for lots of things.
+Take your notebook and write down your answers. All of them: the cube, the ladder, the lion, the road, the sea, the house and the sign, the horse. We'll be using this notebook for lots of things. Keep this page. These pictures will turn up again later, on a map.
 
 Remember what I said about nobody seeing and understanding the same thing the way you do? Here too, the key only offers a parallel. To actually interpret it, you need to call on your own inner intuition. If you saw the sea as stormy, but you happen to love a stormy sea, then it's a positive symbol, because it's dear to you.
 
