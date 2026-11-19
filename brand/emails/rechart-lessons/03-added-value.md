@@ -4,6 +4,7 @@
 - **Stage:** 1 · Wake Up the Inner Navigator
 - **Sent:** Thursday 7 January 2027
 - **Source:** `Kincsesterkep\Ujratervezes\lecke_szovegek\lecke03_2026.md` (approved HU 2026 version)
+- **First mate's logbook:** wayfinding note added 2026-11-19 (see WAYFINDER-NOTES-PROPOSAL.md for sources)
 - **Merge tags:** `{{Nickname}}`
 - **Placeholders:** `[AUDIO-LINK]`; `[IMAGE: the pen frame]` = the same frame image as in the Hungarian lesson, the one the reader holds their pen up to.
 - **UNTOUCHABLE:** the Alice and Mokka tale, the joy detector, and the whole Pen Companion (Toll-társ) ritual. Translated as closely as English allows, nothing added or cut.
@@ -190,6 +191,9 @@ We've reached the end of what was planned for today, and it wasn't that strange 
 
 I'm off now, good luck with the joy detector tomorrow!
 We'll carry on soon.
+
+> **From the first mate's logbook**
+> The wayfinders' star compass isn't an object. It's held in the navigator's mind: the horizon divided into 32 "houses", where the stars rise and set. Nobody can hand it to you, you build it inside. (Your pen is a different matter. That one, somebody just did hand you.)
 
 With love,
 Sophie

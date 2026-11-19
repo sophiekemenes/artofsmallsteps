@@ -4,6 +4,7 @@
 - **Stage:** 1 · Wake Up the Inner Navigator
 - **Sent:** Monday 11 January 2027
 - **Source:** `Kincsesterkep\Ujratervezes\lecke_szovegek\lecke05_2026.md` (approved HU 2026 version)
+- **First mate's logbook:** wayfinding note added 2026-11-19 (see WAYFINDER-NOTES-PROPOSAL.md for sources)
 - **Merge tags:** `{{Nickname}}`
 - **Placeholders:** `[AUDIO-LINK]`
 - **Changes vs HU:**
@@ -117,6 +118,9 @@ These are only examples. Look for what inner values, according to your own inner
 Find as many as you can, but at least ten, write them down and keep them within reach. You'll need them next time we talk. :)
 
 All the best!
+
+> **From the first mate's logbook**
+> Out at sea, wayfinders watch the birds. Some seabirds fly out to fish in the morning and head back to land at dusk, so the direction they fly in the evening points towards an island you can't see yet. Your wishes can work like that. They don't have to be the land. They show you where it is.
 
 With love,
 Sophie

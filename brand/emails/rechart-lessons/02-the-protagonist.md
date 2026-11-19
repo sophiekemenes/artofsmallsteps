@@ -4,6 +4,7 @@
 - **Stage:** 1 · Wake Up the Inner Navigator
 - **Sent:** Tuesday 5 January 2027
 - **Source:** `Kincsesterkep\Ujratervezes\lecke_szovegek\lecke02_2026.md` (approved HU 2026 version)
+- **First mate's logbook:** wayfinding note added 2026-11-19 (see WAYFINDER-NOTES-PROPOSAL.md for sources)
 - **Merge tags:** `{{Nickname}}`
 - **Placeholders:** `[AUDIO-LINK]`; `[IMAGE 1/2/3]` = the same three filtered photos of Sophie as in the Hungarian lesson (original, dark filter, fairytale filter). Reuse the HU images.
 - **Changes vs HU:**
@@ -134,6 +135,9 @@ Play with this for as long as you like.
 Maybe something in you has already stirred: it would be a shame for all this information to vanish into thin air. Use your notebook, and write down everything you experience during the exercises! In this first stage we mostly use our imagination, but because your mind is flexible, sometimes this information slips away by the next day, to make room for "more useful" things, like a PIN number. But if you read it back over the coming weeks, it'll give you ideas and new points of view. So off you go! :)
 
 Bye for now, {{Nickname}}, until next time!
+
+> **From the first mate's logbook**
+> Nainoa Thompson, the Hawaiian navigator who learned from Mau, has said that the hardest thing was learning to read the ocean swells the way his teacher could, because no two people sense things in quite the same way. Same ocean, different reading. Your filters aren't a flaw in the instrument. They are the instrument.
 
 With love,
 Sophie

@@ -4,6 +4,7 @@
 - **Stage:** 1 · Wake Up the Inner Navigator
 - **Sent:** Sunday 3 January 2027 (then every two days)
 - **Source:** `Kincsesterkep\Ujratervezes\lecke_szovegek\lecke01_2026.md` (approved HU 2026 version)
+- **First mate's logbook:** wayfinding note added 2026-11-19 (see WAYFINDER-NOTES-PROPOSAL.md for sources)
 - **Merge tags:** `{{Nickname}}`
 - **Placeholders:** `[AUDIO-LINK]` (English audio not recorded yet; drop the line if there's none by launch)
 - **Changes vs HU:**
@@ -115,6 +116,11 @@ We won't go into why this matters just yet, but write it down, or circle it.
 If you have a question, just hit reply. It comes straight to me.
 
 We'll carry on in two days. Be good!
+
+> **From the first mate's logbook**
+> In 1976 a double-hulled canoe called Hōkūleʻa sailed from Hawaiʻi to Tahiti, about 2,500 miles, with no compass, no charts and no instruments at all. Its navigator, Mau Piailug from the tiny island of Satawal, read the stars, the wind, the birds and the swell. A lot of what he knew couldn't be written down. It was felt. That's the kind of navigator your downstairs neighbour is.
+>
+> *About this little box: on the original page I promised to be your first mate, and a good first mate keeps a logbook. There’s no female version, by the way. I checked. “First materess” sounds far too much like something people want to sleep on, and I need you awake and curious all along the journey :)*
 
 With love,
 Sophie
