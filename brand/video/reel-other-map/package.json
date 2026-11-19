@@ -1,0 +1,22 @@
+{
+  "name": "reel-other-map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/lora": "^5.3.0",
+    "@fontsource/shadows-into-light-two": "^5.3.0",
+    "@remotion/cli": "^4.0.545",
+    "@remotion/paths": "^4.0.545",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.545"
+  }
+}
