@@ -39,6 +39,10 @@ From lesson 7 on, the reader draws one real map on one big sheet of paper (A3, o
 - Lesson 1 now plants the seed: "Keep this page. These pictures will turn up again later, on a map."
 - Lesson 8 (Home Port): the reader also draws their house from Find Your Bearings next to the cube. The house is their home, their home port, so the first game's pictures literally end up on the map.
 
+## Rewriting Tibi's lessons (Sophie, 2026-11-19)
+
+Tibi's writing is very much his own: close to Sophie's, a bit drier, and actually quite British in its humour. Keep what works. But **weed out every sexist wink**, for example the "good wife" role card (beauty, sexiness, losing weight so the husband likes her, "Rezső", spicing up the bedroom), "attractive appearance" as the first goal under love, and "the label is even ruder for ladies". Replace them with gender-neutral examples that stay warm and a little cheeky. Sophie's own voice is the bar.
+
 ## Things to decide or watch
 
 - L13 (the voyage plan) is the heaviest letter. The 10 rules could be trimmed or moved partly into L14.
