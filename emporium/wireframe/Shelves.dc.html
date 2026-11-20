@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Polc vagy rekesz — vizuál próba</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body { margin: 0; font-family: ui-sans-serif, system-ui, sans-serif; }
+a { color: #9C4A2A; } a:hover { color: #6E3219; }
+.lbl { font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: #6B6355; }
+.cap { font-size: 12px; color: #4A443A; line-height: 1.5; }
+.num { font-size: 10px; letter-spacing: 1.2px; color: #9C4A2A; }
+.nm { font-size: 11px; color: #4A443A; }
+</style>
+</helmet>
+
+<div style="width: 1280px; height: 920px; box-sizing: border-box; background: #F7F4EC; color: #1E1C18; padding: 48px 56px; display: flex; flex-direction: column; gap: 34px">
+
+  <div style="display: flex; align-items: baseline; gap: 16px">
+    <div class="lbl">Polc vagy rekesz</div>
+    <div class="cap">A nyílt deszka a díszlet, a rekesz az áru. Ugyanaz a tinta, két különböző munka.</div>
+  </div>
+
+  <div style="display: flex; gap: 48px; align-items: flex-start">
+
+    <div style="width: 600px; flex: none">
+      <div class="lbl" style="margin-bottom: 6px">Nyílt deszka · a díszlet</div>
+      <div class="cap" style="margin-bottom: 18px">Laza, különböző méretű tárgyak, nincs rács, nincs címke. Ettől bolt a bolt.</div>
+
+      <div style="position: relative; height: 150px">
+        <div style="position: absolute; bottom: 22px; left: 26px; display: flex; align-items: flex-end; gap: 30px">
+
+          <svg width="52" height="92" viewBox="0 0 56 96" fill="none" stroke="#1E1C18" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <rect x="20" y="5" width="16" height="11" rx="2"></rect>
+            <path d="M14 31 C14 23 20 20 20 16 L36 16 C36 20 42 23 42 31"></path>
+            <path d="M12 31 v49 a7 7 0 0 0 7 7 h18 a7 7 0 0 0 7 -7 v-49 z"></path>
+            <rect x="16" y="46" width="24" height="21"></rect>
+            <path d="M16 73 h24 M16 78 h24" stroke-width="1"></path>
+          </svg>
+
+          <svg width="96" height="62" viewBox="0 0 104 68" fill="none" stroke="#1E1C18" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <g transform="rotate(-74 54 40)">
+              <rect x="46" y="2" width="16" height="11" rx="2"></rect>
+              <path d="M40 28 C40 20 46 17 46 13 L62 13 C62 17 68 20 68 28"></path>
+              <path d="M38 28 v42 a7 7 0 0 0 7 7 h18 a7 7 0 0 0 7 -7 v-42 z"></path>
+              <rect x="42" y="42" width="24" height="19"></rect>
+            </g>
+            <circle cx="20" cy="60" r="1.8" fill="#9C4A2A" stroke="none"></circle>
+            <circle cx="11" cy="63" r="1.3" fill="#9C4A2A" stroke="none"></circle>
+            <circle cx="27" cy="64" r="1.1" fill="#9C4A2A" stroke="none"></circle>
+            <circle cx="17" cy="66" r="0.9" fill="#9C4A2A" stroke="none"></circle>
+          </svg>
+
+          <svg width="78" height="62" viewBox="0 0 84 66" fill="none" stroke="#1E1C18" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 18 v26 a11 11 0 0 0 11 11 h20 a11 11 0 0 0 11 -11 v-26"></path>
+            <path d="M12 18 a21 6 0 0 1 42 0 a21 6 0 0 1 -42 0"></path>
+            <path d="M16 15 l4 -6 l4 6" stroke-linecap="round"></path>
+            <path d="M54 24 c13 0 13 17 0 17"></path>
+            <path d="M22 34 h22" stroke-width="1"></path>
+          </svg>
+
+          <svg width="92" height="44" viewBox="0 0 98 48" fill="none" stroke="#1E1C18" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M10 28 h78 v9 a4 4 0 0 1 -4 4 h-70 a4 4 0 0 1 -4 -4 z"></path>
+            <path d="M12 28 c0 -4 2 -6 6 -6 h62 c4 0 6 2 6 6" stroke-width="1"></path>
+            <path d="M14 22 c0 -4 2 -5 6 -5 h58 c4 0 6 1 6 5" stroke-width="1"></path>
+            <path d="M10 41 c-4 -5 -4 -9 0 -14"></path>
+          </svg>
+
+          <svg width="64" height="92" viewBox="0 0 72 100" fill="none" stroke="#1E1C18" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 20 L19 6 L33 13"></path>
+            <path d="M50 20 L53 6 L39 13"></path>
+            <circle cx="36" cy="30" r="17"></circle>
+            <circle cx="29" cy="29" r="2.2" fill="#1E1C18" stroke="none"></circle>
+            <circle cx="43" cy="29" r="2.2" fill="#1E1C18" stroke="none"></circle>
+            <path d="M34 36 h4 l-2 3 z" fill="#1E1C18" stroke="none"></path>
+            <path d="M16 32 h7 M16 37 h7 M56 32 h-7 M56 37 h-7" stroke-width="0.9"></path>
+            <path d="M21 45 C15 58 15 80 19 90 h34 C57 80 57 58 51 45"></path>
+            <path d="M19 90 h34"></path>
+            <path d="M53 90 c14 -2 17 -17 8 -23"></path>
+            <path d="M30 78 v12 M42 78 v12" stroke-width="1"></path>
+          </svg>
+
+        </div>
+
+        <div style="position: absolute; bottom: 8px; left: 0; width: 600px; height: 2px; background: #1E1C18"></div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 600px; height: 8px; background: #DCD5C4; border-bottom: 2px solid #1E1C18"></div>
+      </div>
+    </div>
+
+    <div style="width: 520px; flex: none">
+      <div class="lbl" style="margin-bottom: 6px">Rekesz · az áru</div>
+      <div class="cap" style="margin-bottom: 18px">Rács, szám, címke. Ez törik magától mobilon, és egy rekesz üresen is maradhat.</div>
+
+      <div style="border: 2px solid #1E1C18; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr))">
+
+        <div style="border-right: 1px solid #1E1C18; border-bottom: 1px solid #1E1C18; padding: 12px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 112px; box-sizing: border-box">
+          <svg width="26" height="46" viewBox="0 0 56 96" fill="none" stroke="#1E1C18" stroke-width="2.4" aria-hidden="true">
+            <rect x="20" y="5" width="16" height="11" rx="2"></rect>
+            <path d="M12 31 v49 a7 7 0 0 0 7 7 h18 a7 7 0 0 0 7 -7 v-49 z"></path>
+            <rect x="16" y="46" width="24" height="21"></rect>
+          </svg>
+          <div style="width: 100%; border-top: 1px solid #C7BFAD; padding-top: 6px; text-align: center">
+            <div class="num">No. 04</div><div class="nm">Salt</div>
+          </div>
+        </div>
+
+        <div style="border-right: 1px solid #1E1C18; border-bottom: 1px solid #1E1C18; padding: 12px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 112px; box-sizing: border-box">
+          <svg width="34" height="46" viewBox="0 0 84 96" fill="none" stroke="#1E1C18" stroke-width="2.4" aria-hidden="true">
+            <path d="M18 34 v26 a11 11 0 0 0 11 11 h18 a11 11 0 0 0 11 -11 v-26"></path>
+            <path d="M18 34 a20 6 0 0 1 40 0 a20 6 0 0 1 -40 0"></path>
+            <path d="M58 40 c13 0 13 17 0 17"></path>
+          </svg>
+          <div style="width: 100%; border-top: 1px solid #C7BFAD; padding-top: 6px; text-align: center">
+            <div class="num">No. 11</div><div class="nm">Sweet</div>
+          </div>
+        </div>
+
+        <div style="border-right: 1px solid #1E1C18; border-bottom: 1px solid #1E1C18; padding: 12px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 112px; box-sizing: border-box">
+          <svg width="40" height="46" viewBox="0 0 98 96" fill="none" stroke="#1E1C18" stroke-width="2.4" aria-hidden="true">
+            <path d="M14 52 h70 v16 a4 4 0 0 1 -4 4 h-62 a4 4 0 0 1 -4 -4 z"></path>
+            <path d="M16 52 c0 -6 3 -9 8 -9 h54 c5 0 8 3 8 9"></path>
+          </svg>
+          <div style="width: 100%; border-top: 1px solid #C7BFAD; padding-top: 6px; text-align: center">
+            <div class="num">No. 12</div><div class="nm">Sour</div>
+          </div>
+        </div>
+
+        <div style="border-bottom: 1px solid #1E1C18; padding: 12px 8px 8px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 8px; height: 112px; box-sizing: border-box">
+          <div style="flex: 1; display: flex; align-items: center"><span class="cap" style="color: #9A917F; font-style: italic">elfogyott</span></div>
+          <div style="width: 100%; border-top: 1px solid #C7BFAD; padding-top: 6px; text-align: center">
+            <div class="num">&nbsp;</div><div class="nm" style="color: #9A917F">üres rekesz</div>
+          </div>
+        </div>
+
+        <div style="border-right: 1px solid #1E1C18; padding: 12px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 112px; box-sizing: border-box">
+          <svg width="30" height="46" viewBox="0 0 72 100" fill="none" stroke="#1E1C18" stroke-width="2.6" aria-hidden="true">
+            <path d="M22 20 L19 6 L33 13"></path><path d="M50 20 L53 6 L39 13"></path>
+            <circle cx="36" cy="30" r="17"></circle>
+            <circle cx="29" cy="29" r="2.6" fill="#1E1C18" stroke="none"></circle>
+            <circle cx="43" cy="29" r="2.6" fill="#1E1C18" stroke="none"></circle>
+            <path d="M21 45 C15 58 15 80 19 90 h34 C57 80 57 58 51 45"></path>
+            <path d="M53 90 c14 -2 17 -17 8 -23"></path>
+          </svg>
+          <div style="width: 100%; border-top: 1px solid #C7BFAD; padding-top: 6px; text-align: center">
+            <div class="num">No. 21</div><div class="nm">Bitter</div>
+          </div>
+        </div>
+
+        <div style="border-right: 1px solid #1E1C18; padding: 12px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 112px; box-sizing: border-box">
+          <svg width="26" height="46" viewBox="0 0 56 96" fill="none" stroke="#9C4A2A" stroke-width="2.4" aria-hidden="true">
+            <rect x="20" y="5" width="16" height="11" rx="2"></rect>
+            <path d="M12 31 v49 a7 7 0 0 0 7 7 h18 a7 7 0 0 0 7 -7 v-49 z"></path>
+            <rect x="16" y="46" width="24" height="21"></rect>
+          </svg>
+          <div style="width: 100%; border-top: 1px solid #C7BFAD; padding-top: 6px; text-align: center">
+            <div class="num">No. 02</div><div class="nm">Spice</div>
+          </div>
+        </div>
+
+        <div style="border-right: 1px solid #1E1C18; padding: 12px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 112px; box-sizing: border-box">
+          <svg width="30" height="46" viewBox="0 0 70 96" fill="none" stroke="#1E1C18" stroke-width="2.4" aria-hidden="true">
+            <path d="M35 14 c-14 10 -20 24 -20 34 a20 20 0 0 0 40 0 c0 -10 -6 -24 -20 -34 z"></path>
+            <path d="M35 24 v44"></path>
+          </svg>
+          <div style="width: 100%; border-top: 1px solid #C7BFAD; padding-top: 6px; text-align: center">
+            <div class="num">No. 07</div><div class="nm">Umami</div>
+          </div>
+        </div>
+
+        <div style="padding: 12px 8px 8px; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 112px; box-sizing: border-box">
+          <svg width="40" height="46" viewBox="0 0 96 96" fill="none" stroke="#1E1C18" stroke-width="2.4" aria-hidden="true">
+            <ellipse cx="42" cy="54" rx="26" ry="16"></ellipse>
+            <path d="M16 54 v6 a26 16 0 0 0 52 0 v-6"></path>
+            <path d="M68 50 h18"></path>
+          </svg>
+          <div style="width: 100%; border-top: 1px solid #C7BFAD; padding-top: 6px; text-align: center">
+            <div class="num">No. 18</div><div class="nm">New pan</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div style="border-top: 1px solid #C7BFAD; padding-top: 28px">
+    <div class="lbl" style="margin-bottom: 16px">Mélység: árnyék vagy tinta</div>
+    <div style="display: flex; gap: 72px; align-items: flex-start">
+
+      <div style="width: 420px">
+        <div style="height: 86px; display: flex; align-items: flex-end">
+          <div style="width: 100%; height: 14px; background: #DCD5C4; box-shadow: 0 12px 20px rgba(30,28,24,0.32)"></div>
+        </div>
+        <div class="cap" style="margin-top: 22px"><strong>Így ne.</strong> A vetett árnyék képernyős konvenció egy másik világból, és azonnal szkeumorf sablon-hatást ad.</div>
+      </div>
+
+      <div style="width: 420px">
+        <div style="height: 86px; display: flex; align-items: flex-end">
+          <div style="width: 100%">
+            <div style="height: 1px; background: #8C8476"></div>
+            <div style="height: 10px; background: #DCD5C4"></div>
+            <div style="height: 3px; background: #1E1C18"></div>
+          </div>
+        </div>
+        <div class="cap" style="margin-top: 22px"><strong>Így igen.</strong> Vékony vonal a hátsó élen, tömör sáv a deszka vastagsága, vastag vonal az elülső élen. Ahogy egy metsző rajzol mélységet.</div>
+      </div>
+
+      <div style="flex: 1">
+        <div class="cap"><strong>És a tárgyak lógjanak rá</strong> egy hajszálnyit a deszka elülső élére. Ez többet ad a térérzetből, mint bármilyen árnyék, és nem kerül semmibe.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":920}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

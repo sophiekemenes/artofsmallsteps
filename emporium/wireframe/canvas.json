@@ -1,0 +1,47 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-11-20T10:10:00Z" },
+  "title": "The Emporium — oldalszerkezet drótváz (desktop + mobil)",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": { "x": 0, "y": 0, "w": 1280, "h": 2400, "title": "Desktop — 1280" },
+    "Mobile.dc.html": { "x": 1360, "y": 0, "w": 390, "h": 2400, "title": "Mobil — 390" },
+    "Shelves.dc.html": { "x": 0, "y": 2520, "w": 1280, "h": 920, "title": "Polc vagy rekesz — vizuál próba" }
+  },
+  "order": ["Main.dc.html", "Mobile.dc.html", "Shelves.dc.html"],
+  "notes": {
+    "t1": {
+      "x": 0,
+      "y": -300,
+      "text": "The Emporium — a görgetés drótváza",
+      "kind": "title1",
+      "maxW": 1750
+    },
+    "s1": {
+      "x": 1830,
+      "y": 0,
+      "w": 320,
+      "text": "A sorrend mindkét szélességen ugyanaz: tábla, rövid keret, PULT, polcok, hosszú sztori, boltos. A pult közvetlenül a rövid keret után jön, hogy a levélből érkező ne görgessen érte."
+    },
+    "s2": {
+      "x": 1830,
+      "y": 420,
+      "w": 320,
+      "text": "Desktopon a polc a margóból nyúlik be, váltakozva balról és jobbról. Mobilon ugyanaz a polc teljes szélességű vízszintes sáv lesz, három tárggyal, nem héttel."
+    },
+    "s3": {
+      "x": 1830,
+      "y": 840,
+      "w": 320,
+      "text": "A #counter horgony a levél linkjének a célpontja. Ugyanaz az egy oldal, nincs detektálás, és felfelé görgetve a bolt eleje felé sétálsz."
+    },
+    "s4": {
+      "x": 1360,
+      "y": 2520,
+      "w": 320,
+      "text": "Ez tiszta vonalstílus, kézzel rajzolt SVG, nem valódi rézmetszet. A rendszert mutatja: deszka kontra rekesz, és tinta-mélység kontra árnyék. A végleges metszetek később jönnek."
+    }
+  },
+  "designSystems": []
+}
