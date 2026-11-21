@@ -1,6 +1,6 @@
 # 06 · The longer story (four folds)
 
-- **Status:** DRAFT, waiting for Sophie
+- **Status:** APPROVED by Sophie 2026-11-21 (her additions in folds 1 and 4)
 - **Slot:** the four `<details>` folds. The questions stay as they are on the page.
 
 ---
@@ -9,7 +9,7 @@
 
 Most days serve you whatever's on the menu. Emails, errands, the same route, the same three thoughts on repeat. Some of it is perfectly good. A fair bit of it is the mental version of junk food: it fills you up, leaves you oddly hungry, and somehow you keep going back for seconds. (So do I. I'm not judging. I sell spices, not diets.)
 
-The Emporium doesn't take anything off your plate. It hands you one small pinch to add. A different way home. A thank-you you didn't plan. A cloud that looks like a slightly suspicious potato. You put it into your day, and the day tastes a little more like yours.
+The Emporium doesn't take anything off your plate. It hands you one small pinch to add. A different way home. A thank-you you didn't plan. A cloud that looks like a slightly suspicious potato. You put it into your day, and the day tastes a little more like yours. I think this is something most of us need. A lot.
 
 That's all. It's gloriously unnecessary, and that's rather the point.
 
@@ -33,9 +33,11 @@ You find out which one you got when the pinch lands on the counter. (The shop is
 
 ## What does it cost?
 
-Nothing. The pinches are free, and they'll stay free.
+Nothing. All the pinches here are free, and they'll stay free.
 
-If you'd like a gentle reminder in your inbox each morning, that's free too (it's at the bottom of the page, next to the sleeping cat). One day there may be something on the shelf to take home, made just for you. When there is, I'll tell you. Until then, help yourself.
+If you'd like a gentle reminder in your inbox each morning, that's free too (it's at the bottom of the page, next to the sleeping cat).
+
+(I might be cooking up something. Something specific. But not now. If you'd be open to a life-culinary experience we'd take on together, just write to me at sophie@artofsmallsteps.com.)
 
 ---
 
@@ -43,3 +45,4 @@ If you'd like a gentle reminder in your inbox each morning, that's free too (it'
 - "Not everything uncomfortable is growth, and not everything comfortable is laziness" is Sophie's own line from the Hungarian Életkaland page, carried over.
 - Sophie, 2026-11-21: the visitor does not choose a flavour, the Emporium always draws at random from all 57 (a flavour pool of 6–11 would run dry fast). This fold is written for that.
 - "next to the sleeping cat" only if the cat really sleeps by the signup (VISUAL.md plans it). If not, cut the bracket to "(it's at the bottom of the page)".
+- **Check before going live:** that `sophie@artofsmallsteps.com` is a real, working mailbox.
