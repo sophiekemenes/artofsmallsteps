@@ -63,3 +63,34 @@ Send a short message to someone you'd love to hear from but haven't been in touc
 
 **A new pan · The cook's little trick** *(46)*
 Change one small thing about a meal or drink you always have. A new spice, a different plate, a combination you've never tried. (Yes. This one is literally a new pan.)
+
+## Új küldetések (2026-11-21, Sophie kérésére)
+
+A Sour és a Bitter polc kiegyenlítésére. Ezek nem a magyar listából jönnek, hanem újak. Nyersek, átírhatod őket a saját szavaiddal. Több közülük a polcon álló tárgyakra épül (páratlan zokni, lefelé fordított tükör, felbontatlan boríték, óra mutatók nélkül), így a kép és a küldetés összeér.
+
+Ezekkel: **Sour 11 · Bitter 9.**
+
+### Sour (4 új)
+
+**Sour · Odd sock day** *(új)*
+Put on two socks that don't match. On purpose. Nobody else needs to know. You'll know. :)
+
+**Sour · The secret note** *(új)*
+Leave a small, kind, anonymous note somewhere a stranger will find it: on the office kettle, inside a library book, under a windscreen wiper. Don't sign it. Enjoy being a tiny mystery for the rest of the day.
+
+**Sour · The nature documentary** *(új)*
+Pick one dull task and narrate it, quietly or out loud, like a wildlife film. "And here, after a long winter, the laundry basket is finally approached…" The task stays exactly the same. You won't.
+
+**Sour · The silly option** *(új)*
+When a small choice turns up today (which mug, which queue, which way round the block), pick the one you'd normally call silly. Then carry on as if it were the most sensible thing in the world.
+
+### Bitter (3 új)
+
+**Bitter · The face-down mirror** *(új)*
+Look at yourself in a mirror for thirty seconds. Longer than it takes to check your hair. Then say one kind, true sentence to the person looking back. If that's too much today, a nod will do.
+
+**Bitter · The unopened envelope** *(új)*
+Is there something you keep not opening? A letter, an email, a message, a bill. Open it today. You don't have to deal with it yet. Just find out what's inside. (It's very often smaller than the shape it's been taking up in your head.)
+
+**Bitter · "One day" gets a date** *(új)*
+Think of something you keep saying you'll do one day. Give it a date. Any date, even a ridiculously far-off one. Write it down somewhere you'll see it. "One day" has just been given a calendar.
