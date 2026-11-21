@@ -1,6 +1,6 @@
 # 05 · The shelf to take home (paid)
 
-- **Status:** DRAFT, waiting for Sophie
+- **Status:** DECIDED (Sophie, 2026-11-21): the shelf stays **hidden** until the Emporium has its own product. RECHART does not go on it; it gets a quiet "back room" mention instead (see `07-keeper-signup.md`).
 - **Sophie, 2026-11-21:** nothing on this shelf for now. Later: a personal blend, a cheap 10–15 pinch email series. It only makes sense once many people are on the free list.
 
 ---

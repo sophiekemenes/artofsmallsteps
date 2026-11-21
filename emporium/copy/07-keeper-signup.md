@@ -16,6 +16,11 @@ So that's what I keep on the counter. Take a pinch, put it in, see what it does.
 With love,
 Sophie
 
+**P.S. (the back room, proposal):**
+> P.S. If one day a pinch isn't enough and you'd like to look at the whole map, I also take people on a longer voyage. It's called RECHART.
+
+"RECHART" links to `/wayfinder-method/`. Where exactly it sits (under the note, or in the footer) is `local-landing-design`'s call: a back room, not a shop window.
+
 ## The signup
 
 **Heading:**
