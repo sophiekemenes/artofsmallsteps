@@ -1,0 +1,152 @@
+---
+// The Emporium of Small Adventures: WORK-IN-PROGRESS preview (noindex, linked from nowhere).
+// Built from the Design canvas wireframe (https://claude.ai/artifact/4tP7N67oGGDnzUmB7ikfUG,
+// Main + Mobile artboards) and emporium/assets/. Copy is still placeholder: see emporium/OPEN-QUESTIONS.md.
+const shelves = [
+  { name: 'Salt', line: 'grounding, the basics put right', img: 'salt', alt: 'Salt shelf: a darning mushroom with a half-darned sock, a worn wooden spoon, unlaced boots, a jar of coarse salt, a dented tin alarm clock' },
+  { name: 'Sweet', line: 'kindness, something you give yourself', img: 'sweet', alt: 'Sweet shelf: a plant in a teacup, a biscuit with one bite gone, a hot-water bottle, flowers, sugar cubes' },
+  { name: 'Sour', line: 'mischief, cheek, a little impudence', img: 'sour', alt: 'Sour shelf: a jar of keys, a catapult, a rubber stamp, a door knocker' },
+  { name: 'Bitter', line: 'what you keep walking past', img: 'bitter-with-cat', alt: 'Bitter shelf: a mirror turned face down, an unopened envelope, a skipping rope, coffee beans, a clock without hands, and a ginger cat hanging off the edge' },
+  { name: 'Spice', line: 'courage, and a bit of risk', img: 'spice', alt: 'Spice shelf: a roller skate, a matchbox with a burnt match, a rolled-up map, a bicycle bell, dried chillies' },
+  { name: 'A new pan', line: 'a change of tool, or of place', img: 'new-pan-with-cat', alt: 'New pan shelf: a sleeping black cat, a pan with ivy growing in it, a telescope, a jar of bus tickets, a teapot with a cactus' },
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>The Emporium of Small Adventures · work in progress</title>
+<meta name="description" content="Work-in-progress preview of The Emporium of Small Adventures, an Art of Small Steps programme." />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,600;1,400&family=Shadows+Into+Light+Two&display=swap" />
+<style is:global>
+:root{--paper:#FBF1E3;--paper-light:#FFF8EE;--text:#141413;--teal:#123C3B;--rust:#A4492F;--hair:#D9C7AC;--counter:#093B3A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--text);font-family:'Lora',Georgia,serif;overflow-x:hidden}
+a{color:var(--rust)}a:hover{color:#6E3219}
+.display{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500}
+.hand{font-family:'Shadows Into Light Two',cursive}
+.wip{background:var(--teal);color:#F6ECD8;font-size:14px;text-align:center;padding:9px 16px;line-height:1.5}
+.wip b{color:#F2C9A0;font-weight:600}
+.todo{border:1.5px dashed #C9B9A3;border-radius:8px;padding:16px 18px;color:#6B6156;font-size:15px;line-height:1.55;font-style:italic;background:rgba(255,248,238,.5)}
+.sign{display:flex;flex-direction:column;align-items:center;padding:0 16px}
+.sign img{width:min(620px,100%);height:auto;display:block}
+.sign p{margin:4px 0 0;font-size:18px;color:#3F3A32;text-align:center}
+.intro{max-width:600px;margin:34px auto 40px;padding:0 16px}
+.counter{background:var(--counter);padding:0 0 30px}
+.counter-stage{position:relative}
+.counter-stage img{width:100%;height:auto;display:block}
+.pinch{position:absolute;bottom:25%;left:50%;transform:translateX(-50%) rotate(-1.2deg);width:min(430px,86%);background:var(--paper-light);border:1px solid var(--hair);padding:16px 22px;text-align:center}
+.pinch .eyebrow{font-family:system-ui,sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--rust)}
+.pinch .task{font-size:19px;line-height:1.4;color:var(--teal);padding-top:6px}
+.counter-actions{display:flex;flex-direction:column;align-items:center;gap:12px;padding:24px 16px 0}
+.btn-ghost{min-height:48px;padding:0 30px;border:1px solid #E7D7B8;background:transparent;font:inherit;font-size:14px;letter-spacing:1.6px;color:#F6ECD8;cursor:not-allowed}
+.counter-actions a{font-size:14px;color:#D8B48E}
+.eyebrow-sec{font-family:system-ui,sans-serif;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:#6B6156;text-align:center;margin:44px 0 18px}
+.shelf{display:flex;align-items:center;gap:48px;margin:0 0 40px}
+.shelf .pic{width:440px;flex:none;overflow:hidden}
+.shelf .pic img{width:490px;max-width:none;height:auto;display:block}
+.shelf.l{padding-right:80px}.shelf.l .pic img{margin-left:-50px}
+.shelf.r{padding-left:80px;flex-direction:row-reverse}.shelf.r .pic img{margin-left:0}
+.shelf .txt{flex:1;max-width:560px}
+.shelf.r .txt{margin-left:auto}
+.shelf h3{margin:0;font-size:32px;color:var(--teal);line-height:1.1}
+.shelf .line{margin:2px 0 12px;font-size:16px;color:var(--rust)}
+.stock{display:flex;align-items:center;gap:56px;padding:30px 0 30px 80px;border-top:1px dashed #C9C7BE;border-bottom:1px dashed #C9C7BE;overflow:hidden}
+.stock .txt{flex:1}.stock .pic{width:520px;flex:none;margin-right:-60px}.stock .pic img{width:100%;height:auto;display:block}
+.story{max-width:680px;margin:40px auto;padding:0 16px}
+.story details{border:1px solid var(--hair);background:var(--paper-light);margin:0 0 8px;border-radius:4px}
+.story summary{cursor:pointer;padding:14px 16px;font-size:17px;color:var(--teal)}
+.story details .todo{margin:0 16px 16px}
+.keeper{max-width:600px;margin:50px auto 70px;padding:0 16px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.keeper form{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;width:100%}
+.keeper input{min-height:48px;flex:1 1 240px;max-width:320px;padding:0 14px;border:1px solid #C9C7BE;background:var(--paper-light);font:inherit;font-size:15px}
+.keeper button{min-height:48px;padding:0 22px;border:1px solid var(--teal);background:transparent;font:inherit;font-size:14px;letter-spacing:1.2px;color:var(--teal);cursor:not-allowed}
+footer{border-top:1px solid var(--hair);padding:22px 16px 34px;text-align:center;font-size:14px;color:#6B6156}
+@media (max-width:900px){
+  .shelf,.shelf.l,.shelf.r{flex-direction:column;gap:6px;padding:0;margin-bottom:30px}
+  .shelf .pic{width:100%}
+  .shelf .pic img{width:114%}
+  .shelf.l .pic img{margin-left:-14%}
+  .shelf .txt,.shelf.r .txt{padding:0 16px;text-align:center;width:100%;margin:0}
+  .shelf h3{font-size:26px}
+  .stock{flex-direction:column-reverse;padding:18px 0 22px;gap:10px}
+  .stock .pic{width:100%;margin:0;overflow:hidden}.stock .pic img{width:126%;max-width:none}
+  .stock .txt{padding:0 16px;width:100%}
+  .pinch{position:relative;bottom:auto;left:auto;transform:rotate(-1.2deg);width:auto;margin:-42px 22px 0;z-index:2}
+  .pinch .task{font-size:16px}
+  .btn-ghost{width:100%}
+}
+</style>
+</head>
+<body>
+<div class="wip"><b>Work in progress.</b> Layout and illustrations are real, the words are still to come. Dashed boxes mark where the copy will go.</div>
+
+<header class="sign" id="top">
+<img src="/emporium/sign-cutout.webp" alt="A hanging shop sign on chains: Sophie presents The Emporium of gloriously unnecessary Small Adventures" width="1536" height="1024" />
+<p>Spices for whatever life serves you.</p>
+</header>
+
+<section class="intro">
+<div class="todo">Short intro, two or three sentences: who this is, what happens here, and what it costs.</div>
+</section>
+
+<section class="counter" id="counter" aria-label="Today's pinch">
+<div class="counter-stage">
+<img src="/emporium/counter-on-teal.webp" alt="The shop counter: brass scales with empty pans, blank paper labels on a string, a paper bag, a pencil, a pair of glasses, twine" width="2172" height="724" />
+<div class="pinch">
+<div class="eyebrow">Sour &nbsp;·&nbsp; No. 12</div>
+<div class="task">Today's pinch will sit here: one small adventure, in real text.</div>
+</div>
+</div>
+<div class="counter-actions">
+<button class="btn-ghost" type="button" disabled title="Not working yet">TAKE A PINCH</button>
+<a href="#top">First time in? Start at the door.</a>
+</div>
+</section>
+
+<p class="eyebrow-sec">The flavours · one shelf each</p>
+{shelves.map((s, i) => (
+<section class={`shelf ${i % 2 ? 'r' : 'l'}`}>
+<div class="pic"><img src={`/emporium/${s.img}.webp`} alt={s.alt} loading="lazy" /></div>
+<div class="txt">
+<h3 class="display">{s.name}</h3>
+<p class="line">{s.line}</p>
+<div class="todo">The story of this flavour goes here. The shelf only sets the mood.</div>
+</div>
+</section>
+))}
+
+<section class="stock">
+<div class="txt">
+<p class="eyebrow-sec" style="text-align:left;margin:0 0 10px">On the shelf to take home</p>
+<div class="todo">The paid things, shown on a shelf, not as a wall of offers.</div>
+</div>
+<div class="pic"><img src="/emporium/general-stock.webp" alt="The shop's general stock: jars, lavender, spectacles, a chipped cup, a book" loading="lazy" /></div>
+</section>
+
+<section class="story">
+<p class="eyebrow-sec">The longer story</p>
+<details><summary>What is all this?</summary><div class="todo">Copy to come.</div></details>
+<details><summary>Why is there no daily must-do?</summary><div class="todo">Copy to come.</div></details>
+<details><summary>What do the flavours mean?</summary><div class="todo">Copy to come.</div></details>
+<details><summary>What does it cost?</summary><div class="todo">Copy to come.</div></details>
+</section>
+
+<section class="keeper">
+<p class="hand" style="font-size:28px;color:var(--rust);margin:0">Sophie, keeper of the Emporium</p>
+<div class="todo" style="width:100%">A note from the shopkeeper, and a cat asleep somewhere nearby.</div>
+<form onsubmit="return false">
+<label for="em" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email</label>
+<input id="em" type="email" placeholder="name@example.com" disabled />
+<button type="button" disabled title="Not working yet">JOIN THE ROSTER</button>
+</form>
+</section>
+
+<footer>The Emporium of Small Adventures · an <a href="/">Art of Small Steps</a> programme · preview, not yet open</footer>
+</body>
+</html>
