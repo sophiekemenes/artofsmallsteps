@@ -35,7 +35,7 @@ You find out which one you got when the pinch lands on the counter. (The shop is
 
 Nothing. All the pinches here are free, and they'll stay free.
 
-If you'd like a gentle reminder in your inbox each morning, that's free too (it's at the bottom of the page, next to the sleeping cat).
+If you'd like a gentle reminder in your inbox each morning, that's free too (it's at the bottom of the page, next to Toto. You'll meet soon enough: Toto's the ginger cat).
 
 (I might be cooking up something. Something specific. But not now. If you'd be open to a life-culinary experience we'd take on together, just write to me at sophie@artofsmallsteps.com.)
 
@@ -44,5 +44,5 @@ If you'd like a gentle reminder in your inbox each morning, that's free too (it'
 **Editor notes**
 - "Not everything uncomfortable is growth, and not everything comfortable is laziness" is Sophie's own line from the Hungarian Életkaland page, carried over.
 - Sophie, 2026-11-21: the visitor does not choose a flavour, the Emporium always draws at random from all 57 (a flavour pool of 6–11 would run dry fast). This fold is written for that.
-- "next to the sleeping cat" only if the cat really sleeps by the signup (VISUAL.md plans it). If not, cut the bracket to "(it's at the bottom of the page)".
+- "next to Toto": Toto, the ginger cat, sleeps on the signup form (Sophie, 2026-11-21).
 - **Check before going live:** that `sophie@artofsmallsteps.com` is a real, working mailbox.

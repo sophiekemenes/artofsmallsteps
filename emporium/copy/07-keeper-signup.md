@@ -1,6 +1,6 @@
 # 07 · The shopkeeper's note and the signup
 
-- **Status:** the note and the P.S. are Sophie's (dictated in Hungarian and English 2026-11-21, put into English by the editor, approved P.S.). The signup text is still the editor's draft.
+- **Status:** the note and the P.S. are Sophie's (dictated in Hungarian and English 2026-11-21, put into English by the editor, approved P.S.). Signup approved by Sophie 2026-11-21 (button "YES, PLEASE", the Toto line). **Whole section APPROVED.**
 - **Slot:** `<section class="keeper">`, under the handwritten "Sophie, keeper of the Emporium", then the email form.
 
 ---
@@ -31,16 +31,21 @@ Sophie
 **Text:**
 > Once a day I'll send you a short email. There's nothing to do in it and no pinch inside (you collect that at the counter). Just a gentle tap on the shoulder: the shop's open, come and add a little something to your day.
 
-**Button** (already on the page): **JOIN THE ROSTER**
+**Above the button** (Toto, the ginger cat, sleeps on top of the form):
+> (Type softly. Toto is napping on the form.)
+
+**Button:** **YES, PLEASE** (replaces "JOIN THE ROSTER", a leftover from the old newspaper idea)
 
 **Small print under the form:**
 > One short email each morning. Leave whenever you like: one click, no hard feelings.
 
 **After signing up:**
-> You're on the roster. See you in the morning.
+> Lovely. See you in the morning.
 
 ---
 
 **Editor notes / for `local-landing-design`**
+- The cats have names (Sophie, 2026-11-21): **Toto** is the ginger cat (sleeps on the signup, also hangs off the Bitter shelf), **Kormi** is the black cat (asleep on the new pan shelf). Spelled Toto, no accent.
+- Button text changes from JOIN THE ROSTER to **YES, PLEASE**.
 - The Hungarian form also asks for a name ("Hogy szólítsunk?"), which makes the "Morning, {Name}" greeting at the counter possible. English label if it comes back: **What should I call you?**
 - The consent checkbox wording depends on the email tool (EmailOctopus); not drafted here.
