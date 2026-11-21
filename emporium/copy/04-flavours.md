@@ -22,11 +22,9 @@ This is the cheeky shelf. It belongs to the kid you used to be (and, let's be ho
 
 The envelope you haven't opened. The mirror turned face down. The "one day" that never quite gets a date. These bitter-flavoured pinches won't ask you to fix anything, but there's a chance they'll ask you to look, for a minute, at the thing you've been politely ignoring. Bitter is an acquired taste. So is honesty. (The cat hanging off this shelf has opinions about both.)
 
-## Spice · courage, and a bit of risk
+## Chilli · courage, and a bit of risk
 
 You know that moment when you very nearly did it, all by yourself. And then you flinched, and stepped back. These pinches are for getting past the flinch. A message after a long silence. Five minutes of something you're a complete beginner at. Saying the nice thing out loud instead of only thinking it. None of it is a mountain. It's more like the first bite of a chilli: your face does something alarming, and then you're glad you tasted it. Got your courage on you?
-
-*(Name of this flavour under discussion: "Spice" is used everywhere else in the shop as the general word. See the options in the chat of 2026-11-21.)*
 
 ## A new pan · a change of tool, or of place
 

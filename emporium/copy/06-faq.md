@@ -27,7 +27,7 @@ And if you take a pinch and your first thought is "Sophie, honestly, not today".
 
 Every pinch belongs to a flavour. You don't pick it: the Emporium does, the way a good shopkeeper slips something into your bag that you didn't know you needed.
 
-Salt for when you need your feet back on the ground. Sweet for when you could do with some kindness, including your own. Sour for when you're feeling a bit cheeky. Bitter for the thing you keep walking past. Spice for a little courage. And a new pan, which isn't a flavour at all, for when the trouble is the same old pan.
+Salt for when you need your feet back on the ground. Sweet for when you could do with some kindness, including your own. Sour for when you're feeling a bit cheeky. Bitter for the thing you keep walking past. Chilli for a little courage. And a new pan, which isn't a flavour at all, for when the trouble is the same old pan.
 
 You find out which one you got when the pinch lands on the counter. (The shop is surprisingly good at this.)
 

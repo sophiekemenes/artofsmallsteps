@@ -134,7 +134,7 @@ Is there something you keep not opening? A letter, an email, a message, a bill. 
 **No. 39 · "One day" gets a date** *(new)*
 Think of something you keep saying you'll do one day. Give it a date. Any date, even a ridiculously far-off one. Write it down where you'll see it. "One day" has just been given a calendar.
 
-## Spice · courage, and a bit of risk
+## Chilli · courage, and a bit of risk
 
 **No. 40 · A note from three months on** *(HU 17)*
 Imagine yourself three months from now, when one small thing works better in your life. What is that one change you'd be glad about?
