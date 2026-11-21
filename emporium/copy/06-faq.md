@@ -25,11 +25,11 @@ And if you take a pinch and your first thought is "Sophie, honestly, not today".
 
 ## What do the flavours mean?
 
-Every pinch belongs to a flavour, and you choose by mood, the way you'd choose what to cook.
+Every pinch belongs to a flavour. You don't pick it: the Emporium does, the way a good shopkeeper slips something into your bag that you didn't know you needed.
 
 Salt for when you need your feet back on the ground. Sweet for when you could do with some kindness, including your own. Sour for when you're feeling a bit cheeky. Bitter for the thing you keep walking past. Spice for a little courage. And a new pan, which isn't a flavour at all, for when the trouble is the same old pan.
 
-Not sure? Let the shop choose. It's surprisingly good at it.
+You find out which one you got when the pinch lands on the counter. (The shop is surprisingly good at this.)
 
 ## What does it cost?
 
@@ -41,5 +41,5 @@ If you'd like a gentle reminder in your inbox each morning, that's free too (it'
 
 **Editor notes**
 - "Not everything uncomfortable is growth, and not everything comfortable is laziness" is Sophie's own line from the Hungarian Életkaland page, carried over.
-- "Not sure? Let the shop choose" depends on the counter having a random option (see `03-counter.md`).
+- Sophie, 2026-11-21: the visitor does not choose a flavour, the Emporium always draws at random from all 57 (a flavour pool of 6–11 would run dry fast). This fold is written for that.
 - "next to the sleeping cat" only if the cat really sleeps by the signup (VISUAL.md plans it). If not, cut the bracket to "(it's at the bottom of the page)".

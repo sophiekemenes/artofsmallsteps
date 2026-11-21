@@ -5,7 +5,8 @@
 1. **Levél ritmusa:** naponta egyszer, finom emlékeztető, hogy gyere be, és tegyél egy kis fűszert a napodba. Más ígéret nincs. A levélben nincs küldetés.
 2. **Fizetős polc:** egyelőre üres. Később: személyre szabott fűszerezés, személyre szabott kalandlista, olcsó, 10–15 kihívásos e-mail sorozat. Akkor van értelme, ha már sokan feliratkoztak az ingyenesre. A polc-szakasz addig ki is maradhat.
 3. **Küldetések:** a forrás `Claude\Életkaland\eletkaland_50_mini_misszio.md`. Az ízekre osztás a copywriteren múlik. Javaslat: `emporium/copy/00-missions-by-flavour.md`.
-4. **Élő szavak, emoji, elköszönés, magyar eredet:** lásd `VOICE-NOTES.md` 5. pont.
+4. **Ízválasztás nincs** (2026-11-21): a látogató nem választ ízt, az Emporium mindig véletlenül húz mind az 57-ből, ismétlés nélkül. Egy ízen belül 6–11 küldetés gyorsan elfogyna, és így egyszerűbb is megépíteni. Ez felülírja a CONCEPT.md "hangulatból választható kategória" sorát.
+5. **Élő szavak, emoji, elköszönés, magyar eredet:** lásd `VOICE-NOTES.md` 5. pont.
 
 ---
 
