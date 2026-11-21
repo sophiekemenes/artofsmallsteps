@@ -20,7 +20,7 @@ This is the cheeky shelf. It belongs to the kid you used to be (and, let's be ho
 
 ## Bitter · what you keep walking past
 
-The envelope you haven't opened. The mirror turned face down. The "one day" that never quite gets a date. These pinches don't ask you to fix anything. They ask you to look, for a minute, at the thing you've been politely ignoring. Bitter is an acquired taste. So is honesty. (The cat hanging off this shelf has opinions about both.)
+The envelope you haven't opened. The mirror turned face down. The "one day" that never quite gets a date. These bitter-flavoured pinches won't ask you to fix anything, but there's a chance they'll ask you to look, for a minute, at the thing you've been politely ignoring. Bitter is an acquired taste. So is honesty. (The cat hanging off this shelf has opinions about both.)
 
 ## Spice · courage, and a bit of risk
 
