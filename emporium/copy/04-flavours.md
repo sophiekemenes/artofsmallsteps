@@ -16,7 +16,7 @@ Sweet is kindness, and some of it is for other people: a thank-you you didn't pl
 
 ## Sour · mischief, cheek, a little impudence
 
-This is the cheeky shelf. A jar of keys that open nothing, a catapult, a rubber stamp for approving things nobody asked you to approve. The pinches here are small acts of mischief: odd socks, a secret note, narrating the laundry like a wildlife film. Nobody gets hurt. Somebody, probably you, grins.
+This is the cheeky shelf. It belongs to the kid you used to be (and, let's be honest, still are on a good day). A jar of keys that open nothing, a catapult, a rubber stamp for approving things nobody asked you to approve. The pinches here are small acts of mischief: odd socks, a secret note, narrating the laundry like a wildlife film. Every now and then one of them makes the world look curiously innocent again. Which is no small thing. Play is the most serious thing we do. Nobody gets hurt. Somebody, probably you, grins.
 
 ## Bitter · what you keep walking past
 
