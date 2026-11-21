@@ -1,0 +1,344 @@
+[
+ {
+  "no": "01",
+  "flavour": "Salt",
+  "title": "Pocket treasure",
+  "text": "Find one small treasure outdoors today: an interesting leaf, a pebble, a seed pod. Look at it properly. What caught your eye? You don't have to take it home."
+ },
+ {
+  "no": "02",
+  "flavour": "Salt",
+  "title": "Sound hunting",
+  "text": "Stop for one minute and listen for three different sounds around you. Then go looking for a fourth: the one you didn't notice at first."
+ },
+ {
+  "no": "03",
+  "flavour": "Salt",
+  "title": "Texture safari",
+  "text": "Find three different surfaces: something smooth, something rough, something soft. Touch each one slowly, as if you'd never touched anything before."
+ },
+ {
+  "no": "04",
+  "flavour": "Salt",
+  "title": "Today's colour",
+  "text": "Choose a colour for today's mood. Then go looking for it around you. Does anything shift once you've found it? (Sometimes it does. Sometimes it's just a nice blue.)"
+ },
+ {
+  "no": "05",
+  "flavour": "Salt",
+  "title": "Your own rhythm",
+  "text": "Notice when you have the most get-up-and-go today. You don't need to change a thing. Just spot the pattern. Your day has a shape, and it's yours."
+ },
+ {
+  "no": "06",
+  "flavour": "Salt",
+  "title": "The real question",
+  "text": "Ask someone how they are today, and then really listen to the answer. All of it. Without hopping in with your own story. (Yours can wait. It's a good story, it'll keep.)"
+ },
+ {
+  "no": "07",
+  "flavour": "Salt",
+  "title": "A palm-sized bit of order",
+  "text": "Put one tiny patch of the world in order: a drawer, your bag, one corner of the desk. Not the whole house. The whole house is not today's main villain."
+ },
+ {
+  "no": "08",
+  "flavour": "Salt",
+  "title": "Wake-up call for your body",
+  "text": "Stretch. Roll your shoulders. Walk for a few minutes if it feels good. Notice how you feel before, and after."
+ },
+ {
+  "no": "09",
+  "flavour": "Salt",
+  "title": "One thing, all of you",
+  "text": "Choose one thing and give it your whole attention for ten minutes. Just that one thing. The notifications can queue up nicely and wait their turn."
+ },
+ {
+  "no": "10",
+  "flavour": "Sweet",
+  "title": "The five-minute hideaway",
+  "text": "Give yourself five minutes in which nothing has to be useful. Not meditation. Not a task. Just five free minutes, all yours."
+ },
+ {
+  "no": "11",
+  "flavour": "Sweet",
+  "title": "The small win",
+  "text": "Name one thing you've done, got through or started this past week. It counts even if nobody else would ever notice. Especially then."
+ },
+ {
+  "no": "12",
+  "flavour": "Sweet",
+  "title": "An old joy",
+  "text": "Do something today that you used to love and haven't done for ages. A song, a game, a doodle, an old favourite dish."
+ },
+ {
+  "no": "13",
+  "flavour": "Sweet",
+  "title": "The unexpected thank-you",
+  "text": "Thank someone for one specific, small thing they did for you. And tell them why it mattered."
+ },
+ {
+  "no": "14",
+  "flavour": "Sweet",
+  "title": "The invisible helper",
+  "text": "Think of someone who quietly makes your everyday life easier. Let them know you've noticed. One sentence is plenty."
+ },
+ {
+  "no": "15",
+  "flavour": "Sweet",
+  "title": "Micro-kindness",
+  "text": "Find one small way to make someone's day a little easier. Letting them go first, giving directions, holding a door. That's enough."
+ },
+ {
+  "no": "16",
+  "flavour": "Sweet",
+  "title": "The recommendation",
+  "text": "Recommend a song, a book, a film or a place that made you happy. Add one sentence about why that person came to mind."
+ },
+ {
+  "no": "17",
+  "flavour": "Sweet",
+  "title": "The caring bite",
+  "text": "Make or choose yourself something to eat or drink that makes you feel good. Today's mission: don't leave yourself out of the looking-after."
+ },
+ {
+  "no": "18",
+  "flavour": "Sweet",
+  "title": "Luxury in three minutes",
+  "text": "Turn something ordinary into a tiny ritual. Put your breakfast nicely on the plate. Or drink a cup of tea and do nothing else while you drink it. (Nothing. Not even the phone. Hang on, where are you going?)"
+ },
+ {
+  "no": "19",
+  "flavour": "Sweet",
+  "title": "Today's hidden treat",
+  "text": "Pick one small, pleasant thing and let yourself have it today. Don't earn it. Don't tie it to being productive. Just let there be a little joy in the day, for no reason at all. :)"
+ },
+ {
+  "no": "20",
+  "flavour": "Sour",
+  "title": "Cloud reading",
+  "text": "Look up and find a cloud that looks like something. There are no wrong answers. Not even if it's clearly a slightly suspicious potato."
+ },
+ {
+  "no": "21",
+  "flavour": "Sour",
+  "title": "If this could talk",
+  "text": "Pick an old object at home. Make up a short story about how it came to you, or what it would say if it could talk. (If it wants to complain, let it. It's earned it.)"
+ },
+ {
+  "no": "22",
+  "flavour": "Sour",
+  "title": "Seventy per cent",
+  "text": "Pick one thing today that doesn't have to be perfect, and do it at about seventy per cent. Then notice that the world is still turning."
+ },
+ {
+  "no": "23",
+  "flavour": "Sour",
+  "title": "Remember when",
+  "text": "Send someone a message about a funny or lovely memory you share. Just the memory. No need to start a long conversation."
+ },
+ {
+  "no": "24",
+  "flavour": "Sour",
+  "title": "Living-room disco",
+  "text": "Put on a song you used to love moving to. If you feel like it, dance for one minute. If you don't, listen to the whole thing. Both count."
+ },
+ {
+  "no": "25",
+  "flavour": "Sour",
+  "title": "Previously on…",
+  "text": "Give today a title, as if it were an episode of a TV series or a video game. Something like \"The Dirty Dishes Strike Back\"."
+ },
+ {
+  "no": "26",
+  "flavour": "Sour",
+  "title": "The theme tune",
+  "text": "Choose a song for today. If a harder moment turns up later, play it again and see whether it gives you a little push."
+ },
+ {
+  "no": "27",
+  "flavour": "Sour",
+  "title": "Odd sock day",
+  "text": "Put on two socks that don't match. On purpose. Nobody else needs to know. You'll know. :)"
+ },
+ {
+  "no": "28",
+  "flavour": "Sour",
+  "title": "The secret note",
+  "text": "Leave a small, kind, anonymous note somewhere a stranger will find it: on the office kettle, inside a library book, under a windscreen wiper. Don't sign it. Enjoy being a tiny mystery for the rest of the day."
+ },
+ {
+  "no": "29",
+  "flavour": "Sour",
+  "title": "The nature documentary",
+  "text": "Pick one dull task and narrate it, quietly or out loud, like a wildlife film. \"And here, after a long winter, the laundry basket is finally approached…\" The task stays exactly the same. You won't."
+ },
+ {
+  "no": "30",
+  "flavour": "Sour",
+  "title": "The silly option",
+  "text": "When a small choice turns up today (which mug, which queue, which way round the block), pick the one you'd normally call silly. Then carry on as if it were the most sensible thing in the world."
+ },
+ {
+  "no": "31",
+  "flavour": "Bitter",
+  "title": "The energy thief",
+  "text": "Think of one thing you'll do today that usually takes more out of you than you expect. What exactly is the most tiring part of it? Just name it. Naming it is enough for today."
+ },
+ {
+  "no": "32",
+  "flavour": "Bitter",
+  "title": "The question you keep walking past",
+  "text": "Finish this sentence, on paper or just in your head: \"If I were honest with myself, right now I'd like…\" That's all. You don't have to do anything with the answer. (Not today, anyway.)"
+ },
+ {
+  "no": "33",
+  "flavour": "Bitter",
+  "title": "The old rule",
+  "text": "Think of one \"I really should…\" thought. Ask yourself: does this actually matter to me, or am I just used to expecting it of myself?"
+ },
+ {
+  "no": "34",
+  "flavour": "Bitter",
+  "title": "Your own company",
+  "text": "Spend ten minutes with only yourself for company. Let the quiet pull up a chair. See what turns up, and how it feels."
+ },
+ {
+  "no": "35",
+  "flavour": "Bitter",
+  "title": "The two-minute start",
+  "text": "Choose something you've been putting off and give it two minutes. Exactly two. After that you're free to stop. (You might not. But you're free to.)"
+ },
+ {
+  "no": "36",
+  "flavour": "Bitter",
+  "title": "The overdue message",
+  "text": "If there's a short message you've been meaning to send for ages, write it now. It doesn't have to be perfect. It just has to be sent."
+ },
+ {
+  "no": "37",
+  "flavour": "Bitter",
+  "title": "The face-down mirror",
+  "text": "Look at yourself in a mirror for thirty seconds. Longer than it takes to check your hair. Then say one kind, true sentence to the person looking back. If that's too much today, a nod will do."
+ },
+ {
+  "no": "38",
+  "flavour": "Bitter",
+  "title": "The unopened envelope",
+  "text": "Is there something you keep not opening? A letter, an email, a message, a bill. Open it today. You don't have to deal with it yet. Just find out what's inside. (It's very often smaller than the space it's been taking up in your head.)"
+ },
+ {
+  "no": "39",
+  "flavour": "Bitter",
+  "title": "\"One day\" gets a date",
+  "text": "Think of something you keep saying you'll do one day. Give it a date. Any date, even a ridiculously far-off one. Write it down where you'll see it. \"One day\" has just been given a calendar."
+ },
+ {
+  "no": "40",
+  "flavour": "Chilli",
+  "title": "A note from three months on",
+  "text": "Imagine yourself three months from now, when one small thing works better in your life. What is that one change you'd be glad about?"
+ },
+ {
+  "no": "41",
+  "flavour": "Chilli",
+  "title": "The old thread",
+  "text": "Send a short message to someone you'd love to hear from but haven't been in touch with for ages. You don't have to explain the silence. Just pick up the thread."
+ },
+ {
+  "no": "42",
+  "flavour": "Chilli",
+  "title": "Curious, not convincing",
+  "text": "In a conversation today, ask about something the two of you see differently. You're not there to win anyone over. You're there to understand."
+ },
+ {
+  "no": "43",
+  "flavour": "Chilli",
+  "title": "Say it now",
+  "text": "If someone comes to mind because of something good about them, tell them. Today. Don't save it for their birthday."
+ },
+ {
+  "no": "44",
+  "flavour": "Chilli",
+  "title": "The imperfect masterpiece",
+  "text": "Draw something in two minutes, and on purpose don't fix anything. The mission isn't beauty. It's finishing."
+ },
+ {
+  "no": "45",
+  "flavour": "Chilli",
+  "title": "Beginner's five minutes",
+  "text": "Spend five minutes on something you'd like to learn. A language, an instrument, drawing, cooking. Today you're only being introduced."
+ },
+ {
+  "no": "46",
+  "flavour": "Chilli",
+  "title": "The secret character",
+  "text": "Pick one small thing that shows a slightly different side of you: a bright piece of clothing, an unusual accessory, bolder music. It can be just for you."
+ },
+ {
+  "no": "47",
+  "flavour": "Chilli",
+  "title": "Three small wishes",
+  "text": "Write down three little things you'd like to try next month. They don't have to be big goals. Tasting a new ice cream is a perfectly valid life project."
+ },
+ {
+  "no": "48",
+  "flavour": "A new pan",
+  "title": "Visitor from another planet",
+  "text": "Find something you see every day but have never really looked at. Study it for thirty seconds, as if you were a researcher from another planet."
+ },
+ {
+  "no": "49",
+  "flavour": "A new pan",
+  "title": "The hidden detail",
+  "text": "Choose a building you walk past all the time. Find one detail on it you've never noticed before."
+ },
+ {
+  "no": "50",
+  "flavour": "A new pan",
+  "title": "The other way round",
+  "text": "If you can, take a slightly different route somewhere familiar today. See what the detour brings."
+ },
+ {
+  "no": "51",
+  "flavour": "A new pan",
+  "title": "The book that found you",
+  "text": "Find a book whose title stops you. Read its first paragraph. You don't have to buy it, and you don't have to finish it."
+ },
+ {
+  "no": "52",
+  "flavour": "A new pan",
+  "title": "The odd choice",
+  "text": "Next time you're shopping, look for a fruit, a vegetable or some everyday thing you hardly ever pick up. Just noticing it counts. You don't have to buy it."
+ },
+ {
+  "no": "53",
+  "flavour": "A new pan",
+  "title": "A crumb of knowledge",
+  "text": "Learn one new thing about a topic you're curious about. By the end of the day, explain it in one sentence, to someone else or to yourself."
+ },
+ {
+  "no": "54",
+  "flavour": "A new pan",
+  "title": "A few steps outside",
+  "text": "Step outside for a few minutes, if you can. It doesn't need to be exercise, and it doesn't need to reach any goal. A slightly different view is enough."
+ },
+ {
+  "no": "55",
+  "flavour": "A new pan",
+  "title": "Photo hunt",
+  "text": "Take a photo of something that catches your eye today. You don't have to share it anywhere. It's your own little discovery."
+ },
+ {
+  "no": "56",
+  "flavour": "A new pan",
+  "title": "The cook's little trick",
+  "text": "Change one small thing about a meal or drink you always have. A new spice, a different plate, a combination you've never tried. (Yes. This one is literally a new pan.)"
+ },
+ {
+  "no": "57",
+  "flavour": "A new pan",
+  "title": "The analogue moment",
+  "text": "Do something without a screen: draw, write a note by hand, fold a paper plane, play an old game."
+ }
+]
