@@ -1,6 +1,6 @@
 # The Emporium: hangjegyzet (VOICE-NOTES)
 
-- **Státusz:** PISZKOZAT, Sophie jóváhagyására vár
+- **Státusz:** Sophie válaszai beépítve 2026-11-21 (lásd 5. pont)
 - **Írta:** `emporium-copy` session, 2026-11-21
 - **Forrás:** `brand/voice/hu-source/` (3 fájl + a `sophie-hangja` skill), `brand/emails/GLOBAL-ENGLISH.md`, a 6 jóváhagyott RECHART prep-levél, a 12 jóváhagyott lecke, a RECHART landing élő szövege és Sophie saját v0 landing-piszkozata.
 - **Munkamód:** editor, nem copywriter. A legjobb input Sophie nyers szövege, akkor is, ha kanyarog.
@@ -69,7 +69,10 @@ Ez az, ami a jóváhagyott angol szövegekben bizonyítottan Sophie, nem csak a 
 - Szöveg soha nincs képbe égetve (a cégtábla kivétel, az már kész).
 - Életrajzi tényt nem találok ki. Ha egy mondathoz tény kell rólad, kérdezek.
 
-## 5. Ami még bizonytalan (ezt Sophie-tól kérdezem)
+## 5. Sophie döntései (2026-11-21)
 
-- **Emoji.** A RECHART leckékben van ":)", a koncepció szerint az Emporiumban sehol nincs emoji. Maradjon a nulla?
-- **Angol élő szavak.** A RECHART szövegekben ezeket láttam visszatérni: *Well.* · *Oh dear.* · *Hm…* · *Ouch, right?* · *pesky* · *Hang on a minute.* · *Obviously.* · *I checked.* · *Be good!* · *honestly*. De ezek fordításból is jöhettek. Melyik a tiéd, melyiket mondod tényleg angolul?
+- **Angol élő szavak:** mind az övé (*Well.* · *Oh dear.* · *Hm…* · *Ouch, right?* · *pesky* · *Hang on a minute.* · *Obviously.* · *I checked.* · *Be good!* · *honestly*). A kicsit whimsy, flimsy, nem 100%-osan tökéletes angol is ő. Nem simítom ki.
+- **Mindig meleg, mindig kedves, mindig indokolatlanul szeretetteljes.** Ha a szellemesség és a melegség ütközik, a melegség nyer.
+- **Elköszönés:** a magyar *Szeretettel, Sophie* angolul *With love, Sophie*. Egy korábbi jó változat: *Stay wayward, Sophie*.
+- **Emoji:** Sophie smiley-rakó ember. Egy ":)" mehet, ha a poén vagy a whimsy kéri. Ritkán, nem fűtötten. (Ez felülírja a CONCEPT.md "emoji sehol" sorát.)
+- **A magyar eredet nem kerül a kirakatba.** Nem titok, de nem ad hitelességet egy globális közönségnek. Az Életkaland 2016-os születését sem említjük. Az oldalon nem lesz erről mondat.

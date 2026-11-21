@@ -1,5 +1,14 @@
 # The Emporium — ami még nyitott
 
+## Sophie válaszai, 2026-11-21
+
+1. **Levél ritmusa:** naponta egyszer, finom emlékeztető, hogy gyere be, és tegyél egy kis fűszert a napodba. Más ígéret nincs. A levélben nincs küldetés.
+2. **Fizetős polc:** egyelőre üres. Később: személyre szabott fűszerezés, személyre szabott kalandlista, olcsó, 10–15 kihívásos e-mail sorozat. Akkor van értelme, ha már sokan feliratkoztak az ingyenesre. A polc-szakasz addig ki is maradhat.
+3. **Küldetések:** a forrás `Claude\Életkaland\eletkaland_50_mini_misszio.md`. Az ízekre osztás a copywriteren múlik. Javaslat: `emporium/copy/00-missions-by-flavour.md`.
+4. **Élő szavak, emoji, elköszönés, magyar eredet:** lásd `VOICE-NOTES.md` 5. pont.
+
+---
+
 ## A szövegíráshoz kell, és csak Sophie tudja
 
 **1. A levél ritmusa.** Mit ígér a *Join the roster*? Naponta jön? Hetente?
