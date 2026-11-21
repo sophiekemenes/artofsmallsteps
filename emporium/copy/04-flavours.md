@@ -28,4 +28,8 @@ You know that moment when you very nearly did it, all by yourself. And then you 
 
 ## A new pan · a change of tool, or of place
 
-Sometimes the recipe is fine and it's the pan that's tired. These pinches change the tool or the place: a different route, a book picked for its title, an ordinary object studied like a visitor from another planet. Same you, same day, new pan. (The black cat asleep in this one would like you to keep your voice down.)
+Sometimes the recipe is fine, the ingredients are in place, and the spices are in just the right proportion. It's only the pan that's tired. When you reach in for a pinch and get one of these, it's gonna ask you to change the tool or the place: a different route, a book picked for its title, an ordinary object studied like a visitor from another planet. Same you, same day, new tool. (Kormi, the black cat asleep on this shelf, has a very refined taste for things that come out of a new pan. It's not related to your adventures. I just wanted you to know.)
+
+---
+
+**Note:** the black cat now has a name, **Kormi** (Sophie, 2026-11-21). If the cats are named anywhere else on the page, keep it consistent.
