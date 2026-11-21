@@ -8,7 +8,7 @@
 
 ## Salt · grounding, the basics put right
 
-Salt doesn't show off. You only notice it when it's missing. These pinches are for days that have come a bit unstitched: one drawer put in order, three sounds you actually listen to, a stretch before the next thing. Plain, small, and oddly steadying. Like a darned sock. (Yes, people still darn socks. I checked.)
+Salt doesn't show off. You only notice it when it's missing. These pinches are for days that have come a bit unstitched: one drawer put in order, three sounds you actually listen to, a stretch before the next thing. Plain, small, and oddly steadying. Like a mended sock. (Yes, people still mend socks. With a darning mushroom, no less. I checked.)
 
 ## Sweet · kindness, something you give yourself
 
