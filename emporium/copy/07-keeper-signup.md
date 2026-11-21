@@ -45,7 +45,7 @@ Sophie
 ---
 
 **Editor notes / for `local-landing-design`**
-- The cats have names (Sophie, 2026-11-21): **Toto** is the ginger cat (sleeps on the signup, also hangs off the Bitter shelf), **Kormi** is the black cat (asleep on the new pan shelf). Spelled Toto, no accent.
+- The cats have names (Sophie, 2026-11-21): **Toto** is the ginger cat sleeping on the signup; **Rozi** hangs off the Bitter shelf; **Alfi** is on the sign (full list in VISUAL.md), **Kormi** is the black cat (asleep on the new pan shelf). Spelled Toto, no accent.
 - Button text changes from JOIN THE ROSTER to **YES, PLEASE**.
 - The Hungarian form also asks for a name ("Hogy szólítsunk?"), which makes the "Morning, {Name}" greeting at the counter possible. English label if it comes back: **What should I call you?**
 - The consent checkbox wording depends on the email tool (EmailOctopus); not drafted here.

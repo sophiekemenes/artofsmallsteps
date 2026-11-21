@@ -1,14 +1,15 @@
 ---
 // The Emporium of Small Adventures: WORK-IN-PROGRESS preview (noindex, linked from nowhere).
 // Built from the Design canvas wireframe (https://claude.ai/artifact/4tP7N67oGGDnzUmB7ikfUG,
-// Main + Mobile artboards) and emporium/assets/. Copy is still placeholder: see emporium/OPEN-QUESTIONS.md.
+// Main + Mobile artboards) and emporium/assets/. Copy: approved by Sophie 2026-11-21, source in
+// emporium/copy/ (emporium-copy session). The counter and the signup are not wired up yet.
 const shelves = [
-  { name: 'Salt', line: 'grounding, the basics put right', img: 'salt', alt: 'Salt shelf: a darning mushroom with a half-darned sock, a worn wooden spoon, unlaced boots, a jar of coarse salt, a dented tin alarm clock' },
-  { name: 'Sweet', line: 'kindness, something you give yourself', img: 'sweet', alt: 'Sweet shelf: a plant in a teacup, a biscuit with one bite gone, a hot-water bottle, flowers, sugar cubes' },
-  { name: 'Sour', line: 'mischief, cheek, a little impudence', img: 'sour', alt: 'Sour shelf: a jar of keys, a catapult, a rubber stamp, a door knocker' },
-  { name: 'Bitter', line: 'what you keep walking past', img: 'bitter-with-cat', alt: 'Bitter shelf: a mirror turned face down, an unopened envelope, a skipping rope, coffee beans, a clock without hands, and a ginger cat hanging off the edge' },
-  { name: 'Spice', line: 'courage, and a bit of risk', img: 'spice', alt: 'Spice shelf: a roller skate, a matchbox with a burnt match, a rolled-up map, a bicycle bell, dried chillies' },
-  { name: 'A new pan', line: 'a change of tool, or of place', img: 'new-pan-with-cat', alt: 'New pan shelf: a sleeping black cat, a pan with ivy growing in it, a telescope, a jar of bus tickets, a teapot with a cactus' },
+  { name: 'Salt', story: `Salt doesn't show off. You only notice it when it's missing. These pinches are for days that have come a bit unstitched: one drawer put in order, three sounds you actually listen to, a stretch before the next thing. Plain, small, and oddly steadying. Like a mended sock. (Yes, people still mend socks. With a darning mushroom, no less. I checked.)`, line: 'grounding, the basics put right', img: 'salt', alt: 'Salt shelf: a darning mushroom with a half-darned sock, a worn wooden spoon, unlaced boots, a jar of coarse salt, a dented tin alarm clock' },
+  { name: 'Sweet', story: `Sweet is kindness, and some of it is for other people: a thank-you you didn't plan, a door held, a song passed on. But a fair share of it is for you. Five minutes that don't have to be useful. A biscuit eaten slowly, on purpose. You're allowed to be on your own list.`, line: 'kindness, something you give yourself', img: 'sweet', alt: 'Sweet shelf: a plant in a teacup, a biscuit with one bite gone, a hot-water bottle, flowers, sugar cubes' },
+  { name: 'Sour', story: `This is the cheeky shelf. It belongs to the kid you used to be (and, let's be honest, still are on a good day). A jar of keys that open nothing, a catapult, a rubber stamp for approving things nobody asked you to approve. The pinches here are small acts of mischief: odd socks, a secret note, narrating the laundry like a wildlife film. Every now and then one of them makes the world look curiously innocent again. Which is no small thing. Play is the most serious thing we do. Nobody gets hurt. Somebody, probably you, grins.`, line: 'mischief, cheek, a little impudence', img: 'sour', alt: 'Sour shelf: a jar of keys, a catapult, a rubber stamp, a door knocker' },
+  { name: 'Bitter', story: `The envelope you haven't opened. The mirror turned face down. The "one day" that never quite gets a date. These bitter-flavoured pinches won't ask you to fix anything, but there's a chance they'll ask you to look, for a minute, at the thing you've been politely ignoring. Bitter is an acquired taste. So is honesty. (The cat hanging off this shelf has opinions about both.)`, line: 'what you keep walking past', img: 'bitter-with-cat', alt: 'Bitter shelf: a mirror turned face down, an unopened envelope, a skipping rope, coffee beans, a clock without hands, and a ginger cat hanging off the edge' },
+  { name: 'Chilli', story: `You know that moment when you very nearly did it, all by yourself. And then you flinched, and stepped back. These pinches are for getting past the flinch. A message after a long silence. Five minutes of something you're a complete beginner at. Saying the nice thing out loud instead of only thinking it. None of it is a mountain. It's more like the first bite of a chilli: your face does something alarming, and then you're glad you tasted it. Got your courage on you?`, line: 'courage, and a bit of risk', img: 'spice', alt: 'Chilli shelf: a roller skate, a matchbox with a burnt match, a rolled-up map, a bicycle bell, dried chillies' },
+  { name: 'A new pan', story: `Sometimes the recipe is fine, the ingredients are in place, and the spices are in just the right proportion. It's only the pan that's tired. When you reach in for a pinch and get one of these, it's gonna ask you to change the tool or the place: a different route, a book picked for its title, an ordinary object studied like a visitor from another planet. Same you, same day, new tool. (Kormi, the black cat asleep on this shelf, has a very refined taste for things that come out of a new pan. It's not related to your adventures. I just wanted you to know.)`, line: 'a change of tool, or of place', img: 'new-pan-with-cat', alt: 'New pan shelf: a sleeping black cat, a pan with ivy growing in it, a telescope, a jar of bus tickets, a teapot with a cactus' },
 ];
 ---
 <!doctype html>
@@ -56,6 +57,12 @@ a{color:var(--rust)}a:hover{color:#6E3219}
 .shelf.r .txt{margin-left:auto}
 .shelf h3{margin:0;font-size:32px;color:var(--teal);line-height:1.1}
 .shelf .line{margin:2px 0 12px;font-size:16px;color:var(--rust)}
+.shelf .tale{margin:0;font-size:16px;line-height:1.65}
+.intro p{margin:0 0 14px;font-size:18px;line-height:1.65}
+.story .body{padding:0 16px 6px}.story .body p{margin:0 0 12px;line-height:1.65}
+.keeper .note{text-align:left;width:100%}.keeper .note p{margin:0 0 14px;line-height:1.65}
+.keeper h3{margin:18px 0 0;font-size:26px;color:var(--teal)}
+.keeper .soft{font-size:15px;color:#6B6156;margin:0}
 .stock{display:flex;align-items:center;gap:56px;padding:30px 0 30px 80px;border-top:1px dashed #C9C7BE;border-bottom:1px dashed #C9C7BE;overflow:hidden}
 .stock .txt{flex:1}.stock .pic{width:520px;flex:none;margin-right:-60px}.stock .pic img{width:100%;height:auto;display:block}
 .story{max-width:680px;margin:40px auto;padding:0 16px}
@@ -84,7 +91,7 @@ footer{border-top:1px solid var(--hair);padding:22px 16px 34px;text-align:center
 </style>
 </head>
 <body>
-<div class="wip"><b>Work in progress.</b> Layout and illustrations are real, the words are still to come. Dashed boxes mark where the copy will go.</div>
+<div class="wip"><b>Work in progress.</b> The words and illustrations are real. The counter and the signup don't work yet.</div>
 
 <header class="sign" id="top">
 <img src="/emporium/sign-cutout.webp" alt="A hanging shop sign on chains: Sophie presents The Emporium of gloriously unnecessary Small Adventures" width="1536" height="1024" />
@@ -92,20 +99,20 @@ footer{border-top:1px solid var(--hair);padding:22px 16px 34px;text-align:center
 </header>
 
 <section class="intro">
-<div class="todo">Short intro, two or three sentences: who this is, what happens here, and what it costs.</div>
+<p>Come in. This is a small shop with one intent only: to give you pinches of adventure. Doses of well-deserved peace or excitement. A dash of random spice that you can add to your life. You have your days. Life gives you various fruits. I give you a nudge, and permission to make guacamole, or a protein shake, or singing lemonade out of them.</p>
+<p>I'm Sophie, and I keep the shop. It's free, it's always open, and nobody's keeping count. Come and dig into the jars, and take your first pinch. You're gonna love it.</p>
 </section>
 
 <section class="counter" id="counter" aria-label="Today's pinch">
 <div class="counter-stage">
 <img src="/emporium/counter-on-teal.webp" alt="The shop counter: brass scales with empty pans, blank paper labels on a string, a paper bag, a pencil, a pair of glasses, twine" width="2172" height="724" />
 <div class="pinch">
-<div class="eyebrow">Sour &nbsp;·&nbsp; No. 12</div>
-<div class="task">Today's pinch will sit here: one small adventure, in real text.</div>
+<div class="eyebrow">Sour &nbsp;·&nbsp; No. 20</div>
+<div class="task">Look up and find a cloud that looks like something. There are no wrong answers. Not even if it's clearly a slightly suspicious potato.</div>
 </div>
 </div>
 <div class="counter-actions">
 <button class="btn-ghost" type="button" disabled title="Not working yet">TAKE A PINCH</button>
-<a href="#top">First time in? Start at the door.</a>
 </div>
 </section>
 
@@ -116,12 +123,12 @@ footer{border-top:1px solid var(--hair);padding:22px 16px 34px;text-align:center
 <div class="txt">
 <h3 class="display">{s.name}</h3>
 <p class="line">{s.line}</p>
-<div class="todo">The story of this flavour goes here. The shelf only sets the mood.</div>
+<p class="tale">{s.story}</p>
 </div>
 </section>
 ))}
 
-<section class="stock">
+<section class="stock" hidden>
 <div class="txt">
 <p class="eyebrow-sec" style="text-align:left;margin:0 0 10px">On the shelf to take home</p>
 <div class="todo">The paid things, shown on a shelf, not as a wall of offers.</div>
@@ -131,20 +138,31 @@ footer{border-top:1px solid var(--hair);padding:22px 16px 34px;text-align:center
 
 <section class="story">
 <p class="eyebrow-sec">The longer story</p>
-<details><summary>What is all this?</summary><div class="todo">Copy to come.</div></details>
-<details><summary>Why is there no daily must-do?</summary><div class="todo">Copy to come.</div></details>
-<details><summary>What do the flavours mean?</summary><div class="todo">Copy to come.</div></details>
-<details><summary>What does it cost?</summary><div class="todo">Copy to come.</div></details>
+<details><summary>What is all this?</summary><div class="body"><p>Most days serve you whatever's on the menu. Emails, errands, the same route, the same three thoughts on repeat. Some of it is perfectly good. A fair bit of it is the mental version of junk food: it fills you up, leaves you oddly hungry, and somehow you keep going back for seconds. (So do I. I'm not judging. I sell spices, not diets.)</p><p>The Emporium doesn't take anything off your plate. It hands you one small pinch to add. A different way home. A thank-you you didn't plan. A cloud that looks like a slightly suspicious potato. You put it into your day, and the day tastes a little more like yours. I think this is something most of us need. A lot.</p><p>That's all. It's gloriously unnecessary, and that's rather the point.</p></div></details>
+<details><summary>Why is there no daily must-do?</summary><div class="body"><p>Because you have plenty of those already.</p><p>The shop is always open. No closing time, no streak, no little flame that goes out if you miss a day. Come in when you feel like it. Skip a day, or a week, or a month. The shelves will still be here, and so will I.</p><p>If the first pinch doesn't suit you, ask for another. You get three. After the third, the pan on the scales stays empty until tomorrow. Not as a punishment: it just means today your spice will come from somewhere else. Nobody leaves this shop empty-handed.</p><p>And if you take a pinch and your first thought is &ldquo;Sophie, honestly, not today&rdquo;&hellip; then not today. Not everything uncomfortable is growth, and not everything comfortable is laziness. :)</p></div></details>
+<details><summary>What do the flavours mean?</summary><div class="body"><p>Every pinch belongs to a flavour. You don't pick it: the Emporium does, the way a good shopkeeper slips something into your bag that you didn't know you needed.</p><p>Salt for when you need your feet back on the ground. Sweet for when you could do with some kindness, including your own. Sour for when you're feeling a bit cheeky. Bitter for the thing you keep walking past. Chilli for a little courage. And a new pan, which isn't a flavour at all, for when the trouble is the same old pan.</p><p>You find out which one you got when the pinch lands on the counter. (The shop is surprisingly good at this.)</p></div></details>
+<details><summary>What does it cost?</summary><div class="body"><p>Nothing. All the pinches here are free, and they'll stay free.</p><p>If you'd like a gentle reminder in your inbox each morning, that's free too (it's at the bottom of the page, next to Toto. You'll meet soon enough: Toto's the ginger cat).</p><p>(I might be cooking up something. Something specific. But not now. If you'd be open to a life-culinary experience we'd take on together, just write to me at <a href="mailto:sophie@artofsmallsteps.com">sophie@artofsmallsteps.com</a>.)</p></div></details>
 </section>
 
-<section class="keeper">
+<section class="keeper" id="signup">
 <p class="hand" style="font-size:28px;color:var(--rust);margin:0">Sophie, keeper of the Emporium</p>
-<div class="todo" style="width:100%">A note from the shopkeeper, and a cat asleep somewhere nearby.</div>
+<div class="note">
+<p>Hello, hon. It's me, the one behind the counter.</p>
+<p>I love this shop. I made it for the ordinary days, the ones that are sometimes almost criminally average. I know I've got enough imagination and playfulness to rattle happily along through life. But some days, just getting the existing things done takes so much out of me that I need a little extra spice from outside. And if nobody else was going to make it for me, I decided I'd make it myself. And if you're here, for you too.</p>
+<p>There are days when nobody needs a five-step plan, or a whole new life. All you need is one itsy-bitsy little thing to put in, and that's plenty.</p>
+<p>So that's what's on my counter right now. Just take a pinch, drop it into your day, and see what it does. If it happens to do nothing at all, that's perfectly fine too. Because there's always tomorrow, and thank heavens (and the genies of the www, and the great superhighways of the internet) this shop never closes. It'll be here when you need it. And it'll be here for me too: you might as well know that I come back regularly myself, for a pinch of randomly generated goodness.</p>
+<p>With love,<br />Sophie</p>
+<p>P.S. If one day a pinch isn't enough and you'd like to look at the whole map, I also take people on a longer voyage. It's called <a href="/wayfinder-method/">RECHART</a>.</p>
+</div>
+<h3 class="display">Would you like a little note in the morning?</h3>
+<p style="margin:0;line-height:1.65">Once a day I'll send you a short email. There's nothing to do in it and no pinch inside (you collect that at the counter). Just a gentle tap on the shoulder: the shop's open, come and add a little something to your day.</p>
+<p class="soft hand" style="font-size:20px">(Type softly. Toto is napping on the form.)</p>
 <form onsubmit="return false">
 <label for="em" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email</label>
 <input id="em" type="email" placeholder="name@example.com" disabled />
-<button type="button" disabled title="Not working yet">JOIN THE ROSTER</button>
+<button type="button" disabled title="Not working yet">YES, PLEASE</button>
 </form>
+<p class="soft">One short email each morning. Leave whenever you like: one click, no hard feelings.</p>
 </section>
 
 <footer>The Emporium of Small Adventures · an <a href="/">Art of Small Steps</a> programme · preview, not yet open</footer>

@@ -88,6 +88,8 @@ teáskanna kaktusszal · konyhai időzítő.
 
 ### Visszatérő szereplők
 
+**A macskák neve (Sophie, 2026-11-21):** Alfi a cégtáblán, Rozi lóg le a keserű polcról, Kormi alszik az új lábason (fekete), Toto alszik a feliratkozásnál (vörös). Az oldalszövegben csak Kormi és Toto szerepel név szerint.
+
 - **A csorba, kék virágos csésze** — a folytonosság horgonya a cégtáblához
 - **A sárgaréz tetejű üvegek** — a bolt tárolórendszere
 - **Egy pár kerek szemüveg, épp letéve** — a boltos nyoma
