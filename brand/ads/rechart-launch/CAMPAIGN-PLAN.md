@@ -11,6 +11,8 @@
   - Advantage+ audience: **KI** az első 7 napban, hogy tényleg hideg, érdeklődés-alapú legyen. Utána, ha jön vásárlás, kipróbálhatjuk BE-kapcsolva.
   - Elhelyezés: Advantage+ placements, de **Audience Network kizárva** (sok a véletlen kattintás).
 - **Hirdetések**: a RECHART copy session 6 változatából (A–F) az első körben a Sophie által kiválasztott **3**. Ha 4 nap után valamelyik egyértelműen gyenge, kicseréljük a következőre.
+- **CTA gomb**: „Learn more” (hideg közönség, a sales oldalra visz, nem egyből fizetésre).
+- **Advantage+ creative**: a szöveget vagy képet átíró/átalakító javítások KI (hogy a hangod és az akvarellek változatlanok maradjanak). Az elhelyezésekhez igazító vágás maradhat.
 - **Céloldal**: minden hirdetés → `https://artofsmallsteps.com/wayfinder-method/` (a Find Your Bearings játék nem része a tölcsérnek).
 
 ## 2. Napi keret és futás
