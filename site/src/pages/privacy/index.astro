@@ -1,12 +1,124 @@
 ---
+// Privacy policy. Written 2026-11-22 by the legal-pages session from what actually
+// runs (COORDINATION.md: Make 8613336, EmailOctopus, Slack, Tracking.astro / Meta
+// Pixel + CAPI from web-campaign). Update this page whenever a new tool touches
+// personal data. Review by an accountant or lawyer recommended before scaling ads.
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Privacy Policy">
-  <section style="max-width: 640px;">
-    <h1 style="font-size: 36px; font-weight: 400; margin: 0 0 var(--space-3);">Privacy Policy</h1>
-    <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.6; color: var(--color-text-muted);">
-      [TODO: needs a real privacy policy before launch — GDPR-relevant given a Hungary-based operator serving a global audience. Do not launch with this placeholder.]
+<Layout title="Privacy policy" description="What personal data Art of Small Steps collects, why, who helps us process it, and your rights.">
+  <article class="legal">
+    <p class="updated">Last updated: 22 November 2026</p>
+    <h1>Privacy policy</h1>
+    <p class="lede">I collect as little about you as I can, use it only to send you what you asked for, and never sell it. Here's the full picture.</p>
+
+    <h2>1. Who is responsible for your data</h2>
+    <p>The data controller is:</p>
+    <p class="seller">
+      Kemenes György Lászlóné, egyéni vállalkozó (a Hungarian sole trader), trading as Art of Small Steps<br />
+      Tímár u. 19/J, 1034 Budapest, Hungary<br />
+      Hungarian tax number: 92558515-1-41<br />
+      Email: <a href="mailto:hello@artofsmallsteps.com">hello@artofsmallsteps.com</a>
     </p>
-  </section>
+    <p>Because the business is based in Hungary and sells to people in the United Kingdom, we follow both the EU General Data Protection Regulation (GDPR) and the UK GDPR with the Data Protection Act 2018. For anything about your data, write to the email address above.</p>
+
+    <h2>2. What we collect, and why</h2>
+
+    <h3>When you buy RECHART</h3>
+    <p>Payment happens on Stripe's checkout page. Stripe (through its Link service, the reseller for your order) collects your card details, billing details and email, and handles VAT, receipts and invoices. <strong>We never see your card details.</strong> Stripe then passes us your <strong>name, email address, country, the amount paid and the order reference</strong>, so that we can:</p>
+    <ul>
+      <li>add you to the course mailing list and send you the preparation emails and lessons;</li>
+      <li>send you a short notice to our private order channel, so I know a new traveller is on board;</li>
+      <li>answer your questions, re-send emails and handle refunds.</li>
+    </ul>
+    <p><strong>Lawful basis:</strong> performing our contract with you, and our legal obligations for tax and accounting records.</p>
+
+    <h3>When you sign up for something free</h3>
+    <p>For example the Find Your Bearings "message in a bottle", or one of our email letters. We collect your <strong>email address</strong>, your consent, and sometimes a first name or a nickname you choose. The signup form is protected by Google reCAPTCHA (see section 4).</p>
+    <p><strong>Lawful basis:</strong> your consent. You can unsubscribe at any time with the link at the bottom of every email.</p>
+
+    <h3>When you choose a nickname</h3>
+    <p>If you use the nickname form, we store the nickname in your existing course contact, so the emails greet you the way you like.</p>
+    <p><strong>Lawful basis:</strong> performing our contract with you.</p>
+
+    <h3>When you write to me</h3>
+    <p>We keep your email and what you wrote, so I can reply and keep track of the conversation.</p>
+    <p><strong>Lawful basis:</strong> our legitimate interest in answering you.</p>
+
+    <h3>When you visit the website</h3>
+    <ul>
+      <li><strong>Server logs.</strong> Our host, Vercel, records technical data such as your IP address, browser type and the pages requested, to deliver the site and keep it secure. These logs are kept for a short time. <em>Lawful basis: legitimate interests (running a secure website).</em></li>
+      <li><strong>Fonts.</strong> The site's fonts are loaded from Google Fonts, so your browser sends your IP address to Google when a page loads. No cookies are set. <em>Lawful basis: legitimate interests (a readable website).</em></li>
+      <li><strong>Your choices in the browser.</strong> We store your cookie choice, and on some pages small preferences (such as the name you gave the Emporium counter), in your own browser. They stay on your device. See the <a href="/cookies/">Cookie policy</a>.</li>
+    </ul>
+
+    <h3>Advertising measurement (Meta)</h3>
+    <p>We advertise RECHART on Facebook and Instagram. To see whether those ads work, we use two tools from Meta:</p>
+    <ul>
+      <li><strong>The Meta Pixel</strong>, which <strong>only runs if you say yes</strong> in the cookie banner. It tells Meta which pages you viewed and when you clicked the buy button, linked to Meta's cookies in your browser. <em>Lawful basis: your consent, which you can withdraw at any time in <a href="/cookies/">Cookie settings</a>.</em></li>
+      <li><strong>The Conversions API.</strong> When a paid order comes in, we send Meta a "purchase" event with the order value and currency, the order reference, and your email address, first and last name and country, all <strong>scrambled (hashed)</strong> before sending, so Meta can only match them to an existing Meta account, not read them. If you accepted cookies, Meta's browser identifiers are included too. This lets Meta tell us how many sales an ad brought in. <em>Lawful basis: our legitimate interest in measuring our advertising. You can object at any time by emailing me, and we'll stop sending your data.</em></li>
+    </ul>
+    <p>Meta uses this data under its own terms and privacy policy (<a href="https://www.facebook.com/privacy/policy/" rel="noopener">facebook.com/privacy/policy</a>).</p>
+
+    <h2>3. What we don't do</h2>
+    <ul>
+      <li>We don't sell or rent your data.</li>
+      <li>We don't make automated decisions about you that have legal or similar effects.</li>
+      <li>We don't knowingly collect data from anyone under 18. The course is for adults.</li>
+    </ul>
+
+    <h2>4. Who helps us</h2>
+    <p>A few trusted services process data on our behalf, each only for its own job:</p>
+    <ul>
+      <li><strong>Stripe</strong> (Link): checkout, payment, VAT, receipts, refunds. Stripe is the reseller for your order and is also a controller for the payment data it holds. <a href="https://stripe.com/privacy" rel="noopener">Stripe privacy policy</a>.</li>
+      <li><strong>EmailOctopus</strong>: our mailing list, and delivery of the course and other emails.</li>
+      <li><strong>Make.com</strong>: the automation that passes a new order from Stripe to the mailing list, the order notice and Meta.</li>
+      <li><strong>Slack</strong>: our private workspace, where a new order notice (name, email, country, amount) appears.</li>
+      <li><strong>Vercel</strong>: website hosting.</li>
+      <li><strong>Google</strong>: website fonts (Google Fonts) and spam protection on signup forms (reCAPTCHA).</li>
+      <li><strong>Meta</strong>: advertising measurement, as described above.</li>
+      <li>Our <strong>accountant</strong>, where needed for tax and bookkeeping.</li>
+    </ul>
+
+    <h2>5. Transfers outside the UK and EU</h2>
+    <p>Some of these services, for example Stripe, Vercel, Slack, Google and Meta, may process data in the United States or elsewhere. When they do, the transfer is protected by recognised safeguards, such as the EU-US Data Privacy Framework and its UK extension, or standard contractual clauses approved by the European Commission and the UK.</p>
+
+    <h2>6. How long we keep it</h2>
+    <ul>
+      <li><strong>Buyers:</strong> as long as needed to deliver and support the course, and for as long as tax and accounting law requires us to keep records of sales (in Hungary, up to 8 years).</li>
+      <li><strong>Email letters:</strong> until you unsubscribe. After that we keep only what is needed to make sure we don't email you again.</li>
+      <li><strong>Emails you send me:</strong> as long as the conversation needs, then up to 2 years.</li>
+      <li><strong>Order notices in Slack and automation logs:</strong> no longer than needed to check that each order went through.</li>
+    </ul>
+
+    <h2>7. Your rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>ask for a copy of the data we hold about you;</li>
+      <li>have it corrected if it's wrong;</li>
+      <li>have it deleted, where we don't have to keep it by law;</li>
+      <li>restrict or object to how we use it, including the advertising measurement described above;</li>
+      <li>receive it in a portable format;</li>
+      <li>withdraw your consent at any time, without affecting what happened before.</li>
+    </ul>
+    <p>Just email <a href="mailto:hello@artofsmallsteps.com">hello@artofsmallsteps.com</a>. I'll reply within one month, and it's free.</p>
+    <p>If you're unhappy with how we've handled your data, you can complain to a data protection authority. In the UK that's the Information Commissioner's Office (<a href="https://ico.org.uk" rel="noopener">ico.org.uk</a>). In Hungary, where the business is based, it's the Nemzeti Adatvédelmi és Információszabadság Hatóság (<a href="https://naih.hu" rel="noopener">naih.hu</a>). I'd be grateful for the chance to put things right first.</p>
+
+    <h2>8. Changes</h2>
+    <p>If we change how we use your data, we'll update this page and the date at the top. If the change is significant and you're on our list, we'll tell you by email.</p>
+  </article>
 </Layout>
+
+<style>
+  .legal { max-width: 680px; margin: 0 auto; padding: 30px 8px 90px; font-size: 17px; line-height: 1.75; color: var(--color-text-muted); }
+  .legal h1 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(32px, 4vw, 44px); line-height: 1.15; color: var(--color-text); margin: 0 0 22px; }
+  .legal h2 { font-family: var(--font-serif); font-weight: 600; font-size: 25px; line-height: 1.25; color: var(--color-text); margin: 44px 0 10px; }
+  .legal h3 { font-size: 17px; font-weight: 600; color: var(--color-text); margin: 26px 0 6px; }
+  .legal p, .legal ul { margin: 0 0 14px; }
+  .legal ul { padding-left: 22px; }
+  .legal li { margin: 0 0 6px; }
+  .legal strong { color: var(--color-text); font-weight: 600; }
+  .legal .updated { font-size: 13px; margin: 0 0 10px; }
+  .legal .lede { font-size: 19px; }
+  .legal .seller { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 16px 20px; font-size: 16px; }
+</style>

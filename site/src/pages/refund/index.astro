@@ -1,0 +1,58 @@
+---
+// Refund policy. Sophie chose "14 days, no questions asked" on 2026-11-22.
+// Review by an accountant or lawyer recommended before scaling ads.
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Refund policy" description="RECHART comes with a 14-day money-back promise, no questions asked. Here's how it works.">
+  <article class="legal">
+    <p class="updated">Last updated: 22 November 2026</p>
+    <h1>Refund policy</h1>
+    <p class="lede">The short version: if RECHART isn't for you, write to me within 14 days of buying and you'll get every penny back. No questions, no forms, no hard feelings.</p>
+
+    <h2>Our 14-day money-back promise</h2>
+    <ul>
+      <li>You can ask for a <strong>full refund within 14 days of your purchase</strong>.</li>
+      <li>You don't need to give a reason.</li>
+      <li>It applies even if you've already opened the emails or started the exercises.</li>
+      <li>You get back the full amount you paid, including VAT, to the card or account you paid with.</li>
+    </ul>
+
+    <h2>How to ask</h2>
+    <p>Email <a href="mailto:hello@artofsmallsteps.com">hello@artofsmallsteps.com</a> from the address you used to buy, with "Refund" in the subject line. That's all. I'll confirm by email, usually within two working days, and stop the course emails.</p>
+    <p>Because RECHART is sold through Stripe's Link service (the reseller for your order), the refund itself is paid back by Stripe, and Stripe emails you a refund confirmation. Most banks show the money within 5 to 10 working days. You can also ask Link support directly at <a href="https://support.link.com/topics/sold-through-link" rel="noopener">support.link.com</a>.</p>
+
+    <h2>Your statutory rights</h2>
+    <p>Our promise sits on top of your legal rights, it doesn't replace them.</p>
+    <h3>The 14-day right to cancel</h3>
+    <p>Under the UK Consumer Contracts Regulations 2013, you normally have 14 days to cancel an online purchase. For digital content, such as a course delivered by email, that right ends once delivery has started, if you asked for it to start straight away and acknowledged that you'd lose the right to cancel. At checkout you'll be asked to agree to this so your welcome email can arrive straight away.</p>
+    <p>In practice this makes no difference to you here: our own promise still gives you 14 days from purchase to change your mind and get a full refund, whatever has already been delivered.</p>
+    <h3>If something is wrong</h3>
+    <p>Under the Consumer Rights Act 2015, digital content must be as described, fit for purpose and of satisfactory quality. If anything is missing, broken or not as described, tell me at any time, not just within 14 days, and I'll fix it or resend it. If I can't, you're entitled to a refund, in full or in part.</p>
+
+    <h2>After 14 days</h2>
+    <p>After 14 days the promise ends and refunds are no longer automatic, except where something is wrong with the course as above. If your circumstances have changed and you'd like to talk about it, please write to me anyway. I'm a person, not a policy.</p>
+
+    <h2>Who you're dealing with</h2>
+    <p class="seller">
+      Kemenes György Lászlóné, egyéni vállalkozó (a Hungarian sole trader), trading as Art of Small Steps<br />
+      Tímár u. 19/J, 1034 Budapest, Hungary · Hungarian tax number: 92558515-1-41<br />
+      Email: <a href="mailto:hello@artofsmallsteps.com">hello@artofsmallsteps.com</a>
+    </p>
+    <p>See also the <a href="/terms/">Terms</a>.</p>
+  </article>
+</Layout>
+
+<style>
+  .legal { max-width: 680px; margin: 0 auto; padding: 30px 8px 90px; font-size: 17px; line-height: 1.75; color: var(--color-text-muted); }
+  .legal h1 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(32px, 4vw, 44px); line-height: 1.15; color: var(--color-text); margin: 0 0 22px; }
+  .legal h2 { font-family: var(--font-serif); font-weight: 600; font-size: 25px; line-height: 1.25; color: var(--color-text); margin: 44px 0 10px; }
+  .legal h3 { font-size: 17px; font-weight: 600; color: var(--color-text); margin: 26px 0 6px; }
+  .legal p, .legal ul { margin: 0 0 14px; }
+  .legal ul { padding-left: 22px; }
+  .legal li { margin: 0 0 6px; }
+  .legal strong { color: var(--color-text); font-weight: 600; }
+  .legal .updated { font-size: 13px; margin: 0 0 10px; }
+  .legal .lede { font-size: 19px; }
+  .legal .seller { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 16px 20px; font-size: 16px; }
+</style>

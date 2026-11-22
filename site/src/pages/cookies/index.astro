@@ -1,0 +1,92 @@
+---
+// Cookie policy. Lists exactly what runs (from the web-campaign session's notes in
+// COORDINATION.md, 2026-11-22). Update when Tracking.astro or any embed changes.
+// The "Cookie settings" button uses data-cookie-settings (handled by Tracking.astro)
+// and only shows when the Meta Pixel is switched on in site/src/data/tracking.json.
+import Layout from '../../layouts/Layout.astro';
+import tracking from '../../data/tracking.json';
+const pixelOn = Boolean(tracking.metaPixelId);
+---
+
+<Layout title="Cookie policy" description="Which cookies and similar technologies artofsmallsteps.com uses, and how to change your choice.">
+  <article class="legal">
+    <p class="updated">Last updated: 22 November 2026</p>
+    <h1>Cookie policy</h1>
+    <p class="lede">This site uses very few cookies. The only ones that track anything are Meta's advertising cookies, and they only run if you say yes.</p>
+
+    <div class="settings">
+      {pixelOn ? (
+        <>
+          <p>You can change your mind at any time:</p>
+          <button type="button" data-cookie-settings class="btn">Cookie settings</button>
+        </>
+      ) : (
+        <p>Right now no advertising cookies are in use on this site, so there's nothing to choose. When they are, a small banner will ask you first, and a "Cookie settings" button will appear here and in the footer.</p>
+      )}
+    </div>
+
+    <h2>What cookies are</h2>
+    <p>Cookies are small text files a website saves in your browser. "Local storage" is a similar way of saving a small note in your browser. Both stay on your device until they expire or you clear them.</p>
+
+    <h2>Strictly necessary (always on)</h2>
+    <table>
+      <thead><tr><th>Name</th><th>Set by</th><th>What it does</th><th>How long</th></tr></thead>
+      <tbody>
+        <tr><td><code>aoss_consent</code> (local storage)</td><td>artofsmallsteps.com</td><td>Remembers whether you said yes or no to advertising cookies, and when.</td><td>Until you clear it</td></tr>
+        <tr><td><code>_GRECAPTCHA</code></td><td>Google reCAPTCHA</td><td>Protects our email signup form from spam and bots. Only on pages with a signup form.</td><td>Up to 6 months</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Functional (always on, never leave your device)</h2>
+    <table>
+      <thead><tr><th>Name</th><th>Set by</th><th>What it does</th><th>How long</th></tr></thead>
+      <tbody>
+        <tr><td><code>aoss-emporium-name</code> and the pinch history (local storage)</td><td>artofsmallsteps.com</td><td>On the Emporium page: remembers the name you gave and which pinches you've already drawn, so you don't get repeats.</td><td>Until you clear it</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Advertising (only if you say yes)</h2>
+    <table>
+      <thead><tr><th>Name</th><th>Set by</th><th>What it does</th><th>How long</th></tr></thead>
+      <tbody>
+        <tr><td><code>_fbp</code></td><td>Meta Pixel, on artofsmallsteps.com</td><td>A random browser ID, so Meta can tell us whether people who saw our ads visited the site or clicked to buy.</td><td>90 days</td></tr>
+        <tr><td><code>_fbc</code></td><td>Meta Pixel, on artofsmallsteps.com</td><td>Only set if you arrived by clicking one of our ads. Remembers that click.</td><td>90 days</td></tr>
+        <tr><td>Meta's own cookies, e.g. <code>fr</code></td><td>Meta (facebook.com)</td><td>If you're logged in to Facebook or Instagram, Meta may read or set its own cookies to match your visit to your account.</td><td>Set by Meta, up to 90 days</td></tr>
+      </tbody>
+    </table>
+    <p>With your consent, the Meta Pixel records these events: page views, viewing the RECHART page, and clicking the buy button. If you say no, or later change to no, the Pixel doesn't load and the <code>_fbp</code> and <code>_fbc</code> cookies are deleted. Purchases are measured separately, as described in the <a href="/privacy/">Privacy policy</a>.</p>
+
+    <h2>Other sites we link to</h2>
+    <ul>
+      <li><strong>Stripe checkout</strong> (buy.stripe.com) sets its own cookies for secure payment and fraud prevention when you go there to buy. See <a href="https://stripe.com/legal/cookies-policy" rel="noopener">Stripe's cookie policy</a>.</li>
+      <li><strong>Google Fonts</strong> loads our fonts without setting cookies, but Google does see your IP address.</li>
+    </ul>
+
+    <h2>Controlling cookies in your browser</h2>
+    <p>You can also block or delete cookies in your browser settings. Blocking the strictly necessary ones may stop the signup form from working.</p>
+
+    <h2>Questions</h2>
+    <p>Write to <a href="mailto:hello@artofsmallsteps.com">hello@artofsmallsteps.com</a>. This site is run by Kemenes György Lászlóné, egyéni vállalkozó (a Hungarian sole trader), trading as Art of Small Steps, Tímár u. 19/J, 1034 Budapest, Hungary.</p>
+  </article>
+</Layout>
+
+<style>
+  .legal { max-width: 760px; margin: 0 auto; padding: 30px 8px 90px; font-size: 17px; line-height: 1.75; color: var(--color-text-muted); }
+  .legal h1 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(32px, 4vw, 44px); line-height: 1.15; color: var(--color-text); margin: 0 0 22px; }
+  .legal h2 { font-family: var(--font-serif); font-weight: 600; font-size: 25px; line-height: 1.25; color: var(--color-text); margin: 44px 0 10px; }
+  .legal p, .legal ul { margin: 0 0 14px; }
+  .legal ul { padding-left: 22px; }
+  .legal li { margin: 0 0 6px; }
+  .legal strong { color: var(--color-text); font-weight: 600; }
+  .legal code { font-size: 14px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 3px; padding: 0 4px; word-break: break-word; }
+  .legal .updated { font-size: 13px; margin: 0 0 10px; }
+  .legal .lede { font-size: 19px; }
+  .legal .settings { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 16px 20px; margin: 0 0 10px; }
+  .legal .settings p { margin: 0 0 10px; }
+  .legal .settings p:last-child { margin: 0; }
+  .legal .btn { background: var(--color-text); color: var(--color-bg); border: 0; border-radius: 999px; padding: 12px 24px; font: inherit; font-weight: 600; font-size: 16px; min-height: 44px; cursor: pointer; }
+  .legal .btn:hover { background: var(--color-deep-sea); }
+  .legal table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.55; margin: 0 0 14px; display: block; overflow-x: auto; }
+  .legal th, .legal td { text-align: left; vertical-align: top; padding: 10px 10px; border-bottom: 1px solid var(--color-border); }
+  .legal th { color: var(--color-text); font-weight: 600; white-space: nowrap; }
+</style>
