@@ -4,8 +4,12 @@
 - **Written:** 2026-11-22, for `local-landing-design` (Sophie's request), by the RECHART lesson-copy session.
 - **Campaign:** cold sales, UK, English-speaking. Every ad goes straight to the sales page: `https://artofsmallsteps.com/wayfinder-method/` (UTMs: see the `web-campaign` session).
 - **Offer:** £39 until Sunday 3 January 2027, then £69. 15 lessons by email, one every two days, then the full workbook (PDF). Self-paced. Find Your Bearings (free) is a bonus, not the funnel, so no ad sells it.
-- **Formats (planned, waiting for `web-campaign` to confirm):** feed 1:1 (1080×1080) and 4:5 (1080×1350); Stories/Reels 9:16 (1080×1920). One image or video per variant, cropped or extended to all three.
-- **CTA button:** "Learn more" by default (cold traffic, a sales page with a story). Test "Shop now" on variant B in the last two weeks before 3 January, when the price deadline is the message.
+- **Formats (confirmed by `web-campaign`, 2026-11-22, see `CAMPAIGN-PLAN.md`):** **4:5 (1080×1350) is the main feed size.** 1:1 only as a fallback, skip it when a 4:5 exists. Stories/Reels 9:16 (1080×1920): **no text or faces in the top 14% or the bottom 35%** of the frame. The video also gets a 4:5 feed crop.
+- **Structure:** one campaign (Sales, Purchase), one ad set (UK, 28–60, interests). **Round one runs 3 ads that Sophie picks**; the other variants are reserves. My suggestion for the three: **A, B, D** (two different hooks and the video).
+- **Advantage+ creative:** enhancements that rewrite or alter (text, music, image expansion, touch-ups, overlays) are OFF, so Sophie's voice and the watercolours stay as they are. Standard placement cropping is fine.
+- **CTA button:** "Learn more" on every ad (cold traffic, the button leads to the sales page).
+- **URL:** `https://artofsmallsteps.com/wayfinder-method/`, nothing appended. UTMs go in Ads Manager's URL parameters field (same for every ad, see `CAMPAIGN-PLAN.md`). **Ad names:** `letter_shortname_format`, e.g. `A_feels-off_4x5`, `D_other-map_9x16`.
+- **Lengths:** the first ~125 characters of each primary text work on their own (checked: each opens with a complete hook). Every headline is 40 characters or fewer.
 
 ## House rules this copy follows
 
@@ -29,7 +33,7 @@
 | E | The coffee machine (humour) | A job. People. A perfectly decent coffee machine. And yet. | Watercolour: foggy window being wiped clear (existing image) | Feed 1:1 + 4:5 |
 | F | Ten years, now in English | A quiet bestseller in Hungarian, now in English. | Watercolour: open travel trunk with map (existing image) + quote card | Feed 4:5 |
 
-Suggested start: run **A, B, D, E** from day one (four clearly different angles), keep **C and F** as the second wave once the first data is in.
+Round one is 3 ads (one ad set). Suggested: **A, B, D**. Reserves: **E** (first swap-in), then C and F. Short names for the ad names: A `feels-off`, B `permission`, C `first-mate`, D `other-map`, E `coffee`, F `ten-years`.
 
 ---
 
@@ -54,7 +58,7 @@ Suggested start: run **A, B, D, E** from day one (four clearly different angles)
 
 - **Type:** single image.
 - **Image:** `brand/visual/landing-images/woman-sitting-thinking-bun.png` (the softer, bluer version; calmer in a busy feed). Person sitting cross-legged, chin on hand, looking away.
-- **Crops:** 1:1 and 4:5 straight from the square original (extend the cream paper at the top for 4:5). 9:16: extend the background up and down in ChatGPT ("extend the cream paper and soft watercolour washes above and below, keep the figure unchanged"), so the figure sits in the lower middle, out of the caption zone.
+- **Crops:** 1:1 and 4:5 straight from the square original (extend the cream paper at the top for 4:5). 9:16: extend the background up and down in ChatGPT ("extend the cream paper and soft watercolour washes above and below, keep the figure unchanged"), so the figure sits in the middle band (between 14% from the top and 35% from the bottom).
 - **Text overlay** (handwritten-style font, navy #142230, top third, on cream): *Nothing is wrong. Nothing feels quite right, either.*
 - **Small logo:** RECHART wordmark, bottom corner, small.
 - **Note:** a woman in this one; variant E has a man. Run both, so the set doesn't read as "for women only".
@@ -89,10 +93,10 @@ Suggested start: run **A, B, D, E** from day one (four clearly different angles)
   ```
   Scene: a quiet harbour on a winter morning, the first day of a new year. A small wooden sailboat moored at a weathered jetty, sail still furled, no hurry at all. On the jetty: a steaming mug and an open notebook with a pencil, nothing written on it. A few strings of small warm lights left over from the holidays along the harbour wall, soft and faded. Calm water, pale gold light on the horizon. Peaceful, unhurried, no fireworks, no party, nobody visible. Generous empty cream space in the upper part of the image for text.
   ```
-  For each format, add one line: `Format: square 1:1.` / `Format: portrait 4:5.` / `Format: tall 9:16, boat and jetty in the lower half.`
+  For each format, add one line: `Format: square 1:1.` / `Format: portrait 4:5.` / `Format: tall 9:16, boat and jetty in the middle band, nothing important in the top 14% or the bottom 35%.`
 - **Text overlay** (top, on the empty cream): *You don't have to become a new person on 1 January.*
 - **Why this picture:** the holidays are only in the background (faded lights, a winter morning). No fireworks, no "2027", no "new you" cues, which is exactly what everyone else will be running.
-- **Last two weeks before 3 January:** swap the description to *Price goes up on 3 January* and test the "Shop now" button.
+- **Last two weeks before 3 January:** swap the description to *Price goes up on 3 January* (the button stays "Learn more").
 
 ---
 
@@ -141,7 +145,8 @@ Suggested start: run **A, B, D, E** from day one (four clearly different angles)
 **Creative brief**
 
 - **Type:** video, 9:16, 28 s: `brand/video/reel-other-map/out/draw-your-other-map-reel.mp4` (Sophie approved the storyboard on 2026-11-19; captions burned in, Sophie's voice clone, Find Your Bearings music; "you are here" marker instead of the cube, so it doesn't give the free test away).
-- **Feed versions:** 4:5 and 1:1 cut from the same render (centre crop, captions moved up if they fall outside). If the Remotion project can render 1080×1350 directly, that's cleaner than cropping.
+- **Safe zones:** check the burned-in captions sit between 14% from the top and 35% from the bottom; if they sit lower, move them up in `src/Reel.tsx` before export.
+- **Feed versions:** 4:5 (main) and, if needed, 1:1 cut from the same render (centre crop, captions moved up if they fall outside). If the Remotion project can render 1080×1350 directly, that's cleaner than cropping.
 - **Cover / thumbnail:** `brand/video/reel-other-map/out/cover.jpg` (the finished map).
 - **First 2 seconds:** the empty sheet must already show something moving, so check the opening frame works as a hook without sound. If it doesn't, add a one-line on-screen title from frame 1: *What if you drew a different map?*
 - **"I can't draw either":** true (Sophie confirmed she can't draw, see the 6b lesson note).
@@ -212,4 +217,4 @@ All copy says "starts 3 January" and "£39 until then". From 3 January the offer
 
 1. Variant F, first line: may it say *I* started this course ten years ago? (see F)
 2. Do you want a real photo of yourself in variant C, or is the illustration enough?
-3. Which first wave: my suggestion is A, B, D, E.
+3. Which three ads go in round one: my suggestion is A, B, D (E as the first reserve).
