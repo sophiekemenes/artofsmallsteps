@@ -53,6 +53,7 @@ page = f"""---
 // Generated from the "Bearings" artboard of the Design canvas "RECHART landing wireframe"
 // by site/tools/bearings_to_astro.py; the canvas is the design source of truth.
 // noindex: reached from the email only, and the English video is not recorded yet.
+import Tracking from '../../components/Tracking.astro';
 ---
 
 <!doctype html>
@@ -88,6 +89,7 @@ page = f"""---
         }});
       }})();
     </script>
+    <Tracking />
   </body>
 </html>
 """

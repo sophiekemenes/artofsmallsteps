@@ -13,6 +13,12 @@
   --color-accent: #B87345;
   --color-accent-dark: #8A5129;
 
+  /* Emporium of Small Adventures accents (approved by Sophie; ground stays paper) */
+  --emporium-teal: #123C3B;
+  --emporium-rust: #A4492F;
+  --emporium-turquoise: #25A9A6;
+  --emporium-brass: #B68A45;
+
   --font-serif: 'Cormorant Garamond', Georgia, 'Iowan Old Style', serif;
   --font-sans: 'Lora', Georgia, serif;
   --font-hand: 'Shadows Into Light Two', cursive;

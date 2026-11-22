@@ -1,20 +1,19 @@
 ---
 import '../styles/tokens.css';
+import Tracking from '../components/Tracking.astro';
+import tracking from '../data/tracking.json';
 
 interface Props {
   title: string;
   description?: string;
 }
 
-const { title, description = 'Art of Small Steps — a gentle, evidence-informed path of small, doable steps.' } = Astro.props;
+const { title, description = 'Art of Small Steps: a gentle, evidence-informed path of small, doable steps.' } = Astro.props;
 
 const nav = [
   { href: '/', label: 'Home' },
-  { href: '/method/', label: 'The Method' },
-  { href: '/program/', label: 'The Program' },
   { href: '/wayfinder-method/', label: 'The Wayfinder Method' },
   { href: '/blog/', label: 'Journal' },
-  { href: '/about/', label: 'About' },
   { href: '/contact/', label: 'Contact' },
 ];
 ---
@@ -30,6 +29,7 @@ const nav = [
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,600;1,400&family=Shadows+Into+Light+Two&display=swap" />
+    {tracking.metaDomainVerification && <meta name="facebook-domain-verification" content={tracking.metaDomainVerification} />}
     <title>{title} · Art of Small Steps</title>
   </head>
   <body>
@@ -54,8 +54,11 @@ const nav = [
         <div style="display: flex; gap: var(--space-3);">
           <a href="/privacy/" style="color: var(--color-text-muted);">Privacy</a>
           <a href="/terms/" style="color: var(--color-text-muted);">Terms</a>
+          <a href="/contact/" style="color: var(--color-text-muted);">Contact</a>
+          {tracking.metaPixelId && <button type="button" data-cookie-settings style="padding: 0; border: 0; background: none; font: inherit; color: var(--color-text-muted); text-decoration: underline; cursor: pointer;">Cookie settings</button>}
         </div>
       </div>
     </footer>
+    <Tracking />
   </body>
 </html>

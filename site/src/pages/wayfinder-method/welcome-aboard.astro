@@ -2,6 +2,8 @@
 // Welcome aboard: where the RECHART Stripe payment link sends buyers after paying.
 // Hand-written (not generated from the canvas). Copy is a DRAFT for Sophie to edit.
 // noindex: only reached from the checkout.
+// Tracking: PageView only after consent. Purchase is sent server-side by Make 8613336 (see Tracking.astro).
+import Tracking from '../../components/Tracking.astro';
 ---
 
 <!doctype html>
@@ -64,5 +66,6 @@ a{color:#8A5129}a:hover{color:#142230}
 </footer>
 
 </div>
+    <Tracking />
   </body>
 </html>

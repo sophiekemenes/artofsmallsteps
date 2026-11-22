@@ -1,0 +1,132 @@
+---
+// Cookie consent + Meta Pixel. Owner: web-campaign session (see COORDINATION.md).
+// Put <Tracking /> right before </body> on every page. With no pixel ID in
+// src/data/tracking.json it renders nothing at all (no banner, no cookies).
+//
+// What it does once the pixel ID is set:
+// - Shows a small banner. Nothing from Meta loads until "Yes" (UK GDPR / PECR).
+//   The choice itself is kept in localStorage `aoss_consent` (strictly necessary).
+// - After "Yes": loads the Meta Pixel (sets _fbp, and _fbc when the visitor came
+//   from an ad click), PageView on every page, ViewContent on /wayfinder-method/,
+//   InitiateCheckout when a buy.stripe.com link is clicked.
+// - Purchase is NOT sent from the browser on purpose: the payment link allows
+//   promotion codes, so the browser cannot tell a £0 (100% coupon) order from a
+//   paid one. Make scenario 8613336 sends Purchase through the Conversions API
+//   with the real amount and skips £0 orders. To let Meta match that server
+//   event to the ad click, the buy link gets ?client_reference_id=p<ts>-<rand>_c<ts>-<fbclid>
+//   (the _fbp/_fbc values, dots swapped because Stripe allows only [A-Za-z0-9_-]).
+// - Any element with [data-cookie-settings] reopens the banner. Saying "No" after
+//   a "Yes" deletes the Meta cookies and reloads the page.
+import tracking from '../data/tracking.json';
+const pixelId = tracking.metaPixelId;
+---
+
+{pixelId && (
+  <>
+    <div id="aoss-consent" class="aoss-consent" role="dialog" aria-live="polite" aria-labelledby="aoss-consent-title" hidden>
+      <p id="aoss-consent-title" class="aoss-consent-title">A cookie, if that's alright?</p>
+      <p class="aoss-consent-text">
+        Only one kind: Meta's, so I can see whether my Facebook and Instagram ads reach the right people.
+        Nothing loads unless you say yes, and the site works the same either way.
+        <a href="/cookies/">More about cookies</a>
+      </p>
+      <div class="aoss-consent-buttons">
+        <button type="button" data-consent="denied">No, thanks</button>
+        <button type="button" data-consent="granted">Yes, that's fine</button>
+      </div>
+    </div>
+    <style is:global>
+      .aoss-consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483000;max-width:440px;margin:0 auto;box-sizing:border-box;padding:20px 22px 18px;background:#FFF8EE;color:#142230;border:1px solid #EBDCC6;border-radius:10px;box-shadow:0 14px 40px rgba(20,34,48,.18);font-family:'Lora',Georgia,serif}
+      .aoss-consent[hidden]{display:none}
+      .aoss-consent-title{margin:0 0 6px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:22px;line-height:1.2}
+      .aoss-consent-text{margin:0 0 14px;font-size:15px;line-height:1.55;color:#3E4852}
+      .aoss-consent-text a{color:#8A5129}
+      .aoss-consent-buttons{display:flex;gap:10px}
+      .aoss-consent-buttons button{flex:1 1 0;min-height:44px;padding:10px 12px;font:600 15px/1.2 'Lora',Georgia,serif;color:#142230;background:#FBF1E3;border:1.5px solid #142230;border-radius:999px;cursor:pointer}
+      .aoss-consent-buttons button:hover,.aoss-consent-buttons button:focus-visible{background:#142230;color:#FBF1E3;outline:none}
+    </style>
+    <script is:inline define:vars={{ pixelId }}>
+      (function () {
+        var KEY = 'aoss_consent';
+        var box = document.getElementById('aoss-consent');
+        var loaded = false;
+
+        function choice() {
+          try { var c = JSON.parse(localStorage.getItem(KEY) || 'null'); return c && c.v; } catch (e) { return null; }
+        }
+        function save(v) {
+          try { localStorage.setItem(KEY, JSON.stringify({ v: v, t: Date.now() })); } catch (e) {}
+        }
+        function cookie(name) {
+          var m = document.cookie.match('(?:^|; )' + name + '=([^;]*)');
+          return m ? decodeURIComponent(m[1]) : '';
+        }
+        function price() {
+          // £39 until 3 Jan 2027 (London), £69 from then on.
+          return Date.now() < Date.UTC(2027, 0, 3, 0, 0, 0) ? 39 : 69;
+        }
+
+        function loadPixel() {
+          if (loaded) return;
+          loaded = true;
+          !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+          n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+          document,'script','https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', pixelId);
+          fbq('track', 'PageView');
+          if (location.pathname.replace(/\/+$/, '') === '/wayfinder-method') {
+            fbq('track', 'ViewContent', { content_name: 'RECHART: The Wayfinder Method', content_ids: ['rechart'], content_type: 'product', value: price(), currency: 'GBP' });
+          }
+        }
+
+        function stripMetaCookies() {
+          ['_fbp', '_fbc'].forEach(function (n) {
+            var host = location.hostname.replace(/^www\./, '');
+            document.cookie = n + '=; Max-Age=0; path=/';
+            document.cookie = n + '=; Max-Age=0; path=/; domain=.' + host;
+          });
+        }
+
+        function decide(v) {
+          var before = choice();
+          save(v);
+          box.hidden = true;
+          if (v === 'granted') loadPixel();
+          else if (before === 'granted') { stripMetaCookies(); location.reload(); }
+        }
+
+        box.addEventListener('click', function (e) {
+          var b = e.target.closest('[data-consent]');
+          if (b) decide(b.getAttribute('data-consent'));
+        });
+        document.addEventListener('click', function (e) {
+          var s = e.target.closest('[data-cookie-settings]');
+          if (s) { e.preventDefault(); box.hidden = false; box.querySelector('button').focus(); return; }
+
+          var a = e.target.closest('a[href^="https://buy.stripe.com/"]');
+          if (!a || choice() !== 'granted') return;
+          // Hand the Meta browser IDs to Stripe so the server-side Purchase can be matched.
+          var fbp = cookie('_fbp').split('.'), fbc = cookie('_fbc').split('.');
+          var ref = '';
+          if (fbp.length === 4 && /^\d+$/.test(fbp[2] + fbp[3])) ref += 'p' + fbp[2] + '-' + fbp[3];
+          if (fbc.length >= 4 && /^\d+$/.test(fbc[2])) {
+            var c = '_c' + fbc[2] + '-' + fbc.slice(3).join('.');
+            if (/^[A-Za-z0-9_-]+$/.test(c) && (ref + c).length <= 200) ref += c;
+          }
+          if (ref) {
+            var url = new URL(a.href);
+            url.searchParams.set('client_reference_id', ref);
+            a.href = url.toString();
+          }
+          if (window.fbq) fbq('track', 'InitiateCheckout', { content_ids: ['rechart'], content_type: 'product', value: price(), currency: 'GBP', num_items: 1 });
+        }, true);
+
+        var c = choice();
+        if (c === 'granted') loadPixel();
+        else if (!c) box.hidden = false;
+      })();
+    </script>
+  </>
+)}

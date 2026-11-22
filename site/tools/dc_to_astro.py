@@ -216,6 +216,7 @@ page = f"""---
 // Standalone document on purpose: no site nav on the sales page (Sophie,
 // 2026-11-02), so it does not use Layout.astro. noindex until launch:
 // the page still carries [placeholders] (legal details, checkout).
+import Tracking from '../../components/Tracking.astro';
 ---
 
 <!doctype html>
@@ -272,6 +273,7 @@ page = f"""---
         }});
       }})();
     </script>
+    <Tracking />
   </body>
 </html>
 """
