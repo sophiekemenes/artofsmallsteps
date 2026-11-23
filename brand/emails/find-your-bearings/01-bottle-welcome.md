@@ -1,6 +1,6 @@
 # Find Your Bearings · The bottle email (welcome)
 
-- **Status:** APPROVED by Sophie 2026-11-23 (header image ready)
+- **Status:** APPROVED by Sophie 2026-11-23. BUILT in EmailOctopus 2026-11-23 as one Code block (source: `01-bottle-welcome.html`; images in the EO image library); automation still PAUSED
 - **Where it lives:** EmailOctopus → Automations → "Find Your Bearings - welcome" → step "Welcome email". Trigger: Contact added. The automation is **PAUSED** right now, so new signups get nothing until it's switched back on.
 - **Sent from:** Sophie | Art of Small Steps <hello@artofsmallsteps.com>
 - **Merge tags:** none. The signup form only asks for an email address, so the greeting is "Hi there," (Sophie, 2026-11-23). Open question for later: add an optional First name field to the EmailOctopus form? Trade-off: a personal greeting versus one more field before the game starts.
