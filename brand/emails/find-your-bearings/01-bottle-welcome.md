@@ -1,11 +1,11 @@
 # Find Your Bearings · The bottle email (welcome)
 
-- **Status:** APPROVED by Sophie 2026-11-23 (header image still to be generated)
+- **Status:** APPROVED by Sophie 2026-11-23 (header image ready)
 - **Where it lives:** EmailOctopus → Automations → "Find Your Bearings - welcome" → step "Welcome email". Trigger: Contact added. The automation is **PAUSED** right now, so new signups get nothing until it's switched back on.
 - **Sent from:** Sophie | Art of Small Steps <hello@artofsmallsteps.com>
 - **Merge tags:** none. The signup form only asks for an email address, so the greeting is "Hi there," (Sophie, 2026-11-23). Open question for later: add an optional First name field to the EmailOctopus form? Trade-off: a personal greeting versus one more field before the game starts.
 - **Sophie's edits 2026-11-23:** subject option 3 chosen; "in person" added to the 200; **no Hungarian origin, no other language, no Kincsestérkép at all** (Sophie: UK readers, don't push "I'm not British" at them); the 150,000 views of the original video added (YouTube shows ~158k).
-- **Placeholders:** `[HEADER-IMAGE]` (to be generated in ChatGPT), `[SOPHIE-PHOTO]` (ready: `brand/visual/email-assets/sophie-polaroid-email.jpg`)
+- **Placeholders:** `[HEADER-IMAGE]` (ready: `brand/visual/email-headers/email/fyb-bottle-welcome.jpg`, 1200×600), `[SOPHIE-PHOTO]` (ready: `brand/visual/email-assets/sophie-polaroid-email.jpg`)
 - **Links:** button → `https://artofsmallsteps.com/wayfinder-method/find-your-bearings/` · RECHART → `https://artofsmallsteps.com/wayfinder-method/`
 
 ## What was weak in v1, and what changed
