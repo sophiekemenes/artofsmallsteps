@@ -83,7 +83,7 @@ One of the main signs of the downstairs neighbour is that it loves the language 
 
 You've already met it, actually. Remember the cube, the ladder, the lion? That little game in Find Your Bearings was your first conversation with your downstairs neighbour.
 
-(If you haven't played it yet, now's the moment. Five minutes, a pen, and the key at the end: [Find your bearings →](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/))
+(If you haven't played it yet, now's the moment. Five minutes, a pen, and the key at the end: [Find your bearings →](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/?from=rechart))
 
 Let me tell you about one of the first times I ever played it with someone.
 

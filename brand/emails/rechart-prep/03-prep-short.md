@@ -26,7 +26,7 @@ Here's the short version, because we don't have long:
 
 **Before then, one stage is already open: Find Your Bearings.** It's a short visualisation game with a cube, a ladder, a lion and a few other surprises. About five quiet minutes and a pen. Play it first, then open the key.
 
-**[Find your bearings →](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/)**
+**[Find your bearings →](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/?from=rechart)**
 
 (If you've already played it via the message in a bottle: no need to do it again. But if you're curious, have another go and see whether any of the pictures have changed.)
 

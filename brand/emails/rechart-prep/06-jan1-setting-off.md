@@ -34,4 +34,4 @@ See you on Sunday.
 With love,
 Sophie
 
-P.S. If you haven't played **Find Your Bearings** yet, today is a lovely day for it: [artofsmallsteps.com/wayfinder-method/find-your-bearings/](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/)
+P.S. If you haven't played **Find Your Bearings** yet, today is a lovely day for it: [artofsmallsteps.com/wayfinder-method/find-your-bearings](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/?from=rechart)

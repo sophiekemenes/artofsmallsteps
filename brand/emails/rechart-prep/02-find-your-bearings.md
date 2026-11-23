@@ -4,7 +4,7 @@
 - **Sent:** "Prep long": 2 days after purchase · "Prep week": 1 day after purchase
 - **Edited 2026-11-23:** the cube, ladder, lion and sea removed from the preview and body (FYB rule: never name the symbols before someone plays)
 - **Merge tags:** `{{Nickname}}`
-- **Link:** https://artofsmallsteps.com/wayfinder-method/find-your-bearings/
+- **Link:** https://artofsmallsteps.com/wayfinder-method/find-your-bearings/?from=rechart (buyer mode)
 
 ---
 
@@ -24,7 +24,7 @@ I first recorded it in 2016, and it still surprises me. (Including when I play i
 
 What you'll need: about five quiet minutes, a pen, and a bit of trust in the first picture that shows up. Don't edit it. The first one is the honest one.
 
-**[Find your bearings →](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/)**
+**[Find your bearings →](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/?from=rechart)**
 
 One tip: play it before you read the key. It works much better that way round.
 
