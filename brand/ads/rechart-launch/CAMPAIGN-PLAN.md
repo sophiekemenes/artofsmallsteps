@@ -1,4 +1,4 @@
-# RECHART Meta kampányterv (TERVEZET, Sophie jóváhagyására vár)
+# RECHART Meta kampányterv (keret és leállítási szabály JÓVÁHAGYVA 2026-11-23)
 
 `web-campaign` session, 2026-11-22. Amit Sophie jóváhagy, azt itt **JÓVÁHAGYVA** jelöljük.
 
@@ -19,7 +19,7 @@
 ## 2. Napi keret és futás (Sophie, 2026-11-23: lassan indulunk)
 
 - **£5 / nap**, legalább november végéig. (A magyar B1 is pici kerettel indult, és megtalálta a közönségét.)
-- **Fiók-szintű költési limit**: javaslat **£50** (Ads Manager → Fizetési beállítások → Fiók költési limitje). Végső fék: ennél többet akkor sem költ, ha elfelejtünk ránézni. Később emelhető.
+- **Fiók-szintű költési limit**: **£50** (JÓVÁHAGYVA, Sophie 2026-11-23) (Ads Manager → Fizetési beállítások → Fiók költési limitje). Végső fék: ennél többet akkor sem költ, ha elfelejtünk ránézni. Később emelhető.
 - **December 1.: közös átnézés** a számokkal, és döntés: marad, emeljük, vagy változtatunk.
 - **3 január**: az ár £69 lesz, a hirdetésszövegek ár- és dátum-sorait cserélni kell.
 
