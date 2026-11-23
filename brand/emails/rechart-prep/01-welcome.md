@@ -1,6 +1,6 @@
 # 01 · Welcome + nickname
 
-- **Status:** APPROVED by Sophie 2026-11-17
+- **Status:** APPROVED by Sophie 2026-11-17. BUILT in EmailOctopus 2026-11-23: "Rechart prep long" step "Prep 01 Welcome", one Code block from `01-welcome.html` (made with `brand/emails/tools/md_to_eo.py`)
 - **Sent:** at purchase
 - **Used in:** "Prep long" and "Prep week" automations
 - **Merge tags:** `{{Nickname}}` (default "Wayfinder"), `{{FirstName}}`
