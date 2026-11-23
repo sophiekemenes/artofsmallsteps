@@ -30,7 +30,7 @@ for blob, name in blobs.items():
     body = body.replace(f"/_blob/{blob}", f"/images/wayfinder/{name}.webp")
 
 # links between artboards -> real URLs
-body = body.replace('href="Main.dc.html" style="display:flex;justify-content:center', 'href="/wayfinder-method/#journey" style="display:flex;justify-content:center')
+body = body.replace('href="Main.dc.html" style="display:flex;justify-content:center', 'href="https://buy.stripe.com/cNiaEYgD08fd2l59ZF3Nm00" style="display:flex;justify-content:center')
 body = body.replace('<a href="Main.dc.html" style="display:inline-flex', '<a href="/wayfinder-method/#method" style="display:inline-flex')
 body = body.replace('href="Main.dc.html"', 'href="/wayfinder-method/"')
 body = body.replace('<a href="#key">', '<a href="/wayfinder-method/#legal">')
@@ -52,7 +52,7 @@ page = f"""---
 // Find Your Bearings: stage 0 of RECHART, the page the "message in a bottle" email leads to.
 // Generated from the "Bearings" artboard of the Design canvas "RECHART landing wireframe"
 // by site/tools/bearings_to_astro.py; the canvas is the design source of truth.
-// noindex: reached from the email only, and the English video is not recorded yet.
+// Public since 2026-11-23 (launch); buy button = RECHART Stripe payment link.
 import Tracking from '../../components/Tracking.astro';
 ---
 
@@ -61,7 +61,6 @@ import Tracking from '../../components/Tracking.astro';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content="Find Your Bearings: a six-minute game for your imagination, and the key to what your pictures might mean." />
     <link rel="icon" type="image/svg+xml" href="/rechart-favicon.svg" />
     <link rel="apple-touch-icon" href="/rechart-apple-touch-icon.png" />

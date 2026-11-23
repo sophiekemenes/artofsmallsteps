@@ -4,8 +4,8 @@
 // (claude.ai artifact, 2026-11-02) by site/tools/dc_to_astro.py: the
 // canvas is the design source of truth while copy is still being reviewed.
 // Standalone document on purpose: no site nav on the sales page (Sophie,
-// 2026-11-02), so it does not use Layout.astro. noindex until launch:
-// the page still carries [placeholders] (legal details, checkout).
+// 2026-11-02), so it does not use Layout.astro. public since
+// 2026-11-23 (launch). Buy buttons = RECHART Stripe payment link.
 import Tracking from '../../components/Tracking.astro';
 ---
 
@@ -14,7 +14,6 @@ import Tracking from '../../components/Tracking.astro';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content="RECHART · The Wayfinder Method. Maybe you don't need a new life. Maybe you need a new direction." />
     <link rel="canonical" href="https://artofsmallsteps.com/wayfinder-method/" />
     <!-- share preview (Facebook, LinkedIn, WhatsApp, X); image made from site/tools/og-rechart.html -->
@@ -414,7 +413,7 @@ a{color:#8A5129}a:hover{color:#142230}
 <span style="font-size:20px;color:#4A5560;text-decoration:line-through">£69</span>
 <span style="font-size:15px;color:#4A5560">one payment, yours to keep</span>
 </div>
-<a class="btn" href="#journey" style="display:flex;justify-content:center;align-items:center;margin-top:22px;background:#142230;color:#FBF1E3;text-decoration:none;padding:16px 24px;border-radius:999px;font-weight:600;font-size:18px;min-height:52px;box-sizing:border-box">Start the Wayfinder journey</a>
+<a class="btn" href="https://buy.stripe.com/cNiaEYgD08fd2l59ZF3Nm00" style="display:flex;justify-content:center;align-items:center;margin-top:22px;background:#142230;color:#FBF1E3;text-decoration:none;padding:16px 24px;border-radius:999px;font-weight:600;font-size:18px;min-height:52px;box-sizing:border-box">Start the Wayfinder journey</a>
 <p class="hand" style="margin:14px 0 0;font-size:20px;color:#1C4F6B;text-align:center">Launch price until we set sail on 3 January 2027. After that, £69.</p>
 <p style="margin:10px 0 0;font-size:14px;line-height:1.55;color:#4A5560;text-align:center">14-day money-back promise, no questions asked, on top of your statutory rights. Price in GBP, VAT included where applicable. By buying you agree to the <a href="/terms/">Terms</a> and <a href="/refund/">Refund policy</a>. Secure checkout by Stripe.</p>
 </div>
@@ -595,7 +594,7 @@ a{color:#8A5129}a:hover{color:#142230}
 <p class="display" style="margin:16px 0 0;font-size:clamp(24px,2.2vw,32px);font-style:italic;color:#1C4F6B">Just a little room to reconsider what's next.</p>
 <p class="hand" style="margin:26px 0 0;font-size:28px;color:#8A5129;line-height:1.3">Start with a question. Follow a curiosity. Find your bearings.</p>
 <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;align-items:center">
-<a class="btn" href="#journey" style="background:#142230;color:#FBF1E3;text-decoration:none;padding:16px 28px;border-radius:999px;font-weight:600;font-size:18px;min-height:52px;box-sizing:border-box;display:inline-flex;align-items:center">Start for £39</a>
+<a class="btn" href="https://buy.stripe.com/cNiaEYgD08fd2l59ZF3Nm00" style="background:#142230;color:#FBF1E3;text-decoration:none;padding:16px 28px;border-radius:999px;font-weight:600;font-size:18px;min-height:52px;box-sizing:border-box;display:inline-flex;align-items:center">Start for £39</a>
 <a class="btn" href="#bearings" style="background:transparent;color:#142230;text-decoration:none;padding:14px 26px;border-radius:999px;font-weight:600;font-size:17px;min-height:52px;box-sizing:border-box;display:inline-flex;align-items:center;border:1.5px solid #142230">Or try the free taste</a>
 </div>
 </div>

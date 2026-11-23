@@ -214,8 +214,8 @@ page = f"""---
 // (claude.ai artifact, 2026-11-02) by site/tools/dc_to_astro.py: the
 // canvas is the design source of truth while copy is still being reviewed.
 // Standalone document on purpose: no site nav on the sales page (Sophie,
-// 2026-11-02), so it does not use Layout.astro. noindex until launch:
-// the page still carries [placeholders] (legal details, checkout).
+// 2026-11-02), so it does not use Layout.astro. public since
+// 2026-11-23 (launch). Buy buttons = RECHART Stripe payment link.
 import Tracking from '../../components/Tracking.astro';
 ---
 
@@ -224,7 +224,6 @@ import Tracking from '../../components/Tracking.astro';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content="RECHART · The Wayfinder Method. Maybe you don't need a new life. Maybe you need a new direction." />
     <link rel="canonical" href="https://artofsmallsteps.com/wayfinder-method/" />
     <!-- share preview (Facebook, LinkedIn, WhatsApp, X); image made from site/tools/og-rechart.html -->
