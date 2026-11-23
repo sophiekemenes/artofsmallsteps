@@ -76,6 +76,7 @@ const pixelId = tracking.metaPixelId;
           document,'script','https://connect.facebook.net/en_US/fbevents.js');
           // No automatic button-click / page-metadata events (SubscribedButtonClick etc.): only the events below.
           fbq('set', 'autoConfig', false, pixelId);
+          fbq.disablePushState = true; // no extra PageView when an in-page #anchor link changes the URL
           fbq('init', pixelId);
           fbq('track', 'PageView');
           if (location.pathname.replace(/\/+$/, '') === '/wayfinder-method') {
