@@ -129,6 +129,8 @@ Round one is 3 ads (one ad set). Suggested: **A, B, D**. Reserves: **E** (first 
 
 ## D · The hand-drawn map (video)
 
+**APPROVED by Sophie 2026-11-23** ("It's good"), as written. Video files: `creatives/D_other-map_4x5.mp4` (feed + Reels) and `creatives/D_other-map_9x16.mp4` (Stories only). Round one = B1 + D + the beige drawing voiceover video.
+
 **Primary text**
 
 > What if you drew a different map?
