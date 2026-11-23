@@ -1,4 +1,4 @@
-# B1: "The 80s girl on the floor" (DRAFT, waiting for Sophie)
+# B1: "The 80s girl on the floor" (APPROVED by Sophie 2026-11-23)
 
 `web-campaign` session, 2026-11-23. The same copy as Sophie's own Hungarian B1 text (2026-10-08), carried into English for RECHART. Only the last line is new (the offer).
 
