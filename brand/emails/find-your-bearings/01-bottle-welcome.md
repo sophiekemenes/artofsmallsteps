@@ -1,7 +1,7 @@
 # Find Your Bearings · The bottle email (welcome)
 
 - **Status:** APPROVED by Sophie 2026-11-23. BUILT in EmailOctopus 2026-11-23 as one Code block (source: `01-bottle-welcome.html`; images in the EO image library); automation ACTIVE again since 2026-11-23 (Sophie)
-- **Where it lives:** EmailOctopus → Automations → "Find Your Bearings - welcome" → step "Welcome email". Trigger: Contact added (note: this also fires for brand-new RECHART buyers that Make 8613336 creates).
+- **Where it lives:** EmailOctopus → Automations → "Find Your Bearings - welcome" → step "Welcome email". Trigger: Contact added, with the filter **Source is Form** (since 2026-11-23, Sophie): only bottle-form signups get it, RECHART buyers created by Make 8613336 (API) do not.
 - **Sent from:** Sophie | Art of Small Steps <hello@artofsmallsteps.com>
 - **Merge tags:** none. The signup form only asks for an email address, so the greeting is "Hi there," (Sophie, 2026-11-23). Open question for later: add an optional First name field to the EmailOctopus form? Trade-off: a personal greeting versus one more field before the game starts.
 - **Sophie's edits 2026-11-23:** subject option 3 chosen; "in person" added to the 200; **no Hungarian origin, no other language, no Kincsestérkép at all** (Sophie: UK readers, don't push "I'm not British" at them); the 150,000 views of the original video added (YouTube shows ~158k).
