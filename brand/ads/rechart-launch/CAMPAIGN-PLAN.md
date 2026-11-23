@@ -10,7 +10,8 @@
   - Érdeklődés (egy csoportban, VAGY kapcsolattal): personal development, self-help, life coaching, mindfulness, journaling, career change, Brené Brown, Psychology Today.
   - Advantage+ audience: **KI** az első 7 napban, hogy tényleg hideg, érdeklődés-alapú legyen. Utána, ha jön vásárlás, kipróbálhatjuk BE-kapcsolva.
   - Elhelyezés: Advantage+ placements, de **Audience Network kizárva** (sok a véletlen kattintás).
-- **Hirdetések**: a RECHART copy session 6 változatából (A–F) az első körben a Sophie által kiválasztott **3**. Ha 4 nap után valamelyik egyértelműen gyenge, kicseréljük a következőre.
+- **Hirdetések, első kör (Sophie, 2026-11-23):** **B1** (80-as évekbeli lány, `b1-80s-girl.md`, JÓVÁHAGYVA), **D** (Draw your other map videó, 4:5 feed+Reels, 9:16 Stories, szöveg a `RECHART-LAUNCH-ADS-v1.md` D részében, JÓVÁHAGYVA), és a 3. a copy session angol hangalámondásos bézs videója, ha elkészül. Tartalék: a copy session A–F változatai.
+- Korábbi terv: a RECHART copy session 6 változatából (A–F) az első körben a Sophie által kiválasztott **3**. Ha 4 nap után valamelyik egyértelműen gyenge, kicseréljük a következőre.
 - **CTA gomb**: „Learn more” (hideg közönség, a sales oldalra visz, nem egyből fizetésre).
 - **Advantage+ creative**: a szöveget vagy képet átíró/átalakító javítások KI (hogy a hangod és az akvarellek változatlanok maradjanak). Az elhelyezésekhez igazító vágás maradhat.
 - **Céloldal**: minden hirdetés → `https://artofsmallsteps.com/wayfinder-method/` (a Find Your Bearings játék nem része a tölcsérnek).
