@@ -1,0 +1,16 @@
+01	Lesson 1: Meet your downstairs neighbour	We set off today. A little theory first, I promise it's about you.	header=yes	hidden=-	visible_ph=-	len=12021
+02	Lesson 2: So, what was your cube like?	Same photo, three filters. And why you're the lead in this film.	header=yes	hidden=-	visible_ph=-	len=10504
+03	Lesson 3: A pen, a goblin and a joy detector	Today you'll need a pen. A special one. Not special in itself, special to you.	header=yes	hidden=-	visible_ph=-	len=14908
+04	Lesson 4: Three words to rewrite in your head	"Have to", "try" and "problem". Small words, surprisingly heavy luggage.	header=yes	hidden=-	visible_ph=-	len=11696
+05	Lesson 5: Got your pen? Today it gets to work	Five minutes of free writing, a wish list with no limits, and a faulty genie.	header=yes	hidden=-	visible_ph=-	len=9177
+06	Lesson 6: A starry night, and a secret you can carry in your hand	One feeling from your past, anchored to your fingertips. Available any time.	header=yes	hidden=[ANCHORING-AUDIO-LINK]	visible_ph=-	len=9700
+06b	Your navigator is awake. Now we draw.	Stage 1 is done. Here's what's coming, and one big sheet of paper you'll need.	header=yes	hidden=-	visible_ph=-	len=3966
+07	Lesson 7: Draw your compass	What matters most to you? Five cards, one envelope, and the first line on your map.	header=yes	hidden=[VALUES-LIST-APPROACH], [VALUES-LIST-AVOID]	visible_ph=-	len=13097
+08	Lesson 8: Your home port	One perfect day, five pillars, and the middle of your map.	header=yes	hidden=-	visible_ph=-	len=7519
+09	Lesson 9: Light your lighthouse	Why reaching a goal can still feel empty, and the four writings that help you avoid it.	header=yes	hidden=-	visible_ph=-	len=12519
+10	Lesson 10: The islands in your sea	Parent, colleague, friend, kitchen disaster: which of your roles are really yours?	header=yes	hidden=-	visible_ph=-	len=12979
+11	Lesson 11: X marks the spot	A day as a tourist in your own town, a handful of goal cards, and the X on your map.	header=yes	hidden=-	visible_ph=-	len=8442
+12	Lesson 12: Here be dragons	The X is on your map. Which means the fears have arrived. Good. Let's give them a seat.	header=NO	hidden=-	visible_ph=-	len=14597
+13	Lesson 13: Plotting the course	The dragons have names now. Time to pack the boat, mark the reefs, and draw the route. In pencil.	header=NO	hidden=-	visible_ph=-	len=16650
+14	Lesson 14: Hands up!	Why your body sometimes knows the way before you do, and a door you'll walk through once a week.	header=NO	hidden=-	visible_ph=-	len=7079
+15	Lesson 15: Parting words	The last letter. Two sentences to take with you for the rest of the voyage, and one small, important task.	header=NO	hidden=-	visible_ph=-	len=10559
