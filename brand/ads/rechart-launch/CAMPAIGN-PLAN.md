@@ -16,22 +16,20 @@
 - **Advantage+ creative**: a szöveget vagy képet átíró/átalakító javítások KI (hogy a hangod és az akvarellek változatlanok maradjanak). Az elhelyezésekhez igazító vágás maradhat.
 - **Céloldal**: minden hirdetés → `https://artofsmallsteps.com/wayfinder-method/` (a Find Your Bearings játék nem része a tölcsérnek).
 
-## 2. Napi keret és futás
+## 2. Napi keret és futás (Sophie, 2026-11-23: lassan indulunk)
 
-- **£15 / nap** (javaslat). Indítás: amint a mérés élesben megy és teszteltük.
-- **Fiók-szintű költési limit**: **£300** (Ads Manager → Fizetési beállítások → Fiók költési limitje). Ez a végső biztonsági fék, akkor is megáll, ha mi elfelejtjük.
-- **3 január**: az ár £69 lesz, a hirdetésszövegek ár- és dátum-sorait cserélni kell (a copy session megírta a cserét).
+- **£5 / nap**, legalább november végéig. (A magyar B1 is pici kerettel indult, és megtalálta a közönségét.)
+- **Fiók-szintű költési limit**: javaslat **£50** (Ads Manager → Fizetési beállítások → Fiók költési limitje). Végső fék: ennél többet akkor sem költ, ha elfelejtünk ránézni. Később emelhető.
+- **December 1.: közös átnézés** a számokkal, és döntés: marad, emeljük, vagy változtatunk.
+- **3 január**: az ár £69 lesz, a hirdetésszövegek ár- és dátum-sorait cserélni kell.
 
-## 3. Leállítási szabály (előre megbeszélve, hogy ne érzésből döntsünk)
+## 3. Leállítási szabály (kis kerethez igazítva)
 
 | Ha... | akkor... |
 |---|---|
-| £30 költés után a link-CTR 0,7% alatt van | hirdetést cserélünk (a kép vagy az első mondat nem működik) |
-| £45 költés után 0 InitiateCheckout (vásárlás gomb kattintás) | szünet, megnézzük az oldalt és a hirdetést együtt |
-| **£80 költés után 0 vásárlás** | **szünet**, átnézzük, mit változtassunk, csak utána indul újra |
-| egy vásárlás ára (CPA) 3 nap átlagában £60 fölött van | csökkentjük a keretet vagy cserélünk hirdetést |
-
-(£80 ≈ a jelenlegi ár kétszerese. Kisebb számmal nem lehet jó döntést hozni, nagyobbal feleslegesen sok pénz menne el.)
+| £15 költés után a link-CTR 0,7% alatt van | a leggyengébb hirdetést cseréljük |
+| £20 költés után 0 InitiateCheckout (vásárlás gomb kattintás) | szünet, megnézzük együtt az oldalt és a hirdetéseket |
+| **£40 költés után 0 vásárlás** | **szünet**, átnézzük, mit változtassunk |
 
 ## 4. UTM-ek
 
