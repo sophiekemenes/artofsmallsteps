@@ -24,11 +24,11 @@ Here's the short version, because we don't have long:
 
 **We set off on Sunday 3 January.** The first stage arrives in your inbox that morning, then a new one every two days.
 
-**Before then, one stage is already open: Find Your Bearings.** It's a short visualisation game with a cube, a ladder, a lion and a few other surprises. About five quiet minutes and a pen. Play it first, then open the key.
+**Before then, one stage is already open: Find Your Bearings.** It's a short visualisation game: I talk, you close your eyes, and a few pictures turn up. About five quiet minutes and a pen. Play it first, then open the key.
 
 **[Find your bearings →](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/?from=rechart)**
 
-(If you've already played it via the message in a bottle: no need to do it again. But if you're curious, have another go and see whether any of the pictures have changed.)
+(If you've already played it via the message in a bottle: no need to do it again. But if you're curious, have another go and see whether any of the pictures have changed. And if you still have the page where you wrote them down, keep it handy: you'll need it on Sunday.)
 
 **And one small question: what should I call you?** The payment form told me "{{FirstName}}", which may or may not be what your friends say.
 

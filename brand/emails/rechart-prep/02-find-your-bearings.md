@@ -28,7 +28,7 @@ What you'll need: about five quiet minutes, a pen, and a bit of trust in the fir
 
 One tip: play it before you read the key. It works much better that way round.
 
-**If you've already played it** (some of you found it through the message in a bottle before booking): lovely, you're one step ahead. You don't have to do it again. But if you're curious, play it once more and see whether any of the pictures have changed. Sometimes they look quite different a few weeks later.
+**If you've already played it** (some of you found it through the message in a bottle before booking): lovely, you're one step ahead. You don't have to do it again. But if you're curious, play it once more and see whether any of the pictures have changed. Sometimes they look quite different a few weeks later. And if you still have the page where you wrote your pictures down, keep it handy: you'll need it on 3 January.
 
 With love,
 Sophie

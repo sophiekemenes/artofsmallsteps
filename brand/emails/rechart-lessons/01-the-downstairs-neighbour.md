@@ -81,9 +81,9 @@ And that view, {{Nickname}}, holds a lot of possibilities. :)
 
 One of the main signs of the downstairs neighbour is that it loves the language of symbols and metaphors, and it communicates brilliantly through them.
 
-You've already met it, actually. Remember the cube, the ladder, the lion? That little game in Find Your Bearings was your first conversation with your downstairs neighbour.
+(If you haven't played Find Your Bearings yet, pause here and play it first, before you read on. Five minutes, a pen, and the key at the end: [Find your bearings →](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/?from=rechart))
 
-(If you haven't played it yet, now's the moment. Five minutes, a pen, and the key at the end: [Find your bearings →](https://artofsmallsteps.com/wayfinder-method/find-your-bearings/?from=rechart))
+You've already met it, actually. Remember the cube, the ladder, the lion? That little game in Find Your Bearings was your first conversation with your downstairs neighbour.
 
 Let me tell you about one of the first times I ever played it with someone.
 
