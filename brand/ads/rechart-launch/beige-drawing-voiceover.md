@@ -22,3 +22,19 @@ First, we wake up your inner navigator. Then you draw your other map. And then w
 RECHART isn't a standard goal-setting course. It's gentle, funny, surprising, and deadly serious play. And at the end of it, the next step is yours.
 
 RECHART: The Wayfinder Method. We set sail on 3 January.
+
+## Ad copy (APPROVED by Sophie 2026-11-23, she changed the headline)
+
+Ad name: `C_beige-drawing_4x5`. Media: `creatives/beige-drawing_4x5_en.mp4`, "Original" in every crop box, no separate 9:16.
+
+**Primary text**
+
+> Is there something you know you'd like to change, but you're not sure where to start?
+>
+> RECHART starts with what's already there: the parts of you that know more than you think. Then you draw your other map. And then you get real, practical tools, so you don't just think about it. You actually set off.
+>
+> Gentle, funny, surprising, and deadly serious play. 15 lessons by email, starting 3 January. £39 until then, £69 after.
+
+**Headline:** Something needs to change
+**Description:** RECHART · The Wayfinder Method
+**Button:** See details

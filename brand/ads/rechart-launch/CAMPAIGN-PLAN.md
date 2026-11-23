@@ -10,10 +10,12 @@
   - **Advantage+ audience: BE, érdeklődési körök nélkül** (Sophie, 2026-11-23). A magyar kincses térképes kampány így működött: csak ország és kor, és a Meta maga találta meg a vásárlókat. A kor (28–60) itt csak javaslat a Metának. Ha legalább 28-at kemény határnak szeretnénk, az a „Show more controls” alatti **minimum életkor**.
   - Tartalék, ha december 1-jén gyenge: érdeklődési körök (personal development, self-help, life coaching, mindfulness, journaling, career change, Brené Brown, Psychology Today).
   - Kampánynév az Ads Managerben: „AoSS Rechart First Cold Sales Campaign”. Napi £5 kampányszintű költségkeret (Advantage+ campaign budget), egy hirdetéscsoport, így mindegy.
-  - Elhelyezés: Advantage+ placements, de **Audience Network kizárva** (sok a véletlen kattintás).
+  - Elhelyezés: **Advantage+ placements, kizárás nélkül** (Sophie, 2026-11-23: vásárlásra optimalizálunk, és a magyar kampány is így futott).
 - **Hirdetések, első kör (Sophie, 2026-11-23):** **B1** (80-as évekbeli lány, `b1-80s-girl.md`, JÓVÁHAGYVA), **D** (Draw your other map videó, 4:5 feed+Reels, 9:16 Stories, szöveg a `RECHART-LAUNCH-ADS-v1.md` D részében, JÓVÁHAGYVA), és a 3. a copy session angol hangalámondásos bézs videója (új hanggal és halk zenével, **JÓVÁHAGYVA 2026-11-23**, „Igen, mehet”): **minden elhelyezésben a `beige-drawing_4x5_en.mp4` megy** (a 9:16-osban a felső felirat a Stories/Reels felső 14%-ába esik, ott a profilnév eltakarná). Tartalék: a copy session A–F változatai.
 - Korábbi terv: a RECHART copy session 6 változatából (A–F) az első körben a Sophie által kiválasztott **3**. Ha 4 nap után valamelyik egyértelműen gyenge, kicseréljük a következőre.
-- **CTA gomb**: „Learn more” (hideg közönség, a sales oldalra visz, nem egyből fizetésre).
+- **CTA gomb**: „See details” (a Meta alapértelmezése, Sophie 2026-11-23). A sales oldalra visz, nem egyből fizetésre.
+- **Hirdetésnevek az Ads Managerben**: `B1_80s-girl_4x5`, `D_other-map_video` (4:5 + 9:16 Stories), `C_beige-drawing_4x5` (4:5 mindenhol). A bézs szövege: `beige-drawing-voiceover.md`.
+- **Ki van kapcsolva**: Dynamic creative, Multi-advertiser ads, Optimise website destination, minden Advantage+ creative generation és enhancement (szöveg, CTA, animáció, ad layout details, visual touch-ups, music, overlays). **Be**: Flex media.
 - **Advantage+ creative**: a szöveget vagy képet átíró/átalakító javítások KI (hogy a hangod és az akvarellek változatlanok maradjanak). Az elhelyezésekhez igazító vágás maradhat.
 - **Céloldal**: minden hirdetés → `https://artofsmallsteps.com/wayfinder-method/` (a Find Your Bearings játék nem része a tölcsérnek).
 
