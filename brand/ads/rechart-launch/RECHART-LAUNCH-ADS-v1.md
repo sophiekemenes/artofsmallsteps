@@ -17,7 +17,7 @@
 - **Global English:** UK spelling, no UK-only slang. No em dashes.
 - **Sophie's voice:** warm, self-ironic, a little cheeky, a parenthesis now and then. Lines are taken from the approved sales page where possible, so the ad and the page sound like the same person.
 - **Facts only:** 15 lessons, one every two days; workbook; £39/£69; 3 January; "used with 100+ people over ten years" (confirmed by Sophie, COORDINATION.md). Audio is **not** mentioned, because it doesn't exist yet.
-- **Hungarian origin:** acknowledged where it fits (variant F), never pushed.
+- **Hungarian origin: NEVER named** (Sophie, 2026-11-23: UK audience, no "I'm not British" in their face). A soft "the country I grew up in" is the most we say. Variant F is ON HOLD until rewritten without it.
 - **No "crew" or cohort framing** (COORDINATION.md): "we" is Sophie and the reader.
 - **No "New Year, New You".** The holidays are the backdrop, not the message. The message is permission.
 - **Never in any visual:** cube, ladder, lion, horse, a single "the house" image (the Find Your Bearings symbols). The landing image `pier-feet-over-water-wide.png` has a ladder in it: **don't use it for ads.**

@@ -1,6 +1,6 @@
 # 04 · 6 December: Mikulás (good child, naughty child)
 
-- **Status:** APPROVED by Sophie 2026-11-17
+- **Status:** APPROVED by Sophie 2026-11-17; edited 2026-11-23 (Sophie): "Hungary" replaced by "the country I grew up in" (rule: never name Hungary in AoSS reader-facing copy, a soft hint like this is fine)
 - **Sent:** 6 December 2026, broadcast to "Prep long"
 - **Built from:** "Mit jelent valójában az újratervezés?" (kincsesterkep.hu, 2026-09-01), English version in `brand/blog/what-rechart-really-means.md`
 - **Merge tags:** `{{Nickname}}`
@@ -10,13 +10,13 @@
 
 **Subject:** Good child or naughty child?
 
-**Preview text:** In Hungary, today is the day someone in red decides. Then we carry the verdict for years.
+**Preview text:** In the country I grew up in, today is the day someone in red decides. Then we carry the verdict for years.
 
 ---
 
 Hi {{Nickname}},
 
-Today is 6 December, and in Hungary that means Mikulás has been. He's our Santa, only earlier and a bit stricter.
+Today is 6 December, and in the country I grew up in, that means Mikulás has been. He's a kind of Santa, only earlier and a bit stricter.
 
 Last night children all over the country polished their boots until they shone and put them in the window. By morning there's chocolate in them, tangerines, a few walnuts. If you've been good. If you haven't, you get a *virgács*: a little bundle of twigs, sometimes sprayed gold, just so you know someone's been keeping score.
 

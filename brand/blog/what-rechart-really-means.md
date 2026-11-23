@@ -44,7 +44,7 @@ So this is what I've worked out: life tosses you about, you fall, you get up, yo
 
 Instead, skilfully and with a gentle hand, you start reading your own story differently. The old failure doesn't simply stay a failure. An old job isn't ten wasted years. An interest you dropped isn't just "something you used to like".
 
-It's raw material. Data. Ingredients – and if so far you've been making, say, a nice lecsó with them (a Hungarian pepper-and-tomato stew, the kind every family swears they make best), now you could make ANYTHING, just as delicious, or even better.
+It's raw material. Data. Ingredients – and if so far you've been making, say, a nice lecsó with them (a pepper-and-tomato stew from the country I grew up in, the kind every family swears they make best), now you could make ANYTHING, just as delicious, or even better.
 
 Think about it 😊 The same memories. The same experiences. Only the connections between them will be different.
 

@@ -12,7 +12,7 @@
   - "Mother" as the example role became "parent". The pub mate stays, as a "drinking buddy".
   - The "good wife" role card (beauty, sexiness, sex) is gone. In its place: "partner", with warm, cheeky but gender-neutral values and abilities. Its goals come in lesson 11, without "Rezső" and without the bedroom.
   - Labels: "Casanova (and the label for ladies is even ruder)" became "a heartbreaker". "Spinster", "loose" and the "man and woman are labels too, what a muddle these days" line are left out (gendered, and a global readership would read the last one as a political aside). The other labels stay.
-  - The chocolate story is Sophie's own, kept in full. "Kapucíner" is explained as a Hungarian brand.
+  - The chocolate story is Sophie's own, kept in full. "Kapucíner" is glossed as "a chocolate bar from the country I grew up in" (2026-11-23: Hungary is never named in reader-facing copy).
   - BKV passenger (Budapest transport) became "bus passenger".
   - New: the map layer (roles as islands, shaded by satisfaction; firm coastline for roles that are truly yours, dotted for labels).
 
@@ -117,7 +117,7 @@ Labels are powerful, and it's almost impossible to escape their influence comple
 
 And they can be tricky, because you can't always tell whether a role reached you from the inside out, or from the outside in. That matters only because the first kind instinctively agrees with your inner values far more than the second.
 
-Once, when I was little, seven or eight, and not exactly swimming in pocket money, I stole a chocolate bar from a shop. (A Kapucíner, I think, a Hungarian brand.) I did it very badly, of course: I stood in front of the chocolate shelf for at least a minute, then grabbed one with a sudden movement and half ran out of the shop crying "Ow, ow, my tummy hurts!"
+Once, when I was little, seven or eight, and not exactly swimming in pocket money, I stole a chocolate bar from a shop. (A Kapucíner, I think, a chocolate bar from the country I grew up in.) I did it very badly, of course: I stood in front of the chocolate shelf for at least a minute, then grabbed one with a sudden movement and half ran out of the shop crying "Ow, ow, my tummy hurts!"
 
 Are you surprised that the shopkeeper came after me, and I gave the chocolate back, very sheepishly? Nobody called me a thief, although it would have been the perfect moment to stick that label on me. And I wasn't a thief. I'd made a decision, a bad one, obviously, and in a moment, in the shopkeeper's eyes, I'd become something I wasn't, on the inside.
 
