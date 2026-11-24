@@ -17,9 +17,14 @@
 //   (the _fbp/_fbc values, dots swapped because Stripe allows only [A-Za-z0-9_-]).
 // - Any element with [data-cookie-settings] reopens the banner. Saying "No" after
 //   a "Yes" deletes the Meta cookies and reloads the page.
+// - Vercel Web Analytics (cookieless page views + UTMs, no consent needed) runs on
+//   every page regardless of the banner choice.
+import Analytics from '@vercel/analytics/astro';
 import tracking from '../data/tracking.json';
 const pixelId = tracking.metaPixelId;
 ---
+
+<Analytics />
 
 {pixelId && (
   <>
